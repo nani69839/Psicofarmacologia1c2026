@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema Nervioso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Lexend+Deca:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg:        #ffffff;
+      --surface:   #f9f9f9;
+      --border:    #e0e0e0;
+      --accent1:   #4a7c59;
+      --accent2:   #c0623a;
+      --accent3:   #5b7fa6;
+      --text:      #1e1e1e;
+      --muted:     #6b6b6b;
+      --highlight: #fff5c2;
+
+      --font-body: 'Atkinson Hyperlegible', sans-serif;
+      --font-head: 'Lexend Deca', sans-serif;
+
+      --lh: 1.85;
+      --ls: 0.03em;
+      --gap: 2.4rem;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: clamp(17px, 2vw, 20px);
+      line-height: var(--lh);
+      letter-spacing: var(--ls);
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 2rem 6rem;
+    }
+
+    .toc {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-left: 6px solid var(--accent1);
+      border-radius: 10px;
+      padding: 1.4rem 1.8rem;
+      margin-bottom: 3rem;
+    }
+    .toc h2 {
+      font-family: var(--font-head);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 0.8rem;
+    }
+    .toc ol { padding-left: 1.4rem; }
+    .toc li { margin: 0.35rem 0; }
+    .toc a { color: var(--accent3); text-decoration: none; font-weight: 600; }
+    .toc a:hover { text-decoration: underline; }
+
+    h1 {
+      font-family: var(--font-head);
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      color: var(--accent1);
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+      border-bottom: 3px solid var(--accent1);
+      padding-bottom: 0.6rem;
+    }
+    h2 {
+      font-family: var(--font-head);
+      font-size: clamp(1.35rem, 3vw, 1.75rem);
+      font-weight: 700;
+      color: var(--accent2);
+      margin-top: var(--gap);
+      margin-bottom: 0.9rem;
+      padding-left: 0.7rem;
+      border-left: 5px solid var(--accent2);
+    }
+    h3 {
+      font-family: var(--font-head);
+      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+      font-weight: 600;
+      color: var(--accent3);
+      margin-top: calc(var(--gap) * 0.9);
+      margin-bottom: 0.7rem;
+      padding-left: 0.5rem;
+      border-left: 4px solid var(--accent3);
+    }
+    h4 {
+      font-family: var(--font-head);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-top: 1.6rem;
+      margin-bottom: 0.6rem;
+      background: var(--highlight);
+      display: block;
+      padding: 0.1em 0.5em;
+      border-radius: 4px;
+    }
+    h5 {
+      font-family: var(--font-head);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 1.4rem;
+      margin-bottom: 0.4rem;
+    }
+    h6 {
+      font-family: var(--font-head);
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--accent2);
+      margin-top: 1.2rem;
+      margin-bottom: 0.4rem;
+    }
+
+    p { margin-bottom: 1rem; }
+    ul, ol { padding-left: 1.6rem; margin-bottom: 1rem; }
+    li { margin-bottom: 0.55rem; }
+    li > ul, li > ol { margin-top: 0.4rem; }
+    strong { color: var(--accent2); }
+
+    .card {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: 1.8rem 2rem;
+      margin: 1.6rem 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    .func-item {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: 1.1rem 1.4rem;
+      margin-bottom: 0.9rem;
+    }
+    .func-item h4 { margin-top: 0; }
+    .func-item p { margin-bottom: 0; }
+
+    .keywords {
+      background: #eef4fb;
+      border-left: 4px solid var(--accent3);
+      border-radius: 6px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      color: var(--accent3);
+    }
+
+    .img-block {
+      margin: 1.6rem 0;
+      text-align: center;
+    }
+    .img-block img {
+      max-width: 100%;
+      border-radius: 10px;
+      border: 2px solid var(--border);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+    .img-caption {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px dashed var(--border);
+      margin: 2.5rem 0;
+    }
+
+    .chip {
+      display: inline-block;
+      background: var(--accent1);
+      color: #fff;
+      font-family: var(--font-head);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 0.2em 0.7em;
+      border-radius: 99px;
+      margin-bottom: 0.5rem;
+    }
+
+    /* TABLA */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 1.6rem 0;
+      border-radius: 10px;
+      border: 1.5px solid var(--border);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    thead {
+      background: var(--accent3);
+      color: #fff;
+    }
+    thead th {
+      font-family: var(--font-head);
+      font-weight: 600;
+      padding: 0.75rem 1rem;
+      text-align: left;
+    }
+    tbody tr:nth-child(even) { background: var(--surface); }
+    tbody tr:nth-child(odd)  { background: var(--bg); }
+    td {
+      padding: 0.7rem 1rem;
+      vertical-align: top;
+      border-bottom: 1px solid var(--border);
+    }
+    td:first-child {
+      font-family: var(--font-head);
+      font-weight: 600;
+      color: var(--accent2);
+      white-space: nowrap;
+    }
+
+    /* DOS COLUMNAS */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin: 1.4rem 0;
+    }
+    .col-card {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: 1.2rem 1.4rem;
+    }
+    .col-card .img-block { margin: 0.8rem 0; }
+    .col-card p { margin-bottom: 0; font-size: 0.95rem; }
+    h6.col-title {
+      font-family: var(--font-head);
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-transform: none;
+      letter-spacing: 0;
+      margin-top: 0;
+      margin-bottom: 0.4rem;
+      padding: 0.25em 0.6em;
+      border-radius: 6px;
+      display: inline-block;
+    }
+    h6.col-title.ionotropico  { background: #ddeeff; color: var(--accent3); }
+    h6.col-title.metabotropico { background: #ffeedd; color: var(--accent2); }
+    @media (max-width: 600px) {
+      .two-col { grid-template-columns: 1fr; }
+    }
+
+    /* SALITE */
+    .salite {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: 1.4rem 2rem;
+      margin: 1.2rem 0 1.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .salite-item {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+    }
+    .salite-letter {
+      font-family: var(--font-head);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent3);
+      min-width: 2.8rem;
+      line-height: 1;
+    }
+    .salite-word {
+      font-family: var(--font-head);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a1a1a;
+        --surface: #222222;
+        --border: #333333;
+        --text: #e8e8e8;
+        --muted: #999999;
+        --highlight: #3a3010;
+      }
+      .keywords { background: #1a2a38; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="toc" aria-label="Tabla de contenidos">
+    <h2>📋 Índice</h2>
+    <ol>
+      <li><a href="#neurona-intro">Neurona</a></li>
+      <li><a href="#glia">Células de la glía</a>
+        <ol>
+          <li><a href="#astrocitos">Astrocitos</a></li>
+          <li><a href="#neuropatologia">Papel en la neuropatología</a></li>
+          <li><a href="#astrogliosis">Astrogliosis reactiva</a></li>
+          <li><a href="#oligodendrocitos">Oligodendrocitos y células de Schwann</a></li>
+          <li><a href="#mielina">Mielina</a></li>
+          <li><a href="#microglia">Microglía</a></li>
+          <li><a href="#poda">Poda sináptica</a></li>
+          <li><a href="#fisiopato">Fisiopatología de trastornos mentales</a></li>
+          <li><a href="#ependimocitos">Ependimocitos</a></li>
+        </ol>
+      </li>
+      <li><a href="#neuronas">Neuronas</a>
+        <ol>
+          <li><a href="#componentes">Soma, axón, dendritas</a></li>
+        </ol>
+      </li>
+      <li><a href="#membrana">Membrana plasmática y potencial de reposo</a>
+        <ol>
+          <li><a href="#ion">¿Qué es un ion?</a></li>
+          <li><a href="#reposo">Potencial de reposo</a></li>
+          <li><a href="#asimetria">Asimetría entre interior y exterior</a></li>
+          <li><a href="#cambios">Cambios en el potencial de reposo</a></li>
+          <li><a href="#potencial-accion">Potencial de acción</a></li>
+        </ol>
+      </li>
+      <li><a href="#sinapsis">Sinapsis</a>
+        <ol>
+          <li><a href="#tipos-sinapsis">Sinapsis eléctricas y químicas</a></li>
+        </ol>
+      </li>
+      <li><a href="#sinapsis-quimica">Sinapsis química</a>
+        <ol>
+          <li><a href="#sinapsis-quimica">El proceso de neurotransmisión (SALITE)</a></li>
+        </ol>
+      </li>
+    </ol>
+  </nav>
+
+  <h1>Sistema nervioso</h1>
+  <p>Está compuesto por pequeñas unidades ejecutoras de sus funciones.</p>
+
+  <hr />
+
+  <!-- NEURONA INTRO -->
+  <section id="neurona-intro">
+    <h2>Neurona</h2>
+    <div class="card">
+      <span class="chip">Unidad básica</span>
+      <p><strong>Unidad ejecutora mínima.</strong></p>
+      <p>Célula especializada en la transmisión de señales.</p>
+    </div>
+  </section>
+
+  <!-- GLÍA -->
+  <section id="glia">
+    <h2>Células de la glía</h2>
+
+    <div class="img-block">
+      <img src="https://gyazo.com/ae794c53fb22f0e6145830a2044a740b.png" alt="Ilustración general de las células de la glía" />
+      <p class="img-caption">Ilustración general de las células de la glía</p>
+    </div>
+
+    <ul>
+      <li>Clásicamente descritas como "células de sostén".</li>
+      <li>Funciones igual de importantes que las neuronas, menos estudiadas.</li>
+      <li>Compuesta por, al menos, cinco tipos de células:
+        <ul>
+          <li>Astrocitos</li>
+          <li>Oligoendocitos</li>
+          <li>Células de Schwann</li>
+          <li>Ependimocitos</li>
+          <li>Microglía</li>
+        </ul>
+      </li>
+    </ul>
+
+    <section id="astrocitos">
+      <h3>Astrocitos</h3>
+      <ul>
+        <li>5x más que las neuronas.</li>
+        <li>Cubren todo el SNC.</li>
+      </ul>
+      <h4>Funciones más importantes</h4>
+      <div class="func-item">
+        <h4>Soporte estructural</h4>
+        <p>Proporcionan soporte estructural al tejido cerebral al mantener la integridad de la barrera hematoencefálica y contribuir a una organización tridimensional del tejido nervioso.</p>
+      </div>
+      <div class="func-item">
+        <h4>Regulación del flujo sanguíneo</h4>
+        <p>Participan de la regulación del flujo sanguíneo cerebral, ayudando a mantener un suministro constante de oxígeno y nutrientes a las neuronas.</p>
+      </div>
+      <div class="func-item">
+        <h4>Mantenimiento de la homeostasis</h4>
+        <p>Contribuyen a mantener el entorno iónico y químico adecuado para el funcionamiento óptimo de las neuronas, regulando la concentración de iones y neurotransmisores extracelulares.</p>
+      </div>
+      <div class="func-item">
+        <h4>Absorción de neurotransmisores</h4>
+        <p>Retiran neurotransmisores liberados en la sinapsis para prevenir la sobreexcitación neuronal y contribuir al proceso de reciclaje de neurotransmisores. Esta función es particularmente importante para neurotransmisores como el GABA y el glutamato.</p>
+      </div>
+      <div class="func-item">
+        <h4>Soporte metabólico</h4>
+        <p>Proporcionan nutrientes y energía a las neuronas, almacenando glucógeno que puede ser utilizado por las neuronas como fuente de energía. Participan en la eliminación de desechos metabólicos y células muertas mediante procesos fagocíticos.</p>
+      </div>
+      <div class="func-item">
+        <h4>Modulación de la plasticidad sináptica</h4>
+        <p>Participan en la modulación de la plasticidad sináptica, lo que influye en la fuerza y eficacia de las conexiones entre las neuronas.</p>
+      </div>
+      <div class="func-item">
+        <h4>Formación de la barrera hematoencefálica (BHE)</h4>
+        <p>Contribuyen a la formación y mantenimiento de la barrera hematoencefálica, que controla el paso de sustancias entre la sangre y el cerebro.</p>
+      </div>
+      <div class="func-item">
+        <h4>Comunicación neuro-astroglial</h4>
+        <p>Responden a las señales neuronales y liberan neurotransmisores, estableciendo una comunicación bidireccional con las neuronas.</p>
+      </div>
+      <div class="func-item">
+        <h4>Contribución a la reparación del tejido nervioso</h4>
+        <p>Participan en la formación de cicatrices gliales y pueden contribuir a una reparación del tejido nervioso después de lesiones.</p>
+      </div>
+
+      <div class="img-block">
+        <img src="https://gyazo.com/2b4224b001c81b2b8d3eac14eb8c0bec.png" alt="Imagen de astrocitos" />
+        <p class="img-caption">Imagen de astrocitos</p>
+      </div>
+    </section>
+
+    <section id="neuropatologia">
+      <h3>Papel de los astrocitos en la neuropatología</h3>
+      <p>En la <strong>patogénesis</strong> de muchos trastornos neurológicos, incluyendo enfermedades neuropsiquiátricas y neurodegenerativas, se describe la pérdida de la <strong>función homeostática</strong> (astenia astrocitaria) o la remodelación de las capacidades homeostáticas astrocitarias.</p>
+
+      <section id="astrogliosis">
+        <h4>Astrogliosis reactiva</h4>
+        <p>Es un programa defensivo complejo. Los astrocitos responden a lesiones, daño neuronal, infecciones o condiciones patológicas en el SNC.</p>
+        <p>Esta respuesta es parte de los <strong>mecanismos de defensa y reparación</strong> del cerebro y la médula espinal.</p>
+        <h5>Incluye</h5>
+        <ul>
+          <li><strong>Cambios morfológicos:</strong> aumento de tamaño y prolongaciones.</li>
+          <li><strong>Proliferación celular:</strong> aumento en la reproducción de astrocitos para <strong>reemplazar las células dañadas</strong> o para formar una <strong>barrera que proteja el tejido</strong> cerebral.</li>
+          <li><strong>Secreción de moléculas señalizadoras:</strong> factores de crecimiento y moléculas inflamatorias, que pueden influir en la respuesta inmune y en la supervivencia celular.</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="oligodendrocitos">
+      <h3>Oligodendrocitos y células de Schwann</h3>
+      <p>Forman parte de la <strong>vaina de mielina</strong>.</p>
+
+      <h4>Oligoendrocitos</h4>
+      <div class="img-block">
+        <img src="https://gyazo.com/8f7fb30396a107981d23e17a8a95b901.png" alt="Imagen de oligodendrocitos" />
+        <p class="img-caption">Imagen de oligodendrocitos</p>
+      </div>
+      <ul>
+        <li>Los oligodendrocitos tienen pequeños cuerpos celulares con prolongaciones.</li>
+        <li>Estas envuelven los axones de las neuronas del SNC.</li>
+        <li>Una única célula puede formar varias envolturas mielínicas en una neurona.</li>
+      </ul>
+
+      <h4>Células de Schwann</h4>
+      <ul>
+        <li>Realizan la misma función que los oligodendrocitos, pero en el sistema nervioso periférico.</li>
+        <li>Su cuerpo completo cubre el axón, no una prolongación del mismo.</li>
+        <li>Para un mismo axón se requieren muchas células de Schwann.</li>
+      </ul>
+    </section>
+
+    <section id="mielina">
+      <h3>Mielina</h3>
+      <ul>
+        <li>Sostiene a los axones.</li>
+        <li>Funciona como <strong>aislante eléctrico</strong>, aumentando la velocidad de conducción de señales.</li>
+      </ul>
+      <h4>Conducción saltatoria</h4>
+      <p>Las pequeñas partes que no quedan cubiertas por la vaina se las llama <strong>nodos de Ranvier</strong>, y permiten la "conducción saltatoria" del potencial de acción.</p>
+      <p>El <strong>potencial de acción no se regenera punto por punto</strong> en la membrana plasmática celular a lo largo de todo el axón, sino que solo lo hace en los nodos.</p>
+    </section>
+
+    <section id="microglia">
+      <h3>Microglía</h3>
+      <div class="keywords">🔑 <strong>Palabras clave:</strong> células inmunitarias, poda sináptica.</div>
+      <p>En líneas generales, son las células encargadas del cuidado de las células nerviosas.</p>
+      <ul>
+        <li>Poco citoplasma, núcleo alargado, prolongaciones muy ramificadas.</li>
+        <li>Son las células menos numerosas en el SNC, pero aumenta su número de haber patologías, generando inflamación.</li>
+      </ul>
+      <p>Son <strong>células inmunitarias</strong> que buscan <strong>amenazas o signos de daño</strong> en el SN. Su función es la vigilancia o el mantenimiento del funcionamiento cerebral.</p>
+      <p><strong>Responden a cambios patológicos en el tejido cerebral.</strong></p>
+      <p>Pueden moverse y se comportan como <strong>macrófagos</strong> (células "limpiadoras") si encuentran peligros potenciales que ataquen al tejido.</p>
+      <p>Además, de ser necesario, pueden <strong>multiplicarse para batallar con la amenaza</strong>, ganando también en número.</p>
+      <p>Su <strong>activación</strong> genera el <strong>llamado de otras células inmunitarias (linfocitos)</strong>, manifestando una mejor y mayor respuesta.</p>
+      <p>La microglía se mueve activamente hacia las áreas dañadas, donde <strong>elimina restos celulares</strong> después de la <strong>muerte neuronal</strong>. Retiran o consumen células muertas o sus restos.</p>
+
+      <div class="img-block">
+        <img src="https://i.gyazo.com/e534e5ae5b9112744ed2690daca9b0b9.png" alt="Imagen de microglía" />
+        <p class="img-caption">Imagen de microglía</p>
+      </div>
+
+      <section id="poda">
+        <h4>Poda sináptica</h4>
+        <p>La microglía es importante para la maduración o eliminación de sinapsis. Puede monitorear y mantener las sinapsis en el cerebro no lesionado.</p>
+        <p>La poda sináptica es un proceso natural del organismo que elimina conexiones neuronales poco eficientes o inútiles.</p>
+        <p>A medida que nos desarrollamos y aprendemos, nuestras vivencias fortalecen los <strong>circuitos neuronales</strong> más relevantes, mientras que los menos importantes se debilitan y desaparecen gradualmente.</p>
+      </section>
+
+      <section id="fisiopato">
+        <h4>Fisiopatología de trastornos mentales</h4>
+        <p>Su activación aumentada se asocia a la fisiopatología de trastornos mentales.</p>
+        <p>Ejemplo: en la <strong>esquizofrenia</strong> hay una <strong>hiperactivación de la microglía</strong>, que aumenta la actividad inflamatoria y la poda sináptica descontrolada → conduce a hipoconectividad en áreas cerebrales.</p>
+      </section>
+    </section>
+
+    <section id="ependimocitos">
+      <h3>Ependimocitos</h3>
+      <p>Forman una capa continua que reviste los ventrículos cerebrales y el canal central de la médula espinal.</p>
+      <p>Ependimocitos = <strong>células epiteliales ependimarias ciliadas</strong>.</p>
+      <ul>
+        <li><strong>Epiteliales</strong> → forman un revestimiento (como una "pared").</li>
+        <li><strong>Ependimarias</strong> → del epéndimo (el tejido que recubre los ventrículos).</li>
+        <li><strong>Ciliadas</strong> → tienen cilios que mueven el LCR.</li>
+      </ul>
+    </section>
+
+  </section><!-- /glia -->
+
+  <hr />
+
+  <!-- NEURONAS -->
+  <section id="neuronas">
+    <h2>Neuronas</h2>
+    <ul>
+      <li>Suelen tener el papel principal del sistema nervioso.</li>
+      <li>Son las <strong>unidades morfofuncionales</strong> del tejido nervioso.
+        <ul>
+          <li>Morfo: forma/estructura. La neurona es la <strong>unidad mínima estructural</strong> del tejido nervioso.</li>
+          <li>Funcional: es la unidad que lleva a cabo la <strong>función esencial del SN</strong> (recibir, integrar y transmitir información mediante señales eléctricas y químicas).</li>
+        </ul>
+      </li>
+      <li>Se especializan en la <strong>transmisión de impulsos</strong>: son excitables, reciben, transmiten y almacenan información.</li>
+      <li><strong>Componentes:</strong> soma, axón y dendritas.</li>
+    </ul>
+
+    <div class="img-block">
+      <img src="https://gyazo.com/4db26d2dc6e67f7783a0fea198add3f8.png" alt="Imagen de neurona" />
+      <p class="img-caption">Imagen de neurona</p>
+    </div>
+
+    <section id="componentes">
+      <h3>Soma, axón, dendritas</h3>
+
+      <h4>Soma</h4>
+      <ul>
+        <li>Es el cuerpo celular.</li>
+        <li>Posee el núcleo y la mayoría de las organelas.</li>
+      </ul>
+
+      <h4>Axón</h4>
+      <ul>
+        <li>Prolongación única.</li>
+        <li>Especializado en transmitir el impulso nervioso que nace en el soma.</li>
+        <li>La mayor parte cubierta por vaina de mielina.</li>
+      </ul>
+      <h5>Cono axónico</h5>
+      <ul>
+        <li>Sin mielina.</li>
+        <li>Concentración elevada de canales de sodio voltaje-dependientes.</li>
+        <li>Presenta el menor umbral para la respuesta eléctrica de la célula. Esto permite que se inicien los potenciales de acción.</li>
+      </ul>
+      <h5>Vaina de mielina</h5>
+      <p>Asiste a que la transmisión del impulso sea más veloz, puesto que se realiza de forma saltatoria.</p>
+
+      <h4>Dendritas</h4>
+      <ul>
+        <li>Ramificaciones que son extensiones del cuerpo celular.</li>
+        <li>Constituyen el mayor porcentaje de la superficie neuronal.</li>
+        <li>Son diversas en morfología y distribución.</li>
+        <li>En ellas se localiza el mayor porcentaje de contactos sinápticos.</li>
+        <li>A diferencia de los axones, las dendritas pueden ser múltiples y no poseen mielina.</li>
+      </ul>
+    </section>
+  </section>
+
+  <hr />
+
+  <!-- MEMBRANA PLASMÁTICA -->
+  <section id="membrana">
+    <h2>Membrana plasmática y potencial de reposo</h2>
+
+    <h3>Membrana plasmática</h3>
+    <ul>
+      <li>Rodea a todas las células vivas.</li>
+      <li>Separa el interior del exterior de la célula.</li>
+      <li>Compuesta por una bicapa lipídica: dos capas de fosfolípidos con proteínas incrustadas.</li>
+      <li>Divide espacios: intracelular y extracelular. Ambos espacios están constituidos fundamentalmente por agua, pero los componentes disueltos son diferentes.</li>
+    </ul>
+
+    <div class="img-block">
+      <img src="https://gyazo.com/ff9ea9d78bd2d8a2aa3f954570bd45f1.png" alt="Imagen de membrana plasmática" />
+      <p class="img-caption">Imagen de membrana plasmática</p>
+    </div>
+
+    <section id="ion">
+      <h4>Recordatorio: ¿Qué es un ion?</h4>
+      <p>Átomo o molécula que perdió o ganó electrones, lo que le confiere una carga eléctrica neta.</p>
+      <ul>
+        <li>Pérdida de electrones → carga positiva → catión. Ejemplos: K⁺, Na⁺, Ca²⁺.</li>
+        <li>Ganancia de electrones → carga negativa → anión. Ejemplos: Cl⁻ y cargas aniónicas de las proteínas intracelulares.</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <p>Diferencia de potencial eléctrico: las concentraciones de iones de un lado y el otro de la membrana no son idénticas → "potencial de membrana": fenómeno común a todas las células.</p>
+    <p>Las únicas células capaces de modificar sus <strong>potenciales transmembrana</strong> son las células nerviosas y musculares.</p>
+
+    <div class="img-block">
+      <img src="http://www.genomasur.com/piloto/BCH_tradu/b_4/potencial_accion.JPG" alt="Imagen de potencial de acción" />
+      <p class="img-caption">Imagen de potencial de acción</p>
+    </div>
+
+    <section id="reposo">
+      <h3>Potencial de reposo</h3>
+      <p>En la sangre y el exterior de las células, abundan los iones de sodio y cloro (NaCl).</p>
+
+      <section id="asimetria">
+        <h4>Asimetría entre interior y exterior</h4>
+        <ul>
+          <li>Na⁺ → ion predominante en el medio extracelular.</li>
+          <li>K⁺ → ion predominante en el medio intracelular. También tiene aniones sueltos.</li>
+        </ul>
+        <p>Disparidad de cargas: el interior es "negativo" comparado con el exterior. Ojo: la carga es positiva, pero menor que la del exterior.</p>
+        <p>Podríamos decir que la membrana está naturalmente "polarizada", con un polo positivo en la cara extracelular y un polo negativo en su cara intracelular. Como si fuera un gran imán.</p>
+
+        <h5>Pero en las neuronas, mantener este equilibrio no es tan sencillo...</h5>
+        <p>En los nodos de Ranvier hay:</p>
+        <ul>
+          <li>Canales de Na⁺ que meten Na⁺ a la célula.</li>
+          <li>Canales de K⁺ que sacan K⁺ al exterior.</li>
+        </ul>
+        <p>¿Por qué?</p>
+        <ul>
+          <li>Si bien los canales pueden estar inactivos, nunca están del todo cerrados, por lo que se escapan iones.</li>
+          <li>La búsqueda de equilibrio entre las cantidades de Na⁺ y K⁺ los lleva a querer entrar o salir de su lugar.</li>
+        </ul>
+        <p>La <strong>bomba de sodio-potasio</strong> trabaja para mantener las cargas en su lugar, ingresando K⁺ y sacando Na⁺.</p>
+
+        <div class="img-block">
+          <img src="https://gyazo.com/7d8909120186b5967cfaa878bd01fc4d.png" alt="Imagen de la bomba de sodio-potasio" />
+          <p class="img-caption">Imagen de la bomba de sodio-potasio</p>
+        </div>
+      </section>
+    </section>
+
+    <section id="cambios">
+      <h3>Cambios en el potencial de reposo</h3>
+      <h4>Potenciales electrotónicos / potenciales graduales</h4>
+      <p>Las neuronas son capaces de modificar su potencial transmembrana.</p>
+      <p>Para eso existen cambios graduales en el potencial eléctrico a lo largo de la membrana, llamados potenciales electrotónicos.</p>
+      <p>Estos cambios se generan a partir de flujos iónicos transmembrana pequeños.</p>
+      <p>Ejemplo: cuando un neurotransmisor abre o cierra un canal iónico.</p>
+      <p>Los potenciales electrotónicos pueden ser positivos o negativos:</p>
+      <ul>
+        <li><strong>Hiperpolarización</strong> → más negativo → neurona inhibida → menos probable que dispare.</li>
+        <li><strong>Despolarización</strong> → menos negativo → neurona excitada → más probable que dispare.</li>
+      </ul>
+      <p>Cuando los potenciales despolarizan a la célula, la acercan un poquito más al umbral para desencadenar eventualmente un potencial de acción.</p>
+    </section>
+
+    <section id="potencial-accion">
+      <h3>Potencial de acción</h3>
+      <p>Es un fenómeno fundamental en la fisiología neuronal.</p>
+      <p>Es una <strong>señal eléctrica</strong> generada por las células nerviosas.</p>
+      <p>Surge de <strong>cambios en la permeabilidad</strong> de la membrana a iones específicos.</p>
+      <p>Para activar el potencial de acción, la <strong>señal</strong> generalmente viene de las dendritas, atraviesa el cuerpo celular y se dirige al axón.</p>
+      <p>Si es suficiente para superar el umbral de -30 mV (milivoltios), comenzaría el proceso sin retorno.</p>
+
+      <h4>Entrada masiva de sodio</h4>
+      <p>El potencial de acción depende de la apertura masiva de canales de sodio voltaje-dependientes.</p>
+      <p>Cuando se supera el umbral, los canales de sodio se abren estrepitosamente, dejando pasar grandes cantidades de Na⁺ a la neurona.</p>
+      <p>Se genera la despolarización, que invierte el voltaje de la membrana: el interior ahora es más positivo que el exterior.</p>
+
+      <h4>La señal es transitoria</h4>
+      <ul>
+        <li>Apenas se activan los canales, se desactivan.</li>
+        <li>Al mismo tiempo se produce una apertura de canales de potasio.</li>
+        <li>La bomba de sodio-potasio sigue actuando para regresar a la neurona al estado de reposo.</li>
+      </ul>
+      <p>Luego de esa gran apertura, la neurona suele hiperpolarizarse por un instante, gracias a la salida más gradual de potasio que "sale" por los canales mencionados anteriormente.</p>
+      <p>Aquí es cuando el interior vuelve a ser menos positivo que el exterior, pero se vuelve un poco menos de lo habitual, hasta que recupera el equilibrio en la instancia de reposo.</p>
+      <p>Este proceso es saltatorio, va de nodo en nodo, hasta llegar finalmente al cono axonal.</p>
+
+      <div class="img-block">
+        <img src="https://gyazo.com/ea4ad2b04a8f4c6c088128dc64488694.png" alt="Imagen del potencial de acción" />
+        <p class="img-caption">Imagen del potencial de acción</p>
+      </div>
+    </section>
+
+  </section><!-- /membrana -->
+
+  <hr />
+
+  <!-- SINAPSIS -->
+  <section id="sinapsis">
+    <h2>Sinapsis</h2>
+
+    <h3>Las sinapsis son los contactos funcionales entre neuronas</h3>
+    <p>El cerebro humano contiene 86 mil millones de neuronas, cada una con la capacidad de influir en muchas otras células.</p>
+    <p>Se necesitan mecanismos sofisticados y altamente eficientes para permitir la comunicación entre esta gran cantidad de elementos.</p>
+    <p>Este órgano representa un 2% del peso corporal total en el ser humano, pero aún así se encarga de consumir aproximadamente el 20% de la energía producida por el cuerpo (aún en reposo, sin estar realizando tareas cognitivas de ningún tipo).</p>
+    <p>Se cree que esta energía consumida por el cerebro se utiliza entre un 60-80% para la <strong>comunicación entre células</strong>, especialmente entre neuronas.</p>
+    <p>Esta comunicación es posible gracias a las <strong>sinapsis</strong>, los contactos funcionales entre neuronas.</p>
+    <p>Se pueden distinguir dos tipos diferentes de sinapsis: <strong>eléctricas y químicas</strong>, en función de su mecanismo de transmisión.</p>
+
+    <section id="tipos-sinapsis">
+      <h3>Sinapsis eléctricas y sinapsis químicas</h3>
+
+      <div class="img-block">
+        <img src="https://gyazo.com/010bb89ac190fedbb824962435820a04.png" alt="Imagen comparativa de sinapsis eléctricas y químicas" />
+        <p class="img-caption">Imagen comparativa de sinapsis eléctricas y químicas</p>
+      </div>
+
+      <h4>Sinapsis eléctricas</h4>
+      <p>La corriente fluye a través de "conexones", que son canales de membrana especializados que conectan dos células en uniones de hendidura.</p>
+
+      <h4>Sinapsis químicas</h4>
+      <p>Permiten la comunicación célula a célula mediante la secreción de agentes químicos: los <strong>neurotransmisores</strong>.</p>
+      <p>Los neurotransmisores producen un flujo de corriente secundario en las neuronas postsinápticas al activar receptores específicos de estas moléculas.</p>
+      <p>Es el tipo de sinapsis más frecuente y modificable.</p>
+
+      <h4>Cinco pasos clave en la neurotransmisión química</h4>
+      <div class="salite">
+        <div class="salite-item">
+          <span class="salite-letter">S</span>
+          <span class="salite-word">síntesis</span>
+        </div>
+        <div class="salite-item">
+          <span class="salite-letter">A</span>
+          <span class="salite-word">almacenamiento</span>
+        </div>
+        <div class="salite-item">
+          <span class="salite-letter">L</span>
+          <span class="salite-word">liberación</span>
+        </div>
+        <div class="salite-item">
+          <span class="salite-letter">I</span>
+          <span class="salite-word">interacción</span>
+        </div>
+        <div class="salite-item">
+          <span class="salite-letter">TE</span>
+          <span class="salite-word">terminación</span>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Características</th>
+              <th>Sinapsis eléctrica</th>
+              <th>Sinapsis química</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tipo de transmisión</td>
+              <td>Transmisión directa de <strong>corriente eléctrica</strong> a través de uniones especializadas llamadas <strong>uniones GAP</strong>.</td>
+              <td>Transmisión de señales a través de <strong>neurotransmisores</strong> liberados en la <strong>hendidura sináptica</strong>.</td>
+            </tr>
+            <tr>
+              <td>Mecanismo de acción</td>
+              <td>Los potenciales de acción se propagan directamente a través de uniones comunicantes entre las células.</td>
+              <td>La llegada de un potencial de acción causa la liberación de neurotransmisores en la <strong>terminal presináptica</strong>.</td>
+            </tr>
+            <tr>
+              <td>Velocidad de transmisión</td>
+              <td>Rápida.</td>
+              <td>Relativamente lenta.</td>
+            </tr>
+            <tr>
+              <td>Direccionalidad</td>
+              <td>Bidireccional (puede ser tanto de presináptico a postsináptico como viceversa).</td>
+              <td>Unidireccional (de presináptico a postsináptico), aunque hay excepciones.</td>
+            </tr>
+            <tr>
+              <td>Plasticidad sináptica</td>
+              <td><strong>Menor plasticidad sináptica:</strong> cambios en la fuerza sináptica y plasticidad a largo plazo son menos comunes.</td>
+              <td><strong>Mayor plasticidad sináptica:</strong> puede ser modulada a través de cambios en la fuerza sináptica y la plasticidad a largo plazo.</td>
+            </tr>
+            <tr>
+              <td>Ejemplos</td>
+              <td>Se encuentran principalmente en tejidos como el músculo cardíaco y algunas áreas del sistema nervioso central, como el cerebelo.</td>
+              <td>Sinapsis glutamatérgicas, colinérgicas, dopaminérgicas.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </section><!-- /sinapsis -->
+
+  <hr />
+
+  <!-- SINAPSIS QUÍMICA -->
+  <section id="sinapsis-quimica">
+    <h2>Sinapsis química</h2>
+
+    <h3>El proceso de neurotransmisión: cinco pasos</h3>
+
+    <div class="salite">
+      <div class="salite-item"><span class="salite-letter">S</span><span class="salite-word">Síntesis</span></div>
+      <div class="salite-item"><span class="salite-letter">A</span><span class="salite-word">Almacenamiento</span></div>
+      <div class="salite-item"><span class="salite-letter">L</span><span class="salite-word">Liberación</span></div>
+      <div class="salite-item"><span class="salite-letter">I</span><span class="salite-word">Interacción</span></div>
+      <div class="salite-item"><span class="salite-letter">TE</span><span class="salite-word">Terminación</span></div>
+    </div>
+
+    <div class="img-block">
+      <img src="https://gyazo.com/a757daea4874715d0ef5beaaf2288440.png" alt="Imagen del proceso de neurotransmisión" />
+      <p class="img-caption">Imagen del proceso de neurotransmisión</p>
+    </div>
+
+    <h4>1. S de Síntesis</h4>
+    <p>Síntesis de neurotransmisores en el cuerpo celular o en la terminación axonal de la neurona presináptica.</p>
+    <p>Hay NT de molécula grande y de molécula pequeña.</p>
+
+    <h5>Moléculas grandes</h5>
+    <ol>
+      <li>Síntesis de NT en el cuerpo celular.</li>
+      <li>Transporte a lo largo del axón hacia las terminales.</li>
+    </ol>
+    <p>Ejemplo: endorfinas.</p>
+
+    <h5>Moléculas pequeñas</h5>
+    <ol>
+      <li>Síntesis de NT en las terminales presinápticas. Se hace a partir de precursores metabólicos disponibles localmente.</li>
+    </ol>
+    <p><strong>Ejemplos:</strong> glutamato, acetilcolina, dopamina, serotonina, noradrenalina y GABA.</p>
+
+    <h4>2. A de Almacenamiento</h4>
+    <h5>Almacenamiento en vesículas sinápticas</h5>
+    <p>Los NT sintetizados son empaquetados en las vesículas sinápticas en el terminal axónico de la neurona presináptica para su posterior liberación.</p>
+
+    <h4>3. L de Liberación</h4>
+    <h5>La liberación es calcio dependiente</h5>
+    <ol>
+      <li>Un potencial de acción alcanza el terminal axónico.</li>
+      <li>Se abre el canal de calcio dependiente de voltaje.</li>
+      <li>Ingresan iones de calcio al terminal axónico.</li>
+      <li>Los iones de calcio desencadenan la <strong>fusión de las vesículas</strong> sinápticas con la membrana sináptica y la <strong>liberación de NT</strong> hacia la hendidura sináptica.</li>
+    </ol>
+
+    <h4>4. I de Interacción</h4>
+    <h5>Interacción con receptores postsinápticos</h5>
+    <p>Los NT actúan como llaves y los receptores como cerraduras.</p>
+    <p>Los NT se unen a receptores específicos en la membrana de la neurona postsináptica, lo que desencadena una respuesta.</p>
+
+    <div class="two-col">
+      <div class="col-card">
+        <h6 class="col-title ionotropico">Receptores ionotrópicos</h6>
+        <div class="img-block">
+          <img src="https://gyazo.com/57bb515bf0657d6d5a5c8696b2b2a016.png" alt="Imagen de receptores ionotrópicos" />
+        </div>
+        <p>Abren canales iónicos directamente cuando se unen al NT.</p>
+      </div>
+      <div class="col-card">
+        <h6 class="col-title metabotropico">Receptores metabotrópicos</h6>
+        <div class="img-block">
+          <img src="https://gyazo.com/e226806771570f894c3f79843670baa8.png" alt="Imagen de receptores metabotrópicos" />
+        </div>
+        <p>Activan vías de señalización intracelular más complejas.</p>
+      </div>
+    </div>
+
+  </section><!-- /sinapsis-quimica -->
+
+</body>
+</html>

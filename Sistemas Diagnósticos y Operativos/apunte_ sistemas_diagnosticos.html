@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apunte: Psicopatología & SDO</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=DM+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --azul:    #1a3a5c;
+    --cielo:   #4fc3f7;
+    --lima:    #c6f135;
+    --coral:   #ff6b6b;
+    --menta:   #43e3a4;
+    --violeta: #b388ff;
+    --sol:     #ffd54f;
+    --rosa:    #f48fb1;
+    --bg:      #f0f4f8;
+    --card:    #ffffff;
+    --texto:   #1a2332;
+    --gris:    #546e7a;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--texto);
+    overflow-x: hidden;
+  }
+
+  /* ── HERO ─────────────────────────────────────────────── */
+  .hero {
+    background: var(--azul);
+    padding: 3rem 2rem 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 80% 60% at 30% 40%, #264d7a 0%, transparent 60%),
+                radial-gradient(ellipse 60% 50% at 80% 70%, #0d2137 0%, transparent 55%);
+  }
+  .hero-shapes {
+    position: absolute; inset: 0; pointer-events: none;
+    overflow: hidden;
+  }
+  .hero-shapes span {
+    position: absolute;
+    border-radius: 50%;
+    opacity: .18;
+    animation: float 8s ease-in-out infinite;
+  }
+  .hero-shapes span:nth-child(1){ width:220px;height:220px;background:var(--cielo);top:-60px;left:-40px;animation-delay:0s; }
+  .hero-shapes span:nth-child(2){ width:160px;height:160px;background:var(--lima);bottom:-40px;right:10%;animation-delay:2s; }
+  .hero-shapes span:nth-child(3){ width:100px;height:100px;background:var(--coral);top:30%;right:5%;animation-delay:4s; }
+  .hero-shapes span:nth-child(4){ width:80px;height:80px;background:var(--menta);bottom:10%;left:15%;animation-delay:1s; }
+  .hero-shapes span:nth-child(5){ width:60px;height:60px;background:var(--sol);top:10%;right:30%;animation-delay:3s; }
+  @keyframes float {
+    0%,100% { transform: translateY(0) scale(1); }
+    50%      { transform: translateY(-18px) scale(1.05); }
+  }
+
+  .hero-content { position: relative; z-index: 2; }
+  .hero-badge {
+    display: inline-block;
+    background: var(--lima);
+    color: var(--azul);
+    font-family: 'Space Mono', monospace;
+    font-size: .75rem;
+    font-weight: 700;
+    padding: .35rem .9rem;
+    border-radius: 99px;
+    letter-spacing: .08em;
+    margin-bottom: 1.2rem;
+    animation: pop .5s cubic-bezier(.34,1.56,.64,1) both;
+  }
+  .hero h1 {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(2.4rem, 7vw, 4.5rem);
+    font-weight: 900;
+    line-height: 1.05;
+    color: #fff;
+    margin-bottom: .5rem;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--cielo);
+  }
+  .hero-sub {
+    color: #a8c4dc;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  /* nav pills */
+  .nav-pills {
+    display: flex; flex-wrap: wrap; gap: .5rem;
+    justify-content: center;
+    position: relative; z-index: 2;
+  }
+  .nav-pills a {
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 700;
+    padding: .45rem 1rem;
+    border-radius: 99px;
+    transition: transform .2s, box-shadow .2s;
+    letter-spacing: .03em;
+  }
+  .nav-pills a:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,.3); }
+
+  /* ── LAYOUT ───────────────────────────────────────────── */
+  .container { max-width: 940px; margin: 0 auto; padding: 0 1.5rem; }
+
+  /* ── SECTIONS ─────────────────────────────────────────── */
+  .section {
+    padding: 3rem 0 1.5rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity .6s ease, transform .6s ease;
+  }
+  .section.visible { opacity: 1; transform: translateY(0); }
+
+  .section-header {
+    display: flex; align-items: center; gap: 1rem;
+    margin-bottom: 1.8rem;
+    padding-bottom: .8rem;
+    border-bottom: 3px solid;
+  }
+  .section-icon {
+    width: 3rem; height: 3rem;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+  .section-header h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.9rem;
+    font-weight: 800;
+    line-height: 1.1;
+  }
+  .section-header .num {
+    font-family: 'Space Mono', monospace;
+    font-size: .85rem;
+    opacity: .55;
+    display: block;
+  }
+
+  /* ── CARDS ────────────────────────────────────────────── */
+  .card {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 1.4rem 1.6rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,.07);
+    border-left: 5px solid;
+    position: relative;
+    overflow: hidden;
+    transition: transform .25s, box-shadow .25s;
+  }
+  .card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(0,0,0,.12); }
+  .card h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: .6rem;
+  }
+  .card p, .card li { font-size: .95rem; line-height: 1.65; color: var(--gris); }
+  .card ul { padding-left: 1.2rem; }
+  .card li { margin-bottom: .3rem; }
+
+  /* ── TABLES ───────────────────────────────────────────── */
+  .table-wrap { overflow-x: auto; margin-bottom: 1.4rem; border-radius: 14px; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+  table { width: 100%; border-collapse: collapse; background: var(--card); }
+  table thead tr { }
+  table th {
+    padding: .85rem 1rem;
+    text-align: left;
+    font-family: 'Space Mono', monospace;
+    font-size: .78rem;
+    letter-spacing: .05em;
+    color: #fff;
+    white-space: nowrap;
+  }
+  table td {
+    padding: .8rem 1rem;
+    font-size: .9rem;
+    line-height: 1.55;
+    border-bottom: 1px solid #eef0f4;
+    vertical-align: top;
+  }
+  table tr:last-child td { border-bottom: none; }
+  table tr:nth-child(even) td { background: #f8fafd; }
+  table tr:hover td { background: #eef6ff; transition: background .15s; }
+  table td:first-child { font-weight: 700; }
+
+  /* ── HIGHLIGHT BOXES ──────────────────────────────────── */
+  .box {
+    border-radius: 16px;
+    padding: 1.4rem 1.6rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .box .box-label {
+    font-family: 'Space Mono', monospace;
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-bottom: .6rem;
+    display: flex; align-items: center; gap: .4rem;
+  }
+  .box h3 { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 700; margin-bottom: .5rem; }
+  .box p, .box li { font-size: .93rem; line-height: 1.65; }
+  .box ul { padding-left: 1.2rem; }
+  .box li { margin-bottom: .35rem; }
+
+  /* ── GRID CARDS ───────────────────────────────────────── */
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-bottom: 1.2rem; }
+  .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.2rem; }
+
+  .mini-card {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 1.2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,.06);
+    border-top: 4px solid;
+    transition: transform .2s;
+  }
+  .mini-card:hover { transform: translateY(-4px); }
+  .mini-card .icon { font-size: 2rem; margin-bottom: .5rem; }
+  .mini-card h4 { font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 700; margin-bottom: .4rem; }
+  .mini-card p { font-size: .85rem; color: var(--gris); line-height: 1.55; }
+
+  /* ── TIMELINE ─────────────────────────────────────────── */
+  .timeline { position: relative; padding-left: 2rem; }
+  .timeline::before { content:''; position:absolute; left:.55rem; top:0; bottom:0; width:3px; background: linear-gradient(to bottom, var(--cielo), var(--menta)); border-radius: 3px; }
+  .tl-item { position: relative; margin-bottom: 1.1rem; }
+  .tl-dot { position:absolute; left:-1.56rem; top:.3rem; width:1rem; height:1rem; border-radius:50%; border:3px solid var(--card); box-shadow: 0 0 0 2px; }
+  .tl-content { background: var(--card); border-radius: 12px; padding: .9rem 1.1rem; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+  .tl-year { font-family:'Space Mono',monospace; font-size:.8rem; font-weight:700; margin-bottom:.2rem; }
+  .tl-content p { font-size:.88rem; color:var(--gris); line-height:1.55; }
+
+  /* ── COMPARISON ───────────────────────────────────────── */
+  .vs-grid { display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; align-items: start; margin-bottom: 1.2rem; }
+  .vs-divider { display:flex; align-items:center; padding-top:3rem; }
+  .vs-badge { background: var(--azul); color:#fff; font-family:'Space Mono',monospace; font-size:.8rem; font-weight:700; padding:.4rem .7rem; border-radius:99px; }
+  .vs-col { }
+  .vs-col h4 { font-family:'Fraunces',serif; font-size:1.1rem; font-weight:800; padding:.6rem 1rem; border-radius:10px 10px 0 0; color:#fff; }
+  .vs-col .vs-item { background:var(--card); padding:.6rem 1rem; font-size:.88rem; border-bottom:1px solid #eef0f4; }
+  .vs-col .vs-item:last-child { border-bottom:none; border-radius:0 0 10px 10px; }
+
+  /* ── CALLOUT ──────────────────────────────────────────── */
+  .callout {
+    border-radius: 14px;
+    padding: 1.2rem 1.4rem;
+    margin-bottom: 1.2rem;
+    display: flex; gap: .9rem; align-items: flex-start;
+    font-size: .92rem; line-height: 1.6;
+  }
+  .callout .callout-icon { font-size: 1.6rem; flex-shrink: 0; margin-top: -.1rem; }
+  .callout strong { display: block; font-size: 1rem; margin-bottom: .2rem; }
+
+  /* ── PILL TAGS ────────────────────────────────────────── */
+  .tags { display:flex; flex-wrap:wrap; gap:.4rem; margin-top:.6rem; }
+  .tag { font-size:.75rem; font-weight:700; padding:.25rem .65rem; border-radius:99px; font-family:'Space Mono',monospace; }
+
+  /* ── STAT CARDS ───────────────────────────────────────── */
+  .stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:1rem; margin-bottom:1.4rem; }
+  .stat-card { background:var(--card); border-radius:14px; padding:1.2rem; text-align:center; box-shadow:0 2px 10px rgba(0,0,0,.07); position:relative; overflow:hidden; }
+  .stat-card::before { content:''; position:absolute; inset:0; opacity:.08; }
+  .stat-num { font-family:'Fraunces',serif; font-size:2.2rem; font-weight:900; line-height:1; margin-bottom:.2rem; }
+  .stat-label { font-size:.8rem; color:var(--gris); line-height:1.4; }
+
+  /* ── UTILITY ──────────────────────────────────────────── */
+  .sub-heading { font-family:'Fraunces',serif; font-size:1.25rem; font-weight:700; margin: 1.4rem 0 .8rem; }
+  .divider { height:2px; border-radius:2px; margin: 1.5rem 0; opacity:.2; }
+  .emoji-list { list-style:none; padding:0; }
+  .emoji-list li { padding:.35rem 0; font-size:.93rem; line-height:1.55; color:var(--gris); }
+  .emoji-list li::before { content: attr(data-e); margin-right:.5rem; }
+
+  @keyframes pop { from { transform:scale(.7); opacity:0; } to { transform:scale(1); opacity:1; } }
+
+  /* color themes per section */
+  .s1 { --sc: var(--cielo);    --sbg: #e3f6fd; }
+  .s2 { --sc: var(--coral);    --sbg: #fff0f0; }
+  .s3 { --sc: var(--lima);     --sbg: #f5fce0; }
+  .s4 { --sc: var(--violeta);  --sbg: #f3eeff; }
+  .s5 { --sc: var(--menta);    --sbg: #e6faf4; }
+  .s6 { --sc: var(--sol);      --sbg: #fffbe6; }
+  .s7 { --sc: var(--rosa);     --sbg: #fff0f5; }
+  .s8 { --sc: #64b5f6;         --sbg: #e8f4fe; }
+  .s9 { --sc: var(--coral);    --sbg: #fff4f4; }
+  .s10{ --sc: var(--menta);    --sbg: #e5faf3; }
+  .s11{ --sc: var(--sol);      --sbg: #fffae6; }
+
+  .section-header { border-color: var(--sc); }
+  .section-header h2 { color: var(--azul); }
+  .section-icon { background: var(--sc); }
+
+  /* Footer */
+  footer { background:var(--azul); color:#a8c4dc; text-align:center; padding:2rem; font-size:.85rem; margin-top:3rem; }
+  footer strong { color:var(--cielo); }
+</style>
+</head>
+<body>
+
+<!-- ══ HERO ════════════════════════════════════════════════════════ -->
+<div class="hero">
+  <div class="hero-shapes">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">📚 APUNTE DE ESTUDIO</div>
+    <h1>Psicopatología &<br><em>Sistemas Diagnósticos</em></h1>
+    <p class="hero-sub">Psicofarmacología · Cátedra Ferrali / Bacínzo</p>
+    <nav class="nav-pills">
+      <a href="#s1" style="background:var(--cielo);color:var(--azul)">🧠 Clínica</a>
+      <a href="#s2" style="background:var(--coral);color:#fff">🔍 Conceptos</a>
+      <a href="#s3" style="background:var(--lima);color:var(--azul)">📂 Clasificación</a>
+      <a href="#s4" style="background:var(--violeta);color:#fff">⚙️ SDO</a>
+      <a href="#s5" style="background:var(--menta);color:var(--azul)">📅 Historia</a>
+      <a href="#s6" style="background:var(--sol);color:var(--azul)">⚠️ Críticas</a>
+      <a href="#s7" style="background:var(--rosa);color:var(--azul)">🗣️ Entrevista</a>
+      <a href="#s8" style="background:#64b5f6;color:#fff">🔬 Semiología</a>
+      <a href="#s9" style="background:var(--coral);color:#fff">📊 Epidemiología</a>
+      <a href="#s10" style="background:var(--menta);color:var(--azul)">🔄 Modelos</a>
+    </nav>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- ══ S1: CLÍNICA ════════════════════════════════════════════════ -->
+<section class="section s1" id="s1">
+  <div class="section-header">
+    <div class="section-icon">🧠</div>
+    <h2><span class="num">01</span>Clínica y Psicopatología</h2>
+  </div>
+
+  <div class="box" style="background:#e3f6fd; border-left:5px solid var(--cielo);">
+    <div class="box-label" style="color:var(--azul)">💡 Definición esencial</div>
+    <h3 style="color:var(--azul)">¿Qué es la clínica?</h3>
+    <p>El estudio del enfermo y su tratamiento. Es <strong>esencialmente práctica y personalizada</strong>. Se ocupa de los <em>enfermos</em>, no de las enfermedades. El diagnóstico es el paso inicial de un adecuado tratamiento.</p>
+  </div>
+
+  <div class="sub-heading">🔎 Tres formas de conocer: ¿cuál usa el clínico?</div>
+  <div class="grid-3">
+    <div class="mini-card" style="border-top-color:#64b5f6">
+      <div class="icon">📐</div>
+      <h4>Deducción</h4>
+      <p>De premisas generales → al hecho singular. <em>"Todos los X son Y, por lo tanto este es Y."</em></p>
+    </div>
+    <div class="mini-card" style="border-top-color:var(--menta)">
+      <div class="icon">🔢</div>
+      <h4>Inducción</h4>
+      <p>De hechos singulares → a reglas generales. <em>"Observé N casos, extraigo una regla."</em></p>
+    </div>
+    <div class="mini-card" style="border-top-color:var(--sol); background:#fffbe6;">
+      <div class="icon">🕵️</div>
+      <h4>Abducción ⭐</h4>
+      <p><strong>BASE del acto clínico.</strong> Nexo entre lo observable y lo inferible. Hipótesis conjetural que luego se verifica. Como Sherlock Holmes — o el baqueano que lee huellas.</p>
+    </div>
+  </div>
+
+  <div class="callout" style="background:#e3f6fd; border-left:4px solid var(--cielo);">
+    <span class="callout-icon">🧬</span>
+    <div><strong>Peirce (semiótica)</strong> La abducción es la forma más inmediata del razonamiento inferente. Es una hipótesis sobre premisas inciertas que luego debe ser confirmada. La clínica funciona igual que la investigación criminal: captura indicios → construye hipótesis → verifica.</div>
+  </div>
+
+  <div class="sub-heading">📐 Ramas de la Psicopatología</div>
+  <div class="grid-2">
+    <div class="card" style="border-left-color: var(--cielo)">
+      <h3>🔭 Psicopatología Descriptiva</h3>
+      <p>Caracteriza con precisión los hechos de la vida psíquica anómala. Estudia las grandes funciones (atención, memoria, percepción…) y los cuadros clínicos — cómo se presentan y evolucionan.</p>
+    </div>
+    <div class="card" style="border-left-color: var(--violeta)">
+      <h3>⚗️ Psicopatología Analítica</h3>
+      <p>Establece las leyes que rigen la producción de esos fenómenos. Estudia la <strong>etiopatogenia</strong>: causas (etiología) + mecanismos (patogenia). Integra factores bio-psico-sociales.</p>
+    </div>
+  </div>
+
+  <div class="sub-heading">🏗️ Los 4 pilares del estudio del paciente</div>
+  <div class="grid-2">
+    <div class="mini-card" style="border-top-color:var(--cielo)"><div class="icon">💬</div><h4>1 · Entrevista</h4><p>Herramienta técnica principal. Permite comprender fenómenos del vínculo terapeuta-paciente.</p></div>
+    <div class="mini-card" style="border-top-color:var(--violeta)"><div class="icon">🔎</div><h4>2 · Semiología Psiquiátrica</h4><p>Pesquisa sistemática de signos. Estudia funciones psíquicas y comportamientos básicos.</p></div>
+    <div class="mini-card" style="border-top-color:var(--menta)"><div class="icon">🧪</div><h4>3 · Medios Complementarios</h4><p>Tests, laboratorio, neuroimágenes, electrofisiología, informe social.</p></div>
+    <div class="mini-card" style="border-top-color:var(--sol)"><div class="icon">📋</div><h4>4 · Historia Clínica</h4><p>Instrumento ordenador. Función científico-técnica, administrativa y legal.</p></div>
+  </div>
+</section>
+
+<!-- ══ S2: CONCEPTOS ══════════════════════════════════════════════ -->
+<section class="section s2" id="s2">
+  <div class="section-header">
+    <div class="section-icon">🔍</div>
+    <h2><span class="num">02</span>Conceptos Clave</h2>
+  </div>
+
+  <div class="sub-heading">🩺 Signo, Síntoma y Síndrome</div>
+  <div class="grid-3">
+    <div class="mini-card" style="border-top-color:var(--coral)">
+      <div class="icon">🗣️</div>
+      <h4>Síntoma</h4>
+      <p>Lo que <strong>refiere el paciente</strong> como experiencia subjetiva. <em>Lo que siente y cuenta.</em></p>
+    </div>
+    <div class="mini-card" style="border-top-color:#64b5f6">
+      <div class="icon">👁️</div>
+      <h4>Signo</h4>
+      <p>Lo que <strong>identifica el profesional</strong> durante el examen. <em>Lo que el clínico observa.</em></p>
+    </div>
+    <div class="mini-card" style="border-top-color:var(--menta)">
+      <div class="icon">🧩</div>
+      <h4>Síndrome</h4>
+      <p>Conjunto de signos y síntomas que aparecen con <strong>regularidad característica</strong>.</p>
+    </div>
+  </div>
+
+  <div class="sub-heading">⚔️ Enfermedad vs. Trastorno</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr style="background:var(--azul)">
+          <th>Criterio</th>
+          <th>🏥 Enfermedad</th>
+          <th>🧠 Trastorno (DSM/CIE)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Etiología (causa)</td><td>✅ Identificada</td><td>❌ No identificada en psiquiatría</td></tr>
+        <tr><td>Patogenia (mecanismo)</td><td>✅ Definida</td><td>❌ En general desconocida</td></tr>
+        <tr><td>Alteración orgánica</td><td>✅ Evidenciable</td><td>⚠️ Parcialmente en esquizofrenia/bipolar</td></tr>
+        <tr><td>Cuadro clínico</td><td>✅ Típico</td><td>✅ Más o menos definido</td></tr>
+        <tr><td>Evolución</td><td>✅ Conocida</td><td>✅ Relativamente conocida</td></tr>
+        <tr><td>Terapéutica</td><td>✅ Validada</td><td>✅ Parcialmente validada</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout" style="background:#fff0f0; border-left:4px solid var(--coral);">
+    <span class="callout-icon">⚠️</span>
+    <div><strong>¡Por eso se llaman "trastornos"!</strong> En psiquiatría NO se puede hablar de "enfermedad" en sentido pleno porque falta la alteración orgánica evidenciable como causa demostrable. Este es históricamente el punto débil de la psiquiatría frente a otras especialidades médicas.</div>
+  </div>
+
+  <div class="sub-heading">📖 Dos definiciones de Trastorno</div>
+  <div class="grid-2">
+    <div class="box" style="background:#fff0f0; border-left:5px solid var(--coral)">
+      <div class="box-label" style="color:var(--coral)">📗 DSM-IV / CIE</div>
+      <h3>Definición clásica</h3>
+      <p><strong>Síndrome o patrón comportamental/psicológico</strong> de significación clínica que:</p>
+      <ul style="margin-top:.6rem">
+        <li>① Asociado a un <strong>malestar</strong> (sufrimiento psíquico o físico)</li>
+        <li>② Asociado a una <strong>discapacidad</strong> (deterioro en áreas social, laboral, familiar)</li>
+        <li>③ Asociado a un <strong>riesgo</strong> (dolor, muerte, pérdida de la libertad)</li>
+      </ul>
+    </div>
+    <div class="box" style="background:#e3f6fd; border-left:5px solid var(--cielo)">
+      <div class="box-label" style="color:var(--azul)">📘 DSM-5 — lenguaje cognitivo</div>
+      <h3>Definición actualizada</h3>
+      <p>Síndrome con <strong>alteración clínicamente significativa</strong> del:</p>
+      <ul style="margin-top:.6rem">
+        <li>• Estado <strong>cognitivo</strong></li>
+        <li>• <strong>Regulación emocional</strong></li>
+        <li>• <strong>Comportamiento</strong></li>
+      </ul>
+      <p style="margin-top:.6rem">Que refleja disfunción de procesos <strong>psicológicos, biológicos y del desarrollo</strong>. Asociado a estrés o discapacidad.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ S3: CLASIFICACIÓN ══════════════════════════════════════════ -->
+<section class="section s3" id="s3">
+  <div class="section-header">
+    <div class="section-icon">📂</div>
+    <h2><span class="num">03</span>Nomenclatura y Clasificación</h2>
+  </div>
+
+  <div class="grid-2">
+    <div class="card" style="border-left-color:var(--lima)"><h3>📛 Nomenclatura</h3><p>Listado de <em>nombres</em> de síntomas, trastornos y/o enfermedades.</p></div>
+    <div class="card" style="border-left-color:var(--menta)"><h3>🗺️ Nosografía</h3><p><em>Clasificación analítica</em> de las enfermedades.</p></div>
+    <div class="card" style="border-left-color:#64b5f6"><h3>📚 Nosología</h3><p>Rama de la medicina que <em>estudia</em> la clasificación, definición y caracteres distintivos de las enfermedades.</p></div>
+    <div class="card" style="border-left-color:var(--sol)"><h3>🌿 Taxonomía</h3><p>Disciplina de clasificar y ordenar (origen: <strong>Linneo, S. XVIII</strong>, ciencias naturales → importada a psiquiatría).</p></div>
+  </div>
+
+  <div class="sub-heading">🎯 ¿Para qué sirve clasificar?</div>
+  <ul class="emoji-list">
+    <li data-e="🗣️">Comunicación entre profesionales de distintas teorías y disciplinas</li>
+    <li data-e="🎓">Transmisión de conceptos en la enseñanza</li>
+    <li data-e="🔬">Posibilitar la investigación (criterios de inclusión/exclusión)</li>
+    <li data-e="🧠">Reducir la carga cognitiva del conocimiento complejo</li>
+    <li data-e="📋">Facilitar el trabajo clínico y estadístico</li>
+  </ul>
+
+  <div class="callout" style="background:#f5fce0; border-left:4px solid var(--lima);">
+    <span class="callout-icon">🌱</span>
+    <div><strong>Limitación fundamental:</strong> Las clasificaciones psiquiátricas <strong>NO son verdades platónicas</strong>. Son constructos arbitrarios basados en consenso de expertos. Toda clasificación impone una organización cognitiva particular y humanamente sesgada.</div>
+  </div>
+</section>
+
+<!-- ══ S4: SDO ══════════════════════════════════════════════════════ -->
+<section class="section s4" id="s4">
+  <div class="section-header">
+    <div class="section-icon">⚙️</div>
+    <h2><span class="num">04</span>Sistemas Diagnósticos Operativos (SDO)</h2>
+  </div>
+
+  <div class="box" style="background:#e8f5e9; border-left:5px solid var(--menta)">
+    <div class="box-label" style="color:#2e7d32">🔬 Estudio histórico clave</div>
+    <h3>Estudio US-UK (1965) — la razón de ser de los SDO</h3>
+    <p>En EE.UU. se diagnosticaban más esquizofrenias; en Londres, más psicosis maníaco-depresivas. Conclusión: no había diferencia real en los pacientes — los <strong>criterios de los profesionales discrepaban</strong>. Cuando se usó una entrevista estructurada y criterios normalizados, <strong>las diferencias desaparecieron</strong>.</p>
+  </div>
+
+  <div class="sub-heading">⚙️ Las 5 Características de los SDO</div>
+
+  <div class="card" style="border-left-color:var(--violeta)">
+    <h3>1 · CATEGORIAL</h3>
+    <p>Reconoce <strong>clases diagnósticas</strong> precisas, homogéneas, con límites claros y mutuamente excluyentes.</p>
+    <div class="tags">
+      <span class="tag" style="background:#f3eeff;color:var(--azul)">homogéneas</span>
+      <span class="tag" style="background:#f3eeff;color:var(--azul)">límites claros</span>
+      <span class="tag" style="background:#f3eeff;color:var(--azul)">excluyentes</span>
+    </div>
+    <p style="margin-top:.7rem; font-size:.88rem; color:var(--gris)">↔️ Opuesto: <strong>Dimensional</strong> — mide rasgos en magnitud continua (como el IMC: no sos "obeso" o "delgado", tenés un número entre 0 y 40+).</p>
+  </div>
+
+  <div class="card" style="border-left-color:var(--cielo)">
+    <h3>2 · NOMOTÉTICO</h3>
+    <p>Criterio <strong>estándar</strong> que supone un término medio poblacional. Quien se aparta suficientemente de la media queda incluido en el criterio. Apropiado para trabajo estadístico.</p>
+    <p style="margin-top:.7rem; font-size:.88rem; color:var(--gris)">↔️ Opuesto: <strong>Idiográfico</strong> (NO es DSM ni CIE) — personalizado, único e irrepetible. Apropiado para el trabajo clínico individual.</p>
+  </div>
+
+  <div class="card" style="border-left-color:var(--menta)">
+    <h3>3 · POLITÉTICO</h3>
+    <p>Cada criterio se forma con un <strong>número de síntomas</strong>. No es necesario que estén todos, sino un mínimo.</p>
+    <div class="callout" style="background:#e6faf4; margin-top:.7rem; padding:.8rem 1rem; border-radius:10px; border:none">
+      <span class="callout-icon">💡</span>
+      <span style="font-size:.88rem">Ejemplo: <strong>Depresión Mayor</strong> → necesita ≥5 de 9 síntomas, y uno debe ser ánimo bajo o anhedonia.</span>
+    </div>
+  </div>
+
+  <div class="card" style="border-left-color:var(--sol)">
+    <h3>4 · MULTIAXIAL (hasta DSM-IV)</h3>
+    <p>Organiza la información clínica en <strong>distintos ejes</strong> (facetas clínicas). El DSM-5 eliminó la multiaxialidad, aunque en Argentina muchas obras sociales aún solicitan el formato DSM-IV.</p>
+  </div>
+
+  <div class="card" style="border-left-color:var(--rosa)">
+    <h3>5 · ATEÓRICO</h3>
+    <p>En principio no se adscribe a ninguna teoría. En la práctica, <strong>siempre subyace algún modelo teórico</strong> — nada surge de la nada.</p>
+  </div>
+
+  <div class="sub-heading">📊 Ejes del DSM-IV TR</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr style="background:var(--violeta)">
+        <th>Eje</th><th>Nombre</th><th>Contenido</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>I</td><td>Trastornos Clínicos</td><td>Todos los trastornos clínicos y otros problemas de atención clínica</td></tr>
+        <tr><td>II</td><td>Personalidad / RM</td><td>Trastornos de personalidad y retraso mental</td></tr>
+        <tr><td>III</td><td>Enfermedades Médicas</td><td>Condiciones médicas relacionadas con el motivo de consulta</td></tr>
+        <tr><td>IV</td><td>Problemas Psicosociales</td><td>Factores psicosociales y ambientales relevantes</td></tr>
+        <tr><td>V</td><td>Actividad Global (EAG)</td><td>Escala 0–100 de funcionamiento global del paciente</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sub-heading">📊 Ejes de la CIE-10 (versión multiaxial)</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr style="background:#2e7d32">
+        <th>Eje</th><th>Nombre</th><th>Contenido</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>I</td><td>Todos los trastornos</td><td>Mentales, de personalidad y somáticos</td></tr>
+        <tr><td>II</td><td>Discapacidades</td><td>Cuidado personal, ocupacional, familiar y comportamiento social</td></tr>
+        <tr><td>III</td><td>Factores Ambientales</td><td>Factores ambientales y circunstanciales</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ══ S5: HISTORIA ═══════════════════════════════════════════════ -->
+<section class="section s5" id="s5">
+  <div class="section-header">
+    <div class="section-icon">📅</div>
+    <h2><span class="num">05</span>Historia: CIE y DSM</h2>
+  </div>
+
+  <div class="vs-grid">
+    <div class="vs-col">
+      <h4 style="background:#1565c0">🌍 CIE (OMS)</h4>
+      <div class="timeline" style="padding-top:.5rem">
+        <div class="tl-item"><div class="tl-dot" style="background:#1565c0; box-shadow-color:#1565c0"></div><div class="tl-content"><div class="tl-year" style="color:#1565c0">1853</div><p>Primera Conferencia Internacional de Estadística (Farr & d'Espine)</p></div></div>
+        <div class="tl-item"><div class="tl-dot" style="background:#1976d2"></div><div class="tl-content"><div class="tl-year" style="color:#1976d2">1900–1929</div><p>Clasificación Internacional de Causas de Muerte (revisiones 1–4)</p></div></div>
+        <div class="tl-item"><div class="tl-dot" style="background:#1e88e5"></div><div class="tl-content"><div class="tl-year" style="color:#1e88e5">1948</div><p>Posguerra: surge la OMS. <strong>CIE-6</strong> incluye morbilidad — primer capítulo de trastornos mentales</p></div></div>
+        <div class="tl-item"><div class="tl-dot" style="background:#42a5f5"></div><div class="tl-content"><div class="tl-year" style="color:#42a5f5">1989</div><p><strong>CIE-10</strong> (vigente): Capítulo V, 78 categorías F00–F99</p></div></div>
+        <div class="tl-item"><div class="tl-dot" style="background:var(--menta)"></div><div class="tl-content"><div class="tl-year" style="color:#00897b">2018</div><p><strong>CIE-11</strong> publicada online (sin versión impresa completa aún)</p></div></div>
+      </div>
+    </div>
+    <div class="vs-divider"><div class="vs-badge">vs</div></div>
+    <div class="vs-col">
+      <h4 style="background:#6a1b9a">🇺🇸 DSM (APA)</h4>
+      <div class="timeline" style="padding-top:.5rem">
+        <div class="tl-item"><div class="tl-dot" style="background:#6a1b9a"></div><div class="tl-content"><div class="tl-year" style="color:#6a1b9a">1952 · DSM-I</div><p>Posguerra. Influido por Adolf Meyer. <strong>106 diagnósticos</strong>. Mismo año que se descubre la clorpromazina.</p></div></div>
+        <div class="tl-item"><div class="tl-dot" style="background:#7b1fa2"></div><div class="tl-content"><div class="tl-year" style="color:#7b1fa2">1968 · DSM-II</div><p>Busca correspondencia con CIE-8. Contexto teórico plural.</p></div></div>
+        <div class="tl-item"><div class="tl-dot" style="background:#8e24aa"></div><div class="tl-content"><div class="tl-year" style="color:#8e24aa">1980 · DSM-III ⭐</div><p><strong>Punto de inflexión:</strong> criterios operativos, multiaxialidad, enfoque ateórico. <strong>265 diagnósticos.</strong></p></div></div>
+        <div class="tl-item"><div class="tl-dot" style="background:#ab47bc"></div><div class="tl-content"><div class="tl-year" style="color:#ab47bc">1994 · DSM-IV</div><p><strong>374 diagnósticos.</strong> Revisado en 2000 (DSM-IV-TR).</p></div></div>
+        <div class="tl-item"><div class="tl-dot" style="background:var(--coral)"></div><div class="tl-content"><div class="tl-year" style="color:#e53935">2013 · DSM-5</div><p><strong>Versión vigente.</strong> ~400+ diagnósticos. Elimina multiaxialidad. Orden por ciclo vital.</p></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub-heading">✨ Novedades del DSM-5</div>
+  <div class="grid-2">
+    <div class="mini-card" style="border-top-color:var(--menta)"><div class="icon">🌱</div><h4>Orden por ciclo vital</h4><p>Primero trastornos del neurodesarrollo → adolescencia → adultez → vejez.</p></div>
+    <div class="mini-card" style="border-top-color:var(--cielo)"><div class="icon">🏷️</div><h4>Nuevos especificadores</h4><p>Para reducir la alta tasa de comorbilidad.</p></div>
+    <div class="mini-card" style="border-top-color:var(--sol)"><div class="icon">📌</div><h4>"Otro trastorno especificado"</h4><p>Reemplaza "no especificado". Permite indicar qué criterios NO se cumplen.</p></div>
+    <div class="mini-card" style="border-top-color:var(--coral)"><div class="icon">📏</div><h4>Sin multiaxialidad</h4><p>Los 5 ejes se integran. Pero obras sociales aún pueden pedir DSM-IV.</p></div>
+  </div>
+
+  <div class="sub-heading">🎯 Especificadores del DSM-5</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr style="background:var(--menta); color:var(--azul)"><th>Tipo</th><th>Categoría</th><th>Descripción</th></tr></thead>
+      <tbody>
+        <tr><td rowspan="3">Gravedad</td><td>🟢 Leve</td><td>Pocos o ningún síntoma excede los requeridos. Deterioro mínimo.</td></tr>
+        <tr><td>🟡 Moderado</td><td>Síntomas o deterioro exceden lo requerido.</td></tr>
+        <tr><td>🔴 Grave</td><td>Gran cantidad, intensidad o deterioro de síntomas.</td></tr>
+        <tr><td rowspan="3">Curso</td><td>⏳ Remisión parcial</td><td>Antes se cumplían todos los criterios, ahora solo algunos persisten (mejorando).</td></tr>
+        <tr><td>✅ Remisión total</td><td>Ya no existen síntomas ni signos del trastorno.</td></tr>
+        <tr><td>🔁 Recurrencia</td><td>Después de remisión total, reaparece el trastorno.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout" style="background:#fff8e1; border-left:4px solid var(--sol);">
+    <span class="callout-icon">⚖️</span>
+    <div><strong>Marco legal argentino — Ley 26.529:</strong> Los diagnósticos en la historia clínica deben basarse en "nomenclaturas y modelos universales adaptados y actualizados por la OMS" (= CIE). El DSM-5 es compatible porque usa los mismos nomencladores.</div>
+  </div>
+</section>
+
+<!-- ══ S6: CRÍTICAS ═══════════════════════════════════════════════ -->
+<section class="section s6" id="s6">
+  <div class="section-header">
+    <div class="section-icon">⚠️</div>
+    <h2><span class="num">06</span>Críticas a los SDO</h2>
+  </div>
+
+  <div class="grid-2">
+    <div class="card" style="border-left-color:var(--coral)">
+      <h3>📈 Inflación diagnóstica</h3>
+      <p>De 106 diagnósticos (DSM-I) → 374 (DSM-IV TR) → ~400+ (DSM-5). ¿Se están medicalizando conductas normales?</p>
+    </div>
+    <div class="card" style="border-left-color:var(--sol)">
+      <h3>🔀 Alta comorbilidad</h3>
+      <p>Muchos pacientes reciben varios diagnósticos simultáneos, lo que sugiere que las categorías no están bien delimitadas.</p>
+    </div>
+    <div class="card" style="border-left-color:var(--violeta)">
+      <h3>🧩 Heterogeneidad interna</h3>
+      <p>Dos pacientes con <em>mismo diagnóstico</em> pueden tener síntomas muy distintos (ej: esquizofrenia con delirios vs. solo síntomas negativos).</p>
+    </div>
+    <div class="card" style="border-left-color:var(--rosa)">
+      <h3>💊 Influencia farmacéutica</h3>
+      <p>Gran parte del financiamiento de investigaciones proviene de la industria farmacéutica. Posibles conflictos de interés.</p>
+    </div>
+    <div class="card" style="border-left-color:var(--menta)">
+      <h3>🏷️ Estigma / Etiquetado</h3>
+      <p>Reducir a una persona a una categoría puede generar daño subjetivo y social. El diagnóstico tiene <em>peso estructurante</em>.</p>
+    </div>
+    <div class="card" style="border-left-color:#64b5f6">
+      <h3>🧬 Sin base biológica</h3>
+      <p>No se han identificado biomarcadores ni base neurobiológica para la mayoría de los diagnósticos psiquiátricos.</p>
+    </div>
+  </div>
+
+  <div class="callout" style="background:#fffde7; border-left:4px solid var(--sol);">
+    <span class="callout-icon">⚖️</span>
+    <div><strong>Postura recomendada:</strong> El diagnóstico NO es un juicio de valor puro, ni tampoco algo totalmente objetivo y científico. Es una herramienta útil con limitaciones conocidas, que debe usarse con sentido crítico. "El dilema del diagnóstico" = no caer ni en el estigma ni en el positivismo ingenuo.</div>
+  </div>
+</section>
+
+<!-- ══ S7: ENTREVISTA ══════════════════════════════════════════════ -->
+<section class="section s7" id="s7">
+  <div class="section-header">
+    <div class="section-icon">🗣️</div>
+    <h2><span class="num">07</span>La Entrevista Clínica</h2>
+  </div>
+
+  <div class="box" style="background:#fff0f5; border-left:5px solid var(--rosa)">
+    <div class="box-label" style="color:#c2185b">💬 Definición</div>
+    <p>Reunión de dos o más personas con objetivo clínico: estudiar al entrevistado para arribar a un diagnóstico que sea el <strong>primer paso de un tratamiento adecuado</strong>.</p>
+  </div>
+
+  <div class="sub-heading">📋 Tipos de Entrevista</div>
+  <div class="grid-3">
+    <div class="mini-card" style="border-top-color:var(--cielo)"><div class="icon">🌊</div><h4>Libre / Abierta</h4><p>El entrevistador asume papel neutro. La estructura depende del paciente. Genera hipótesis abductivas.</p></div>
+    <div class="mini-card" style="border-top-color:var(--coral)"><div class="icon">📝</div><h4>Dirigida / Cerrada</h4><p>Interrogatorio o anamnesis con datos previamente sistematizados.</p></div>
+    <div class="mini-card" style="border-top-color:var(--rosa)"><div class="icon">🎯</div><h4>Semidirigida ⭐</h4><p><strong>La más utilizada.</strong> Dos tiempos: inicial abierto + tardío dirigido.</p></div>
+  </div>
+
+  <div class="sub-heading">🪜 Las 4 Etapas de la Entrevista Semidirigida</div>
+  <div class="timeline">
+    <div class="tl-item"><div class="tl-dot" style="background:var(--rosa)"></div><div class="tl-content"><div class="tl-year" style="color:#c2185b">1 · Apertura</div><p>Breve, respetuosa y austera. Recepción y explicitación del encuadre de trabajo.</p></div></div>
+    <div class="tl-item"><div class="tl-dot" style="background:var(--cielo)"></div><div class="tl-content"><div class="tl-year" style="color:#0288d1">2 · Desarrollo libre</div><p>El paciente expone motivos de consulta. El terapeuta recoge elementos del mundo interno sin intervenir (campo de la entrevista).</p></div></div>
+    <div class="tl-item"><div class="tl-dot" style="background:var(--violeta)"></div><div class="tl-content"><div class="tl-year" style="color:#7b1fa2">3 · Desarrollo dirigido</div><p>El terapeuta ya tiene hipótesis provisorias → busca datos precisos para llegar a un diagnóstico tentativo.</p></div></div>
+    <div class="tl-item"><div class="tl-dot" style="background:var(--menta)"></div><div class="tl-content"><div class="tl-year" style="color:#00897b">4 · Cierre / Devolución</div><p>Conclusiones, recomendaciones, prescripciones o plan de nuevas entrevistas.</p></div></div>
+  </div>
+
+  <div class="sub-heading">🔑 Conceptos Clave del Campo Entrevista</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr style="background:var(--rosa); color:var(--azul)"><th>Concepto</th><th>Definición</th></tr></thead>
+      <tbody>
+        <tr><td>Encuadre</td><td>Variables fijas: horario (inicio/duración/fin), rol del entrevistador, lugar. Fijado por el investigador.</td></tr>
+        <tr><td>Contexto</td><td>Todas las variables que rodean el campo (sociales, ambientales, políticas). NO controlables.</td></tr>
+        <tr><td>Transferencia</td><td>Fenómenos afectivos que el paciente dirige al terapeuta, evocativos de sus experiencias infantiles tempranas. Enorme valor diagnóstico.</td></tr>
+        <tr><td>Contratransferencia</td><td>Fenómenos afectivos que el paciente despierta en el entrevistador. El miedo del paranoide, la seducción del histérico, el aburrimiento del obsesivo...</td></tr>
+        <tr><td>Disociación operativa</td><td>El terapeuta actúa con "yo participante" mientras mantiene su "yo observador".</td></tr>
+        <tr><td>Angustia</td><td>Debe mantenerse en niveles operativos durante la entrevista. Exceso = bloqueo del proceso.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sub-heading">🧰 Entrevistas Estandarizadas</div>
+  <div class="grid-2">
+    <div class="mini-card" style="border-top-color:var(--cielo)"><div class="icon">🔬</div><h4>PSE</h4><p>Semiestructurada. Estudia síntomas del mes previo. Hospital Maudsley, UK.</p></div>
+    <div class="mini-card" style="border-top-color:var(--violeta)"><div class="icon">🧠</div><h4>SCAN</h4><p>Incluye el PSE. 1–1.5 hs. Requiere psicólogo o psiquiatra. Evalúa estado actual + antecedentes.</p></div>
+    <div class="mini-card" style="border-top-color:var(--menta)"><div class="icon">📊</div><h4>CIDI</h4><p>Uso epidemiológico. Puede aplicarla un entrevistador lego.</p></div>
+    <div class="mini-card" style="border-top-color:var(--rosa)"><div class="icon">👤</div><h4>IPDE</h4><p>Trastornos de personalidad. 152 ítems en 6 tópicos: Trabajo, Yo, Relaciones, Afectividad, Prueba de realidad, Control de impulsos.</p></div>
+  </div>
+</section>
+
+<!-- ══ S8: SEMIOLOGÍA ═══════════════════════════════════════════════ -->
+<section class="section s8" id="s8">
+  <div class="section-header">
+    <div class="section-icon">🔬</div>
+    <h2><span class="num">08</span>Semiología Psiquiátrica</h2>
+  </div>
+
+  <div class="box" style="background:#e8f4fe; border-left:5px solid #64b5f6">
+    <div class="box-label" style="color:#1565c0">📖 Definición</div>
+    <p>Estudio <strong>sistemático y pautado</strong> de las funciones psíquicas del paciente y de sus hábitos y comportamientos básicos de vida. Se realiza a través de la entrevista o proceso de entrevistas.</p>
+  </div>
+
+  <div class="sub-heading">🗂️ Esquema General</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr style="background:#1565c0"><th>Área</th><th>Funciones / Contenido</th></tr></thead>
+      <tbody>
+        <tr><td>A · Descripción general</td><td><strong>Aspecto</strong> (vestimenta, cuidado, porte/prosopografía) · <strong>Actitud</strong> (activo/pasivo; colaborador/no colaborador) · <strong>Comportamiento</strong></td></tr>
+        <tr><td>B · Funciones Intelectuales</td><td>Atención · Memoria · Sensopercepción · Conciencia y orientación · Pensamiento y lenguaje · Juicio · Imaginación · Inteligencia</td></tr>
+        <tr><td>B · Afectividad</td><td>Humor / tono basal · Angustia · Sentimientos</td></tr>
+        <tr><td>B · Volición y Actividad</td><td>Acción implícita (impulso) · Acción explícita (conducta motriz)</td></tr>
+        <tr><td>C · Hábitos y Comportamientos</td><td>Conducta alimentaria · Sueño · Sexualidad · Sustancias · Funcionamiento excrementicio · Agresividad · Corporalidad</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sub-heading">😰 Ansiedad, Angustia y Miedo — Pichon Rivière</div>
+  <p style="font-size:.9rem; color:var(--gris); margin-bottom:.8rem">Las 3 áreas de la conducta: <strong>Área 1</strong> = Mental | <strong>Área 2</strong> = Corporal | <strong>Área 3</strong> = Actuación en el mundo exterior</p>
+  <div class="grid-3">
+    <div class="mini-card" style="border-top-color:var(--cielo)">
+      <div class="icon">💭</div><h4>Ansiedad</h4>
+      <p><strong>Área 1 – Mental.</strong> Experiencia subjetiva de tensión. Se vivencia predominantemente en la mente.</p>
+    </div>
+    <div class="mini-card" style="border-top-color:var(--coral)">
+      <div class="icon">💓</div><h4>Angustia</h4>
+      <p><strong>Área 2 – Corporal.</strong> La tensión se expresa en el cuerpo (taquicardia, sudor, opresión).</p>
+    </div>
+    <div class="mini-card" style="border-top-color:var(--sol)">
+      <div class="icon">😨</div><h4>Miedo</h4>
+      <p><strong>Área 3 – Exterior.</strong> Referida a un objeto o situación que adquirió carácter de señal de peligro.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ S9: EPIDEMIOLOGÍA ═══════════════════════════════════════════ -->
+<section class="section s9" id="s9">
+  <div class="section-header">
+    <div class="section-icon">📊</div>
+    <h2><span class="num">09</span>Epidemiología en Salud Mental</h2>
+  </div>
+
+  <div class="stats">
+    <div class="stat-card">
+      <div class="stat-num" style="color:var(--azul)">+150M</div>
+      <div class="stat-label">personas con depresión en un momento dado</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" style="color:var(--coral)">~1M</div>
+      <div class="stat-label">suicidios por año (en aumento)</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" style="color:var(--violeta)">25M</div>
+      <div class="stat-label">personas con esquizofrenia (1% mundial)</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" style="color:var(--menta)">+90M</div>
+      <div class="stat-label">trastornos por alcohol y drogas</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" style="color:var(--sol)">13%</div>
+      <div class="stat-label">de la carga global de enfermedad</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" style="color:var(--rosa)">2%</div>
+      <div class="stat-label">del presupuesto en salud destinado a salud mental</div>
+    </div>
+  </div>
+
+  <div class="callout" style="background:#fff0f0; border-left:4px solid var(--coral);">
+    <span class="callout-icon">😟</span>
+    <div><strong>Brecha de tratamiento:</strong> En países desarrollados, entre el 44% y 70% de las personas con trastornos mentales NO reciben tratamiento. En países en desarrollo (como Argentina) la cifra <strong>alcanza casi el 90%</strong>.</div>
+  </div>
+
+  <div class="sub-heading">📈 Prevalencia en América Latina (OPS, 2009)</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr style="background:var(--coral)"><th>Trastorno</th><th>Total (%)</th><th>Hombres (%)</th><th>Mujeres (%)</th></tr></thead>
+      <tbody>
+        <tr><td>Depresión mayor</td><td>5,0</td><td>3,2</td><td>6,6</td></tr>
+        <tr><td>Distimia</td><td>1,7</td><td>0,9</td><td>2,6</td></tr>
+        <tr><td>Bipolaridad</td><td>0,7</td><td>0,7</td><td>0,7</td></tr>
+        <tr><td>Ansiedad generalizada</td><td>3,3</td><td>2,5</td><td>4,2</td></tr>
+        <tr><td>Pánico</td><td>0,9</td><td>0,6</td><td>1,2</td></tr>
+        <tr><td>Agorafobia</td><td>2,2</td><td>0,8</td><td>3,4</td></tr>
+        <tr><td>Psicosis no afectiva</td><td>1,0</td><td>0,9</td><td>1,1</td></tr>
+        <tr><td>Dependencia de alcohol</td><td>5,7</td><td>9,8</td><td>1,9</td></tr>
+        <tr><td>Dependencia de drogas</td><td>0,7</td><td>0,9</td><td>0,5</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="box" style="background:#fff0f5; border-left:5px solid var(--rosa)">
+    <div class="box-label" style="color:#c2185b">🇦🇷 Argentina — OPS 2017</div>
+    <div class="grid-2" style="margin-top:.6rem">
+      <div style="background:#fff; border-radius:10px; padding:.8rem 1rem; text-align:center">
+        <div style="font-family:'Fraunces',serif; font-size:2rem; font-weight:900; color:var(--azul)">4,7%</div>
+        <div style="font-size:.85rem; color:var(--gris)">Trastornos depresivos</div>
+      </div>
+      <div style="background:#fff; border-radius:10px; padding:.8rem 1rem; text-align:center">
+        <div style="font-family:'Fraunces',serif; font-size:2rem; font-weight:900; color:var(--azul)">6,3%</div>
+        <div style="font-size:.85rem; color:var(--gris)">Trastornos de ansiedad</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout" style="background:#f3eeff; border-left:4px solid var(--violeta)">
+    <span class="callout-icon">📌</span>
+    <div><strong>4 de las 6 causas más frecuentes de AVAD (Años Vividos con Discapacidad):</strong> depresión, trastornos por alcohol, esquizofrenia y trastorno bipolar. Todos en salud mental.</div>
+  </div>
+</section>
+
+<!-- ══ S10: MODELOS ALTERNATIVOS ══════════════════════════════════ -->
+<section class="section s10" id="s10">
+  <div class="section-header">
+    <div class="section-icon">🔄</div>
+    <h2><span class="num">10</span>Modelos Dimensionales Alternativos</h2>
+  </div>
+
+  <div class="callout" style="background:#e6faf4; border-left:4px solid var(--menta)">
+    <span class="callout-icon">🌊</span>
+    <div>Las variables psicológicas no son categoriales sino <strong>dimensionales</strong>: los pacientes oscilan entre síntomas de distinta magnitud. Los modelos categoriales son útiles pero no reflejan la realidad clínica en toda su complejidad.</div>
+  </div>
+
+  <div class="sub-heading">🔀 Modelo Internalizante / Externalizante</div>
+  <div class="vs-grid">
+    <div class="vs-col">
+      <h4 style="background:#1565c0">🌊 Perfil Internalizante</h4>
+      <div class="vs-item">Inseguridad, dependencia, fobias</div>
+      <div class="vs-item">Tristeza, preocupación, somatizaciones</div>
+      <div class="vs-item">Espectro ansioso-depresivo</div>
+      <div class="vs-item" style="border-radius:0 0 10px 10px">Trastornos somatomorfos</div>
+    </div>
+    <div class="vs-divider"><div class="vs-badge">vs</div></div>
+    <div class="vs-col">
+      <h4 style="background:#e53935">⚡ Perfil Externalizante</h4>
+      <div class="vs-item">Bajo control emocional, irritabilidad</div>
+      <div class="vs-item">Agresividad, dificultad interpersonal</div>
+      <div class="vs-item">TDAH, impulsividad</div>
+      <div class="vs-item" style="border-radius:0 0 10px 10px">Trastorno antisocial</div>
+    </div>
+  </div>
+
+  <div class="sub-heading">🌳 HiTOP — Taxonomía Jerárquica de la Psicopatología</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr style="background:#00695c"><th>Nivel Jerárquico</th><th>Espectros / Ejemplos</th></tr></thead>
+      <tbody>
+        <tr><td>Dimensión superior</td><td>Todas las personas con trastornos mentales</td></tr>
+        <tr><td>Internalizante → Miedo</td><td>Fobia social, agorafobia, fobia específica</td></tr>
+        <tr><td>Internalizante → Distress</td><td>Depresión mayor, distimia, trastorno de ansiedad generalizada</td></tr>
+        <tr><td>Somatomorfo</td><td>Trastornos de síntomas somáticos</td></tr>
+        <tr><td>Externalizante</td><td>TDAH, trastorno explosivo, antisocial</td></tr>
+        <tr><td>Desórdenes del pensamiento</td><td>Espectro esquizofrénico</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sub-heading">🧬 Proyecto RDoC (Research Domain Criteria)</div>
+  <div class="box" style="background:#e6faf4; border-left:5px solid var(--menta)">
+    <div class="box-label" style="color:#00695c">🇺🇸 NIMH (Instituto Nacional de Salud Mental EE.UU.)</div>
+    <h3>Marco de investigación transdiagnóstico</h3>
+    <p><strong>Contexto bomba 💥:</strong> En 2013, al salir el DSM-5, el director del NIMH dijo que dejarían de financiar proyectos que usasen el DSM como única guía. Propuso un enfoque completamente diferente basado en neurociencias y genética.</p>
+    <p style="margin-top:.6rem"><strong>Objetivo:</strong> Comprender la salud mental en términos de disfunciones en sistemas psicológicos/biológicos generales.</p>
+  </div>
+  <div class="sub-heading" style="font-size:1rem">🔬 Unidades de análisis del RDoC</div>
+  <div class="grid-3">
+    <div class="mini-card" style="border-top-color:#64b5f6"><div class="icon">🧬</div><h4>Genética</h4></div>
+    <div class="mini-card" style="border-top-color:var(--violeta)"><div class="icon">⚗️</div><h4>Molecular</h4></div>
+    <div class="mini-card" style="border-top-color:var(--coral)"><div class="icon">🔬</div><h4>Celular</h4></div>
+    <div class="mini-card" style="border-top-color:var(--menta)"><div class="icon">⚡</div><h4>Circuitos neurales</h4></div>
+    <div class="mini-card" style="border-top-color:var(--sol)"><div class="icon">🫀</div><h4>Fisiológica</h4></div>
+    <div class="mini-card" style="border-top-color:var(--rosa)"><div class="icon">🎯</div><h4>Conductual + Autoinformes</h4></div>
+  </div>
+</section>
+
+<!-- ══ S11: RESUMEN FINAL ══════════════════════════════════════════ -->
+<section class="section s11" id="s11">
+  <div class="section-header">
+    <div class="section-icon">🗺️</div>
+    <h2><span class="num">11</span>Resumen: DSM vs. CIE</h2>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr style="background:var(--azul)"><th>Aspecto</th><th>📘 DSM-5</th><th>🌍 CIE-10/11</th></tr></thead>
+      <tbody>
+        <tr><td>Organismo</td><td>APA (Asociación Psiquiátrica Americana)</td><td>OMS (Organización Mundial de la Salud)</td></tr>
+        <tr><td>Uso principal</td><td>EE.UU., Canadá, investigación</td><td>Worldwide — el más utilizado globalmente</td></tr>
+        <tr><td>Versión vigente</td><td>DSM-5 (2013)</td><td>CIE-10 (1989) / CIE-11 (2018)</td></tr>
+        <tr><td>Cobertura</td><td>Solo trastornos mentales</td><td>TODAS las enfermedades (capítulos por especialidad)</td></tr>
+        <tr><td>Multiaxialidad</td><td>Eliminada en DSM-5</td><td>3 ejes en versión multiaxial</td></tr>
+        <tr><td>Uso legal Argentina</td><td>Compatible (mismos nomencladores)</td><td>Obligatorio por Ley 26.529</td></tr>
+        <tr><td>Disponibilidad</td><td>Manual impreso completo</td><td>CIE-11: solo online (OMS)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="box" style="background:var(--azul); border:none; color:#fff; border-radius:20px; padding:2rem; margin-top:1.5rem; text-align:center">
+    <div style="font-size:2rem; margin-bottom:.8rem">💬</div>
+    <blockquote style="font-family:'Fraunces',serif; font-size:1.3rem; font-style:italic; line-height:1.55; color:#d0eaf9; margin-bottom:.8rem">
+      "Sin un diagnóstico adecuado, cualquier terapéutica es una imprudente aventura."
+    </blockquote>
+    <p style="color:#7fb8d8; font-size:.9rem">— Juan Carlos Ferrali</p>
+    <div style="width:60px;height:3px;background:var(--cielo);border-radius:3px;margin:.8rem auto 0"></div>
+    <p style="color:#a8c4dc; font-size:.85rem; margin-top:.8rem">El diagnóstico no es un juicio de valor ni algo totalmente objetivo. Es una herramienta útil con limitaciones — hay que usarla con sentido crítico.</p>
+  </div>
+</section>
+
+</div><!-- /container -->
+
+<footer>
+  <strong>Apunte de Psicopatología & SDO</strong> — Basado en material de J.C. Ferrali y clases de N. Bacínzo · Psicofarmacología
+</footer>
+
+<script>
+// Intersection Observer for scroll animations
+const sections = document.querySelectorAll('.section');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.07 });
+sections.forEach(s => io.observe(s));
+
+// Smooth highlight on nav pill click
+document.querySelectorAll('.nav-pills a').forEach(a => {
+  a.addEventListener('click', function(e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>

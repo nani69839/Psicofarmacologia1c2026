@@ -1,0 +1,296 @@
+[00:01]
+Hola, chicos, ¿cómo están? Espero que estén súper súper bien. Espero que hayan podido disfrutar de los dos videos anteriores de farmacocinética, ¿sí? Eh, si no los vieron, les voy a pedir que vayan a verlos porque son supernecesarios y esenciales para poder entender esta eh segunda parte, por así decirlo, de la farmacocinética, ¿de acuerdo?
+
+[00:21]
+Que es la farmacocinética clínica, o sea, a mí todas esas cosas que estudié en la la vez anterior como eh me sirven a mí en lo que es la clínica a la hora de qué cosas tengo que fijarme a la hora de ver un paciente, qué cosas por ahí no son tan importantes y para eso tenemos esta clase que van a ver que tiene muchos gráficos, que van a ver que tiene mucha matemática eh, pero tranquilos, es algo a lo que habitualmente eh no no a todos les gusta en realidad saber hacer los gráficos o lo que fuera, pero quédense tranquilos si ellos O sea, nadie les va a pedir que ustedes sepan hacer los gráficos, eh sino más bien los conceptos que se desprenden de esos gráficos.
+
+[01:09]
+Eh, en eso es lo en lo que nos vamos a centrar hoy y eh bueno, sin más preámbulo arrancamos con lo más importante que es básicamente cómo están la concentración de los fármacos en función de el tiempo, ¿de acuerdo? Vamos por eso. Bueno, ya spoileé en la diapositiva anterior, obvio.
+
+[01:32]
+Pero vamos a tratar de analizar este gráfico lo mejor posible, no entren en pánico, hay un montón de parámetros, pero les prometo que son relativamente fáciles. Váyanme siguiendo, ¿sí? En primera instancia tenemos acá eje de las abscisas el tiempo, eje de las ordenadas la cantidad del medicamento en la sangre o también conocido como la concentración de la droga. Los corchetes es algo que habitualmente utilizamos para representar la concentración de algo, ¿sí?
+
+[02:02]
+Bueno, entonces, minuto cero, tomo el medicamento. ¿Sí? Yo puedo saber, digamos, cuánto medicamento, cuánto fármaco tengo en la biofase, que en definitiva es el parámetro farmacocinético por eh autonomasia. No, la verdad es que no. No tengo forma de hacerlo, porque imagínense que la sinapsis es así, chiquitita, chiquitita, chiquitita, chiquitita.
+
+[02:28]
+No hay forma de que yo eh dose, o sea, meta una jeringuita y empiece a adosar el fármaco de de de eso porque es una unión mega microscópica, no hay chances. Entonces, ¿qué es lo que yo voy a adosar? ¿En dónde lo voy a adosar al fármaco? Bueno, en la sangre, ¿sí? Pues se acuerdan que de la sangre después pasaba el tejido. Entonces, lo más cercano que yo tengo como para poder adosar, más o menos, cuanto hay en la biofase es en la sangre.
+
+[02:57]
+Entonces, minuto uno tomo el medicamento, al principio, ¿sí? Acá no está representado en esta curva justo, la la dejé de todas maneras porque es una curva muy linda y que tiene los parámetros más importantes, pero está incompleta en ese sentido, porque al principio hay una etapa, ¿sí? En donde la curva es plana, ¿por qué? Porque yo administré el medicamento eh por vía oral, ¿sí?
+
+[03:23]
+Esta es una administración por vía oral, ahora les digo cómo sería una administración si fuera por otra vía de administración. Y al principio, digamos, a los 5 minutos yo voy a adosar en la sangre y es como si no hubiera tomado nada, si todavía no se empezó ni a absorber, o se está absorbiendo muy a poquito. Yo no voy a llegar a adosar lo que hay en la sangre. Entonces, al principio hay cero concentración, hasta que en un momento empieza a subir la curva.
+
+[03:47]
+Pero bueno, dejamos eso de lado y vamos a ir acompañando todo lo que es el proceso de esta curva, ¿no? De a poquito el fármaco se va a ir absorbiendo. Se va a ir absorbiendo, se va a ir absorbiendo y empieza esta etapa de la curva, que es la etapa ascendente de la curva, ¿sí? En donde acá está marcado claramente la absorción. Ahora, yo les pregunto, ¿solamente se está absorbiendo para después eliminarse, para después distribuirse?
+
+[04:13]
+No, acuérdense que los procesos son todos dinámicos, están sucediendo todos al mismo tiempo. Entonces, acá en esta fase que a pesar de que diga absorción, también se está eliminando la droga, ¿de acuerdo? O sea, ya se empezó a eliminar aunque estemos en la etapa ascendente de la curva. Pero indudablemente yo voy a tener que eh en esta primera parte de la curva va a predominar la absorción por sobre la eliminación.
+
+[04:43]
+O sea, yo estoy absorbiendo más fármaco del que yo estoy eliminando. Por eso me está aumentando la concentración. ¿Estamos de acuerdo? Bien. 10 puntos. Creo que se entendió. Vamos a el siguiente parámetro. Este de acá acá. ¿Sí? ¿Qué es ese punto? Es el punto más alto de la curva, ¿sí? De esta montañita que a mí se me formó.
+
+[05:08]
+Entonces, yo trazara una línea punteada, esta sería el valor de concentración más alto, ¿de acuerdo? O Cmax también, que es la concentración más alta que alcanza el medicamento en la sangre, ¿sí? O el pico de la curva. Eh, esa es la la importancia. Después empieza la segunda fase de la curva, que fíjense que es una fase descendente de la curva. ¿Qué está pasando acá? ¿Se dejó de absorber?
+
+[05:39]
+¿Se empezó a eliminar? Bueno, eliminar ya se estaba eliminando de antes y absorber se sigue absorbiendo todavía.
+
+[05:46]
+Pero empieza esta segunda etapa con que la eliminación predomina por sobre la absorción, o sea, el fármaco se está eliminando del cuerpo, imagínense por los riñones, imagínense porque el hígado lo está transformando, por lo que se les ocurra, el fármaco se está eliminando del cuerpo más rápido de lo que se está absorbiendo. ¿Sí? Hasta que en algún momento voy a llegar a la concentración cero, ¿sí?
+
+[06:17]
+Que es como si no tuviera nada del fármaco, o sea, me voy a desintoxicar completamente el fármaco. ¿Vamos bien hasta acá? Bueno, perfecto. Dos conceptos más antes de pasar la última diapositiva, a la siguiente diapositiva en realidad, que perdón, no es la última, no quise ilusionarlos. Perdón. Bueno, concepto grande, importante, área bajo la curva y qué importancia tiene.
+
+[06:42]
+Se entiende, y acá medio que ya se los espoileo, ya se los adelanta, que todo lo que queda por debajo, ¿sí? de la fase ascendente y descendente, o sea, toda esta área que a mí me queda acá, se llama área bajo la curva y representa todo lo que mi cuerpo estuvo expuesto al fármaco, ¿sí? O sea, yo estuve expuesta a toda esta cantidad de fármaco.
+
+[07:07]
+A veces a una concentración más bajita, a veces a una concentración más alta, pero evidentemente a la totalidad de eh lo que es esta área bajo la curva, ¿de acuerdo? Habitualmente el área bajo la curva, esto no quiero que se confundan, pero eh también se la considera como la porción biodisponible del fármaco. ¿Por qué?
+
+[07:31]
+Porque en realidad yo entiendo que de todo lo que yo administré no todo se no todo se absorbió, hay parte que inicia absorbió. Eh, de todo lo que yo administré hubo alguna parte que se eliminó eh antes de llegar a la circulación, por ejemplo, por un primer paso hepático. Eh, ¿qué más puede haber pasado? Bueno, que se haya eliminado y que no haya llegado a su sitio de acción, ¿sí?
+
+[07:55]
+Entonces, la droga que verdaderamente tuvo posibilidad de ingresar a la biofase es esta del área bajo la curva, ¿sí? Y a eso le llamamos lo que es la fracción biodisponible o la biodisponibilidad de una droga, ¿sí? O sea, el área bajo la curva representa la biodisponibilidad de la droga, ¿sí? Porque la biodisponibilidad no es la concentración que hay en la biofase, porque ya les digo, en la biofase no se puede usar.
+
+[08:24]
+Es, digamos, todo el resultado de el análisis de esta curva. Bueno, bien. Último concepto de esta eh diapositiva y ya pasamos a otro a otro concepto. más. Acá dice semivida que habitualmente acá en Argentina eh es vida media como le llamamos, ¿sí? De acuerdo.
+
+[08:55]
+Entonces, eh ¿qué es la vida media? Primero que nada es eh un eh parámetro que se mide en el eje de las abscisas, ¿sí? O sea, que es una cantidad de tiempo. Si a mí me dicen, ¿cuál es la vida media, no sé, de tal fármaco?
+
+[09:22]
+Y yo tengo que contestar una unidad de tiempo, horas, días, eh lo que se les ocurra, meses, incluso, hay algunos, raro, pero bueno. Eh, es una unidad de tiempo, ¿sí? O sea, yo no puedo decir, no sé, 2 L, no, ¿sí? Es una unidad de tiempo. Es el tiempo que tarda el cuerpo en desembarazarse, ¿sí? De esta cantidad de droga que es la máxima cantidad de droga, ¿sí?
+
+[09:50]
+O sea que me analiza la vida media de eh la mitad del fármaco, o sea, de la parte descendente del fármaco para adelante básicamente, ¿no? Entonces, ¿cuánto tardo yo en desembarazarme de el 50% de esta concentración? ¿De acuerdo? Fíjense que más Bueno, acá porque hice muy mal las líneas, ¿no? Pero acá me debería dar más o menos en la mitad que dar más o menos esto igual que esto.
+
+[10:21]
+¿Sí? Eh, lo voy a volver a explicar el concepto esto de vía media es muy importante, porque hay eh muchas cosas que analizar con respecto a la vía media, ¿sí? Pero básicamente me habla de la velocidad con la que un cuerpo es capaz de eh sacar o de eliminar un fármaco, ¿sí?
+
+[10:41]
+Entonces, no es lo mismo tener una vía media corta en donde yo administro el fármaco y el cuerpo alto que lo saca afuera que tener una vía media larga en donde voy a tener al fármaco mucho más tiempo o adentro del cuerpo, ¿sí? Y las dos cosas tienen ventajas y desventajas. Tener al fármaco poco tiempo adentro del cuerpo tiene ventajas, pero también tiene desventajas y tenerlo al fármaco mucho tiempo adentro del cuerpo tiene ventajas y también tiene desventajas, ¿sí?
+
+[11:10]
+Que ya las vamos a ir aprendiendo a medida que avancemos con la cursada. Pero, bueno, no quería dejar de mencionarlo acá en esta primera aproximación a la farmacocinética. Espero que vayamos bien ehm pero bueno, Obviamente, eh, entiendo que son muchos conceptos y que les van a generar dudas. Mismo gráfico, ¿sí?
+
+[11:34]
+Mismo gráfico es exactamente lo mismo, solamente lo puse para, eh, que nosotros pudiéramos repasarlo, ¿de acuerdo? Bueno, entonces, administramos en el minuto cero, ¿sí? La droga empieza el periodo ascendente de la curva, acá predomina la absorción por sobre la por sobre la metabolización y excreción, que acuérdense que los dos juntitos forman la eliminación.
+
+[12:04]
+Predomina la absorción en la primera parte de la curva. Eh, llegamos a un pico máximo, ¿sí? Cuando estamos acá, significa que la absorción o la velocidad de absorción, mejor dicho, igualó la velocidad a la que se elimina el fármaco y a partir de ahí comienza la segunda etapa, que es la etapa en donde predomina predomina la eliminación por sobre la excreción.
+
+[12:33]
+La eliminación por sobre la absorción, perdón, quise decir, ¿sí? Bueno, no hay mucho más importante marcado aquí, solo era para hacer un pequeño repaso, acuérdense que el tiempo que tarda en disminuir a la mitad estado, o sea, en sacarme el 50% de la droga, ¿sí? Supongamos que me cae acá, más o menos.
+
+[13:04]
+Ese parámetro se llama vida media y lo van a haber escrito como test, como una T con un medio ahí al costadito. Ehm, y es un parámetro de cuán veloz es el cuerpo para sacarse a una droga de adentro del organismo, ¿sí? Y es un concepto superimportante. Que ahora de hecho lo vamos a ver, ¿sí?
+
+[13:29]
+Porque porque mi idea es que nos pongamos a analizar cómo es la cinética de la eliminación de las drogas, ¿sí? Porque hay cinéticas de eliminación que son distintas. Bueno, les presento, ¿sí? Eh, los dos fármacos de las dos cinéticas de eliminación distintas, se llaman cinética de eliminación de orden uno o cinética de eliminación de orden cero.
+
+[13:57]
+Esto de nuevo, es un tema que habitualmente no no es muy tomado, pero que, digamos, ya que tenemos todo el material virtual, mi idea es hacer como las clases lo más completitas posibles. Eh, pero bueno, de nuevo, no es algo que si no lo entienden muy bien, se tienen como que a estar estresando mucho, lesionando la cabeza, tranqui, ¿sí? Igual vamos a hacer que se entienda. Okay. No me encantan las concentraciones que me pusieron, ¿no?
+
+[14:26]
+Pues ya enseguida me va a empezar a quedar como cinco, como bla bla bla bla bla bla, pero bueno, no importa. Vamos a suponer que yo tengo un fármaco, ¿sí? Que eh yo tengo, no sé, 35 mg por litro de de fármaco en la sangre, ¿no? Que esa es una unidad de concentración. Eh, ¿qué es lo que yo tengo que saber, ¿no? ¿Cuánto va a tardar en quedarme 17,5, ¿no?
+
+[14:53]
+O sea, vamos a suponer que 17,5 O sea, la mitad de la la mitad de 35 está como por acá, ponle. No, vamos a suponer que está como por ahí. Bueno, ¿cuánto tiempo me va a tardar en eliminarse eso? Bueno, vamos a suponer tiki tiki tiki que son, no sé, acá en este caso que serían 40 minutos. Bueno, entonces 40 minutos es la vía media. ¿De acuerdo?
+
+[15:23]
+Y ahora mi idea es saber Acá los los voy a enganchar a más de uno. ¿Qué es lo que pasa? ¿Cuántas vidas medias tarda el cuerpo en eliminar todo el fármaco? ¿Dos vidas medias? Porque primero saca 17,5 y después saca otros 17,5. No, ojo, porque la nueva vida media, cuando estamos hablando de una eliminación de primer orden, es la mitad de 17,5, que a ver, vamos a usar la calculadora es 8,75, ¿no?
+
+[15:52]
+Entonces, yo tengo que saber cuánto tardo en eliminar 8,75. Vamos a suponer que está como por acá, 8,75, ¿no? Como por acá, tiki tiki, acá aproximadamente. Bien. Si esto Si este gráfico está bien hecho, debía darme 40 minutos de nuevo. ¿Sí?
+
+[16:20]
+Y la vida media de X droga, que es la mayoría de los fármacos que se elimina de esta manera, debería ser siempre la misma. Entonces, vamos a suponer que yo tengo que seguir con el cálculo de las vidas medias, ¿no? 4,37 tengo que hacer ahora, ¿no?
+
+[16:40]
+Vamos a poner que el 4,37 está acá, que es la mitad, ¿sí? de eh el número que teníamos previamente, que era el 875 y acá más o menos me tendría que dar. Y fíjense que el intervalo, ¿sí? Entre una y otra y otra debería darme siempre 40, ¿sí? Es casi siempre parecido. Y ahora vamos a hacer una mitad más.
+
+[17:04]
+A ver, eh 2,18 Vamos a suponer que con 2,18 esté como por acá más o menos. Vamos a hacer toda la línea punteada, toda la línea punteada, esto cuesta, pero lo quería hacer como en vivo con ustedes. Acá no me llega muy no me llegó muy bien la curva, pero bueno, vamos a suponer que está acá, ¿no? Y tiki tiki el intervalo tiene que ser de 40 nuevamente, ¿sí?
+
+[17:33]
+Obviamente, fíjense, cómo pasamos de tener una concentración relativamente alta en el plasma a esto que no es casi nada, ¿sí? Entonces, ¿cuántas vidas medias habitualmente lleva eh eliminar completamente al fármaco del cuerpo? Y corresponde más o menos con este número, es entre cuatro y cinco vidas medias, ¿por qué?
+
+[17:59]
+Porque si yo este 2,18 que dice acá, de nuevo tengo que calcular cuánto me da 1 con 09, bla bla bla, que vamos a suponer que esté como por acá. Sí, ya la concentración es casi cero, ¿de acuerdo? La concentración es casi cero, ya digamos para la quinta vida media, o sea, para la quinta vez que me pasen los esos 40 minutos ya se va a haber vivido toda la droga.
+
+[18:28]
+Entonces, el cálculo habitual es que entre cuatro y cinco vidas medias es lo máximo que a mí me dura una droga en la sangre. Bien. La La cinética de orden uno es la que usan la mayoría de los fármacos, por eso cuando ustedes abren cualquier medicamento van a leer el prospecto y uno de los datos que le va a decir es la vida media es de, no sé, 2 horas, la vida media es de 3 días, la vida media es 12 horas, lo que se les ocurra, ¿sí?
+
+[18:57]
+Entonces, eh, eso es muy habitual. Obviamente, por unidad de tiempo siempre saca el mismo porcentaje. ¿no? O sea, porque acá en este caso cada 40 minutos, por ejemplo, elimina el 50%, ¿no? O sea, que eh ¿Qué quiere decir esto?
+
+[19:18]
+Que estas enzimas que se encargan, por ejemplo, del metabolismo o del del de excretar la droga o de lo que se les ocurra, eh no están saturadas. ¿Qué quiere decir que no están saturadas? Por ejemplo, a mí me traen, no sé, che, delfín, mira, tenés que dar eh no no sé, un total de 10 clases de psicofármaco para los chicos.
+
+[19:42]
+Ah, bueno, perfecto, listo, voy, no sé, voy a hacer dos por semana, una cosa por el estilo y tardo cinco semanas. Bueno, del fin tienes que hacer 20 clases. Bueno, listo, no hay problema, hago cuatro por semana. Me dice mira, tenés que hacer eh no sé, 150 clases.
+
+[20:03]
+Okay, bueno, yo hago cuatro por semana hasta ahí llego, lo siento y tardaré más tiempo a lo sumo, ¿de acuerdo?
+
+[20:13]
+Entonces, al principio yo podía eh adaptarme a y hacer, no sé, eh siempre el mismo porcentaje de clases, pero cuando yo ya estoy saturada y no me da más el tiempo para hacer más cosas, eh obviamente que voy a llegar al punto de saturación en donde siempre hago la misma cantidad por unidad de tiempo, que no es lo mismo que el mismo porcentaje por unidad de tiempo, se entiende entiende la diferencia? Si no, ehm no se hagan problemas.
+
+[20:42]
+Se va a entender cuando explique el gráfico de la eliminación de orden cero. La eliminación de orden cero Eh, una de las grandes diferencias es esta del porcentaje. No es que el cuerpo saca siempre el 50% para fuera y chao se acabó. No, de O sea, siempre saca, por ejemplo, no sé, eh, 3 mg por hora.
+
+[21:05]
+Entonces, no importa si pasan eh, o sea, no no importa de qué concentración previa yo partí, porque siempre voy a estar eliminando 3 mg por hora porque ya está como trabajando a su máxima capacidad del sistema. ¿Sí? Vamos a eh poner en ejemplo cómo sería desde el punto de vista más matemático, ¿no? Yo sé que me quieren matar en este momento, pero bueno. Eh, misma premisa. Empezamos en 37.
+
+[21:36]
+Ya habíamos dicho que teníamos que llegar a 17,5, ¿no? Muy bien, vamos a suponer que 17,5 esté acá. Está. Muy bien. Seguimos acá. La vida media es de casi 2 horas aproximadamente 2 horas, bueno vamos a ponerle que es de 2 horas aprox, un poquitito más, 2 horas y 10 minutos.
+
+[22:01]
+Bueno, perfecto, entonces dijimos 17,5 / 2 me daba 18 con eh 18 perdón cualquiera, 8,75, vamos a suponer que eso esté como por acá.
+
+[22:19]
+Llego Ya se ven la diferencia, ¿no? O sea, acá es prácticamente de 1 hora. A ver, voy a sacar a Mini Delfi que está acá molestando. Acá este intervalo no es no es ni parecido con este primer intervalo.
+
+[22:35]
+Se dan cuenta de cómo se modificó la vida media, porque al principio yo tardaba 2 horas en reducir la concentración del fármaco a la mitad y ahora estoy tardando, no sé, una hora más o menos en reducir la concentración del fármaco a la mitad, ¿por qué? Porque siempre sabe con la misma cantidad. Eh, vamos a seguir, un ejemplo más para que se entienda. 4,37 habíamos dicho entonces. 4,37, pin pin pin. Llegamos acá más o menos.
+
+[23:05]
+¿Se dan cuenta que el intervalo de nuevo es más chiquito? No llega a ser una hora siquiera este intervalo. Pues miren que empieza cerquita del tres, o sea, pasado el tres y ah adentro, o sea, son no sé, 40 minutos, 20 minutos, 30 minutos. una cosa así. Entonces, en la cinética de orden cero yo no puedo definir una vida media fija para el fármaco, ¿sí? O sea, la vida media es variable, ¿por qué? Porque yo siempre estoy sacando la misma cantidad.
+
+[23:32]
+Entonces, imagínense que si yo siempre saco, no sé, eh 20 mg en 1 hora eh desde que yo estoy, por ejemplo, si yo tengo una concentración de 100, saqué repoquito, saqué el 20% nada más. Entonces, me va a llevar, no sé, como si les dijera 2 horas y media, sacar el el 50%, voy a regresar a que me vean mi cara, ¿sí?
+
+[23:56]
+En cambio, si yo tengo una concentración de 40 mg, ya en 1 hora saqué los 20 mg que me hacían falta, ¿sí? Y ni hablar si tenía 20 mg, porque en 1 hora ya lo eliminé todo, o sea, que ya le pasaron 1000 veces, o sea, esa es la gran diferencia con la eliminación de orden cero.
+
+[24:15]
+No hay muchos fármacos que actúen eh con una eliminación de orden cero, sí, eh, a resaltar como para resaltar eh, el etanol, ¿sí? Que es el alcohol es una droga que utiliza eh, esta cinética de eliminación y las concentraciones muy altas de ciertos fármacos, por ejemplo las aspirinas, ¿no? Como muy conocidas.
+
+[24:41]
+Ehm, pero de nuevo, concentraciones superaltas, o sea, tengo que estar con el sistema supermega archisaturado. Okay. Es un tema difícil, es un tema que cuesta. Eh, les recomiendo que si sintieron que se hicieron mucho el ión, se tomen un break, un café y vuelvan a ver esta partecita del video.
+
+[25:03]
+Eh, como para que se entiendan las diferencias entre la cinética de primer orden y el segundo orden, pero para que sepan, la única que a mí me interesa entender es la eliminación de primer orden, porque como les digo, son muy poquitos los fármacos utilizan la el orden cero.
+
+[25:22]
+Ehm, con lo cual sabemos que la vida media aproximada va a ser siempre la misma y que yo en el prospecto de cualquier fármaco puedo saber cuál es la vida media, ¿sí? Y en ese sentido es importante que sea siempre constante para que yo pueda calcular las siguientes cosas de los siguientes fármacos de los siguientes gráficos que siguen.
+
+[25:49]
+Así que Bueno, nada, esto es simplemente para hacer un repaso de de cómo se confecciona la curva. Vamos a confeccionarla al revés, vamos a suponer que yo acá tengo 10 mg por litro de una droga y que cada una hora yo voy a reducir la mitad, o sea que la vida media es de una hora.
+
+[26:23]
+Una hora, perfecto. Bueno. Eh, entonces, yo arranco acá, estoy acá. ¿No? En el minuto cero te tengo 10 mg. Pero voy a tener 5 mg muy pronto en 1 hora, así que en 1 hora voy a tener 5 mg. Bueno, después que sigue 2,5 sería que estaría más o menos acá, 2,5.
+
+[26:51]
+Puse una hojita cuadriculada para que nos quede como lo más prolijito posible. Perfecto. Ahora vamos a hacer la mitad de eso que es 1,25.
+
+[27:06]
+que estaría acá aproximadamente. Fíjense que ya nos estamos acercando muchísimo muchísimo al cero. Sí, acá que seguirían 75. Bueno, 0,75. Y estaría como por acá, casi pegada al cero. Muy bien. el color, estaría como por acá.
+
+[27:35]
+O sea, que la curva seguiría así, ¿de acuerdo? Y alrededor de la entre la cuarta y la quinta vida media, que sería esto de acá, se calcula como que yo no salvo que yo vuelva a administrar una droga, que es lo que vamos a ver a continuación, no tiene por qué eh subir, ¿sí? Esa es la curva. Era para hacer un repasito nada más. Pero ahora, acá hay un concepto importante.
+
+[27:59]
+¿Cómo hago yo para tener concentraciones constantes si yo quiero acumular, por ejemplo, una droga dentro del cuerpo, ¿no? ¿Cómo cómo lo haría? Bueno, es tan sencillo como saber la vía media de la droga y saber que si yo administro una nueva dosis de la droga después de la quinta vía media, o sea, después de la cuarta o quinta vía media, o sea, si yo vuelvo a administrar droga acá, mi cinética va a volver a hacer una curva parecida. ¿Sí?
+
+[28:27]
+O sea, en realidad va a ser toda esa curva que vimos al principio, se absorbe que sé yo y después se vuelve eliminar, ¿no? Eh, pero si lo que yo quiero hacer es eh acumular la droga, ¿sí?
+
+[28:42]
+Que siempre haya droga dentro del organismo, como sucede muchas veces con los psicofármacos que se toman todos los días, porque yo necesito que todo el tiempo el paciente, por ejemplo, eh tenga antipsicótico elevado en la sangre para que no tenga delirios, por ejemplo, por poner un ejemplo. Eh, yo sé que tengo que a administrar la siguiente dosis antes de que se pasen las cuatro vidas medias. ¿Sí?
+
+[29:07]
+Entonces, esa es la importancia de entender el tema de las vidas medias. Bueno, vamos a tratar de entender el último gran concepto eh en cuanto a dificultad de esta clase, que yo ya sé que están un poco saturados, no se hagan problema, pero básicamente es el concepto de la cinética de acumulación. ¿Sí?
+
+[29:31]
+Fíjense cómo yo había administrado, se me subió, pero ah mientras empezó a eliminar acá, eh, ¿qué pasó? Volví a administrar una segunda droga y todavía no habían pasado los cuatro días medias. Entonces, ¿qué es lo que sucede? Vuelve a aumentar la concentración, eh, y cuando vuelve a bajar, pum, me volvieron a administrar droga. Y cuando vuelve a bajar, uy, me volvieron a administrar una droga. Hasta que llega un punto, ¿no? En donde la dosis, ¿sí?
+
+[30:00]
+De droga que yo estoy administrando, ponele que yo estoy tomando 200 mg, bueno, mi cuerpo está eliminando 200 mg. ¿Sí? Fíjense. Y llega como a este periodo de acá que se llama eh meseta, plato o periodo estacionario en donde las concentraciones son relativamente estables. Obvio que no son estables, porque acá yo tengo un pico de una concentración más alta y acá esta es una concentración mucho más baja.
+
+[30:28]
+A esto se le llama pico, a esto se le llama valle, ¿sí? ¿Sí? Y eh, tengo concentraciones variables entre uno y otro, pero fíjense que son relativamente estables, o sea, los picos son siempre los mismos y no van a ser más altos y los valles son siempre los mismos y no van a ser más bajos de concentración, ¿sí?
+
+[30:51]
+Ese es uno de los grandes conceptos y acá en el medio tienen esta raya toda continua que es una representación de cómo sería cuando yo administro una droga por infusión continua, por ejemplo, en dovenosa, en donde yo segundo a segundo estoy administrando exactamente la misma cantidad de la que se está eliminando en realidad para tener concentraciones perfectamente estables.
+
+[31:16]
+Eso en la vía oral, obvio, no se puede porque tendría que estar tomando cada 2 segundos 2 mg de comprimido más o menos, pero lo que sí se puede hacer es calcular cada cuánto tengo que tomar yo la medicación para tener eh concentraciones estables en la sangre, ¿de acuerdo?
+
+[31:39]
+Bueno, vamos a hacer un gráfico de cinética acumulación muy chillout, muy muy, tomándome un café o un mate solo y riéndome de cómo Delfi hace mal las cuentas y cómo no le entran las cosas en el gráfico porque van a ver lo que va a pasar a continuación. Yo ya se los adelanto. Nunca lo hice bien, nunca lo voy a hacer bien tampoco. Eh, ni aunque esté grabando un video y haya pruebas de que no se sumar y restar.
+
+[32:05]
+De acuerdo, vamos a a suponer que yo arranco mi gráfico con 100 mg de una droga, ¿sí? O sea, 100 mg por litro 200 mg por la unidad que se ocurra, pero siempre que sea un número lindo. Y que cada una hora que o casualidad va a ser la vida media de esta droga para que me quede lindo el gráfico y nada más.
+
+[32:30]
+Pero podría ser cualquiera la vida media de la droga y podría estar administrando el fármaco en cualquier momento y no eh como lo voy a hacer ahora, era lo que les estaba por decir, ¿se se dan cuenta? Dije cualquier cosa, no tiene ni sentido lo que dije. Básicamente la vida el fármaco, va a ser de 1 hora. Y yo cada 1 hora le voy a administrar de nuevo 100 mg, ¿sí? O sea, dos grandes conceptos como para ver cómo nos queda el gráfico. ¿Sí?
+
+[32:56]
+Entonces, yo tengo que 100 está ahí, entonces 50 tendría que estar por acá, ¿no? Hermoso, perfecto, muy bien, yo voy a ir preparando mi calculadora porque en breve no voy a poder hacer las cuentas. Eh, la mitad de 100 y 50. Muy bien. Eh, y en una Ahora, a mí me debería reducir la concentración, ¿sí? Ahí, a 50, ¿no? Porque dijimos que la vida media de esta droga era de 1 hora.
+
+[33:25]
+Entonces, en 1 hora, 1 hora se me bajó a la mitad que era 50. Y yo qué hice acá? Le volví a administrar 100, que 100 la hice de cuatro cuadraditos, entonces tengo que subir hasta acá. ¿De acuerdo? Eh, si yo a 50 le sumo 100, acá voy a tener 150. ¿No? Sí, hasta ahí vamos.
+
+[33:54]
+Yo ahora voy a tener que eh en 1 hora de nuevo, ¿sí? Llegar a la mitad de 150 que va a ser 75. Obvio, sí, usé la calculadora, pero porque me da como algo de terror hacerlo mal mal, eh, en el video y que quede como grabado para siempre, por más que bueno, 150 dividido tampoco era que no en cuenta, uf.
+
+[34:24]
+Pero bueno, eh, no es así, la el formato debería ser como más, vieron la curva del orden uno, porque acá se está eliminando, ¿no? Entonces debería ser así, pero que hice yo, la guachada de meter 100 mg más. Pero más o menos vamos a suponer que quede como por ahí.
+
+[34:49]
+Entonces yo a 100 a a 75 le sume 100, ¿sí? Para que me dé 175.
+
+[35:00]
+Bien, y quedé ahí. Y de 175 en una hora me tiene que bajar a 87,5. Está como por acá, ¿no? O sea, por acá debería hasta acá más o menos debería voy a bajarme. De acá. Perfecto. Y 87,5 + 100 va a ser 187 con 5.
+
+[35:28]
+Son No mucho más arriba de 175, ¿no? 187. Y acá eh en 1 hora, entonces yo debería tener 93. aprox, que vamos a suponer que esté como por acá. ¿No? Entonces hago mi gráfico así. ¿Sí?
+
+[35:56]
+Ojo con lo que está pasando, me parece, ¿no? Más 100, ¿no? Va a ser 193. No es mucho más arriba de 187, pero bueno, 193. Sí, vamos a suponer que esté como por ahí, que dividido 2 me va a dar 96.
+
+[36:18]
+Y fíjense que de nuevo si le sumo 100, se me va a subir a 196. de 196, me va a bajar a 98.
+
+[36:34]
+Eh, después le sumo 100, se me va a subir a 198 de nuevo y fíjense que ya en lo que es el último tiempo a partir de la cuarta vía media, eh todo lo que yo administré, o sea, estoy eliminando algo muy similar a lo que estoy absorbiendo, ¿sí?
+
+[36:55]
+O sea, se igualó la absorción y la eliminación por unidad de tiempo, porque cada vez que yo le doy 100 mg me están eliminando 100 mg y sacando 100 mg para fuera. ¿Sí? Esto siempre es así a nivel de lo que es la cuarta vía media. Esto sea meceta. Eh, les pido perdón por el dibujo, yo sé que es horrible, pero esto sea meceta, ¿sí? Y las concentraciones son estables en el plasma y tenemos estos picos y estos valles.
+
+[37:25]
+¿De acuerdo? Voy a poner pausa 2 segunditos dos, dos segunditos. Bueno, eh para mí pasó un ratito, para ustedes no fue nada.
+
+[37:33]
+Eh, pero bueno, les estaba diciendo que eh acá va a ser importante el último concepto que yo les quiero mencionar, ya se termina el video, es que eh uno puede podría elegir, entonces, de repente, en lugar de eh dar 100 mg cada 1 hora para que sea más cómodo dar 200 mg cada 2 horas, total eh eh va a ser exactamente lo mismo, a la cuarta vía media se va a mesetar y si no los invito a que hojita cuadriculada en casa y prueben a hacer exactamente lo mismo con las mismas cuentas con 200 y se fijen como en la cuarta vía media que ojo la vía media es de una hora, ¿okay?
+
+[38:14]
+Eh, prueben hacerlo en casa y fíjense como en la cuarta vía media también se meseta, o sea que después de dos administraciones se va a mesetar, eh, y eso es supercómodo porque en lugar de estar dando un fármaco cada una hora, lo voy a estar dando cada 2 horas, estaría buenísimo, solamente estoy duplicando la dosis, pero lo que hay que tener mucho cuidado es de dos cosas. Primero, que los picos, ¿sí?
+
+[38:41]
+No se me vayan a eh cualquier lado. Yo necesito que los picos estén siempre por debajo de los niveles de toxicidad mínimos, ¿sí? Y también necesito que estos valles, ¿sí? Que son los momentos en donde yo tengo menor cantidad de concentración de la droga, eh, estén lo más, eh, estén por encima de lo que serían concentraciones que no son efectivas, ¿sí?
+
+[39:09]
+Porque yo puedo tener una dosis demasiado bajita en la sangre y que no sea efectiva. Y ahí entra el último gran concepto de esta clase que es el de la ventana terapéutica, que lo vemos a continuación. Bueno, yo creo que el gráfico me dio que habla por sí solo. Está representado cinética de dosis múltiples, ¿sí? O sea, dando varias administraciones en la misma droga. Eh, ya en el periodo estacionario, o sea, no está la parte del principio donde empezamos a poquito y íbamos subiendo así.
+
+[39:39]
+Em, y lo importante es que dosis muy bajitas, ¿sí? Me llevarían a la ineficacia y dosis demasiado altas me llevarían a la toxicidad. ¿De acuerdo? Entonces, es importante el cálculo de que todas estas dosis repetidas, ¿sí? Estén siempre por debajo de la toxicidad y por arriba de la ineficacia. Por eso a veces hay fármacos que son superincómodos de tomar, les debe haber pasado con los antibióticos.
+
+[40:09]
+¿Vieron esos antibióticos que de repente se toman cada 8 horas o cada 6 horas y uno se tiene que levantar a mitad de la noche para tomarlo sí o sí porque no queda otra opción. Bueno, tiene que ver con esto, porque si no te tomarías dos pastillas antes de ir a dormir y estaría todo bien, pero no estaría todo bien porque eh se me iría a la toxicidad. Y después de pasar muchas horas y toda esta parte me quedaría como eh por debajo de la línea de la eficacia. Entonces, esa es la gran importancia. Bueno, me despido con esta diapo.
+
+[40:39]
+Eh, en realidad me voy a despedir con la que sigue. Me despido con esta diapo. Les deseo mucha suerte eh y de verdad, de verdad, de verdad, les pido que no se estresen eh y que no me odien por los gráficos de de toda la parte anterior la farmacocinética es compleja, eh, la farmacodinamia también tiene muchos gráficos que por ahí son incluso más divertidos o por lo menos a nivel personal me parecen más divertidos de entender.
+
+[41:09]
+Eh, y bueno, básicamente lo que lo que más importa de esto es que se lleven los conceptos, ¿no? ¿Qué es la biodisponibilidad y por qué hablamos de biodisponibilidad? ¿Qué es la vida media y por qué hablamos de vida media?
+
+[41:25]
+Que la mayoría de los fármacos usan cinética de orden uno y no de orden cero, que la vida media sea constante es muy importante, cuando se elimina eh una un fármaco que es después de las cuatro vidas medias O sea, no es importante que uno se sepa de memoria los gráficos, sino los conceptos que se desprenden de ellos, ¿sí? Les mando un beso enorme, dejo eh este video subiéndose y espero que lo disfruten mucho.
+
+[41:53]
+Nos vemos en las próximas clases que son las de farmacodinamia y eh nos vemos eh espero que muy pronto eh en persona. Eso, la verdad, que sería mi deseo. Pero bueno, chicos, mientras tanto eh nos se nos seguimos viendo por acá. Mua. Besote. Chao, chao.

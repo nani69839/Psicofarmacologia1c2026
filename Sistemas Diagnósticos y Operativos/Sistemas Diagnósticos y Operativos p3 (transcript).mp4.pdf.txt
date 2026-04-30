@@ -1,0 +1,74 @@
+[00:00]
+Bien, vamos al último video de esta clase teórica. Algunas novedades que nos trajo el DSM-5. Por un lado, el DSM-5 ordena sus trastornos según la aparición en el ciclo vital, que significa esto, que primero vamos a tener trastornos del neurodesarrollo, o sea, trastornos que vamos a ver que aparecen en niños y luego vamos a tener los trastornos que frecuentemente aparecen en la adolescencia y así sucesivamente.
+
+[00:28]
+La inclusión de nuevos especificadores para reducir la alta tasa de comorbilidad. La comorbilidad, para quien no sepa, tiene que ver con la aparición en simultáneo de eh dos o más trastornos, algo que en la clínica eh es algo muy frecuente cuando se utiliza modelos categoriales como este.
+
+[00:48]
+La inclusión de un especificador eh otro trastorno mental especificado, esto para quien no tenga manejo del DSM le va a resultar eh muy complejo entender, el que sabía algo el DSM eh que seguramente haya escuchado hablar de que se utilizaba mucho un especificador que era trastorno mental no especificado, ¿sí? Era como una especie de bolsa donde caían los pacientes que no entraban dentro de una categoría diagnóstica, pero tenían sintomatología similar a la de un capítulo.
+
+[01:18]
+Ahora lo que se permite es justamente especificar cuáles son los criterios que el paciente no cumple y así poder llegar a un diagnóstico aunque sea un poco eh más cercano. al real. Aquí tienen entonces el índice del DSM-5. La sección número uno tiene que la introducción al manual y los usos del manual. La sección dos van a encontrar a todos los trastornos mentales.
+
+[01:45]
+Ahí van a ver cómo eh encontramos según la aparición del ciclo vital. Entonces, primero tenemos, como les decía, los trastornos del neurodesarrollo, después la esquizofrenia, después la bipolaridad, después la depresión, etcétera. y la sección tres donde contamos con evaluaciones eh herramientas de evolución, eh diferencias culturales que se encontraron y un modelo un modelo muy alternativo de la personalidad que es dimensional.
+
+[02:16]
+¿Cuáles son las críticas más feroces que se le han hecho al DSM-5? Son muy similares a las que se venían eh viendo en el DSM-4.
+
+[02:24]
+Por un lado, la gran cantidad de comorbilidades, es decir, la cantidad de pacientes con varios diagnósticos a la vez y no solo eso, sino la alta heterogeneidad entre síntomas con pacientes con un mismo diagnóstico, por ejemplo, pacientes con esquizofrenia que presentaban delirios, alucinaciones y pacientes con el mismo diagnóstico, pero que presentaban, por ejemplo, solamente sintomatología negativa, ¿no?
+
+[02:52]
+Y sin embargo, el diagnóstico es exactamente el mismo. Y otra crítica muy importante que se le ha hecho estos manuales diagnósticos tienen que ver con la cantidad de eh dinero que hay detrás de las investigaciones eh y la plata que muchas veces se aporta a la industria farmacéutica para el desarrollo de los mismos.
+
+[03:14]
+Ahí me me tomé el trabajo de eh ponerles desde el DSM-1 al DSM-4 TR que salió en el año 2000, cómo fueron aumentando los diagnósticos desde 106 hasta 374. Lamentablemente eh no tengo tiempo para ponerme a contar el DSM-5, eh cuántos hay, pero les aseguro que debemos tener alrededor de 400 y pico y contando.
+
+[03:39]
+Así que eh bueno, esto es una crítica muy importante a este tipo de de manuales diagnósticos, ¿no? Ahora, finalizado lo que tiene que ver con los modelos categoriales, en salud mental no quería dejar de traerles eh no diría lo nuevo en psicopatología, pero sí lo que que se está hablando ya hace varios años, ¿no?
+
+[04:00]
+eh de que la realidad de nuestros pacientes, la realidad de las variables en psicopatología no son no son categoriales, sino que eh los pacientes oscilan entre dimensiones, ¿sí? Entre síntomas que a su vez tienen distintas magnitudes y vamos a ver, acá tienen eh algunos de los modelos que se están hablando, la realidad es que hay un montón.
+
+[04:24]
+Eh, pero bueno, en parte para eh hacerles ver que eh si bien, seguimos usando el DSM, seguimos usando la CIE, también vemos que eh se está avanzando en modelos mucho más actuales y que probablemente en el futuro tenga mucha más vigencia por la cantidad de críticas que acumulan los paradigmas actuales en salud mental.
+
+[04:48]
+El primer eh modelo, digamos, dimensional es un modelo que se utilizó mucho eh o se empezó a utilizar mucho con niños y adolescentes y donde divide a los pacientes entre perfiles internalizantes y externalizantes.
+
+[05:06]
+Los pacientes con perfiles internalizantes son perfiles, digamos, de pacientes con mucha mayor inseguridad, dependencia, fobias, tristeza, preocupación, somatizaciones, es decir, son pacientes que entrarían dentro del espectro de los trastornos ansiosos, los trastornos depresivos, los trastornos anteriormente llamados somatomorfos eh y por otro lado los trastornos eh con un perfil externalizante se caracterizarían por tener un bajo control emocional, por tener mayor irritabilidad, agresividad dificultad interpersonal, dificultad de respeto por las reglas, es decir que eh por ejemplo, lo que denominamos TDH, el trastorno por déficit de atención e impulsividad, caerían dentro de este perfil externalizante, así como eh perfiles más eh antisociales o pacientes con dificultad en el control de los impulsos, entrarían en este tipo de perfiles.
+
+[06:08]
+Otro tipo de modelo eh dimensional, mucho más actual.
+
+[06:13]
+Este es un modelo que para quien le estuviera interesando este tema se encuentra muy vigente en lo que es la psicopatología y lo que tiene de particularidad el modelo high top es que eh implica un enfoque por un lado dimensional y por el otro lado jerárquico, donde ustedes van a ver que se han reunido distintos eh espectros y superespectos y subfactores eh y a través de esto se van relacionando y se van a los distintos trastornos.
+
+[06:44]
+Entonces tenemos un una dimensión superior donde se encontrarían todas las personas que padecen trastornos mentales. Una dimensión de espectros donde acá también, por ejemplo, se observan los espectros internalizantes. Se agrega el espectro somatomorfo.
+
+[07:02]
+Eh, dentro del espectro internalizante, solamente para darles un ejemplo, como yo les decía, se encuentra el subfactor del miedo y si van ahí al subfactor del miedo, por ejemplo, entraría la fobia social, la agorafobia, la fobia específica.
+
+[07:16]
+Eh, dentro del espectro internalizante, por ejemplo, también se encuentra todo lo que tienen que ver con los fenómenos del estrés, del distress, eh como, por ejemplo, el trastorno de preciado mayor, la distimia, el trastorno de ansiedad generalizada, etcétera. También encontramos los espectros, por ejemplo, de los desórdenes del pensamiento y ahí entraría todo lo que tiene que ver con el espectro esquizofrénico.
+
+[07:41]
+Bueno, Eh, no voy a seguir eh desarrollando esta taxonomía, pero eh se las recomiendo para quien eh le interesa este tipo de modelos porque seguramente tenga mucho desarrollo en los próximos años.
+
+[07:57]
+Y eh para terminar eh este es un modelo que eh el proyecto RDO C es un modelo que ya está en desarrollo hace 10 años, si bien entró en eh vigente o la realidad es que se hizo muy conocido en el 2013 cuando salió el DSM 5 y el director del Instituto Nacional de Salud Mental de Estados Unidos dijo algo así como "Nuestros pacientes se merecen algo mejor que el DSM 5, así que vamos a dejar de financiar absolutamente a todo proyecto en este país que utilice ese manual diagnóstico." Imagínense que para lo que fue la comunidad psicopatológica fue una bomba y la comunidad de investigación, si bien las críticas, como les decían, se venían acumulando a este tipo de paradigmas.
+
+[08:50]
+Para ser sucinto en este tipo de de proyecto, como dice ahí, primero hablarles de que la R12 es un marco de investigación con un enfoque diametralmente opuesto donde eh se enfoca más que nada en lo que son las neurociencias, la genética y la teoría conductual y donde el objetivo eh que es justamente como dice ahí, comprender la naturaleza de la salud mental y las enfermedades en términos de diversos grados de disfunciones en los sistemas psicológicos y biológicos generales.
+
+[09:23]
+Y para ello, y no me voy a extender mucho más de eso y con esto terminamos el teórico, se crearon distintas unidades de análisis, genética molecular, celular, circuital, fisiológica, conductual y los autoinformes, como van a hablar de una parte más subjetiva, donde en las investigaciones se debe eh especificar y se debe utilizar este tipo de unidades de análisis y así ir se está creando, digamos, un banco de datos enorme eh donde eh en cada unidad de análisis se está eh acumulando toda la evidencia científica eh en el mundo.
+
+[10:04]
+Les recomiendo también entrar al proyecto ARDEOC, digamos, es de acceso público, así que ustedes pueden entrar a la página de el Instituto de Salud de Estados Unidos y buscar el proyecto RDOC y van a encontrar eh ahí una infinidad de investigaciones que ya se están haciendo eh con este marco de análisis, ¿sí?
+
+[10:25]
+Bien, espero que no les haya resultado demasiado tedioso a la clase, trata de darles un panorama general de lo que tiene que ver con los modelos categoriales, en particular como les decía el DSM y la CIE y quise también traerles algo más actual como lo es el proyecto RDO C y los modelos dimensionales. Así que bueno, seguimos viéndonos en futuras clases.

@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Psicofarmacología · Resumen</title>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* === VARIABLES === */
+:root {
+  --bg: #f7f4ef;
+  --paper: #ffffff;
+  --ink: #1e1a14;
+  --ink2: #3d3628;
+  --muted: #7c7264;
+
+  --sage:    #4a7c59;
+  --sage-bg: #eaf3ec;
+  --sage-bd: #b8d9c0;
+
+  --terra:   #b85c38;
+  --terra-bg:#fdf0eb;
+  --terra-bd:#ecc4b4;
+
+  --navy:    #2c5f7a;
+  --navy-bg: #e8f3f9;
+  --navy-bd: #afd0e2;
+
+  --amber:   #9a6b20;
+  --amber-bg:#fdf5e4;
+  --amber-bd:#e4cc90;
+
+  --plum:    #6b4080;
+  --plum-bg: #f5eefc;
+  --plum-bd: #d4b8e8;
+
+  --rose:    #a04060;
+  --rose-bg: #fdeef4;
+  --rose-bd: #e8b4c8;
+
+  --nav-w: 230px;
+  --radius: 14px;
+}
+
+/* === RESET === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+/* === BODY === */
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-size: 17px;
+  line-height: 1.9;
+  letter-spacing: 0.025em;
+}
+
+/* === SIDEBAR === */
+nav {
+  position: fixed;
+  top: 0; left: 0;
+  width: var(--nav-w);
+  height: 100vh;
+  background: var(--ink);
+  overflow-y: auto;
+  padding: 2rem 1.4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f7f4ef;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.nav-logo span {
+  display: block;
+  font-weight: 300;
+  font-size: 0.65rem;
+  color: #a09880;
+  letter-spacing: 0.1em;
+  margin-top: 0.2rem;
+}
+
+.nav-divider {
+  height: 1px;
+  background: rgba(255,255,255,0.08);
+  margin: 0.7rem 0;
+}
+
+nav a {
+  display: block;
+  font-family: 'Lexend', sans-serif;
+  font-size: 0.69rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #9c9080;
+  text-decoration: none;
+  padding: 0.42rem 0.75rem;
+  border-radius: 7px;
+  transition: background 0.15s, color 0.15s;
+  line-height: 1.5;
+}
+nav a:hover { background: rgba(255,255,255,0.07); color: #f7f4ef; }
+
+.nav-group-label {
+  font-family: 'Lexend', sans-serif;
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #5a5040;
+  padding: 0 0.75rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.1rem;
+}
+
+/* === MAIN === */
+main {
+  margin-left: var(--nav-w);
+  padding: 3.5rem 3rem 8rem 3.5rem;
+  max-width: 820px;
+}
+
+/* === HERO === */
+.hero {
+  margin-bottom: 3.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 2px solid #e0d9ce;
+  opacity: 0;
+  animation: fadeUp 0.6s 0.05s forwards;
+}
+
+.hero-tag {
+  font-family: 'Lexend', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.8rem;
+}
+
+.hero h1 {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 0.7rem;
+}
+
+.hero h1 em { font-style: normal; color: var(--terra); }
+
+.hero-sub {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-family: 'Lexend', sans-serif;
+  font-weight: 400;
+}
+
+/* === BLOQUES TEMÁTICOS === */
+.block {
+  margin-bottom: 4.5rem;
+  opacity: 0;
+  animation: fadeUp 0.5s forwards;
+}
+.block:nth-child(1) { animation-delay: 0.1s }
+.block:nth-child(2) { animation-delay: 0.15s }
+.block:nth-child(3) { animation-delay: 0.2s }
+.block:nth-child(4) { animation-delay: 0.25s }
+.block:nth-child(5) { animation-delay: 0.3s }
+.block:nth-child(6) { animation-delay: 0.35s }
+.block:nth-child(7) { animation-delay: 0.4s }
+.block:nth-child(8) { animation-delay: 0.45s }
+.block:nth-child(9) { animation-delay: 0.5s }
+.block:nth-child(10) { animation-delay: 0.55s }
+
+.block-label {
+  font-family: 'Lexend', sans-serif;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+.block-label::before {
+  content: '';
+  width: 20px; height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  flex-shrink: 0;
+}
+
+.block-title {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+/* === CARDS DE COLOR === */
+.card {
+  border-radius: var(--radius);
+  padding: 1.4rem 1.7rem;
+  margin-bottom: 1rem;
+  border: 1.5px solid transparent;
+  transition: transform 0.15s, box-shadow 0.15s;
+  position: relative;
+}
+.card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.07); }
+
+.c-sage  { background: var(--sage-bg);  border-color: var(--sage-bd); }
+.c-terra { background: var(--terra-bg); border-color: var(--terra-bd); }
+.c-navy  { background: var(--navy-bg);  border-color: var(--navy-bd); }
+.c-amber { background: var(--amber-bg); border-color: var(--amber-bd); }
+.c-plum  { background: var(--plum-bg);  border-color: var(--plum-bd); }
+.c-rose  { background: var(--rose-bg);  border-color: var(--rose-bd); }
+
+.card-tag {
+  font-family: 'Lexend', sans-serif;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 0.45rem;
+}
+.c-sage  .card-tag { color: var(--sage); }
+.c-terra .card-tag { color: var(--terra); }
+.c-navy  .card-tag { color: var(--navy); }
+.c-amber .card-tag { color: var(--amber); }
+.c-plum  .card-tag { color: var(--plum); }
+.c-rose  .card-tag { color: var(--rose); }
+
+.card p, .card li { color: var(--ink2); font-size: 0.97rem; }
+.card ul { padding-left: 1.3rem; }
+.card li { margin-bottom: 0.25rem; }
+
+/* === KEY HIGHLIGHT === */
+.key-box {
+  background: var(--ink);
+  color: #f7f4ef;
+  border-radius: var(--radius);
+  padding: 1.3rem 1.7rem;
+  margin: 1.2rem 0;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.key-box strong { color: #f4c47a; }
+
+/* === ARROW TEXT === */
+.arrow-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.97rem;
+  color: var(--ink2);
+}
+.arrow-row .arr { color: var(--terra); font-weight: 700; flex-shrink: 0; }
+
+/* === NUMBERED LIST STYLED === */
+.num-list { list-style: none; padding: 0; }
+.num-list li {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 0.9rem;
+  font-size: 0.97rem;
+  color: var(--ink2);
+}
+.num-list li .n {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  min-width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--bg);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+/* === RAMAS GRID === */
+.ramas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 0.9rem;
+}
+
+.rama {
+  background: var(--paper);
+  border: 1.5px solid #e0d9ce;
+  border-radius: var(--radius);
+  padding: 1.2rem 1.4rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  transition: border-color 0.15s, transform 0.15s;
+}
+.rama:hover { border-color: #b8ad9c; transform: translateY(-2px); }
+
+.rama-num {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #d4c8b8;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.rama-name {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: var(--ink);
+  margin-bottom: 0.3rem;
+}
+.rama-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.65; }
+
+/* === HISTORIA (recuadro) === */
+.history-box {
+  background: var(--paper);
+  border: 2px solid #e0d9ce;
+  border-left: 5px solid var(--terra);
+  border-radius: var(--radius);
+  padding: 2rem 2rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.history-box .hb-title {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--terra);
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.history-box .hb-title::before {
+  content: '⬡';
+  font-size: 0.9rem;
+}
+
+.history-box h3 {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--ink);
+  margin: 1.2rem 0 0.4rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ede8e0;
+}
+.history-box h3:first-of-type { margin-top: 0; border-top: none; padding-top: 0; }
+
+.history-box p, .history-box li { font-size: 0.95rem; color: var(--ink2); }
+.history-box ul { padding-left: 1.2rem; }
+.history-box li { margin-bottom: 0.2rem; }
+.history-box strong { color: var(--ink); }
+
+/* === TABLA === */
+.table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius);
+  border: 1.5px solid #e0d9ce;
+  margin: 1.2rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+th {
+  background: var(--ink);
+  color: #f7f4ef;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 1rem 1.2rem;
+  text-align: left;
+}
+th:first-child { color: #f4a080; }
+th:last-child  { color: #80d4a0; }
+
+td {
+  padding: 0.9rem 1.2rem;
+  vertical-align: top;
+  color: var(--ink2);
+  line-height: 1.7;
+  border-top: 1px solid #ede8e0;
+}
+
+tr:nth-child(odd) td { background: #faf7f2; }
+tr:nth-child(even) td { background: var(--paper); }
+
+/* === NIVELES PILLS === */
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+.pill {
+  font-family: 'Lexend', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.9rem;
+  border-radius: 100px;
+  background: var(--paper);
+  border: 1.5px solid #d4c8b8;
+  color: var(--ink2);
+  transition: background 0.15s;
+}
+
+/* === EFICACIA 3 COLS === */
+.three-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 680px) {
+  .three-cols { grid-template-columns: 1fr; }
+  .ramas-grid { grid-template-columns: 1fr; }
+}
+
+/* === SUB HEADING dentro de block === */
+.sub-h {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--ink);
+  margin: 1.5rem 0 0.6rem;
+  padding-left: 0.9rem;
+  border-left: 3px solid var(--sage-bd);
+}
+
+/* === TEXTO CORRIENTE === */
+.prose { font-size: 0.97rem; color: var(--ink2); margin-bottom: 0.7rem; }
+.prose strong { color: var(--ink); font-weight: 700; }
+
+/* === FLECHA VISUAL === */
+.flow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  color: var(--ink2);
+  margin: 0.4rem 0;
+  flex-wrap: wrap;
+}
+.flow .sep { color: var(--muted); font-size: 1rem; }
+
+/* === ANIMACIÓN === */
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === SCROLLBAR === */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: #c8bfb0; border-radius: 3px; }
+
+/* === RESPONSIVE NAV === */
+@media (max-width: 800px) {
+  nav { display: none; }
+  main { margin-left: 0; padding: 2rem 1.2rem 5rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ SIDEBAR ═══════════ -->
+<nav>
+  <div class="nav-logo">Psicofarmacología<span>Resumen · Unidad 1</span></div>
+  <div class="nav-divider"></div>
+
+  <div class="nav-group-label">Definiciones</div>
+  <a href="#def-psico">Def. psicofarmacológica</a>
+  <a href="#def-bio">Def. biopsicológica</a>
+  <a href="#def-clinica">Def. clínica</a>
+
+  <div class="nav-divider"></div>
+  <div class="nav-group-label">Conceptos</div>
+  <a href="#droga-farmaco">Droga / Fármaco / Medicamento</a>
+  <a href="#snc">Características del SNC</a>
+  <a href="#grupos">Grandes grupos</a>
+
+  <div class="nav-divider"></div>
+  <div class="nav-group-label">Historia</div>
+  <a href="#historia1">Sincronía en los '50</a>
+  <a href="#neurolepticos">¿Por qué neurolépticos?</a>
+  <a href="#historia2">Fracasos → buenas nuevas</a>
+  <a href="#1957">El fecundo 1957</a>
+  <a href="#antirrecurrenciales">Antirrecurrenciales</a>
+  <a href="#80s">La década del '80</a>
+
+  <div class="nav-divider"></div>
+  <div class="nav-group-label">Farmacología clínica</div>
+  <a href="#eficacia">Eficacia / Eficiencia / Efectividad</a>
+</nav>
+
+<!-- ═══════════════════════════════ MAIN ══════════════ -->
+<main>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-tag">Biopsicología</div>
+    <h1>Psico<em>farmacología</em></h1>
+    <div class="hero-sub">Definiciones · Historia · Grandes grupos · Farmacología clínica</div>
+  </div>
+
+  <!-- ══════ DEFINICIÓN PSICOFARMACOLÓGICA ══════ -->
+  <div class="block" id="def-psico">
+    <div class="block-label">01 · Definición</div>
+    <div class="block-title">Definición psicofarmacológica</div>
+
+    <div class="card c-navy" style="margin-bottom:1rem">
+      <div class="card-tag">Farmacología</div>
+      <p>Estudio de las interacciones entre las drogas y los seres vivos, o alguno de sus partes.</p>
+    </div>
+
+    <div class="card c-sage">
+      <div class="card-tag">⇒ Psicofarmacología</div>
+      <p>Estudio de las drogas que actúan sobre las células del SNC.</p>
+    </div>
+
+    <div class="key-box">
+      Los psicofármacos <strong>no crean funciones nuevas</strong>, sino que <strong>estimulan o inhiben funciones existentes</strong>.
+    </div>
+  </div>
+
+  <!-- ══════ DEFINICIÓN BIOPSICOLÓGICA ══════ -->
+  <div class="block" id="def-bio">
+    <div class="block-label">02 · Definición</div>
+    <div class="block-title">Definición biopsicológica</div>
+
+    <p class="prose">La psicofarmacología es una <strong>rama de la biopsicología</strong> → estudio científico del comportamiento → puede entenderse como neurociencia del comportamiento.</p>
+    <p class="prose" style="margin-bottom:1.5rem">⇒ Psicofarmacología ubicada dentro de las neurociencias.</p>
+
+    <div class="sub-h">Seis ramas de la biopsicología</div>
+
+    <div class="ramas-grid">
+      <div class="rama">
+        <div class="rama-num">1</div>
+        <div>
+          <div class="rama-name">Psicología fisiológica</div>
+          <div class="rama-desc">Estudia los mecanismos neurológicos del comportamiento por medio de la manipulación eléctrica del cerebro en experimentos controlados.</div>
+        </div>
+      </div>
+      <div class="rama" style="border-color: var(--sage-bd); background: var(--sage-bg)">
+        <div class="rama-num" style="color: var(--sage-bd)">2</div>
+        <div>
+          <div class="rama-name">Psicofarmacología</div>
+          <div class="rama-desc" style="color: var(--sage)">← Nuestra rama</div>
+        </div>
+      </div>
+      <div class="rama">
+        <div class="rama-num">3</div>
+        <div>
+          <div class="rama-name">Neuropsicología</div>
+          <div class="rama-desc">Estudia los efectos de las lesiones cerebrales en los cerebros humanos, tanto en contextos clínicos como de investigación. (ACV, enfermedades neurodegenerativas, etc.)</div>
+        </div>
+      </div>
+      <div class="rama">
+        <div class="rama-num">4</div>
+        <div>
+          <div class="rama-name">Psicofisiología</div>
+          <div class="rama-desc">Estudia la correlación entre la actividad fisiológica y los procesos psicológicos. Ej.: EEG.</div>
+        </div>
+      </div>
+      <div class="rama">
+        <div class="rama-num">5</div>
+        <div>
+          <div class="rama-name">Neurociencia cognitiva</div>
+          <div class="rama-desc">Estudia las bases nerviosas de la cognición. → Procesos intelectuales: pensamiento, memoria, atención, percepción.</div>
+        </div>
+      </div>
+      <div class="rama">
+        <div class="rama-num">6</div>
+        <div>
+          <div class="rama-name">Psicología comparada</div>
+          <div class="rama-desc">Es el estudio comparado del comportamiento entre diversas especies. Hace referencia a la genética, evolución y adaptación.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card c-sage" style="margin-top:1.2rem">
+      <div class="card-tag">Rama 2: Psicofarmacología</div>
+      <p>Estudia los mecanismos neurológicos del comportamiento a través de la manipulación química en experimentos controlados.</p>
+      <p style="margin-top:0.4rem">Se trabaja con moléculas que modifican químicamente al cerebro.</p>
+    </div>
+  </div>
+
+  <!-- ══════ DEFINICIÓN CLÍNICA ══════ -->
+  <div class="block" id="def-clinica">
+    <div class="block-label">03 · Definición</div>
+    <div class="block-title">Definición clínica</div>
+
+    <p class="prose">La psicofarmacología interesa a la psicología en una <strong>doble vía</strong>.</p>
+    <div class="card c-terra">
+      <p>Es el estudio de los fármacos que se utilizan para el tratamiento de trastornos mentales, y de los principios, fundamentos y reglas que fundamentan su acción.</p>
+    </div>
+
+    <div class="card c-amber" style="margin-top:1rem">
+      <div class="card-tag">Evolución del conocimiento</div>
+      <p>Cuando nacen los psicofármacos, no se conoce mucho cómo actúan a nivel cerebral.<br>
+      Con los avances, mejora la comprensión en neurociencias y psicopatología → <strong>mecanismos subyacentes</strong>.</p>
+    </div>
+  </div>
+
+  <!-- ══════ DROGA / FÁRMACO / MEDICAMENTO ══════ -->
+  <div class="block" id="droga-farmaco">
+    <div class="block-label">04 · Conceptos clave</div>
+    <div class="block-title">Droga, fármaco y medicamento</div>
+
+    <div class="card c-terra">
+      <div class="card-tag">Droga — Principio activo</div>
+      <div class="arrow-row"><span class="arr">→</span><span>En interacción con una célula viva produce modificaciones.</span></div>
+      <div class="arrow-row"><span class="arr">→</span><span>Inhibe o estimula funciones preexistentes.</span></div>
+      <div class="arrow-row"><span class="arr">→</span><span>No crea nuevas funciones.</span></div>
+    </div>
+
+    <div class="card c-navy">
+      <div class="card-tag">Fármaco</div>
+      <p>Es la droga que ha pasado por la industria farmacéutica.<br>
+      ≠ formas de presentación.<br>
+      Señal química pura.</p>
+    </div>
+
+    <div class="card c-plum">
+      <div class="card-tag">Medicamento — Fármaco prescripto en un acto médico</div>
+      <p style="margin-bottom:0.6rem"><strong>3 condiciones:</strong></p>
+      <ul>
+        <li><strong>Señal química pura</strong></li>
+        <li><strong>Símbolo del canal binario</strong> → se vinculan actitudes, creencias y expectativas de quien lo da y quien lo recibe</li>
+        <li><strong>Símbolo social</strong> → imaginario colectivo</li>
+      </ul>
+    </div>
+
+    <div class="card c-rose" style="margin-top:0.5rem">
+      <div class="card-tag">Efecto placebo</div>
+      <div class="flow">
+        <span>Farmacológicamente vacío</span>
+        <span class="sep">=</span>
+        <span>símbolo del canal binario</span>
+        <span class="sep">+</span>
+        <span>símbolo social</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════ SNC ══════ -->
+  <div class="block" id="snc">
+    <div class="block-label">05 · Sistema Nervioso Central</div>
+    <div class="block-title">Características del SNC</div>
+
+    <div style="display:grid; grid-template-columns: repeat(3,1fr); gap: 0.9rem; margin-bottom:1.2rem">
+      <div class="card c-sage" style="margin-bottom:0">
+        <div class="card-tag">Complejo</div>
+        <p>Alta complejidad estructural y funcional.</p>
+      </div>
+      <div class="card c-navy" style="margin-bottom:0">
+        <div class="card-tag">Dinámico</div>
+        <p>Está en <strong>permanente cambio</strong>.</p>
+      </div>
+      <div class="card c-amber" style="margin-bottom:0">
+        <div class="card-tag">Abierto</div>
+        <p>Comunicación por <strong>vías aferentes y eferentes</strong>.</p>
+      </div>
+    </div>
+
+    <div class="card c-amber">
+      <div class="card-tag">Vías</div>
+      <div class="arrow-row"><span class="arr">→</span><span><strong>Vías aferentes</strong>: reciben estímulos sensoriales</span></div>
+      <div class="arrow-row"><span class="arr">→</span><span><strong>Vías eferentes</strong>: respuestas</span></div>
+    </div>
+
+    <p class="prose" style="margin-top:1rem">Las presentaciones clínicas reflejan interacciones de factores a menudo mediados por cambios plásticos.</p>
+
+    <div class="sub-h">Niveles</div>
+    <div class="pills">
+      <div class="pill">Genético</div>
+      <div class="pill">Molecular</div>
+      <div class="pill">Celular</div>
+      <div class="pill">Sináptico</div>
+      <div class="pill">Circuital de los sistemas</div>
+      <div class="pill">Comportamental</div>
+    </div>
+
+    <p class="prose" style="margin-top:1.2rem">Los psicofármacos ayudan a dilucidar mecanismos implicados en alteraciones y al desarrollo del conocimiento de las neurociencias.</p>
+  </div>
+
+  <!-- ══════ GRANDES GRUPOS ══════ -->
+  <div class="block" id="grupos">
+    <div class="block-label">06 · Clasificación</div>
+    <div class="block-title">Los grandes grupos de psicofármacos</div>
+
+    <div style="display:grid; grid-template-columns: repeat(2,1fr); gap:0.9rem; margin-bottom:1.4rem">
+      <div class="card c-terra" style="margin-bottom:0"><div class="card-tag">Antipsicóticos</div></div>
+      <div class="card c-sage"  style="margin-bottom:0"><div class="card-tag">Antidepresivos</div></div>
+      <div class="card c-navy"  style="margin-bottom:0"><div class="card-tag">Antirrecurrenciales / Anticiclicos / Estabilizadores del humor</div></div>
+      <div class="card c-plum"  style="margin-bottom:0"><div class="card-tag">Ansiolíticos</div></div>
+    </div>
+
+    <div class="card c-amber">
+      <div class="card-tag">Nomenclatura muy cuestionada</div>
+      <div class="arrow-row"><span class="arr">↓</span><span>Propuesta: <strong>Nomenclatura Basada en la Neurociencia (NBN)</strong></span></div>
+      <div class="arrow-row"><span class="arr">→</span><span>Se centra en los <strong>mecanismos de acción</strong></span></div>
+    </div>
+
+    <div class="sub-h">Ejemplo: Antipsicóticos</div>
+    <div class="card c-terra">
+      <ul>
+        <li>Antagonistas de los receptores D2 (dopamina) → bloqueo de receptores D2</li>
+        <li>Cada antipsicótico puede tener mecanismos adicionales: ejemplo, bloqueo de receptores de serotonina 5HT2</li>
+      </ul>
+    </div>
+
+    <div class="sub-h">Ventajas de la nomenclatura basada en neurociencias</div>
+    <ul class="num-list">
+      <li><div class="n">1</div><div>Incorporar los avances de las neurociencias. Cuando se comienza a usar los psicofármacos no se sabe cómo hacen para producir la respuesta terapéutica. Luego ayudan a comprender los mecanismos de acción.</div></li>
+      <li><div class="n">2</div><div>Ayudar a los clínicos a tomar decisiones informadas sobre la prescripción. Ejemplo: comprender interacciones medicamentosas.</div></li>
+      <li><div class="n">3</div><div>Presentar un sistema de nombres que aclare las razones para seleccionar determinado fármaco, facilitando la transmisión de información a los pacientes y mejorando la adherencia.</div></li>
+      <li><div class="n">4</div><div>Permitir que nuevos dominios farmacológicos y nuevos mecanismos de acción se ajusten lógicamente a este esquema. En la medida en que se vayan descubriendo nuevas moléculas.</div></li>
+    </ul>
+  </div>
+
+  <!-- ══════ HISTORIA 1 ══════ -->
+  <div class="block" id="historia1">
+    <div class="block-label">07 · Historia</div>
+    <div class="block-title">Impensados hallazgos y el nacimiento de la psicofarmacología</div>
+
+    <div class="history-box">
+      <div class="hb-title">Sincronía en los '50</div>
+
+      <p>El escenario fue Francia. El año, 1952.</p>
+      <p style="margin-top:0.5rem">La clorpromazina sorprendió al cirujano Henri Laborit. Usada dentro del combo anestésico, observó su efecto sedante. Recomendó su uso en psiquiatría y en el hospital de Sainte-Anne, su cuñado, el psiquiatra Pierre Deniker la utilizó junto a su jefe, Jean Delay.</p>
+      <p style="margin-top:0.5rem"><strong>Clorpromazina</strong> fue el primer <strong>antipsicótico</strong> conocido. Delay y Deniker introdujeron el término "neuroléptico" al agruparla con reserpina.</p>
+
+      <h3>El momento del hallazgo: Laborit y el "desinterés"</h3>
+      <p>Laborit observó algo que lo llamó la atención. Aun cuando estaba centrado en la perspectiva anestesiológica, subrayó un efecto psíquico provocado por la droga: el "desinterés". Ese sería el punto de partida para la entrada de la clorpromazina en el campo de la psiquiatría.</p>
+      <p style="margin-top:0.5rem">En ese momento se usaba el enfriamiento con agua para calmar la agitación, y Laborit persuadió a un grupo de neuropsiquiatras del hospital militar de París a que probaran un tratamiento con clorpromazina en sus pacientes.</p>
+
+      <h3>El salto al Hospital Sainte-Anne</h3>
+      <p>Delay y Deniker administraron por primera vez la clorpromazina sola, sin asociarla a ningún otro fármaco, y confirmaron la gran eficacia de esta sustancia como agente tranquilizante en pacientes psicóticos o agitados.</p>
+      <p style="margin-top:0.5rem">Además observaron: pobre respuesta sobre la depresión y la sintomatología negativa de la esquizofrenia.</p>
+
+      <h3>Efectos no deseados</h3>
+      <p><strong>Síndrome neuroléptico:</strong> enlentecimiento motor, indiferencia afectiva y neutralidad emocional.</p>
+
+      <h3>El término "neuroléptico"</h3>
+      <p>Se propuso el término "neuroléptico" para designar a la <strong>clorpromazina</strong> y a otros fármacos con efecto similar, como la <strong>reserpina</strong>.</p>
+    </div>
+  </div>
+
+  <!-- ══════ ¿POR QUÉ NEUROLÉPTICOS? ══════ -->
+  <div class="block" id="neurolepticos">
+    <div class="block-label">08 · Conceptos</div>
+    <div class="block-title">¿Por qué se los llamó neurolépticos?</div>
+
+    <p class="prose">El nombre hace referencia a la disminución de la actividad neurológica y el enlentecimiento motor.</p>
+    <p class="prose">Los efectos clínicos eran parecidos a los del Parkinson:</p>
+
+    <div class="card c-plum">
+      <ul>
+        <li>Rigidez muscular</li>
+        <li>Disminución en los movimientos involuntarios. Ejemplo: balanceo de los brazos al caminar</li>
+        <li>Temblor</li>
+      </ul>
+    </div>
+
+    <div class="key-box" style="margin-top:1rem">
+      Hoy esos fármacos se llaman <strong>antipsicóticos típicos</strong>.
+    </div>
+  </div>
+
+  <!-- ══════ HISTORIA 2 ══════ -->
+  <div class="block" id="historia2">
+    <div class="block-label">09 · Historia</div>
+    <div class="block-title">Los fracasos que terminaron siendo buenas nuevas</div>
+
+    <div class="history-box">
+      <div class="hb-title">Fracasos → Buenas nuevas</div>
+
+      <h3>Iproniazida</h3>
+      <ul>
+        <li style="margin-bottom:0.6rem">En el intento de lucha contra la <strong>tuberculosis</strong> demostró sus efectos antidepresivos. No sirvió para la tuberculosis, pero se observó que los pacientes que la tomaban mejoraban el ánimo.</li>
+        <li>Un poco después se encontró que la iproniazida inhibe la MAO, enzima encargada del catabolismo de serotonina, noradrenalina y dopamina: <strong>IMAO</strong>.</li>
+      </ul>
+
+      <div style="background:#f7f4ef; border-radius:10px; padding:1.1rem 1.3rem; margin:0.9rem 0; border:1px solid #e0d9ce">
+        <p style="font-size:0.9rem; margin-bottom:0.5rem"><strong>¿Qué es la MAO?</strong></p>
+        <p style="font-size:0.9rem; color:#4a3f30">La <strong>MAO (MonoAmino Oxidasa)</strong> es una enzima cuya función es degradar —"destruir"— ciertas moléculas una vez que ya cumplieron su función. Específicamente se encarga del <strong>catabolismo</strong> (descomposición) de tres neurotransmisores: serotonina, dopamina y noradrenalina.</p>
+        <p style="font-size:0.9rem; color:#4a3f30; margin-top:0.4rem">La MAO es como el sistema de limpieza sináptico. Después de que estos neurotransmisores se liberan y actúan, la MAO los descompone para que no queden "flotando" en la sinapsis indefinidamente.</p>
+        <p style="font-size:0.9rem; color:#4a3f30; margin-top:0.4rem"><strong>IMAO → Inhibidor de la MAO:</strong> no se degradan los neurotransmisores → más serotonina, dopamina y noradrenalina disponibles.</p>
+      </div>
+
+      <p><strong>La iproniazida fue el primer antidepresivo de la historia.</strong></p>
+
+      <h3>Imipramina: antidepresivo tricíclico</h3>
+      <p>Se encontró buscando antipsicóticos. Fracasó como antipsicótico, pero remitían los síntomas depresivos de los pacientes.</p>
+      <p style="margin-top:0.4rem">Es un antidepresivo tricíclico → llamados así por su <strong>estructura química de tres anillos</strong> (tres ciclos).</p>
+
+      <h3>Fluoxetina "Prozac"</h3>
+      <p>1986. Fue un antidepresivo con muchos menos efectos colaterales que los que podían tener los primeros.</p>
+    </div>
+  </div>
+
+  <!-- ══════ EL FECUNDO 1957 ══════ -->
+  <div class="block" id="1957">
+    <div class="block-label">10 · Historia</div>
+    <div class="block-title">El fecundo 1957</div>
+
+    <p class="prose">El advenimiento de la clorpromazina y del meprobamato a comienzos de los años '50 preparó el terreno para la búsqueda de fármacos con efectos más selectivos sobre el SNC.</p>
+    <p class="prose">Sternbach sintetizó el clordiazepóxido, que se comercializó en 1960. Randall descubrió su peculiar perfil de acción. La introducción del clordiazepóxido señaló el comienzo de la época de las benzodiacepinas. En 1963, apareció su hermano célebre: <strong>diazepam</strong>.</p>
+    <p class="prose">El peculiar mecanismo de acción de las benzodiacepinas tiene lugar sobre el <strong>GABA (ácido gamma amino butírico)</strong>, principal neurotransmisor inhibitorio del SNC.</p>
+    <p class="prose">La primera conferencia sobre el GABA se dio en 1956.</p>
+    <p class="prose">La aparición de las benzodiacepinas fue importante porque hasta allí, como drogas sedantes, se usaban los barbitúricos.</p>
+
+    <div class="sub-h">Las benzodiacepinas destronan a los barbitúricos</div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Barbitúricos</th>
+            <th>Benzodiacepinas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Efecto sedante con correlato motor. No tienen el efecto ansiolítico limpio → no bajan la tensión psíquica sin el correlato motor.</td>
+            <td>Efecto ansiolítico limpio. Propiedades ansiolíticas: bajan la tensión psíquica.</td>
+          </tr>
+          <tr>
+            <td>Menor rango terapéutico: poca diferencia entre dosis mínima efectiva y dosis tóxica. Hace que la droga sea menos segura.</td>
+            <td>Mayor rango terapéutico: mayor diferencia entre dosis mínima efectiva y dosis tóxica. Si el rango es grande, la droga es más segura.</td>
+          </tr>
+          <tr>
+            <td>Mantienen abierto el canal de cloro.</td>
+            <td>Aumentan la frecuencia de apertura del canal de cloro.</td>
+          </tr>
+          <tr>
+            <td>Más riesgosos.</td>
+            <td>Más seguros.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="prose" style="margin-top:1rem">Las benzodiacepinas tuvieron su apogeo gracias a su efecto rápido para calmar la angustia. Luego se vio que producen dependencia y tienen potencial adictivo. Fueron demonizadas hasta que se empezó a hablar del <strong>uso racional de las benzodiacepinas</strong>.</p>
+  </div>
+
+  <!-- ══════ ANTIRRECURRENCIALES ══════ -->
+  <div class="block" id="antirrecurrenciales">
+    <div class="block-label">11 · Grupos</div>
+    <div class="block-title">Antirrecurrenciales</div>
+
+    <p class="prose">La primera descripción específica del rol del litio en el tratamiento de la manía la efectuó el australiano John Cade en 1949.</p>
+    <p class="prose">Si bien hay reportes previos sobre las acciones terapéuticas del litio, debido a su <strong>alta toxicidad</strong> no se adoptaba.</p>
+
+    <div class="card c-terra">
+      <div class="card-tag">Alta toxicidad</div>
+      <div class="arrow-row"><span class="arr">→</span><span>Se debe a que su rango terapéutico es muy estrecho.</span></div>
+    </div>
+
+    <p class="prose" style="margin-top:1rem">Pero en 1954 se comenzó a dosar la concentración de litio en sangre, llamada <strong>litemia</strong>.</p>
+    <p class="prose">Se convirtió en un estabilizador o antirrecurrencial de primera línea.</p>
+
+    <div class="sub-h" id="80s">La década del '80 y sus novedades</div>
+    <ul class="num-list" style="margin-top:0.5rem">
+      <li><div class="n" style="background:var(--plum)">▪</div><div>El divorcio de los antipsicóticos de su efecto neuroléptico. Los <strong>antipsicóticos atípicos</strong> al fin libres de los efectos colaterales neurolépticos.</div></li>
+      <li><div class="n" style="background:var(--sage)">▪</div><div>Aparece el Prozac o la "molécula de la felicidad". La revolución de la fluoxetina, pionera del grupo <strong>IRSS = Inhibidores de la Recaptación Selectiva de Serotonina</strong>.</div></li>
+      <li><div class="n" style="background:var(--navy)">▪</div><div>Se reconoce el <strong>efecto estabilizador del ánimo de las drogas anticonvulsivantes</strong> o antiepilépticas por los estudiosos del trastorno bipolar, especialmente por Robert Post, del NIMH.</div></li>
+    </ul>
+  </div>
+
+  <!-- ══════ EFICACIA / EFICIENCIA / EFECTIVIDAD ══════ -->
+  <div class="block" id="eficacia">
+    <div class="block-label">12 · Farmacología clínica</div>
+    <div class="block-title">Eficacia, eficiencia y efectividad</div>
+
+    <p class="prose" style="margin-bottom:1.5rem">¿Son mejores los fármacos que siguieron a la primera generación?</p>
+
+    <div class="three-cols">
+      <div class="card c-sage" style="margin-bottom:0">
+        <div class="card-tag">Eficacia</div>
+        <p>Potencial teórico para obtener la respuesta esperada acorde a los conocimientos científicos actuales. Apunta a la obtención de un beneficio en <strong>condiciones ideales</strong>.</p>
+        <p style="margin-top:0.5rem; font-style:italic; font-size:0.88rem">"¿Funciona en condiciones ideales?"</p>
+      </div>
+      <div class="card c-navy" style="margin-bottom:0">
+        <div class="card-tag">Eficiencia</div>
+        <p>Obtención de la respuesta esperada con el <strong>menor costo posible</strong>.</p>
+        <p style="margin-top:0.5rem; font-size:0.88rem">Ejemplo: es económica, tiene menos efectos colaterales.</p>
+      </div>
+      <div class="card c-amber" style="margin-bottom:0">
+        <div class="card-tag">Efectividad</div>
+        <p>Cuestión de <strong>grado</strong>. Mide el beneficio en el marco de la <strong>práctica clínica</strong>, en la "vida real".</p>
+      </div>
+    </div>
+
+    <div class="sub-h" style="margin-top:1.5rem">Eficacia — en detalle</div>
+    <p class="prose">Se refiere a la obtención de una respuesta terapéutica en un contexto de investigación.</p>
+    <p class="prose"><strong>Eficacia = "funciona en condiciones ideales"</strong></p>
+    <ul style="padding-left:1.3rem; color:var(--ink2); margin-bottom:1rem">
+      <li style="margin-bottom:0.3rem">Es lo que pasa cuando un fármaco se prueba en un <strong>estudio controlado</strong> (ensayo clínico).</li>
+      <li style="margin-bottom:0.3rem">Todo está "perfecto": pacientes seleccionados, dosis exacta, controles estrictos, buena adherencia.</li>
+      <li>La pregunta es: <strong>¿puede producir el efecto esperado si todo sale bien?</strong></li>
+    </ul>
+
+    <div class="card c-sage">
+      <div class="card-tag">Ejemplo — Antidepresivo en ensayo clínico</div>
+      <ul>
+        <li>Pacientes cumplen la toma al 100%</li>
+        <li>No hay otras enfermedades que interfieran</li>
+        <li>Seguimiento constante</li>
+      </ul>
+      <div class="arrow-row" style="margin-top:0.6rem"><span class="arr">→</span><span>Mejora el ánimo → <strong>es eficaz</strong></span></div>
+    </div>
+
+    <div class="key-box" style="margin-top:1.5rem">
+      Los fármacos que siguieron han ganado en <strong>eficiencia</strong>. No necesariamente todos tienen efectos terapéuticos superiores, pero sí bajaron muy notablemente el grado de efectos adversos.
+    </div>
+  </div>
+
+</main>
+
+</body>
+</html>

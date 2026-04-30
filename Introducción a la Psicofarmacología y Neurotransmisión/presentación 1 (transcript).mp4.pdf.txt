@@ -1,0 +1,98 @@
+[00:00]
+Bueno, en principio quiero darles la bienvenida a la cátedra, la bienvenida a la cursada. Eh, les cuento que es la primera vez que la materia se va a dictar en los dos cuatrimestres y es la primera vez que vamos a iniciar la cursada en esta modalidad, en la modalidad virtual.
+
+[00:24]
+Vamos a ir dándoles orientaciones para que podamos trabajar de la mejor manera Este, vamos a mandar unos comunicados todo el tiempo y esperemos que puedan tener una cursada amable.
+
+[00:40]
+Eh, este es el primer teórico y en ese sentido lo que vamos a hacer es presentar la materia, presentar la psicofarmacología, hacer una breve introducción y pensar cuál es la importancia de estudiar la psicofarmacología en psicología.
+
+[01:06]
+Vamos a estudiar tres definiciones de la psicofarmacología. La primera definición es la definición psicofarmacológica o farmacológica en donde ¿Qué es la farmacología? La farmacología estudia las interacciones entre las drogas y los seres vivos o alguna de sus partes.
+
+[01:30]
+En ese sentido la psicofarmacología estudia las interacciones de las drogas con las células del sistema nervioso central, es decir, con las neuronas. En este punto aclaro que los psicofármacos no crean funciones nuevas, sino que simplemente estimulan o inhiben funciones preexistentes, funciones que ya son propias de la célula, ¿sí?
+
+[01:56]
+Pero también podemos tomar otras definiciones, por ejemplo la definición biopsicológica. Que la tomamos de un psicólogo, un psicólogo americano que es John Pinel, en donde él plantea que la psicofarmacología es una rama de la biopsicología, siendo que la biopsicología es el estudio científico del comportamiento.
+
+[02:19]
+O sea, que en ese sentido la biopsicología puede entenderse como neurociencia del comportamiento y esto ubica la psicofarmacología dentro de las neuro ciencias. Cabe también una tercera definición, la definición clínica, pero la vamos a dejar por ahora en suspenso, retomamos en la medida en que vayamos avanzando porque ahora quiero adentrarme en la definición biopsicológica.
+
+[02:50]
+Bueno, veamos las seis ramas de la biopsicología, la biopsicología y sus otras hermanas psicológicas. Eh, Una de las ramas es la psicología fisiológica que estudia los mecanismos neurológicos del comportamiento por medio de la manipulación física del cerebro en experimentos controlados. ¿Sí?
+
+[03:13]
+Puede ser la estimulación eléctrica, puede ser una intervención quirúrgica, pero digamos correlaciona, ¿no? Un estímulo de naturaleza física con un correlato comportamental. La psicofarmacología es descrita por Pinel en segundo lugar, pero nosotros la vamos a mantener en suspenso, conocemos primero a sus hermanas y la dejamos para el cierre.
+
+[03:42]
+Y la neuropsicología estudia los efectos de las lesiones cerebrales en los cerebros humanos. Se refiere tanto a lesiones observadas en contextos de investigación o en contextos clínicos. Eh, por ejemplo, pueden ser las eh alteraciones en el comportamiento que se reflejan después de una CD o eh cuando existe un tumor, una enfermedad neurodegenerativa.
+
+[04:15]
+La psicofisiología lo que hace es estudiar la correlación entre la actividad fisiológica y los procesos psicológicos. Por ejemplo, es lo que se plasma en un electroencefalograma que muestra cuál es es la actividad este eléctrica del cerebro.
+
+[04:39]
+Las neurociencias cognitivas que estudian las bases nerviosas de la cognición. La cognición se refiere, ustedes bien saben, a procesos intelectuales, pensamiento, memoria, atención y percepción. Y la psicología comparada, que es el estudio comparado del comportamiento entre diversas especies ¿No? Hace referencia a la genética, evolución, adaptación.
+
+[05:05]
+Ustedes saben que incluso hay algunos hallazgos actuales o bueno, de los últimos años. Este que por ejemplo, dan cuenta de cuando se descubrieron las las neuronas en espejo, ¿no? Este, que estaban trabajando ahí en Parma con monos. Este, y hubo, digamos, la posibilidad de correlacionar cómo funcionaban esas neuronas en espejo de los monos con las neuronas nuestras.
+
+[05:39]
+Y ahora sí, vuelvo a la diapo anterior. Retomamos cuál es la segunda definición de la psicofarmacología, la definición que aporta la biopsicología y la definición dice que estudia los mecanismos neurológicos del comportamiento a través de la manipulación, pero de la manipulación química del cerebro en experimentos controlados. Recuerdan que cuando vimos la psicología fisiológica hablaba de la manipulación de naturaleza física.
+
+[06:08]
+En este caso trabajamos con moléculas que modifican el cerebro. Esa sería la definición entonces biopsicológica.
+
+[06:23]
+Y ahora avanzamos en la definición clínica y vemos cómo interesa la psicofarmacología a la psicología en una doble vía. Ya habíamos visto la definición psicofarmacológica pura.
+
+[06:38]
+Vimos recién la definición biopsicológica en donde donde pudimos ver cómo se ubica la psicofarmacología dentro de las neurociencias del comportamiento y la definición clínica la definición que nos dice que la psicofarmacología es el estudio de los fármacos que se utilizan para el tratamiento de los trastornos mentales y de los principios, fundamentos y reglas que fundamentan su acción.
+
+[07:09]
+En realidad, vamos a ver luego cómo cuando nacen los psicofármacos, en principio no se conoce mucho sobre sus mecanismos de acción a nivel de la sinapsis, a nivel íntimo cerebral, pero este a medida que se va despejando cómo cómo funcionan ehm esos conocimientos iluminan muchas cuestiones dentro del mundo de las neurociencias y dentro del mundo de las psicopatología y podemos saber algunas cuestiones más acerca de las condiciones clínicas de los pacientes y de bueno, cuáles son las eh factores subyacentes.
+
+[08:02]
+Bueno, un recreo, recreo o todo de las píldoras del cerebro.
+
+[08:14]
+Bueno, ustedes van a ver en algunos de los artículos que tenemos como bibliografía la distinción entre el concepto de droga, de fármaco y de medicamento. En realidad, hay cierto solapa viento y vamos a hablar durante la cursada un poco indistintamente de los tres términos, pero podemos tener alguna distinción sobre cada uno de ellos.
+
+[08:40]
+La droga en realidad es el principio que en interacción con una célula viva produce modificaciones, es decir, estimula o inhibe, como ya les decía, en un comienzo funciones preexistentes, ¿no? No crea nuevas funciones, sino que modula el funcionamiento de la célula. Fármaco es la droga que ha pasado por la industria farmacéutica y que tiene distintas formas de presentación, ¿no?
+
+[09:04]
+Este, puede puede presentarse en forma de tabletas, de comprimidos, de ampollas, de gotas, todas las que ustedes conozcan, es una señal química pura. Y medicamento es la droga, el fármaco prescrito en un acto médico que cumple con las tres condiciones de señal química, de símbolo del canal binario, ¿no?
+
+[09:27]
+En donde, digamos, este se vinculan las creencias, expectativas y actitudes de quién lo da y de quién lo recibe y también símbolo social, tiene que ver con el imaginario colectivo. Y aunque hay algunos pacientes que por ahí este solicitan que eh los mediquemos, vienen en busca de una medicación.
+
+[09:49]
+Este, y ya vienen con la creencia de que esto los va a ayudar, por ahí por la experiencia de algún conocido y otros pacientes al contrario, son muy reacios, ¿no? Y a veces es necesario eh darles una medicación y hay que trabajar en ese sentido para, digamos, que pueda haber una aceptación del del fármaco y para que se pueda, digamos, este conseguir la adherencia terapéutica.
+
+[10:22]
+Y el efecto placebo también es interesante realidad, el efecto placebo es farmacológicamente vacío, pero sí está referido al principio simbólico del canal binario y al imaginario colectivo, ¿sí? Al símbolo social. Muy interesante cómo funciona esta cuestión.
+
+[10:49]
+Bueno, dijimos que estas drogas van a actuar sobre las células del sistema nervioso central y en ese sentido. Recuerden que el sistema nervioso central es un sistema complejo, ¿no? Del cual apenas conocemos este algunas cuestiones, pero hay muchísimas cuestiones aún oscuras para nosotros. Dinámico, ¿sí?
+
+[11:12]
+Digamos está en permanente cambio y abierto, abierto porque está en comunicación todo el tiempo a través de las vías aferentes, ¿no? Que viven los estímulos sensoriales del exterior y digamos también se comunica a través de aferencias o respuestas del sistema nervioso central hacia el exterior.
+
+[11:40]
+Para cerrar esta breve presentación de la psicofarmacología, luego vamos a continuar presentando a los grandes grupos de psicofármacos con los que ustedes se van a ir familiarizando a lo largo de la cursada, esperamos eh Este y, y vamos a ver un poquito como es el nacimiento de la psicofarmacología, pero para cerrar esta primera parte eh un par de comentarios, sobre que las presentaciones clínicas reflejan una interacción de factores, en ese sentido factores de distinta índole, ¿no?
+
+[12:14]
+Factores biológicos, factores ambientales, factores psicológicos, factores sociales. Eh, reflejan interacción de factores a menudo mediados por cambios plásticos. ¿no? ¿Cómo incide esto sobre el cerebro? Y es posible aproximarse al estudio del cerebro y de su fisiopatología desde varios niveles de resolución, ¿no?
+
+[12:38]
+Se lo intenta estudiar desde el nivel genético, molecular, celular, sináptico, circuital, de los sistemas, comportamental y en este momento presten atención eh cómo hay un foco, ¿no? Eh, puesto sobre sobre el estudio de los circuitos, cómo funcionan los ciertos circuitos cerebrales y su correlación con eh distintas condiciones clínicas o manifestaciones clínicas.
+
+[13:07]
+Ese va a ser un tema que van a ir pudiendo observar al largo de la cursada y los psicofármacos han ayudado a dilucidar mecanismos implicados en la producción de ciertas alteraciones y al desarrollo del conocimiento dentro del campo de las neuro ciencias que en los últimos años este ha ha sido pletórico de conocimientos.
+
+[13:33]
+Con esto cerramos la presentación y continuamos luego con la presentación de los grandes grupos y viendo un poco la historia de la psicofarmacología. Les agradezco y si hay alguna duda nos mantenemos en contacto. Hasta luego.
+
+[13:56]
+1000

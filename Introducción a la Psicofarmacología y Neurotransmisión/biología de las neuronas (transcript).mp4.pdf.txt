@@ -1,0 +1,104 @@
+[00:01]
+Hola, ¿qué tal? Bueno, bienvenidos. Mi nombre es Mauro Centrella. Soy médico psiquiatra y estoy a cargo de la comisión uno. Bueno, este año me toca darles la clase de neurotransmisión. Y preparé este anexo para repasar un poco la biología de las neuronas. Eh, que de esa forma la clase de neurotransmisión, sinapsis, neurotransmisores, sea un poco más fácil de entender.
+
+[00:30]
+Bueno, lo que les muestro acá es una célula que puede ser cualquier célula del organismo. Fíjense que tiene las distintas organelas, el núcleo, el aparato de Golgi, las mitocondrias. Las mitocondrias son, bueno, las productoras de energía de la célula y fíjense que abajo hay un pequeño recuadro que lo que hace es delimitar una región de la membrana, la membrana plasmática.
+
+[01:02]
+La membrana plasmática es una estructura que lo que hace es delimitar a la célula y hacer que queden circunscriptos dos compartimientos líquidos, el intracelular y el extracelular. ¿Está bien?
+
+[01:18]
+Las composiciones químicas del intra y del extracelular son distintas, en el intracelular, por ejemplo, predominan partículas cargadas los iones, como por ejemplo el potasio.
+
+[01:35]
+El potasio, el ion potasio disuelto en el líquido intracelular está más concentrado en el interior, mientras que en el exterior celular encontramos que está más concentrado el sodio y el cloro. ¿Está bien?
+
+[01:53]
+Entonces, la membrana delimita estos dos compartimientos líquidos que tienen características químicas distintas, Lo que vemos acá es un detalle de la membrana. La membrana está formada por básicamente por grasa, ¿está bien? Por fosfolípidos.
+
+[02:20]
+Los fosfolípidos tienen a su vez una cabeza hidrofílica o polar y colas de ácidos grasos apolares. Justamente que tenga esta que los fosfolípidos tengan esta forma hacen que la membrana tenga esta forma, ¿está bien?
+
+[02:49]
+Que sea una doble capa lipídica o una bicapa lipídica, ¿está bien? Esa bicapa lipídica es prácticamente impermeable A cualquier partícula o cualquier molécula que sea de alto peso molecular, que sea hidrosoluble y que esté cargada eléctricamente, ¿está bien?
+
+[03:15]
+Para que Para que las partículas cargadas, como por ejemplo, los iones, el sodio y el potasio, puedan atravesar la membrana, sí o sí tienen que estar estas proteínas que vemos acá que son los canales iónicos. Si no hay canales iónicos, prácticamente estas especies no pueden atravesar. ¿Está bien?
+
+[03:44]
+Hasta ahí vamos bien. La neurona es una célula especializada en la generación y conducción de potenciales electroquímicos, ¿está bien?
+
+[03:57]
+Lo que vemos acá es una neurona típica Del lado izquierdo vemos el árbol dendrítico, al árbol dendrítico llegan muchas aferencias de otras neuronas, por ejemplo, que pueden ser excitatorias o inhibitorias. Después vamos a ver cómo se expresa eso. ¿Está bien?
+
+[04:18]
+Acá lo que vemos es el axón, que habitualmente es una prolongación única, que justamente la prolongación que lleva el estímulo nervioso a grandes distancias, ¿está bien?
+
+[04:35]
+En este extremo vemos que hay sinapsis, es decir, hay botones terminales en el axón que toman contacto acá no con otra célula nerviosa, no con otra neurona, sino con otro tejido excitable, que en este caso es una célula muscular, ¿está bien? Entonces, el axón funciona como un cable llevando señales bioeléctricas a grandes distancias. ¿Está bien?
+
+[05:04]
+Habíamos dicho que en condiciones de reposo había asimetría entre el interior y el exterior celular.
+
+[05:12]
+En el exterior habíamos dicho que el sodio estaba más concentrado respecto al interior y que en el interior celular, aquello que vemos como citosol a la derecha, había mayor cantidad de potasio y lo que vemos acá son cargas fijas, cargas que no pueden atravesar la membrana, polianiónicas, que son ni más ni menos que las proteínas que están disueltas en el líquido intracelular, ¿está bien?
+
+[05:41]
+Eso hace que haya asimetría, que haya un exceso de cargas positivas en el exterior respecto al interior. ¿Está bien? En condiciones de reposo se dice que el potencial de membrana es de -70 mV, es decir, es negativo, ¿verdad?
+
+[06:07]
+En condiciones de reposo hay canales iónicos que están abiertos todo el tiempo, por ejemplo, los canales iónicos pasivos al sodio, como el sodio está más concentrado fuera que dentro, tiende a entrar y además tiende a entrar, ¿por qué? Porque habíamos dicho que el interior era negativo. El sodio es un catión, lo que tiende a hacer es a meterse adentro, ¿está? Distinto es por su gradiente de concentración lo que sucede con el potasio.
+
+[06:35]
+El potasio lo que tiende a hacer es a salir del interior celular porque dentro está más concentrado. Si esto se manda mantuviera mucho tiempo en el en el tiempo, si mantuviera mucho tiempo esa distribución asimétrica, esa diferencia entre el interior y el exterior tenderían a esas diferencias tenderían a disiparse. ¿Está bien?
+
+[06:58]
+Para que eso no suceda, existe una proteína que es la sodio potasio ATPasa, que es esta que vemos acá, que lo que hace es sacar tres moléculas de sodio e ingresar dos moléculas de potasio. Utiliza ATP como fuente de energía y lo que hace justamente es eso. ¿Para qué? Para mantener ese gradiente de concentración a uno y otro lado de la membrana. ¿Está bien?
+
+[07:30]
+¿Cuándo?
+
+[07:34]
+Los estímulos excitatorios que alcanzan el árbol dendrítico se suman y esa variación alcance numbral, que es lo que vemos acá en la imagen, lo que se produce es el potencial de acción. ¿Está bien? ¿De qué depende el potencial de acción?
+
+[07:55]
+Básicamente depende de la apertura masiva de canales de sodio que se encontraban cerrados en condiciones de reposo y que son voltaje dependientes, es decir, canales que solo se activan cuando la membrana sufre una ligera polarización. Cuando la membrana se despolariza, deja de estar tan negativa como estaba en condiciones de reposo, se produce la apertura masiva de estos canales de sodio voltaje dependiente.
+
+[08:25]
+El sodio habíamos dicho que estaba más concentrado fuera que dentro y que además como el interior era negativo respecto al exterior, lo que tendía a hacer era a ingresar raudamente al interior celular. ¿Está bien? Ni bien se activan estos canales de sodio, voltaje de pendientes se inactivan, eso hace que el potencial de acción sea una señal transitoria, ¿está bien?
+
+[08:50]
+Mientras tanto, la bomba sigue actuando, sigue sacando sodio del interior e ingresando potasio desde el exterior hacia el interior, ¿está bien? Y también se activan canales de potasio, voltaje de pendientes que lo que hacen es tratar de sacar ese exceso de cargas positivas en forma de potasio. ¿Está bien? Todo esto, ¿para qué?
+
+[09:15]
+Para restituir rápidamente el potencial de membrana a las condiciones de reposo. Lo que vemos acá es en las ordenadas el potencial de membrana, es decir, los valores de potencial de membrana. Fíjense que en el reposo es de aproximadamente -70 V.
+
+[09:42]
+Y lo que vemos aquí, justamente es cómo aumenta la conductancia de sodio a través de la membrana y cómo aumenta la conductancia de potasio, es decir, el pasaje de potasio y de sodio a través de la membrana por los canales de sodio y potasio voltaje dependientes durante el potencial de acción.
+
+[10:04]
+Fíjense que entonces lo que se produce durante el potencial durante el potencial de acción es prácticamente una inversión del potencial de membrana, el potencial de membrana pasa a ser positivo, fíjense que alcanza aproximadamente los más 50 V, ¿está bien?
+
+[10:24]
+Y esa La variación del potencial de membrana es lo que se conduce en forma de potencial de acción a lo largo del axón. Este axón está recubierto por una vaina, que es la vaina de mielina. La vaina de mielina no lo recubre de manera continua, sino que por tramos va dejando pequeñas regiones donde el potencial de acción se regenera, ¿por qué?
+
+[10:54]
+Porque carecen de mielina y hay mayor concentración de canales iónicos voltaje dependiente que son los nodos, ¿está bien? El canal de sodio voltaje dependiente puede estar en tres estados conformacionales, ¿está bien? En condiciones de reposo es pasible de apertura, ¿está bien?
+
+[11:23]
+Llega una despolarización suficiente para alcanzar el umbral, se produce la apertura. ¿Está bien? Inmediatamente después se inactiva, que es lo que vemos en el centro de la figura. La inactivación, ¿está bien? Y tiempo más tarde vuelve a estar cerrado y pasible de activación, es decir, puede estar cerrado, abierto o inactivo, ¿está bien?
+
+[11:56]
+Cuando los canales de sodio voltaje dependientes están inactivos, no pueden volver a estimularse ni siquiera por estímulos mayores a los estímulos del umbral, ¿está bien? Eso hace que la neurona tenga algo que se denomina periodo refractario, ¿está bien?
+
+[12:21]
+Es decir, periodos de tiempo en los cuales no puede volver a generarse un potencial de acción. ¿Está bien? Habíamos dicho que había canales iónicos pasivos que estaban constitutivamente abiertos, otros canales iónicos activados por voltaje y hay otros canales iónicos que son activados por ligandos. ¿Está bien?
+
+[12:48]
+Es decir, por sustancias a las que se denomina en su conjunto transmisoras. Bueno, eso es lo que vamos a ver en la próxima clase cuando hablemos de neurotransmisión y sinapsis. ¿Está bien?
+
+[13:03]
+Quería que vieran esto, la generación y conducción de potenciales para que pudieran entender mejor cómo llega el potencial de acción al terminal presináptico y justamente activa los mecanismos por los cuales finalmente se produce la transmisión. Bueno, es un anexo. Léanlo, si hay alguna pregunta, me la mandan por el foro.
+
+[13:32]
+Bueno, gracias. Seguimos con en un ratito seguimos con neurotransmisión, sinapsis, neurotransmisores, etcétera, etcétera. Chao, chao.

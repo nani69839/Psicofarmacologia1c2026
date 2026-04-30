@@ -1,0 +1,110 @@
+[00:00]
+Bueno, comenzamos entonces con el tercer video de los sistemas diagnósticos operativos. Espero que todavía cuenten con con algo de energía. Habíamos visto las características de los sistemas diagnósticos operativos, así que vamos ahora a verlas uno por uno qué significan. Categorial implica el reconocimiento de clases diagnósticas.
+
+[00:22]
+Esto en cualquier ciencia eh que favorece el enfoque de tener una clase diagnóstica por un lado que todos los miembros de una clases sean homogéneos, que existan límites claros entre las clases y que obviamente las clases deben ser mutuamente excluyentes entre sí. Un ejemplo básico de esto que aprendemos de chicos es el de los animales, carnívoros y herbívoros, ¿no?
+
+[00:47]
+Entonces podemos definir de una forma muy sencilla, los carnívoros comen animales, los herbívoros comen plantas. Son clases homogéneas, unos solamente comen animales, otros solamente comen plantas y son mutuamente excluyentes.
+
+[01:05]
+Por supuesto, después cuando vamos creciendo vemos que hay un montón de mezclas entre carnívoros y herbívoros y hoy en día contamos con un montón de clases en dependiendo lo que uno come o deja de comer, ¿no? Esta es una de las características que hace que a veces se piense a este tipo de manuales como etiquetador ¿sí?
+
+[01:30]
+Estigmatizador porque de alguna forma eh limita, ¿no? Al ser humano en determinadas clases en lo que tiene que ver con la salud mental como si esto fuera así tan sencillo. Lo contrario del criterio categorial es el criterio dimensional que tiene que ver con medir un rasgo o un atributo a partir de una magnitud.
+
+[01:54]
+Y aquí el en relación al carácter dimensional, el carácter patológico está vinculado a esa misma magnitud. Este punto dimensional da cuenta de la amplitud de las presentaciones clínicas y la realidad es que todas las variables psicológicas tienen presentación dimensional. Sin embargo, a veces es muy útil también incluir eh las categorías para poder eh realizar mejores clasificaciones, ¿no?
+
+[02:22]
+Y un ejemplo de variable dimensional lo pueden ver en lo que tiene que ver con el índice de masa corporal. ¿no? Donde tenemos a una persona que puede ir desde una delgadez extrema hacia una obesidad mórbida, ¿no? Eh, y aún así, ¿no?
+
+[02:41]
+Si bien podríamos clasificar a el peso o al índice de masa corporal en con números, del cero al, imagínense, 40 para dar un ejemplo, eh, también se puede agregar a este enfoque un enfoque híbrido, es decir, también categorial, por ejemplo. un peso normal podríamos decir que va entre un índice de masa corporal de 18 y de 25.
+
+[03:09]
+Por debajo de eso podemos estar hablando de una persona que tiene por ejemplo anorexia, por encima de eso podemos estar hablando de una persona que tiene SOPPs.
+
+[03:21]
+Otra característica de estos manuales es que son nomotéticos, significa que nomotético es criterio estándar, o sea, que suponen un término medio de la población y en relación a eso quien se aparta de la media queda incluido o excluido del criterio y obviamente es muy apropiado para el trabajo estadístico.
+
+[03:40]
+No se olviden que estos manuales son además de diagnósticos estadísticos porque como les dije son muy utilizados para lo que se realiza en en la parte epidemiológica. Lo contrario de lo nomotético es lo idiográfico.
+
+[03:57]
+Este es un criterio clínico ni el DSM como dice ahí ni la sigue, tienen este criterio ideográfico, lo lo puse como para generar eh esa diferencia que es en la clínica cuando uno toma de pronto una persona que tiene depresión, pero eh esa depresión en esa persona no tiene nada que ver con la depresión que tuvo la paciente que vi antes, ¿no?
+
+[04:23]
+Eh, por en ese sentido tiene en cuenta las características únicas irrepetibles de la persona y no se puede comparar los dos individuos a partir de este criterio y obviamente que es apropiado para el trabajo clínico. Para darles un ejemplo muy sencillo en relación a la depresión, si decimos que una persona deprimida tiene que contar al menos cinco síntomas que los vamos a ver, digo al menos, donde uno de ellos tienen que ser el ánimo bajo o la anedonia.
+
+[04:53]
+Sin embargo, hay dos personas depresivas que una puede presentar ánimo vacío, la otra no presentar anhedonia y la característica de cómo llegaron a la depresión o en qué momento tuvieron la depresión o la evolución de esa depresión o la familia que tiene cada persona los recursos cognitivos que cuenta esa persona hace que en este punto el criterio clínico eh sea único, ¿no? Y personalizado, como dice ahí.
+
+[05:23]
+Politético hace referencia que cada criterio dentro del DSM y la CIE se forma con un número de síntomas. Yo les decía, por ejemplo, que para un trastorno de precio mayor tienen que presentar cinco de una lista de nueve síntomas. Entonces, eh uno como clínico, lo que lo que que trata de buscar es que al menos se cumplan esos cinco síntomas que forman eh el eh trastorno.
+
+[05:50]
+Obviamente, como dice ahí, debe estar presente un determinado número de ellos, no necesariamente todos, o sea, no tienen que estar los nueve. Sí, tienen que haber al menos cinco, por ejemplo, para el trastorno depresivo mayor. Multiaxial implica la organización de la información clínica en ejes. Un eje permite organizar la información y hasta el DSM-IV se utilizaba el diagnóstico multiaxial.
+
+[06:15]
+El DSM-5 no utiliza el criterio este, sin embargo, seguimos dando eh los ejes del DSM-4, como lo van a ver acá, porque probablemente muchos de ustedes estén terminando ya la carrera y empiecen a trabajar con obras sociales que les van a pedir a veces diagnósticos todavía con DSM-4, con lo cual eh muchas veces le va a pedir les van a pedir que especifiquen los ejes.
+
+[06:39]
+El eje uno, esto simplemente lo voy a leer, lo pueden buscar después en el manual, el eje uno implica todos los trastornos clínicos y otros problemas que pueden ser objeto de atención clínica, que es otro capítulo del DSM. El eje dos incluye los trastornos de personalidad y el retraso mental, que si bien son trastornos mentales, el DSM-IV lo separaba como en otro eje distinto.
+
+[07:04]
+El eje tres implica las enfermedades médicas, el eje cuatro, los problemas psicosociales y ambientales, por supuesto, el eje tres y y G4, estamos hablando de problemáticas relacionadas con el motivo de consulta, ¿sí? No problemas aleatorios. Y el G5 implicaba una evaluación de la actividad global que se medía del 0 al 100 con una escala que nos daba el DSM.
+
+[07:30]
+La CIE 10 a su vez presentaba tres ejes, el primer eje donde se eh eh y especificaban todos los trastornos mentales de personalidad y somáticos y el eje G 2, las discapacidades evaluadas en cuidado personal, el funcionamiento ocupacional, el funcionamiento de la familia y el comportamiento social y un último eje que es el eje 3 que implican los factores ambientales y circunstanciales. Bien.
+
+[08:00]
+Hasta aquí eh estuvimos hablando las características en relación a los manuales diagnósticos y ahora me gustaría eh realizar una diferencia conceptual entre lo que ustedes van a ver qué tenemos en psicopatología y lo que tenemos en otros ámbitos de la salud. En psicopatología todavía no se puede hablar de enfermedad.
+
+[08:24]
+Ninguno de los trastornos, por eso se les llama trastornos, ninguna de las condiciones del DSM merece todavía el nombre de enfermedad, porque para ser considerado alguna enfermedad tiene que tener una etiología. Etiología significa causa, es decir, de dónde proviene esto que estamos viendo.
+
+[08:46]
+A su vez también tiene que tener una patogenia, la patogenia se referencia a un mecanismo de acción, es decir, que a partir de la causa se genera una cascada de reacciones que es la patogenia que termina deviniendo en una enfermedad.
+
+[09:02]
+Por otra parte, tiene que tener una alteración orgánica evidenciable, todavía si bien en algunas patologías mentales como lo son Dos, en sí, particularmente, la esquizofrenia y la bipolaridad, se están encontrando algunas alteraciones fisiológicas, algunas alteraciones químicas, algunos circuitos involucrados.
+
+[09:24]
+Todavía no hay nada claro en relación a una alteración orgánica evidenciable que podamos decir que son eh la causa de esta patología. Por otra parte, una enfermedad tiene un cuadro clínico, esto sí podemos decir que los trastornos mentales, las condiciones mentales tienen un cuadro clínico más o menos definido, si bien hay cuadros que son más heterogéneos que otros.
+
+[09:49]
+Una evolución como a partir de un cuadro clínico, si uno deja pasar el tiempo y realiza o no un tratamiento, uno espera cierta evolución.
+
+[09:59]
+Esto por suerte también lo tenemos dentro de lo que es salud mental, es decir, uno sabe eh por ejemplo que un trastorno depresivo mayor, uno lo trate o no, más o menos puede durar unos seis o 9 meses y obviamente que si uno lo trata esto va a durar bastante menos, obviamente que depende las particularidades de los pacientes y lo que les dije es una generalidad de lo que ha sido investigado.
+
+[10:25]
+Hay depresiones que pueden durar 2 años, hay depresiones que pueden durar 3 meses, pero en promedio el tiempo que duran es eso. Así como quizás en otro ámbito de la medicina, cuando uno tiene, por ejemplo, una gripe, se sabe que el cuadro clínico que uno tiene esos síntomas tan molestos dura aproximadamente una semana, tome uno algo o no. En salud mental algunas cosas ya estamos sabiendo. Y una terapéutica que tiene que ver con cuáles son las eh los tratamientos.
+
+[10:55]
+eh clínicamente validados y estudiados para ese tipo de patología. Por otra parte, es muy distinto hablar de trastorno, cuando estamos hablando de trastorno que ustedes van a ver que la CIE y el DSM hablan de trastorno, estamos hablando de un síndrome o patrón comportamental o psicológico de significación clínica. Vamos a desmenuzar un poco esto. Síndrome implica un conjunto de signos o síntomas, ¿sí?
+
+[11:22]
+Ahí también dice patrón comportamental o psicológico, de significación clínica, o sea, que tiene que tener cierta significación de cambio en la vida de la persona, que está asociado a un malestar, clip, un malestar de la persona, ya sea físico o psicológico, que está asociado a una discapacidad, o sea que como vemos en el consultorio eh se van deteriorando las áreas de las personas, se deteriora mucho a veces la área social, el área de la pareja, el área laboral, el área académica cuando una persona empieza con algún trastorno mental y que está asociado, por supuesto, a un riesgo, por ejemplo, a sufrir dolor, a eh la muerte, a perder la libertad, por ejemplo, una persona con agorafobia mientras evoluciona su patología cada vez puede salir menos a la calle.
+
+[12:12]
+Eh, bien, o el riesgo eh como les decía eh más extremo que tiene que ver con el suicidio de un paciente que también es un hecho, digamos, real en nuestra clínica, lamentablemente.
+
+[12:26]
+El DSM-5 define también el trastorno de una forma muy similar, pero de una forma que van a leer en un lenguaje mucho más cognitivo, aquí la parte ateórica ha quedado un poco de lado, dice es un síndrome caracterizado por una alteración clínicamente significativa del estado cognitivo, la regulación emocional y el comportamiento, es decir, para el que ha visto algo de de terapia cognitiva, cognición, emoción y conducta y refleja una disfunción de procesos psicológicos, biológicos y del desarrollo.
+
+[13:01]
+Va asociado a un estrés significativo o a una discapacidad, ya sea social, laboral o de otras actividades importantes. Les di dos definiciones, la anterior es la del DSM-IV, esta es la del DSM-V, pueden saber las dos porque prácticamente son iguales con con alguna definición distinta en términos de palabras.
+
+[13:21]
+Y lo que tienen que saber es que el DSM al mismo tiempo grupo que define grupos de clasificación, ustedes van a encontrar dentro del índice varias categorías, al mismo tiempo tiene subgrupos más homogéneos de individuos que comparten dentro de un trastorno ciertas características.
+
+[13:41]
+Por ejemplo, dentro de los trastornos depresivos, hay trastornos depresivos con síntomas atípicos, hay trastornos depresivos mayores con síntomas psicóticos, etcétera.
+
+[13:53]
+Un tipo clásico de especificadores son los especificadores de gravedad, ahí tienen tres, leve, moderado y grave y otro tipo de especificadores son los especificadores de curso, por ejemplo, en remisión parcial tiene que ver con cuando se cumplen todos los criterios en un momento, pero al momento de la evaluación solo presenta al paciente algunos síntomas, o sea, que está mejorando, pero todavía no está curado, podemos decir, en remisión total cuando ya no presenta síntomas o signos del trastorno y se habla de recurrencia o decisiva cuando después de un tiempo de haber tratado al paciente y que los síntomas desaparecieran, o sea, de que estuviera en remisión total, vuelvan a aparecer los síntomas del trastorno anterior.
+
+[14:37]
+Bien, dejamos acá y vamos ahora al último, les prometo, eh, video de esta clase.

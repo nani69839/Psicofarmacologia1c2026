@@ -1,0 +1,104 @@
+[00:00]
+Bueno, continuamos con la segunda parte del teórico de sistemas diagnósticos operativos. Entonces les estaba contando algunas cuestiones en relación a la epidemiología. Me gustaría también traerles eh que la Organización Panamericana de la Salud reunió a estos dos trastornos que yo les decía con mayor prevalencia que son los trastornos depresivos y los trastornos ansiosos en una variable denominada trastornos mentales comunes.
+
+[00:30]
+¿Sí? En Argentina la prevalencia de los trastornos depresivos alcanza un 4% de la población, mientras que los trastornos de ansiedad un 6.3%. Esto es del año 2017. Ya vamos a tener en los respectivos teóricos un poco más de información en relación a esto. A lo largo de la carrera eh me encontré en relación al dilema de lo que tiene que ver con el diagnóstico dos eh polos opuestos.
+
+[00:58]
+Por un lado el polo que que va hacia el juicio de valor, es decir, que vea el diagnóstico desde eh el estigma, desde el etiquetado, vea el diagnóstico desde eh el juicio hacia aquellos eh diagnósticos que eh parecieran carentes de validez, como, por ejemplo, eh las críticas que se le han hecho en la niñez, el trastorno eh de déficit de atención o al eh recientemente psicos eh la psicosis eh atenuada, ¿sí?
+
+[01:38]
+Que se estuvo discutiendo para el DSM 5.
+
+[01:42]
+También en esta vertiente se hizo referencia a eh el gasto de la industria farmacéutica en relación a las investigaciones sobre lo que tiene que ver con los diagnósticos y bueno, todo lo que pudiéramos eh incluir desde las miradas más sociales teológicas, como, por ejemplo, eh lo que hablaba Foucault en relación al poder psiquiátrico eh y estos sistemas eh sociales de poder.
+
+[02:09]
+Por otro lado, la otra el otro polo que pretendía el diagnóstico como una versión objetiva y científica que, por supuesto, partía parte de un paradigma positivista en el cual eh digamos eh con la base eh de las neurociencias y de este tipo de enfoque de conocimiento pretendía que los diagnósticos fueran algo inmutable y real sin importar la cultura a la cual estemos insertos.
+
+[02:50]
+La realidad es que me gustaría que hicieran una especie de dialéctica entre estos dos polos porque que a mi criterio ni eh realizar un diagnóstico es realizar un juicio de valor ni tampoco estamos ante algo totalmente objetivo y totalmente científico, ¿sí?
+
+[03:14]
+Aún así eh me gustaría eh pensar que realizar un diagnóstico implica definir. Cuando hablamos de definir, obviamente lo que estamos haciendo en sentido positivo es describiendo fenómenos, estamos informando Estamos creando representaciones del mundo, fenómenos que eh para cualquier ciencia son necesarios, necesitamos realizar estas descripciones.
+
+[03:41]
+Obviamente que desde el punto de vista eh digamos negativo, también cuando estamos definiendo estamos limitando el campo y estamos reduciendo la complejidad más o menos, ¿sí?
+
+[03:54]
+Pero para realizar investigaciones y para que la ciencia avance, lamentablemente siempre necesitado teorías y cuando uno hace teorías siempre está intentando eh reducir la complejidad hacia algo que sea humanamente posible de comprender eh y luego de llevar a la práctica, ¿no?
+
+[04:16]
+Si aún así no los logro convencer en relación a la importancia del diagnóstico, les traigo aquí eh sé que hay un montón de texto en este PowerPoint. Eh, tiene que ver con la ley 26520 29, que es una ley nacional en relación a los derechos del paciente con relación a los profesionales, instituciones de la salud. Y eh no lo voy a leer todo, pero van a encontrar, lo pueden buscar en internet.
+
+[04:42]
+El artículo 3 tiene que ver con que nosotros tenemos que informarle al paciente, ahí tiene marcado en negrita, sobre el estado de salud, sobre los estudios sobre los tratamientos que fuera en menester realizarle. También la previsible evolución, los riesgos, complicaciones o secuelas de los mismos.
+
+[05:03]
+En este artículo no hace referencia a que uno tiene que informarle el diagnóstico directamente al paciente, de hecho eso es un criterio que queda del clínico, si si sirve o no darle un diagnóstico y esto eh no tiene que ver solamente con la salud mental, sino también con cualquier profesional de la salud.
+
+[05:24]
+Eh, yo soy docente también en lo que tiene que ver con eh psicología comunitaria y social y psicología preventiva en la Universidad de Fabaloro y algo que les inculcamos a los médicos ya desde el primer año es que no hay que decir más de lo que el paciente quiere saber. Es decir, también es un derecho del paciente negarse a recibir esa información.
+
+[05:49]
+El ejemplo paradigmático que siempre doy en relación a esto es cuando a través de estudios se obtiene la información de que el paciente está padeciendo un cáncer. Mucha gente no lo quiere saber, o no quiere saber todo de esto y hay que respetar también eso. Sin embargo, si el paciente quiere saber, obviamente es nuestra obligación decírselo.
+
+[06:11]
+Por otra parte en la misma ley en el apartado de la historia clínica, ahí también tienen marcado en negrita en sí lo que tiene que ver con el diagnóstico presuntivo y el diagnóstico y toda la información que hay que brindar. En la historia clínica hay que escribir el diagnóstico y qué tipo de diagnóstico hay que escribir porque ustedes pueden decir, "Bueno, pero yo escribo el diagnóstico en base a mi a mi no sografía." No, no se puede.
+
+[06:36]
+Ahí van a ver que dentro de la ley lo que dice es que los diagnósticos deberán ser realizados sobre de la base de nomenclaturas y modelos universales adaptados y actualizados por la Organización Mundial de la Salud, ¿sí? Esto hace referencia principalmente a que ustedes van a tener que utilizar la CIE para realizar diagnósticos.
+
+[06:56]
+Ahora vamos a ver de todas formas que el DSM, si también ustedes prefieren usar ese manual, utilizan los nomenclladores de la CIE, con lo cual no habría problemas porque no hay discrepancia entre ambos manuales. Entonces, tenemos dos manuales principales que vamos a estar viendo la ICD o la CIE ICD en inglés que actualmente se encuentra en su versión número 11 y el DSM en su versión número quinta.
+
+[07:27]
+La CIE es de la Organización Mundial de la Salud, por eso en Argentina digamos lo que se refiere a la legalidad de los diagnósticos tiene que ser dado por un organismo internacional y el DSM como verán ahí abajo del libro está realizado por la Asociación Psiquiátrica Americana, ¿sí? La realidad es que en el mundo eh lo más utilizado es la CIE.
+
+[07:53]
+El DSM se utiliza mucho en eh Estados Unidos, obviamente, y en Canadá. Y vamos a ver ahora las razones eh históricas por las cuales eh y circunstanciales por las cuales nosotros en esta materia les vamos a estar dando también principalmente el DSM y no la La CIA. La CIA entonces es eh la abreviatura de la clasificación internacional de muerte de enfermedades.
+
+[08:22]
+Surge eh la primera edición en 1853, cuando se realiza la primera conferencia internacional sobre estadísticas. Aquí lo que se estaba intentando realizar es tener estadísticas básicas sobre morbilidad y mortalidad y entre 1900 y 1000 1929 cambia su nombre y se empiezan a realizar las clasificaciones internacionales de causas de muerte.
+
+[08:52]
+La CIE como CIE surge recién en la posguerra en el año 48 y en su sexta versión, que es la versión que sale ese año, recién en esa incluye un libro de trastornos mentales porque ustedes saben que la clasificación internacional de enfermedades es justamente eso, es una clasificación amplia de enfermedades eh donde pueden encontrar enfermedades cardiovasculares, eh también obviamente eh enfermedades mentales, enfermedades renales, enfermedades en relación a los huesos, etcétera.
+
+[09:24]
+Hay un libro clasificatorio por cada grupo de enfermedades, es decir, que cada especialista cuenta en el mundo con su clasificación internacional de enfermedades. Las dos más recientes son la CIE-10 que surge en 1989 que hasta eh ahora es la CIE vigente, ¿sí?
+
+[09:46]
+O sea, que vean que ya llevamos 31 años eh con esa CIE y en el 2018, el año el año pasado, no, el el anterior, salió la CIE 11. Sin embargo, todavía no salió, digamos, la versión impresa, la versión de libro, solamente pueden acceder a través del browser de la Organización Mundial de la Salud a los diagnósticos eh aislados, pero no tienen nada más que la descripción de los diagnósticos los que se incluyeron, ¿sí?
+
+[10:14]
+Por lo tanto, eh nosotros vamos a estar utilizando el DSM porque el DSM 5, que es la versión más reciente, salió en el 2013 y sí contamos con el manual impreso, con el libro completo para que ustedes puedan leerlo, ¿sí?
+
+[10:31]
+Como verán la historia del DSM es parecida al de a la de la CIE en relación a que el DSM eh también surgió en Estados Unidos justamente para poder eh medir la eh morbilidad en relación a las enfermedades mentales y también surgió en la posguerra. Decíamos que la CIE eh de enfermedades mentales surgió en el año 48, el DSM 1 surgió en el año 52.
+
+[11:00]
+Luego fueron saliendo varios DSM y sus versiones revisadas y eh como les decía, la versión más reciente ya lleva 7 años. Por otra parte, eh me gustaría también que sepan y espero también que sepan desde otras vertientes, ¿no? Que eh existen otros, por supuesto, manuales diagnósticos, acá les traigo algunos para que tengan una idea, espero que alguno de estos lo conozcan conocan.
+
+[11:25]
+El que tienen a la izquierda con letras en chino es el manual diagnóstico de trastornos mentales chinos que hoy en día se encuentra en su tercera versión y el OPD 2, que es el que espero que conozcan junto con el PMD, realmente no sé y en los teóricos que di sobre la materia prácticamente nadie lo conocía, sin embargo, son manuales diagnósticos operativos psicoanalíticos el primero este que tiene aquí el OPD2 es alemán y es del año 2006.
+
+[12:00]
+Sin embargo, eh ya se empieza a trabajar con este manual desde el año 90, o sea, que ya tiene 30 años este tipo de investigaciones desde el ámbito psicoanalítico. Eh, lo pueden encontrar en internet para el que no lo conozca y que le interese. Eh, cuenta con cinco ejes diagnósticos y lo interesante es que están mixado a lo que es la CIE, el quinto eje del OPD2 alemán es un diagnóstico realizado a través de la CIE-10, ¿sí?
+
+[12:27]
+O sea, que está muy articulado lo que tiene que ver con el diagnóstico psicoanalítico en este caso, con el diagnóstico operativo. Y si eh no les gusta el la clasificación alemana, también tienen el PDM, que es eh la clasificación psicoanalítica eh y eh americana, que también está está en su segunda edición, también esta segunda edición es del 2006, o sea que que ya tiene bastantes años.
+
+[12:57]
+Eh, tiene Bueno, no voy a a adentrarme mucho en esto, pero a diferencia de la del manual alemán este está reunido en tres ejes y obviamente las diferencias entre un manual diagnóstico y el otro, por más de que los dos sean psicoanalíticos eh que tiene que ver un poco con las eh los estilos y las teorías psicoanalíticas que eh están vigentes en cada país.
+
+[13:23]
+El siguiente, que tienen es el una guía latinoamericana de diagnóstico psiquiátrico también antigua del año 2004, pero eh digamos para que vean que eh en clasificaciones contamos con eh bastantes tipos de manuales, ¿sí? Bien.
+
+[13:45]
+Voy a nombrar las características de los manuales diagnósticos y luego en el próximo video las vamos a desarrollar. Los manuales diagnósticos operativos son categoriales. Últimamente también están empezando a ser dimensionales, por eso ahí les agregué la palabra dimensional, es decir, empiezan a ser un híbrido entre uno y el otro. Son nomotéticos, son politéticos.
+
+[14:12]
+Hasta el DSM-IV fueron multiaxiales, es decir, que estaban divididos en distintos ejes y se dice que son ateóricos, es decir, que no hay ninguna teoría o no debiera de haber ninguna teoría ya por lo bajo. Dejo el signo de pregunta y seguramente en las próximas clases desarrollemos este punto porque bueno, está claro que nada nace de la nada, así que alguna teoría siempre hay por lo bajo.
+
+[14:41]
+Bien, con esto continuamos en el próximo video.

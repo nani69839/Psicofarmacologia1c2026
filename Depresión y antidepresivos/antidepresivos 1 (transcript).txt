@@ -1,0 +1,209 @@
+[00:00]
+Hola, ¿cómo están? Espero que estén muy bien, que estén estudiando, que les estén sirviendo estos videos eh y esta cursada que le estamos poniendo eh la mayor onda posible.
+
+[00:13]
+Hoy nos toca hablar de mi grupo de moléculas favoritas en la psicofarmacología que son los antidepresivos, así que estoy muy emocionada y muy contenta de poder compartir con ustedes eh lo que respecta al estudio de estas moléculas, es complejo, pero vamos a tratar de ir ir eh despacito desde lo más sencillo hasta tal vez lo más complejo eh y poder acompañarlos un poquito en el recorrido, ¿sí? Eh, vamos a empezar.
+
+[00:41]
+Bien, y antes de empezar a estudiar las moléculas antidepresivas, quiero comentarles un poquito cómo decidí organizar estas clasecitas.
+
+[00:50]
+En primera instancia quiero hablar de lo que son las vías monaminérgicas, de cómo funcionan, de cómo regulan el enánimo, por así decirlo, eh de eh los neurotransmisores, de la serotonina, de la noradrenalina, de la dopamina, que son todas cosas que uno escucha eh y por ahí no sabe de dónde vienen ni hacia dónde van y un poquito eh de cuáles son las vías eh porque en definitiva y eso me lleva al punto dos, el mecanismo de acción de los antidepresivos va a ser necesariamente modificando estas vías noradrenérgicas.
+
+[01:22]
+Eh, todos los antidepresivos de alguna u otra forma se encargan de regular la cantidad de noradrenalinas eh en lo que es el sistema nervioso central. Y por último, vamos a estudiar a las moléculas en sí misma, que es en realidad el tema del práctico, eh que son los antidepresivos, ¿no? Las familias antidepresivos, las clases antidepresivos, ¿sí?
+
+[01:42]
+Los efectos adversos y todo lo que a ustedes más les va a interesar saber, pero me gusta que se entienda por qué los utilizamos eh y así decidí poner un poquito de de esta cuestión más introductoria, si se quiere. Bueno, arrancamos entonces. Y banco con con esta imagen que me parece muy simpática, me parece agradable, ¿sí?
+
+[02:06]
+Eh, son la serotonina y la dopamina, como que las hicieron medio dinosaurios raros. Eh, pero, ¿por qué empiezo con esto, ¿sí? Fíjense lo que dice la frase, técnicamente las únicas dos cosas que uno disfruta, la serotonina y la dopamina. Hay como toda una cultura popular acerca de las monoaminas, de cuáles es su función. Eh Digamos, hay un montón de de de artículos, hay gente que se tatúa las moléculas, bien.
+
+[02:36]
+Este collarcito es una serotonina, por ejemplo, me lo regalaron mis mis compañeros de del hospital cuando me recibí de médica. Así que, o sea, hay toda una cultura acerca de de estas moléculas y uno las debe estar escuchando muy a menudo. Pero, ¿qué son? ¿De dónde vienen? ¿Para qué sirven? Este es un poco el objetivo de esta primera parte de la clase. Bien, y empezamos con el maravilloso mundo de las monoaminas. ¿Qué es una monoamina?
+
+[03:05]
+¿Cómo defino una monoamina? Porque hablamos de monoaminas. Básicamente, porque en la estructura química estas moléculas, ¿sí? Vamos a tener un único grupo amino. En general se producen a partir de aminoácidos que se les saca el grupo ácido y entonces quedan monoaminas. Eh, ¿cuáles son estas monoaminas? Yo me voy a centrar en tres que son las más importantes en lo que es la regulación del ánimo. Una sin lugar a dudas es la serotonina, que ya la mencionamos.
+
+[03:33]
+Otra eh es la noradrenalina. Vamos a hablar de la dopamina también y por ahí como en cuarta instancia, pero no tan importante lo que son las vías centrales de eh lo que es la adrenalina, ¿de acuerdo? Así que sigamos.
+
+[03:50]
+Bien, un poquito eh quería charlar acerca de de este gráfico que creo que resume relativamente bien la funciones de cada monoamina a nivel del sistema nervioso central, forma parte de lo que es la cultura popular, pero no está tan desacertado, ¿sí? Fíjense como muestra que en realidad tanto la serotonina, la noradrenalina o norepinefrina, ¿sí?
+
+[04:15]
+En en general si si aún alguien lee algún libro que está traducido en España, los españoles le llaman epinefrina y norepinefrina a la adrenalina y noradrenalina respectivamente.
+
+[04:26]
+Eh, entonces, perdón, regreso serotonina, noradrenalina y dopamina, eh como en tres círculos que se superponen entre sí y eh regulan diversas funciones en donde, como pueden ver, en el centro va a estar el ánimo, la regulación del estado de ánimo y muchísimas funciones cognitivas, ¿sí?
+
+[04:47]
+Eh, fíjense cómo la dopamina, por ejemplo, clásicamente se la relaciona con eh la recompensa y con la motivación, ¿sí? Fíjense como eh la noradrenalina se la asocia habitualmente con la energía y con el estado de alerta y de concentración, ¿sí? Eso también va a ser importante cuando cuando hablemos de noradrenalina solita en en los déficit atencionales, ¿no?
+
+[05:17]
+O sea, yo podría beneficiar a alguien que tiene un déficit atencional afectando sinapsis que son noradrenérgicas, ¿no? Eh, la serotonina, fíjense como habitualmente también se la relaciona con las obsesiones, las convulsiones, entonces también hace eh diríamos regulando el sistema serotoninérgico yo podría eh beneficiar a alguien que tiene, por ejemplo, eh un trastorno obsesivo-compulsivo, ¿sí?
+
+[05:45]
+Y eh en el medio regulando los tres sistemas hablamos del ánimo y las funciones cognitivas, como ya les mencioné previamente, ¿sí? Bueno, ¿qué les quiero mostrar un poquito de de de esta diapo? Eh, básicamente estos son los neurotransmisores que vamos a estudiar hoy, dopamina, noradrenalina, acá tenemos la serotonina, ¿sí? Todos esos que están ahí a la izquierda y por otro lado, fíjense, acá tenemos a lo que son los receptores, ¿sí?
+
+[06:14]
+La dopamina tiene cinco clases distintas de receptores, que van del D1 al D5. Los receptores adrenérgicos son comunes para noradrenalina y adrenalina, ¿sí? Se subdividen en dos grandes clases que son alfa y beta y a su vez los alfa y beta se subdividen en uno, dos, eh bla bla bla, tienen un montón de de subdivisiones y algo parecido pasa con la serotonina.
+
+[06:37]
+La serotonina se han descubierto hasta 14 tipos distintos de receptores serotonina, que obviamente no están todos aquí representados. Eh, que básicamente se subdividen en siete grupos, del cinco HT1 al cinco HT7. Y qué es lo que quiero remarcar de estos receptores. Todos los receptores que acabo de mencionar son metabotrópicos. ¿Qué características tenían los receptores metabotrópicos?
+
+[07:05]
+Me dan respuestas que son retardadas, ¿sí? O sea, no no son rápidos, pero son muy amplificados con lo cual la respuesta es muy grande y por otro lado se sostiene en el tiempo muchísimo más la respuesta. La única excepción es un receptor de serotonina, que es el 5HT3, eh, que es un que es un canal iónico. Todos los demás son receptores metabotrópicos acoplados a proteína G.
+
+[07:32]
+Así que, eh, básicamente esto es lo que les quería mostrar. Fíjense, eh, voy a borrar esto un momento. si no les molesta. Y acá tenemos a los receptores serotoninérgicos. Eh, fíjense el tres que dijimos que es el único con con un ligando que es un canal. Eh, y qué les quería mostrar.
+
+[07:59]
+Fíjense acá todo Pausen el video si quieren un ratito y fíjense todas las áreas, ¿sí? Ya sea de cerebrales, en la corteza, va al hipocampo a la sustancia nigra, a los ángulos de la base. Fíjense acá, quiero hacer un pequeño paréntesis. El 5 HT 2 A, fíjense cómo va los ángulos de la base, guiño guiño para cuando vean antipsicóticos, ¿sí?
+
+[08:24]
+O sea, que pudiera haber vías serotoninergicas que no median nada más que respuestas anímicas o respuestas cognitivas. Ehm, también pudieran regular lo que son los movimientos y esto solo en el sistema nervioso central, porque en realidad sabemos que la serotonina como molécula, puede encontrarse fuera del sistema nervioso central. ¿Y en dónde la encontramos muy habitualmente? En el tubo digestivo, ¿sí?
+
+[08:50]
+En donde media respuestas peristálticas, eh en la sangre, ¿sí? En donde media respuestas antiagregatorias plaquetarias. Entonces, todas esas cositas son a tener en cuenta eh a la hora de conocer un poquito a estos receptores. Bien, y esto es para presentárselo, obvio, no se lo tienen que saber, pero eh, es la vía química de cómo se sintetizan las catecolaminas.
+
+[09:19]
+Lo puse un poquito torcido porque derecho se veía muy chiquito. Eh, les presento a la tirosina, que es el aminoácido a partir del cual se sintetizan finalmente estas catecolaminas, ahora ya vamos a saber cuáles son, aunque ya lo mencioné en la epoprevia. Eh, primero se hidroxila, ¿sí? Y se forma lo que se llama dopa o dihidrofenilalanina, ¿sí? ¿Sí?
+
+[09:43]
+Eh, que saben que un análogo de de esto, de este aminoácido, porque todavía no lo de carboxile, yo todavía no le saqué el grupo ácido, así que sigue siendo un aminoácido. Eh, pero la L-dopa es una medicación que se utiliza para el tratamiento de la enfermedad de Parkinson, ¿sí? Porque la dopamina no solo está asociada en la recompensa, en el ánimo, en la motivación, sino que también está muy asociada a la regulación de los movimientos y eso también es importante para cuando veamos la clase de antipsicóticos.
+
+[10:12]
+Fíjense como acá sí finalmente se descarboxila por una eh descarboxilasa de aminoácidos aromáticos ehm en dónde se forma acá la dopamina ¿Sí? La dopamina que es una de nuestras primeras catecolaminas. Y fíjense que si yo hidroxilo a la dopamina formo noradrenalina, o sea que a partir de la dopamina se forman las que siguen, ¿sí? Y así mismo, ¿sí?
+
+[10:42]
+Eh, con otra transformación química más yo voy a formar adrenalina finalmente. Entonces, a partir de el mismo sustrato, yo ya formé a las tres tipos de moléculas. Eh, de ¿De qué depende de que se forme una o de otra? Bueno, depende de el sistema enzimático que tenga cada neurona.
+
+[11:00]
+O sea, si yo soy una neurona eh que tengo capacidad de hidroxilar la dopamina, probablemente produzcan la adrenalina y si no tengo esa enzima y probablemente la vía se me queda acá y sea una neurona dopaminérgica, ¿sí? Bueno, vamos a hablar entonces un poquito de las vías, porque bueno, todo muy bien con la síntesis, pero de dónde a dónde va y para qué me sirve.
+
+[11:21]
+Cuando en C la dopamina habitualmente se la asocia con con lo que es la recompensa, con lo que es la motivación, con la regulación del estado de ánimo en estos dos sentidos obviamente y también obviamente con eh funciones cognitivas un poco más complejas que probablemente estén asociadas a eh lo que son las vías más prefrontales, la corteza prefrontal dorsal lateral, orbitofrontal, etcétera. Sí, todas reciben eh aferencias dopaminérgicas.
+
+[11:50]
+¿Dónde se producen las monoaminas? Hay una región del cerebro que es acá, ¿sí? Que se llama tronco del encéfalo, ¿sí? El tronco del encéfalo es obviamente eh es una es una región en donde pasan muchísimas cosas, pasan mucha eh información de muchos tipos y lo que les quiero destacar aquí es que estas estructuras son subcorticales, ¿sí?
+
+[12:16]
+Eh, o sea, que no están primariamente en la corteza y fíjense cómo la dopamina se encuentra como en la región o se produce, mejor dicho, en la región más como de más arriba del tronco del encéfalo, que se llama mesencéfalo, esta región de aquí, ¿sí? ¿Qué pasa con estas vías que son dopaminérgicas?
+
+[12:37]
+Bueno, ya la van a a estudiar super bien las vías dopaminérgicas de nuevo, cuando hablemos de antipsicóticos, pero fíjense cómo se distribuyen a estructuras que son subcorticales, como se distribuyen también a estructuras que son Por aquí hacia los lóbulos más parietales que se van a encargar más de cuestiones que tengan que ver con la atención.
+
+[13:07]
+Eh, en definitiva se distribuye ampliamente, pero de los tres sistemas que vamos a ver hoy, la dopamina es la que menos ampliamente se distribuye.
+
+[13:19]
+No se pueden olvidar de que la dopamina va a una región que se llaman ángulos de la base y va a ir a los ángulos de la base para regular los movimientos, pero también va a ir a una región de los ángulos de la base que se llama estriado ventral o núcleo acumbens en donde eh se la asocia mucho más con con esta cuestión de motivación eh y cuando cuando esto disfunción habitualmente a la alta se relaciona con conductas adictivas, ¿sí?
+
+[13:53]
+Em entonces motivación, conductas adictivas, también la sensación de placer, la recompensa está muy asociada clásicamente asociada a la dopamina, hoy sabemos que los sistemas de recompensa son recomplejos, pero antes se creía que era la dopamina llegando al núcleo accumbens y eso sigue siendo así, ¿sí?
+
+[14:13]
+O sea, sigue estando asociado a la recompensa, sabemos que hay otros otras vías que que acompañan y que son importantes, pero eh la dopamina fue la primera en describirse y es muy importante. Bien, vamos con las vías noradrenérgicas y adrenérgicas, que las vemos todas juntos, ¿sí? Sepan que las que importan son las noradrenérgicas para fines de esta clase.
+
+[14:37]
+Fíjense como eh similar a lo que sucedía en primera instancia con la dopamina en el mesencéfalo, ¿sí? Está esta estructura de acá que se llama locus cerulo, ¿sí? Eh desde donde se producen la mayoría de las neuronas de donde se produce la mayoría de la noradrenalina que después se va a distribuir por todo el resto del cerebro básicamente, ¿sí?
+
+[15:06]
+Hay un montón de vías, algunas descienden hasta la médula espinal, otras ingresan al cerebelo y van a medir funciones que son mucho más motoras. Eh, hay algunas que van a subir al tálamo y otras seguir el hipotálamo, eso va a regular en definitiva respuestas autonómicas, por ejemplo, como la activación del sistema simpático, que es el de la lucha o de la huida, también va a medir respuestas eh de alerta, ¿sí?
+
+[15:33]
+O sea, de estar despierto, por eso se lo asocia también mucho a la energía y al estado de y fíjense como similar a lo que sucedía con la dopamina, luego se va a distribuir por diferentes cortezas, ¿sí? Entre las cuales está incluida, obviamente, la corteza prefrontal, eh en donde va a tener un montón de funciones atencionales, ¿sí? Es superimportante las funciones atencionales de la noradrenalina en el sistema nervioso central y en lo que es el sistema de alerta.
+
+[16:02]
+Eh, a la derecha lo que vemos es eh lo que es son las vías hm adrenérgicas, fíjense que son muy chiquitas y que en general todas terminan en lo que es el hipotálamo, que es esta región de aquí, que es un centro homeostático superimportante, es una región que regula todo lo que es la producción de de hormonas en el cuerpo, o sea, todo el sistema endocrino, ehm regula eh lo que es el sueño y la vigilia nuevamente, ¿sí?
+
+[16:32]
+Principalmente eso son ehm digamos las que las que más les van a importar, pero el hipotálamo es una de las estructuras más importantes y calculo que a lo largo de la cursada lo van a escuchar muchas veces al hipotálamo, si es que ya han oído de él un montón.
+
+[16:49]
+Eh, bien, en definitiva estos son un poco eh las vías nuevamente, pero lo que les quería enseñar aquí es es un tanto de lo que son los los targets, o sea, los lugares diana a donde llegan las células eh noradrenérgicas. Fíjense como llegan a tálamo, ¿sí? Eso tiene que ver con el nivel de alerta, el nivel de vigilia, como llegan al hipotálamo.
+
+[17:15]
+Nuevamente les repito, porque yo creo en la reiteración como método pedagógico, eh, al hipotálamo para activar vías que son parasimpáticas. Fíjense acá cómo va el hipocampo, entonces mejorarían la memoria, ¿sí? Y a las neocortezas, sobre todo a la corteza prefrontal, no se le olviden, en donde media funciones de atención, pero también también de trabajo cognitivo, eh entre otras funciones, ¿sí?
+
+[17:41]
+La noradrenalina entonces es uno de los sistemas más importantes. Tiene más distribución que eh los sistemas dopaminérgicos. Bien, y llegamos a las vías que dominan, por así decirlo. ¿Por qué? Porque son las más ampliamente distribuidas. Si yo te voy a hacer un ranking de las vías que más ampliamente están distribuidas a nivel del sistema nervioso central, con lo que respecta a las las monaminas, ¿sí?
+
+[18:09]
+Las número uno van a ser las serotoninérgicas, las número dos van a ser noradrenérgicas y por último las dopaminérgicas. Y como ya han visto las noradrenérgicas casi que ni nos no nos importan para fines prácticos de esta clase, ¿sí? Así que veamos un poquito. Esta es la síntesis, ¿sí? De lo que son eh de lo que es la serotonina a partir de un aminoácido que se llama triptofano.
+
+[18:33]
+Eh, la primera reacción que se produce es la hidroxilación de ese estofano y por último se le saca el grupo carboxilo dejando triptamina. Eh, entonces el nombre final de la serotonina o la estructura final de la serotonina, mejor dicho, es la cinco hidroxitriptamina. Y ustedes van a ver que a lo largo de toda la cursada nosotros averíamos serotonina como cinco HT. Son sinónimos, ¿sí? Cinco hidroxitriptamina y serotonina.
+
+[19:03]
+También es el nombre que reciben sus receptores, así que ojo con eso. Bien. Bueno, ¿dónde se produce la serotonina a nivel de lo que es eh el sistema el sistema nervioso central? Principalmente aquí en el tronco del encéfalo, igual que las otras dos, en una región que se llama núcleos del rafe. Estos núcleos del rafe, ¿sí? Van a van a producir casi toda la serotonina del sistema nervioso central y la van a distribuir ampliamente, ¿sí?
+
+[19:30]
+De nuevo, funciones cerebelosas, también va a ir a Anglés de la base, va a ir a tálamo, va a ir a hipotálamo, ¿sí? también va a mediar y está involucrada con las respuestas de vigilia, con la alerta, con eh algo de lo que es la energía y fíjense cómo se distribuye también hacia cortesas que son más prefrontales, cortesas que son más parietal, ¿sí?
+
+[19:53]
+Y quiero hacer un pequeño comentario acerca de este nuclicito de acá que se encuentra en lo que es la protuberancia y que fíjense cómo baja hacia la médula espinal, ¿sí?
+
+[20:05]
+No va a cumplir funciones terapéuticas al la hora de que hablemos de ello, sino que más bien al contrario, va a ser el el responsable de los efectos adversos sexuales que eh se producen en la mayoría de los pacientes que se tratan con antidepresivos de eh el tipo de inhibidores de la recaptación de la serotonina. O sea, que ya hice un pequeño spoiler, ¿sí? Bueno, vamos con eh vamos a analizar un poquito estas vías a dónde van nuevamente.
+
+[20:34]
+Eh, ya dijimos ganglios de la base, importante, recuérdenlo para cuando hablemos de ehm de antipsicóticos. Fíjense al hipotálamo, también para medir respuestas, eh autonómicas, endocrinológicas y de todo tipo, conductuales, comportamentales, ¿no? O sea, el hipotálamo se encarga de muchas cosas. El tálamo, ¿sí?
+
+[21:01]
+En donde también tiene que ver con la energía, tiene que ver con la vigilia, de nuevo el hipocampo, donde se va a asociar con la memoria y las neocortesas ni hablar, ¿sí? Las neocortesas es quizá el sitio en donde más importante sea la eh recepción de estas vías serotonérgicas, ¿okay?
+
+[21:24]
+Bien, antes de continuar con con esto que es la teoría monaminérgica, quiero hacer una solita eh como aclaración por así decirlo. Recuerden que nosotros hablamos de el glutamato y el GABA como los principales neurotransmisores del sistema nervioso central, que están involucrados en prácticamente todas todas todas todas las las conductas.
+
+[21:46]
+Entonces, ustedes por ahí se preguntarán por qué, si esos son los neurotransmisores que que por lejos más cantidad de sinapsis tienen, ¿por qué no nos dedicamos principalmente como hacemos con las benzodiacepinas en el GABA eh a por ejemplo controlar el glutamato o lo que fuera?
+
+[22:06]
+Pero justamente esta cuestión de que sean como tan eh como de que tengan tantos tantos tantos sitios que funcione para tantos sistemas y para tantas sinapsis, hace que sea muy un poco específica la la capacidad que nosotros tenemos de de gobernarlos, por así decirlo.
+
+[22:25]
+Entonces, si bien se intenta eh y hoy por hoy hay un montón de de vías de investigación en lo que son las vías glutamatergicas eh para la regulación del ánimo, entre otras cosas.
+
+[22:39]
+Eh, todavía no hemos hallado eh fármacos que sean lo suficientemente específicos para que solamente vayan a áreas que están asociadas con el Entonces, en ese sentido las monoaminas que tienen una producción relativamente limitada, pero muy asociada a cuestiones anímicas y cognitivas, nos sirven mucho como para regularlas evitando tener efectos adversos a nivel de todo el resto del sistema nervioso central.
+
+[23:07]
+Además, y ahora sí, me voy a meter con lo que dice la diapo, fíjense, esto está sacado del estal, me parece que es bastante explicativo. Em, fíjense como es la hipótesis monoaminérgica de la depresión. Lo que se ha observado es que en la depresión la eh la el sistema monoaminérgico que normalmente debiera funcionar de una manera similar a esto, ¿no?
+
+[23:31]
+O sea, fíjense como es todas las vías vienen desde el tronco del encéfalo, ascienden y acá, por ejemplo, está representada la corteza prefrontal en donde se libera la dopamina en dosis suficientes, la serotonina, la noradrenalina, etcétera, ¿sí? Eh, ¿cómo es Estas vías, en los estados depresivos, están enfermas, ¿sí? Entonces, no van a recibir la cantidad, por así decirlo, de neurotransmisor que se requiere.
+
+[24:02]
+Esto inevitablemente conlleva varias consecuencias. Por un lado, se acuerdan que nosotros hablamos siempre de lo que es el down y el up regulation de los receptores. O sea, si yo tengo menos cantidad de neurotransmisor que me está llegando como neurona, automáticamente voy a reaccionar mediante lo que se un up regulation. O sea, que va a haber un montón de receptores de dopamina acá, ¿sí?
+
+[24:26]
+Eventualmente no está representado en la imagen, pero eventualmente va a haber un montón de dopamina, de serotonina y de noradrenalina que no pueden ser ocupados por las sustancias, ¿sí? Eso lleva o es parte de lo que es la la enfermedad, ¿sí? La depresión.
+
+[24:42]
+Por otro lado, estas neuronas, así mismo, como están enfermas, no pueden producir la cantidad de neurotransmisor eh requerido para llevar a cabo todas estas funciones que estuvimos mencionando a lo largo de la clase, ¿sí?
+
+[24:57]
+Y por último quiero cerrar para luego retomarlo en el próximo videíto y así podemos poder hablar un poco de cómo es el mecanismo de acción de todos estos neurotransmisores con un esquema de una sinapsis nuevamente haciendo un repasito del salite que hacemos prácticamente todas las clases, ¿no? Bueno, ya dijimos cómo se sintetiza a partir de triptofano, se forma la serotonina, la serotonina se almacena en vez vesículas, igual que todos los otros neurotransmisores, eh, se va a liberar, ¿sí?
+
+[25:26]
+Aquí a lo que es la brecha sináptica, va a interactuar con estos receptores que son los 5-HT, serotonina, ¿sí? Y ¿cuál es el mecanismo de terminación de la serotonina? La recaptación, ¿sí? Y quédense con ese concepto porque es muy importante. La gran mayoría de los antidepresivos van a ser mayor o menor medida inhibidores de esta recaptación.
+
+[25:53]
+Entonces, la serotonina se recapta, se vuelve a meter para la célula y luego se tiene que degradar, ¿no? Porque eh No puedo tenerla ahí para siempre y acá suelta. ¿Quién la agarra entonces cuando está fuera de la vesícula que se acaba de recaptar? Una enzima que se llama mao o monoaminooxidasa, que se va a encargar no solo de la degradación de serotonina, sino de la degradación de todas las monoaminas.
+
+[26:20]
+O sea, que la noradrenalina también, la dopamina también, ¿sí? Bien. Eh, eso es como el proceso de la sinapsis serotonina. También, sí, último concepto, lo prometo. Quiero recordarles que hay receptores presinápticos.
+
+[26:44]
+Los receptores presinápticos en general lo que hacen lo siguiente, sensan o reciben, por así decirlo, la cantidad de serotonina que hay acá en la brecha sináptica y si dicen que sí hay mucha serotonina, la serotonina se me unió porque hay mucha. Digo, bueno, a ver, a un mecanismo de feedback en donde le digo, "Ya hay mucha serotonina, no liberes más." ¿Sí?
+
+[27:10]
+Entonces, para que lo tengan, lo dejo ahí como colgando. Ese concepto nos va a servir para entender los nuevos antidepresivos también, ¿sí? No voy a explicar la sinapsis noradrenérgica, porque es igualita. No no nos interesa hoy por hoy. Si quieren pausan el video, screenshot, la la repasan, la practican con el salite, ¿sí? Bueno, gracias, gracias por prestarle atención a esta primera parte, ¿sí?
+
+[27:40]
+Que eh como ya les dije es introductoria, nos va a ayudar a entender por qué los antidepresivos funcionan de la manera en la que funcionan. Eh, espero que les haya gustado, espero que les haya quedado relativamente claro. Ahora, a medida que avancemos sobre los grupos y las familias y los mecanismos de acción de los antidepresivos, creo que se va a entender mucho más. Eh Y bueno, nada, ahora a estudiar lo que son los antidepresivos propiamente dichos que para eso estamos acá, ¿dale?
+
+[28:10]
+Les mando un beso a todos y espero que les haya gustado mucho. Chao, chao.

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Farmacocinética — Guía visual</title>
+
+<style>
+:root{
+  --bg:#fff8ef;
+  --paper:#ffffff;
+  --ink:#243042;
+  --muted:#687386;
+  --blue:#4b7bec;
+  --pink:#ff6b9a;
+  --yellow:#ffd166;
+  --green:#55c6a9;
+  --violet:#9b5de5;
+  --orange:#ff9f43;
+  --soft-blue:#eef4ff;
+  --soft-pink:#fff0f6;
+  --soft-green:#ecfff8;
+  --soft-yellow:#fff8dc;
+  --shadow:0 10px 25px rgba(50, 50, 93, .10);
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background:
+    radial-gradient(circle at top left, #ffe8f1 0 18%, transparent 19%),
+    radial-gradient(circle at top right, #e0f7ff 0 16%, transparent 17%),
+    var(--bg);
+  color:var(--ink);
+  line-height:1.65;
+}
+
+.wrapper{
+  max-width:1050px;
+  margin:auto;
+  padding:34px 22px 70px;
+}
+
+.hero{
+  background:linear-gradient(135deg,#ffffff 0%,#fff4c7 45%,#ffe3ef 100%);
+  border:3px solid #222;
+  border-radius:28px;
+  padding:34px;
+  box-shadow:8px 8px 0 #222;
+  position:relative;
+  overflow:hidden;
+}
+
+.hero:after{
+  content:"ADME";
+  position:absolute;
+  right:20px;
+  bottom:-28px;
+  font-size:92px;
+  font-weight:900;
+  color:rgba(255,107,154,.22);
+  letter-spacing:4px;
+}
+
+.kicker{
+  display:inline-block;
+  background:#222;
+  color:white;
+  padding:5px 12px;
+  border-radius:999px;
+  font-size:13px;
+  letter-spacing:.4px;
+  text-transform:uppercase;
+  font-weight:700;
+}
+
+h1{
+  margin:18px 0 8px;
+  font-size:46px;
+  line-height:1.05;
+}
+
+.hero p{
+  max-width:720px;
+  font-size:19px;
+  margin:0;
+}
+
+.big-definition{
+  margin-top:22px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+
+.bubble{
+  background:white;
+  border:2px solid #222;
+  border-radius:20px;
+  padding:16px;
+  box-shadow:5px 5px 0 rgba(0,0,0,.9);
+}
+
+.bubble strong{
+  color:var(--pink);
+}
+
+.nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin:32px 0 20px;
+}
+
+.nav a{
+  text-decoration:none;
+  color:#222;
+  background:white;
+  border:2px solid #222;
+  border-radius:999px;
+  padding:8px 14px;
+  font-weight:700;
+  box-shadow:3px 3px 0 #222;
+}
+
+.section{
+  margin-top:34px;
+}
+
+.section-title{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:14px;
+}
+
+.icon{
+  width:46px;
+  height:46px;
+  display:grid;
+  place-items:center;
+  border:2px solid #222;
+  border-radius:14px;
+  background:var(--yellow);
+  box-shadow:4px 4px 0 #222;
+  font-size:24px;
+}
+
+h2{
+  margin:0;
+  font-size:29px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+}
+
+.card{
+  background:var(--paper);
+  border:2px solid #222;
+  border-radius:24px;
+  padding:20px;
+  box-shadow:var(--shadow);
+}
+
+.card.pop{
+  box-shadow:6px 6px 0 #222;
+}
+
+.card h3{
+  margin:0 0 8px;
+  font-size:22px;
+}
+
+.tag{
+  display:inline-block;
+  font-size:12px;
+  font-weight:800;
+  padding:4px 9px;
+  border-radius:999px;
+  border:2px solid #222;
+  margin-bottom:10px;
+}
+
+.tag.blue{background:var(--soft-blue)}
+.tag.pink{background:var(--soft-pink)}
+.tag.green{background:var(--soft-green)}
+.tag.yellow{background:var(--soft-yellow)}
+
+ul{
+  margin:8px 0 0;
+  padding-left:22px;
+}
+
+li{margin:5px 0}
+
+.adme{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+}
+
+.adme .step{
+  background:white;
+  border:2px solid #222;
+  border-radius:20px;
+  padding:18px 14px;
+  text-align:center;
+  box-shadow:5px 5px 0 #222;
+}
+
+.step .letter{
+  width:52px;
+  height:52px;
+  margin:0 auto 9px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  border:2px solid #222;
+  background:#ffd166;
+  font-size:25px;
+  font-weight:900;
+}
+
+.callout{
+  background:#222;
+  color:white;
+  border-radius:22px;
+  padding:18px 20px;
+  margin-top:16px;
+}
+
+.callout strong{color:#ffd166}
+
+.image-row{
+  display:grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap:18px;
+  align-items:center;
+}
+
+.study-img{
+  width:100%;
+  max-height:260px;
+  object-fit:contain;
+  background:#fff;
+  border:2px solid #222;
+  border-radius:18px;
+  padding:10px;
+  box-shadow:5px 5px 0 #222;
+}
+
+.small-img{
+  max-height:210px;
+}
+
+.flashcards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+
+.flash{
+  min-height:170px;
+  background:white;
+  border:2px solid #222;
+  border-radius:22px;
+  padding:18px;
+  box-shadow:5px 5px 0 #222;
+  position:relative;
+}
+
+.flash:before{
+  content:"";
+  position:absolute;
+  top:12px;
+  right:14px;
+  width:38px;
+  height:10px;
+  background:var(--yellow);
+  transform:rotate(8deg);
+  opacity:.9;
+}
+
+.flash h3{
+  color:var(--blue);
+}
+
+.eq{
+  font-family:"Courier New", monospace;
+  background:#f4f4f5;
+  border:2px dashed #222;
+  border-radius:14px;
+  padding:10px 12px;
+  font-weight:700;
+  display:inline-block;
+}
+
+.compare{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+
+.good{
+  background:var(--soft-green);
+}
+
+.warn{
+  background:var(--soft-pink);
+}
+
+.footer{
+  margin-top:40px;
+  text-align:center;
+  color:var(--muted);
+  font-size:14px;
+}
+
+mark{
+  background:#fff1a8;
+  padding:0 4px;
+  border-radius:4px;
+}
+
+@media (max-width:800px){
+  h1{font-size:36px}
+  .big-definition,
+  .grid,
+  .image-row,
+  .compare,
+  .flashcards{
+    grid-template-columns:1fr;
+  }
+  .adme{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+
+  <section class="hero">
+    <span class="kicker">Psicofarmacología visual</span>
+    <h1>Farmacocinética</h1>
+    <p><strong>Lo que el cuerpo le hace al fármaco.</strong> Estudia cómo cambia la concentración del fármaco a lo largo del tiempo hasta llegar —o no— a su sitio de acción.</p>
+
+    <div class="big-definition">
+      <div class="bubble">
+        <strong>Idea central:</strong><br>
+        ¿Cuánto fármaco llega, cuánto circula, cómo se transforma y cómo se elimina?
+      </div>
+      <div class="bubble">
+        <strong>En psicofarmacología:</strong><br>
+        la biofase suele pensarse en relación con el SNC y la sinapsis.
+      </div>
+    </div>
+  </section>
+
+  <nav class="nav">
+    <a href="#adme">ADME</a>
+    <a href="#vias">Vías</a>
+    <a href="#absorcion">Absorción</a>
+    <a href="#distribucion">Distribución</a>
+    <a href="#bhe">BHE</a>
+    <a href="#metabolismo">Metabolismo</a>
+    <a href="#clinica">Clínica</a>
+  </nav>
+
+  <section class="section" id="adme">
+    <div class="section-title"><div class="icon">🧭</div><h2>Mapa general: ADME</h2></div>
+    <div class="adme">
+      <div class="step"><div class="letter">A</div><strong>Absorción</strong><br><small>entra al cuerpo</small></div>
+      <div class="step"><div class="letter">D</div><strong>Distribución</strong><br><small>viaja a tejidos</small></div>
+      <div class="step"><div class="letter">M</div><strong>Metabolismo</strong><br><small>se transforma</small></div>
+      <div class="step"><div class="letter">E</div><strong>Excreción</strong><br><small>sale del cuerpo</small></div>
+    </div>
+    <div class="callout"><strong>Ojo:</strong> la administración no es algo que “el cuerpo le hace” al fármaco; es la forma en que lo introducimos.</div>
+  </section>
+
+  <section class="section" id="vias">
+    <div class="section-title"><div class="icon">💊</div><h2>Vías de administración</h2></div>
+    <div class="grid">
+      <div class="card pop">
+        <span class="tag blue">Vía oral</span>
+        <h3>Intestino → hígado → circulación</h3>
+        <ul>
+          <li>Absorción intestinal.</li>
+          <li>Suele ser más lenta.</li>
+          <li>Puede sufrir <mark>primer paso hepático</mark>.</li>
+        </ul>
+      </div>
+      <div class="card pop">
+        <span class="tag pink">Sublingual</span>
+        <h3>Más rápida y evita parte del hígado</h3>
+        <ul>
+          <li>Absorción directa.</li>
+          <li>Llega más droga a circulación sistémica.</li>
+          <li>Si se traga, pierde esa ventaja.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag green">Parenterales</span>
+        <h3>IV / IM</h3>
+        <ul>
+          <li>No pasan primero por intestino.</li>
+          <li>La IV entra directo a circulación.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag yellow">Rectal / transdérmica</span>
+        <h3>Otras rutas</h3>
+        <ul>
+          <li>Rectal: parte puede evitar el hígado.</li>
+          <li>Transdérmica: ejemplo, parches de nicotina.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="absorcion">
+    <div class="section-title"><div class="icon">🚪</div><h2>Absorción</h2></div>
+    <div class="card image-row">
+      <div>
+        <span class="tag blue">Definición</span>
+        <h3>Del exterior al interior</h3>
+        <p>Es el desplazamiento de la droga desde un compartimento externo —o comunicado con el exterior, como el tubo digestivo— hacia un compartimento interno.</p>
+        <p>Para absorberse, muchas moléculas deben atravesar <mark>membranas plasmáticas</mark>.</p>
+      </div>
+      <img class="study-img small-img" src="https://gyazo.com/e1b1a9d1fc196655eaf31efcaf703c74.png" alt="Membrana celular intestinal">
+    </div>
+
+    <div class="card image-row" style="margin-top:18px;">
+      <div>
+        <span class="tag pink">Difusión simple</span>
+        <h3>Cuando el fármaco cruza “solo”</h3>
+        <ul>
+          <li>Molécula pequeña.</li>
+          <li>Liposoluble.</li>
+          <li>No ionizada.</li>
+        </ul>
+        <p><strong>Ejemplo clave:</strong> el litio no cruza por difusión simple porque es un ion.</p>
+      </div>
+      <img class="study-img small-img" src="https://gyazo.com/3017a513e5ee321b8683998af009b45d.png" alt="Difusión simple">
+    </div>
+
+    <div class="compare" style="margin-top:18px;">
+      <div class="card good">
+        <h3>✅ Cruza mejor</h3>
+        <p>Pequeño + liposoluble + no ionizado.</p>
+      </div>
+      <div class="card warn">
+        <h3>⚠️ Cruza peor</h3>
+        <p>Grande + hidrosoluble + ionizado.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="distribucion">
+    <div class="section-title"><div class="icon">🚌</div><h2>Distribución</h2></div>
+    <div class="card image-row">
+      <div>
+        <span class="tag green">Viaje por sangre</span>
+        <h3>Del plasma a los tejidos</h3>
+        <p>Es el proceso por el cual el fármaco alcanza distintos órganos o tejidos mediante la circulación sanguínea.</p>
+        <ul>
+          <li><strong>Fracción unida a proteínas:</strong> viaja ligada, por ejemplo a albúmina.</li>
+          <li><strong>Fracción libre:</strong> puede llegar a tejidos y ejercer acción.</li>
+        </ul>
+      </div>
+      <img class="study-img small-img" src="https://gyazo.com/65fdbb5e2934196ee2448c41cc8c36d0.png" alt="Unión a proteínas plasmáticas">
+    </div>
+    <div class="callout"><strong>Clave:</strong> dos fármacos pueden competir por la albúmina. Si uno desplaza al otro, puede aumentar la fracción libre.</div>
+  </section>
+
+  <section class="section" id="bhe">
+    <div class="section-title"><div class="icon">🧠</div><h2>Barrera hematoencefálica</h2></div>
+    <div class="grid">
+      <div class="card">
+        <span class="tag blue">Qué es</span>
+        <h3>Filtro sangre ↔ cerebro</h3>
+        <p>Conjunto de estructuras entre el torrente sanguíneo y el parénquima cerebral. El endotelio del SNC tiene uniones estrechas y transportadores específicos.</p>
+        <img class="study-img" src="https://gyazo.com/0f677f4311092169cc8ce10302cf6f80.png" alt="Barrera hematoencefálica">
+      </div>
+      <div class="card">
+        <span class="tag pink">Qué puede pasar</span>
+        <h3>Entrada selectiva</h3>
+        <ul>
+          <li>Lipofílicos y bajo peso molecular → difusión simple.</li>
+          <li>Glucosa, aminoácidos, hormonas → transportadores.</li>
+          <li>Iones, como litio → canales específicos.</li>
+        </ul>
+        <img class="study-img" src="https://gyazo.com/8103819958463587f45deacbb10cae23.png" alt="Transporte activo o facilitado">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="metabolismo">
+    <div class="section-title"><div class="icon">🧪</div><h2>Metabolismo y eliminación</h2></div>
+    <div class="grid">
+      <div class="card pop">
+        <span class="tag yellow">Metabolismo</span>
+        <h3>Transformar para eliminar</h3>
+        <p>La mayoría de las drogas son liposolubles. El metabolismo las vuelve más hidrosolubles para facilitar su salida.</p>
+        <ul>
+          <li>Metabolitos inactivos.</li>
+          <li>Metabolitos activos.</li>
+          <li>Metabolitos tóxicos.</li>
+        </ul>
+        <p><strong>Órgano clave:</strong> hígado. Enzimas CYP.</p>
+      </div>
+      <div class="card pop">
+        <span class="tag green">Excreción</span>
+        <h3>Sacar del cuerpo</h3>
+        <p>Movimiento desde compartimentos internos hacia el exterior o hacia compartimentos comunicados con el exterior.</p>
+        <ul>
+          <li>Riñón → orina.</li>
+          <li>Hígado → bilis.</li>
+        </ul>
+        <p><strong>Eliminación = metabolismo + excreción.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="clinica">
+    <div class="section-title"><div class="icon">⭐</div><h2>Conceptos clínicos para memorizar</h2></div>
+
+    <div class="flashcards">
+      <div class="flash">
+        <h3>Biodisponibilidad</h3>
+        <p>Fracción de la dosis que alcanza la circulación sistémica en forma inalterada.</p>
+        <p><span class="eq">F = fracción</span></p>
+      </div>
+      <div class="flash">
+        <h3>Vida media</h3>
+        <p>Tiempo necesario para que la concentración plasmática se reduzca al 50%.</p>
+        <p><span class="eq">t½</span></p>
+      </div>
+      <div class="flash">
+        <h3>Primer orden</h3>
+        <p>La velocidad de eliminación es proporcional a la concentración.</p>
+        <p><span class="eq">vida media constante</span></p>
+      </div>
+    </div>
+
+    <div class="callout">
+      <strong>Para examen:</strong> en cinética de primer orden, después de 4–5 vidas medias el fármaco se considera prácticamente eliminado.
+    </div>
+  </section>
+
+  <p class="footer">Guía visual de estudio — Farmacocinética y farmacodinamia</p>
+</div>
+</body>
+</html>

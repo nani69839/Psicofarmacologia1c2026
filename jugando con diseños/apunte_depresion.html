@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apunte: Trastornos Depresivos y Antidepresivos</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --azul: #4A90D9;
+    --celeste: #7EC8E3;
+    --verde: #5CB85C;
+    --verde-claro: #A8D8A8;
+    --amarillo: #FFD166;
+    --naranja: #F4A261;
+    --rojo: #E76F51;
+    --rosa: #FF8FAB;
+    --violeta: #9B72CF;
+    --lila: #C3B1E1;
+    --gris-fondo: #F8F9FA;
+    --blanco: #FFFFFF;
+    --texto: #2D3748;
+    --texto-claro: #4A5568;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #f0f4ff 0%, #fef9f0 50%, #f0fff4 100%);
+    color: var(--texto);
+    line-height: 1.7;
+    padding: 20px;
+  }
+
+  /* PORTADA */
+  .portada {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 40%, #f093fb 100%);
+    border-radius: 24px;
+    padding: 48px 40px;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    box-shadow: 0 20px 60px rgba(102,126,234,0.4);
+    position: relative;
+    overflow: hidden;
+  }
+  .portada::before {
+    content: '';
+    position: absolute; top: -50%; left: -50%;
+    width: 200%; height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+    animation: shimmer 4s ease-in-out infinite;
+  }
+  @keyframes shimmer { 0%,100%{transform:rotate(0deg)} 50%{transform:rotate(180deg)} }
+  .portada h1 { font-size: 2.4em; font-weight: 900; margin-bottom: 12px; text-shadow: 0 2px 10px rgba(0,0,0,0.2); }
+  .portada .subtitulo { font-size: 1.1em; opacity: 0.9; margin-bottom: 20px; }
+  .portada .chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px; }
+  .portada .chip { background: rgba(255,255,255,0.25); border-radius: 20px; padding: 6px 18px; font-size: 0.88em; font-weight: 700; backdrop-filter: blur(10px); }
+
+  /* ÍNDICE */
+  .indice {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 36px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border-left: 6px solid var(--azul);
+  }
+  .indice h2 { color: var(--azul); font-size: 1.3em; margin-bottom: 16px; }
+  .indice-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+  .indice-item { display: flex; align-items: center; gap: 10px; padding: 8px 14px; border-radius: 12px; font-weight: 600; font-size: 0.92em; cursor: pointer; text-decoration: none; color: var(--texto); transition: all 0.2s; }
+  .indice-item:hover { background: #f0f4ff; transform: translateX(4px); }
+  .indice-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.85em; font-weight: 800; color: white; flex-shrink: 0; }
+
+  /* SECCIÓN */
+  .seccion {
+    margin-bottom: 40px;
+  }
+  .seccion-header {
+    border-radius: 18px 18px 0 0;
+    padding: 22px 30px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .seccion-body {
+    background: white;
+    border-radius: 0 0 18px 18px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.09);
+  }
+
+  /* COLORES SECCIONES */
+  .sec-epidemio .seccion-header { background: linear-gradient(135deg, #4A90D9, #7EC8E3); }
+  .sec-psicopato .seccion-header { background: linear-gradient(135deg, #9B72CF, #C3B1E1); }
+  .sec-diagnostico .seccion-header { background: linear-gradient(135deg, #F4A261, #FFD166); }
+  .sec-clasificacion .seccion-header { background: linear-gradient(135deg, #5CB85C, #A8D8A8); }
+  .sec-especificadores .seccion-header { background: linear-gradient(135deg, #E76F51, #FF8FAB); }
+  .sec-etiologia .seccion-header { background: linear-gradient(135deg, #3D5A80, #98C1D9); }
+  .sec-neuro .seccion-header { background: linear-gradient(135deg, #457B9D, #A8DADC); }
+  .sec-antidep .seccion-header { background: linear-gradient(135deg, #6A0572, #AB83A1); }
+  .sec-familias .seccion-header { background: linear-gradient(135deg, #E63946, #F4A261); }
+  .sec-algo .seccion-header { background: linear-gradient(135deg, #2D6A4F, #52B788); }
+
+  /* COMPONENTES */
+  h3 { color: var(--texto); font-size: 1.15em; margin: 24px 0 12px; font-weight: 800; }
+  h4 { font-size: 1em; margin: 16px 0 8px; font-weight: 700; }
+  p { margin-bottom: 12px; color: var(--texto-claro); font-size: 0.95em; }
+
+  /* CAJA DESTACADA */
+  .caja {
+    border-radius: 14px;
+    padding: 18px 22px;
+    margin: 16px 0;
+    border-left: 5px solid;
+  }
+  .caja-azul { background: #EBF4FF; border-color: var(--azul); }
+  .caja-verde { background: #EAFAF1; border-color: var(--verde); }
+  .caja-amarilla { background: #FFF9E6; border-color: var(--amarillo); }
+  .caja-roja { background: #FFF0EE; border-color: var(--rojo); }
+  .caja-violeta { background: #F3EEFF; border-color: var(--violeta); }
+  .caja-naranja { background: #FFF4EC; border-color: var(--naranja); }
+  .caja strong { display: block; font-size: 0.88em; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px; color: var(--texto); }
+
+  /* TABLA */
+  .tabla-wrap { overflow-x: auto; margin: 18px 0; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
+  thead tr { background: linear-gradient(135deg, #4A90D9, #7EC8E3); color: white; }
+  th { padding: 12px 16px; text-align: left; font-weight: 700; }
+  td { padding: 11px 16px; border-bottom: 1px solid #f0f4ff; }
+  tr:nth-child(even) td { background: #f8fbff; }
+  tr:hover td { background: #edf4ff; }
+
+  /* GRID DE SÍNTOMAS */
+  .sintomas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 14px;
+    margin: 18px 0;
+  }
+  .sintoma-card {
+    border-radius: 14px;
+    padding: 16px;
+    border: 2px solid;
+    background: white;
+    position: relative;
+  }
+  .sintoma-num {
+    position: absolute; top: -10px; left: 16px;
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 0.82em; color: white;
+  }
+  .sintoma-titulo { font-weight: 800; font-size: 0.95em; margin-bottom: 4px; padding-top: 6px; }
+  .sintoma-desc { font-size: 0.85em; color: var(--texto-claro); }
+
+  /* BADGE */
+  .badge {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: 700;
+    margin: 2px;
+  }
+  .badge-azul { background: #DBEAFE; color: #1E40AF; }
+  .badge-verde { background: #D1FAE5; color: #065F46; }
+  .badge-rojo { background: #FEE2E2; color: #991B1B; }
+  .badge-amarillo { background: #FEF9C3; color: #854D0E; }
+  .badge-violeta { background: #EDE9FE; color: #5B21B6; }
+  .badge-naranja { background: #FED7AA; color: #9A3412; }
+  .badge-rosa { background: #FCE7F3; color: #9D174D; }
+
+  /* DIAGRAMA DE FASES */
+  .fases {
+    display: flex;
+    gap: 0;
+    margin: 20px 0;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  }
+  .fase {
+    flex: 1;
+    padding: 18px 16px;
+    color: white;
+    text-align: center;
+  }
+  .fase-titulo { font-weight: 800; font-size: 0.95em; margin-bottom: 6px; }
+  .fase-desc { font-size: 0.78em; opacity: 0.9; }
+  .fase-tiempo { font-size: 0.82em; font-weight: 700; margin-top: 8px; background: rgba(255,255,255,0.2); border-radius: 8px; padding: 3px 8px; display: inline-block; }
+
+  /* DROGA CARD */
+  .droga-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; margin: 18px 0; }
+  .droga-card {
+    border-radius: 16px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    border-top: 4px solid;
+  }
+  .droga-nombre { font-size: 1.05em; font-weight: 800; margin-bottom: 4px; }
+  .droga-clase { font-size: 0.8em; color: var(--texto-claro); margin-bottom: 12px; }
+  .droga-label { font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; color: var(--texto-claro); margin: 10px 0 4px; }
+  .droga-efectos { display: flex; flex-wrap: wrap; gap: 4px; }
+
+  /* COMPARACIÓN UNIPOLAR VS BIPOLAR */
+  .comp-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 18px 0;
+  }
+  .comp-card { border-radius: 14px; padding: 20px; }
+  .comp-unipolar { background: linear-gradient(135deg, #EBF4FF, #DBEAFE); border: 2px solid var(--azul); }
+  .comp-bipolar { background: linear-gradient(135deg, #FFF0EE, #FEE2E2); border: 2px solid var(--rojo); }
+  .comp-titulo { font-weight: 900; font-size: 1.1em; margin-bottom: 14px; }
+  .comp-item { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 6px; font-size: 0.88em; }
+  .comp-item::before { content: '→'; font-weight: 700; flex-shrink: 0; }
+
+  /* ÁRBOL DIAGNÓSTICO */
+  .arbol { background: #f8f9ff; border-radius: 14px; padding: 24px; margin: 18px 0; }
+  .criterio-a { background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-radius: 12px; padding: 16px 20px; margin-bottom: 16px; }
+  .criterio-a h4 { color: white; margin: 0 0 8px; font-size: 1em; }
+  .criterio-a p { color: rgba(255,255,255,0.9); font-size: 0.88em; margin: 0; }
+  .criterios-otros { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
+  .criterio-chip { border-radius: 10px; padding: 12px 16px; font-size: 0.85em; font-weight: 700; text-align: center; }
+
+  /* MONOAMINAS VISUAL */
+  .mono-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 18px 0; }
+  .mono-card { border-radius: 16px; padding: 20px; text-align: center; color: white; }
+  .mono-nombre { font-size: 1.1em; font-weight: 900; margin-bottom: 8px; }
+  .mono-funcion { font-size: 0.82em; opacity: 0.9; margin-bottom: 12px; line-height: 1.4; }
+  .mono-origen { font-size: 0.78em; background: rgba(255,255,255,0.2); border-radius: 8px; padding: 4px 10px; }
+
+  /* ALERTA */
+  .alerta {
+    border-radius: 12px; padding: 14px 18px; margin: 14px 0;
+    display: flex; gap: 12px; align-items: flex-start;
+    font-size: 0.9em;
+  }
+  .alerta-icon { font-size: 1.3em; flex-shrink: 0; }
+  .alerta-roja { background: #FFF0EE; border: 2px solid #E76F51; }
+  .alerta-verde { background: #EAFAF1; border: 2px solid #5CB85C; }
+  .alerta-amarilla { background: #FFF9E6; border: 2px solid #FFD166; }
+
+  /* DUELO VS DEPRESIÓN */
+  .duelo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 18px 0; }
+  .duelo-card, .depresion-card { border-radius: 14px; padding: 18px; }
+  .duelo-card { background: linear-gradient(135deg, #EAFAF1, #D1FAE5); border: 2px solid var(--verde); }
+  .depresion-card { background: linear-gradient(135deg, #F3EEFF, #EDE9FE); border: 2px solid var(--violeta); }
+
+  /* FAMILIAS DROGAS */
+  .familia-bloque {
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+  .familia-header {
+    padding: 16px 22px;
+    color: white;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .familia-header h4 { margin: 0; font-size: 1.1em; color: white; }
+  .familia-header .sigla { background: rgba(255,255,255,0.25); padding: 2px 10px; border-radius: 8px; font-size: 0.85em; font-weight: 700; }
+  .familia-body { background: white; padding: 20px 22px; }
+  .familia-drogas-lista { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+  .efectos-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px; }
+  .efectos-col h5 { font-size: 0.82em; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px; color: var(--texto-claro); }
+  .efectos-col ul { list-style: none; }
+  .efectos-col ul li { font-size: 0.85em; padding: 3px 0; display: flex; align-items: center; gap: 6px; color: var(--texto-claro); }
+  .efectos-col ul li::before { content: '•'; font-size: 1.3em; }
+
+  /* MECANISMO DE ACCIÓN VISUAL */
+  .mecanismo {
+    background: #f8f9ff;
+    border-radius: 14px;
+    padding: 20px;
+    margin: 16px 0;
+    text-align: center;
+  }
+  .sinapsis-visual {
+    display: flex; align-items: center; justify-content: center; gap: 8px; margin: 16px 0; flex-wrap: wrap;
+  }
+  .neurona { padding: 12px 18px; border-radius: 12px; font-weight: 700; font-size: 0.88em; }
+  .neurona-pre { background: #DBEAFE; color: #1E40AF; }
+  .neurona-post { background: #D1FAE5; color: #065F46; }
+  .flecha { font-size: 1.5em; color: var(--azul); }
+  .brecha { background: #FEF9C3; border: 2px dashed #FFD166; padding: 10px 18px; border-radius: 10px; font-size: 0.82em; font-weight: 700; color: #854D0E; }
+  .inhibidor { background: #FEE2E2; border: 2px solid #E76F51; padding: 6px 14px; border-radius: 8px; font-size: 0.8em; font-weight: 700; color: #9A1212; }
+
+  /* ALGORITMO */
+  .algo-step {
+    display: flex; gap: 16px; margin-bottom: 14px; align-items: flex-start;
+  }
+  .algo-num {
+    width: 36px; height: 36px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 900; font-size: 1em; color: white; flex-shrink: 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  }
+  .algo-content { flex: 1; }
+  .algo-content h4 { margin: 4px 0 4px; font-size: 0.95em; }
+  .algo-content p { font-size: 0.88em; margin: 0; }
+
+  /* RESPONSIVE */
+  @media (max-width: 640px) {
+    .fases { flex-direction: column; }
+    .comp-grid { grid-template-columns: 1fr; }
+    .mono-grid { grid-template-columns: 1fr; }
+    .duelo-grid { grid-template-columns: 1fr; }
+    .efectos-cols { grid-template-columns: 1fr; }
+    body { padding: 12px; }
+    .portada { padding: 30px 20px; }
+    .portada h1 { font-size: 1.8em; }
+  }
+
+  /* PILLS */
+  .pill-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+  .pill { padding: 5px 14px; border-radius: 20px; font-size: 0.85em; font-weight: 700; }
+
+  /* NOTA IMPORTANTE */
+  .nota-critica {
+    background: linear-gradient(135deg, #FFF0EE, #FFF4EC);
+    border: 2px solid var(--rojo);
+    border-radius: 14px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    font-size: 0.9em;
+  }
+  .nota-critica::before { content: '⚠️ IMPORTANTE: '; font-weight: 800; }
+
+  ul.lista { padding-left: 0; list-style: none; }
+  ul.lista li { padding: 4px 0; padding-left: 20px; position: relative; font-size: 0.9em; color: var(--texto-claro); }
+  ul.lista li::before { content: '▸'; position: absolute; left: 0; color: var(--azul); font-weight: 700; }
+</style>
+</head>
+<body>
+
+<!-- PORTADA -->
+<div class="portada">
+  <div style="font-size:3em; margin-bottom:12px;">🧠</div>
+  <h1>Trastornos Depresivos y Antidepresivos</h1>
+  <p class="subtitulo">Cátedra única de Psicofarmacología · Dr. Saidman / Dra. Herlyn · 2023</p>
+  <div class="chips">
+    <span class="chip">📊 Epidemiología</span>
+    <span class="chip">🔬 Psicopatología</span>
+    <span class="chip">📋 DSM-5</span>
+    <span class="chip">⚗️ Monoaminas</span>
+    <span class="chip">💊 Antidepresivos</span>
+    <span class="chip">🗺️ Algoritmo</span>
+  </div>
+</div>
+
+<!-- ÍNDICE -->
+<div class="indice">
+  <h2>📚 Índice</h2>
+  <div class="indice-grid">
+    <a href="#epidemio" class="indice-item"><span class="indice-num" style="background:#4A90D9">1</span> Epidemiología</a>
+    <a href="#psicopato" class="indice-item"><span class="indice-num" style="background:#9B72CF">2</span> Psicopatología</a>
+    <a href="#diagnostico" class="indice-item"><span class="indice-num" style="background:#F4A261">3</span> Diagnóstico DSM-5</a>
+    <a href="#clasificacion" class="indice-item"><span class="indice-num" style="background:#5CB85C">4</span> Clasificación</a>
+    <a href="#especificadores" class="indice-item"><span class="indice-num" style="background:#E76F51">5</span> Especificadores</a>
+    <a href="#etiologia" class="indice-item"><span class="indice-num" style="background:#3D5A80">6</span> Etiología</a>
+    <a href="#neuro" class="indice-item"><span class="indice-num" style="background:#457B9D">7</span> Monoaminas y SNC</a>
+    <a href="#antidep" class="indice-item"><span class="indice-num" style="background:#6A0572">8</span> Familias antidepresivos</a>
+    <a href="#algo" class="indice-item"><span class="indice-num" style="background:#2D6A4F">9</span> Algoritmo tratamiento</a>
+  </div>
+</div>
+
+<!-- SECCIÓN 1: EPIDEMIOLOGÍA -->
+<div class="seccion sec-epidemio" id="epidemio">
+  <div class="seccion-header">📊 <span>1. Epidemiología</span></div>
+  <div class="seccion-body">
+
+    <div class="sintomas-grid">
+      <div style="background:#EBF4FF; border-radius:14px; padding:18px; text-align:center; border:2px solid var(--azul)">
+        <div style="font-size:2.2em; font-weight:900; color:#1E40AF">3,8%</div>
+        <div style="font-size:0.88em; color:var(--texto-claro)">de la población mundial<br><em>(OMS, 2021)</em></div>
+      </div>
+      <div style="background:#F3EEFF; border-radius:14px; padding:18px; text-align:center; border:2px solid var(--violeta)">
+        <div style="font-size:2.2em; font-weight:900; color:#5B21B6">8,7%</div>
+        <div style="font-size:0.88em; color:var(--texto-claro)">prevalencia vida TDM<br>en Argentina<br><em>(Stagnaro, 2018)</em></div>
+      </div>
+      <div style="background:#EAFAF1; border-radius:14px; padding:18px; text-align:center; border:2px solid var(--verde)">
+        <div style="font-size:2.2em; font-weight:900; color:#065F46">29,1%</div>
+        <div style="font-size:0.88em; color:var(--texto-claro)">prevalencia vida<br>cualquier trastorno mental<br>Argentina (+18 años)</div>
+      </div>
+    </div>
+
+    <h3>🔴 La brecha en el tratamiento</h3>
+    <div style="background:#f8f9ff; border-radius:14px; padding:20px; margin:16px 0;">
+      <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; justify-content:center;">
+        <div style="text-align:center; background:#FEE2E2; border-radius:12px; padding:14px 20px; flex:1; min-width:120px;">
+          <div style="font-size:1.6em; font-weight:900; color:#991B1B">100%</div>
+          <div style="font-size:0.8em; color:#7F1D1D">Pacientes con depresión</div>
+        </div>
+        <div style="font-size:1.5em; color:#999">→</div>
+        <div style="text-align:center; background:#FEF3C7; border-radius:12px; padding:14px 20px; flex:1; min-width:120px;">
+          <div style="font-size:1.6em; font-weight:900; color:#92400E">50%</div>
+          <div style="font-size:0.8em; color:#78350F">Consultan</div>
+        </div>
+        <div style="font-size:1.5em; color:#999">→</div>
+        <div style="text-align:center; background:#D1FAE5; border-radius:12px; padding:14px 20px; flex:1; min-width:120px;">
+          <div style="font-size:1.6em; font-weight:900; color:#065F46">25%</div>
+          <div style="font-size:0.8em; color:#064E3B">Diagnosticados</div>
+        </div>
+        <div style="font-size:1.5em; color:#999">→</div>
+        <div style="text-align:center; background:#DBEAFE; border-radius:12px; padding:14px 20px; flex:1; min-width:120px;">
+          <div style="font-size:1.6em; font-weight:900; color:#1E40AF">12,5%</div>
+          <div style="font-size:0.8em; color:#1E3A8A">Reciben tratamiento</div>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:12px; font-size:0.85em; font-style:italic; color:var(--texto-claro)">Sartorius, 2001</p>
+    </div>
+
+    <h3>📈 Factores de riesgo</h3>
+    <div class="pill-list">
+      <span class="pill" style="background:#FEE2E2;color:#991B1B">Historia de otros trastornos mentales</span>
+      <span class="pill" style="background:#FEF9C3;color:#854D0E">Situaciones traumáticas o estresantes</span>
+      <span class="pill" style="background:#EDE9FE;color:#5B21B6">Antecedentes familiares</span>
+      <span class="pill" style="background:#D1FAE5;color:#065F46">Enfermedad crónica de base</span>
+      <span class="pill" style="background:#DBEAFE;color:#1E40AF">Ciertos medicamentos (ej: antihipertensivos)</span>
+      <span class="pill" style="background:#FCE7F3;color:#9D174D">Abuso de alcohol o drogas</span>
+      <span class="pill" style="background:#FED7AA;color:#9A3412">Pubertad: mujeres 2x más riesgo desde los 15 años</span>
+    </div>
+  </div>
+</div>
+
+<!-- SECCIÓN 2: PSICOPATOLOGÍA -->
+<div class="seccion sec-psicopato" id="psicopato">
+  <div class="seccion-header">🔬 <span>2. Psicopatología</span></div>
+  <div class="seccion-body">
+
+
+    <h3>Síntomas nucleares del TDM</h3>
+    <div class="sintomas-grid">
+      <div class="sintoma-card" style="border-color:#9B72CF">
+        <span class="sintoma-num" style="background:#9B72CF">1</span>
+        <div class="sintoma-titulo" style="color:#9B72CF">Estado de ánimo deprimido</div>
+        <div class="sintoma-desc">Tristeza, vacío, llanto. En niños/adolescentes puede manifestarse como <strong>irritabilidad</strong>. Puede estar "enmascarada".</div>
+      </div>
+      <div class="sintoma-card" style="border-color:#E76F51">
+        <span class="sintoma-num" style="background:#E76F51">2</span>
+        <div class="sintoma-titulo" style="color:#E76F51">Anhedonia</div>
+        <div class="sintoma-desc">Pérdida de capacidad de experimentar placer. Síntoma cardinal aunque no patognomónico (también en esquizofrenia).</div>
+      </div>
+    </div>
+
+    <div class="alerta alerta-roja">
+      <span class="alerta-icon">⚠️</span>
+      <div><strong>Síntoma obligatorio:</strong> Para diagnosticar TDM, al menos uno de los 5 síntomas requeridos DEBE ser el N°1 (ánimo deprimido) O el N°2 (anhedonia).</div>
+    </div>
+
+        <div class="caja caja-violeta">
+          <strong>Tristeza</strong>
+          <p>La depresión se identifica con un estado de ánimo, clásicamente de tonalidad triste o sombría, que puede ser episódico, periódico o continuo.</p>
+          <p>La tristeza puede definirse como una emoción ubicua, que se experimenta por distintas circunstancias y no define por sí sola a la depresión.</p>
+          <p>El síntoma de humor depresivo tuvo en la psicopatología franco-germánica de la primera mitad de siglo un carácter preponderante como elemento semiológico fundamental.</p>
+          <p>Se ha descrito muchas veces que la tristeza puede enmascararse.</p>
+          <p><strong>Depresiones enmascaradas</strong> donde la tristeza no es evidente.</p>
+    </div>
+
+        <div class="caja caja-violeta">
+          <strong>Si no encuentro tristeza, puedo encontrar anhedonia</strong>
+          <p>En 1972 Klein señaló que la pérdida del tono hedónico sería una característica fundamental señalando que la emoción y el humor están supeditados al tono hedónico del momento. Así toma la experiencia central o nuclear de falta de goce y de capacidad vital.</p>
+          <p>La anhedonia tampoco tiene validez como síntoma patognomónico ya que puede encontrarse en otros cuadros.</p>
+        </div>
+
+    <h3>Los 9 síntomas del Criterio A</h3>
+    <div class="sintomas-grid">
+      <div class="sintoma-card" style="border-color:#9B72CF">
+        <span class="sintoma-num" style="background:#9B72CF">1</span>
+        <div class="sintoma-titulo">Ánimo deprimido</div>
+        <div class="sintoma-desc">La mayor parte del día, casi todos los días</div>
+      </div>
+      <div class="sintoma-card" style="border-color:#9B72CF">
+        <span class="sintoma-num" style="background:#9B72CF">2</span>
+        <div class="sintoma-titulo">Anhedonia</div>
+        <div class="sintoma-desc">Pérdida de interés/placer en actividades habituales</div>
+      </div>
+      <div class="sintoma-card" style="border-color:#F4A261">
+        <span class="sintoma-num" style="background:#F4A261">3</span>
+        <div class="sintoma-titulo">Alteración del peso/apetito</div>
+        <div class="sintoma-desc">Pérdida o aumento (>5% peso en un mes). Lo más común: no tener apetito</div>
+      </div>
+      <div class="sintoma-card" style="border-color:#F4A261">
+        <span class="sintoma-num" style="background:#F4A261">4</span>
+        <div class="sintoma-titulo">Insomnio o hipersomnia</div>
+        <div class="sintoma-desc">Dificultad para conciliar, despertar precoz, sueño fragmentado o dormir en exceso</div>
+      </div>
+      <div class="sintoma-card" style="border-color:#4A90D9">
+        <span class="sintoma-num" style="background:#4A90D9">5</span>
+        <div class="sintoma-titulo">Agitación o retraso psicomotor</div>
+        <div class="sintoma-desc">Observable por otros. "No puedo levantarme de la cama" (inhibición) o inquietud que no cesa</div>
+      </div>
+      <div class="sintoma-card" style="border-color:#4A90D9">
+        <span class="sintoma-num" style="background:#4A90D9">6</span>
+        <div class="sintoma-titulo">Fatiga o pérdida de energía</div>
+        <div class="sintoma-desc">Dificultad para llevar adelante actividades de la vida cotidiana</div>
+      </div>
+      <div class="sintoma-card" style="border-color:#5CB85C">
+        <span class="sintoma-num" style="background:#5CB85C">7</span>
+        <div class="sintoma-titulo">Sentimientos de inutilidad o culpa excesiva</div>
+        <div class="sintoma-desc">Puede ser delirante. No simplemente culpa por estar enfermo</div>
+      </div>
+      <div class="sintoma-card" style="border-color:#5CB85C">
+        <span class="sintoma-num" style="background:#5CB85C">8</span>
+        <div class="sintoma-titulo">Dificultad cognitiva</div>
+        <div class="sintoma-desc">Para pensar, concentrarse o tomar decisiones. Persiste en remisión. Más difícil de tratar con fármacos</div>
+      </div>
+      <div class="sintoma-card" style="border-color:#E76F51">
+        <span class="sintoma-num" style="background:#E76F51">9</span>
+        <div class="sintoma-titulo">Pensamientos de muerte/suicidio</div>
+        <div class="sintoma-desc">Ideas pasivas, ideación activa, plan o intento. SIEMPRE investigar</div>
+      </div>
+    </div>
+
+    <div class="caja caja-amarilla">
+      <strong>💡 Sobre la disfunción cognitiva</strong>
+      La disfunción cognitiva (síntoma 8) es la más resistente al tratamiento farmacológico. Los antidepresivos mejoran bien los síntomas afectivos y vegetativos primero, pero los cognitivos pueden persistir aún en remisión y afectar el rendimiento académico y laboral.
+    </div> 
+
+    <div class="caja caja-violeta">
+      <strong>"Serotonina" por Michel Houellebecq</strong>
+      <p>Es un comprimido pequeño, blanco, ovalado, divisible.</p>
+      <p>Me despierto hacia las cinco o a veces las seis de la mañana, la necesidad es extrema, es el momento más doloroso del día. Mi primer gesto es poner en marcha la cafetera eléctrica; la víspera he llenado el depósito de agua y de café molido el filtro (por lo general Malongo, con el café sigo siendo bastante exigente). No enciendo un cigarrillo hasta después de haber tomado un primer sorbo; es una obligación que me impongo, un éxito cotidiano que se ha convertido en mi principal fuente de orgullo (debo confesar, sin embargo, que las cafeteras eléctricas van muy rápido). El alivio que me produce la primera bocanada es inmediato, de una virulencia sorprendente. La nicotina es una droga perfecta, una droga simple y dura, que no proporciona ninguna alegría y se define totalmente por la carencia y por el cese de esa carencia.</p>
+      <p>Unos minutos más tarde, después de dos o tres cigarrillos, tomo un comprimido de Captorix con un cuarto de vaso de agua mineral, normalmente Volvic.</p>
+    </div>
+
+    <h3>Duelo vs. Depresión Mayor</h3>
+    <div class="duelo-grid">
+      <div class="duelo-card">
+        <div class="sintoma-titulo" style="color:var(--verde); margin-bottom:10px">🌿 DUELO (Normal)</div>
+        <ul class="lista">
+          <li>Sentimiento de vacío y pérdida</li>
+          <li>Disforia disminuye con los días/semanas</li>
+          <li>Pensamientos referidos al objeto perdido</li>
+          <li>Puede haber humor y emociones positivas</li>
+          <li>Fantasías de muerte: de reencuentro, "románticas"</li>
+          <li>No interrumpe la vida cotidiana</li>
+          <li>Generalmente NO hay autodepreciación</li>
+        </ul>
+      </div>
+      <div class="depresion-card">
+        <div class="sintoma-titulo" style="color:var(--violeta); margin-bottom:10px">🌧️ DEPRESIÓN MAYOR</div>
+        <ul class="lista">
+          <li>Estado de ánimo persistentemente bajo</li>
+          <li>No mejora espontáneamente</li>
+          <li>Anhedonia generalizada</li>
+          <li>Sin emociones positivas</li>
+          <li>Ideación suicida activa / planes</li>
+          <li>Interfiere significativamente con la vida</li>
+          <li>Autodepreciación, sentimientos de inutilidad</li>
+        </ul>
+        <div style="margin-top:10px; font-size:0.82em; color:var(--texto-claro); font-style:italic">El DSM-5 eliminó la restricción de tiempo para diagnosticar depresión en contexto de duelo</div>
+      </div>
+    </div>
+
+    <div class="caja caja-violeta">
+      <strong>Modelo Interpersonal</strong>
+      En el corazón de una depresión suele haber: <strong>duelo</strong>, <strong>disputa de rol</strong>, <strong>transición de rol</strong> (crisis vital) o <strong>déficit interpersonal</strong> (aislamiento).
+    </div>
+  </div>
+</div>
+
+<!-- SECCIÓN 3: DIAGNÓSTICO -->
+<div class="seccion sec-diagnostico" id="diagnostico">
+  <div class="seccion-header">📋 <span>3. Diagnóstico según DSM-5</span></div>
+  <div class="seccion-body">
+
+    <h3>Criterios para TDM</h3>
+    <div class="arbol">
+      <div class="criterio-a">
+        <h4>CRITERIO A — Síntomas</h4>
+        <p>≥ 5 de los 9 síntomas presentes durante el mismo período de <strong>2 semanas</strong>, representando un cambio del funcionamiento previo. Uno de los 5 DEBE ser: ánimo deprimido (1) o anhedonia (2).</p>
+      </div>
+      <div class="criterios-otros">
+        <div class="criterio-chip" style="background:#D1FAE5; color:#065F46">
+          <strong>B</strong><br><span style="font-size:0.9em">Malestar clínicamente significativo o deterioro social/laboral</span>
+        </div>
+        <div class="criterio-chip" style="background:#DBEAFE; color:#1E40AF">
+          <strong>C</strong><br><span style="font-size:0.9em">No atribuible a sustancias ni a afección médica</span>
+        </div>
+        <div class="criterio-chip" style="background:#FEF9C3; color:#854D0E">
+          <strong>D</strong><br><span style="font-size:0.9em">No se explica mejor por espectro esquizofrenia u otros psicóticos</span>
+        </div>
+        <div class="criterio-chip" style="background:#FCE7F3; color:#9D174D">
+          <strong>E</strong><br><span style="font-size:0.9em">Nunca hubo episodio maníaco o hipomaníaco</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="alerta alerta-roja">
+      <span class="alerta-icon">🔑</span>
+      <div><strong>Episodio depresivo ≠ Trastorno depresivo mayor:</strong> El <em>episodio</em> puede ocurrir en el contexto de un trastorno bipolar. El <em>trastorno</em> requiere que nunca haya habido episodio maníaco o hipomaníaco (criterio E).</div>
+    </div>
+
+    <h3>Evolución del episodio</h3>
+    <div class="fases">
+      <div class="fase" style="background:#4A90D9">
+        <div class="fase-titulo">📍 FASE AGUDA</div>
+        <div class="fase-desc">Búsqueda de respuesta al tratamiento</div>
+        <div class="fase-tiempo">1-3 meses</div>
+      </div>
+      <div class="fase" style="background:#5CB85C">
+        <div class="fase-titulo">✅ RESPUESTA</div>
+        <div class="fase-desc">≥50% de mejora en escala de Hamilton</div>
+        <div class="fase-tiempo">Hito clave</div>
+      </div>
+      <div class="fase" style="background:#FFD166; color:#7A5A00">
+        <div class="fase-titulo">🌤️ REMISIÓN</div>
+        <div class="fase-desc">Disminución o desaparición de síntomas</div>
+        <div class="fase-tiempo">≥2 meses estable</div>
+      </div>
+      <div class="fase" style="background:#F4A261">
+        <div class="fase-titulo">🔄 FASE DE CONTINUACIÓN</div>
+        <div class="fase-desc">Misma dosis. Consenso: 1-2 años</div>
+        <div class="fase-tiempo">≥20 semanas (APA)</div>
+      </div>
+      <div class="fase" style="background:#9B72CF">
+        <div class="fase-titulo">🔒 MANTENIMIENTO</div>
+        <div class="fase-desc">Tratamiento indefinido (candidatos)</div>
+        <div class="fase-tiempo">Mismo dosis terapéutica</div>
+      </div>
+    </div>
+
+    <div class="tabla-wrap">
+      <table>
+        <thead><tr><th>Concepto</th><th>Definición</th></tr></thead>
+        <tbody>
+          <tr><td><span class="badge badge-verde">Respuesta</span></td><td>≥50% de mejora en escala respecto al puntaje original</td></tr>
+          <tr><td><span class="badge badge-azul">Remisión</span></td><td>Disminución notable de síntomas. Total: ≥2 meses sin síntomas</td></tr>
+          <tr><td><span class="badge badge-naranja">Recaída</span></td><td>Reaparece ANTES de los 2 meses → mismo episodio que deja de responder</td></tr>
+          <tr><td><span class="badge badge-rojo">Recurrencia</span></td><td>Reaparece DESPUÉS de los 2 meses → nuevo episodio</td></tr>
+          <tr><td><span class="badge badge-violeta">Poop-out</span></td><td>Recaída en paciente tratado con buena respuesta previa. Conducta: cambiar antidepresivo</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="nota-critica">
+      Con más de 1 episodio: indicación usual de tratamiento de por vida. Si el 1er episodio es severo (inicio >50 años, ideación/intento suicida, factores de riesgo): tratamiento permanente desde el primer episodio.
+    </div>
+  </div>
+</div>
+
+<!-- SECCIÓN 4: CLASIFICACIÓN -->
+<div class="seccion sec-clasificacion" id="clasificacion">
+  <div class="seccion-header">📂 <span>4. Clasificación según DSM-5</span></div>
+  <div class="seccion-body">
+
+    <p>El capítulo "Trastornos depresivos" se separó de los trastornos bipolares en el DSM-5.</p>
+
+    <div class="tabla-wrap">
+      <table>
+        <thead><tr><th>Trastorno</th><th>Características clave</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Trastorno de depresión mayor (TDM) ⭐</strong></td>
+            <td>El más estudiado. El DSM-5 lo describe igual para unipolar y bipolar</td>
+          </tr>
+          <tr>
+            <td><strong>Trastorno depresivo persistente (Distimia)</strong></td>
+            <td>Síntomas de menor intensidad pero mayor duración</td>
+          </tr>
+          <tr>
+            <td><strong>Trastorno disfórico premenstrual</strong></td>
+            <td>Nueva categoría en DSM-5</td>
+          </tr>
+          <tr>
+            <td><strong>T. de desregulación disruptiva del estado de ánimo</strong></td>
+            <td>En niños. Puede guardar continuidad con TLP</td>
+          </tr>
+          <tr>
+            <td><strong>T. depresivo inducido por sustancia/medicamento</strong></td>
+            <td>Ej: abstinencia de cocaína; algunos medicamentos</td>
+          </tr>
+          <tr>
+            <td><strong>T. depresivo debido a otra afección médica</strong></td>
+            <td>Ej: hipotiroidismo, tumores cerebrales</td>
+          </tr>
+          <tr>
+            <td><strong>Otro trastorno depresivo especificado</strong></td>
+            <td>Depresiones menores: breve recurrente, corta duración, síntomas insuficientes</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="caja caja-azul">
+      <strong>⚕️ Nota sobre el hipotiroidismo</strong>
+      El hipotiroidismo tiene una sintomatología muy parecida a los cuadros depresivos. Siempre hay que evaluar y descartar condiciones médicas que puedan estar produciendo el cuadro depresivo.
+    </div>
+  </div>
+</div>
+
+<!-- SECCIÓN 5: ESPECIFICADORES -->
+<div class="seccion sec-especificadores" id="especificadores">
+  <div class="seccion-header">🏷️ <span>5. Especificadores</span></div>
+  <div class="seccion-body">
+
+    <div class="tabla-wrap">
+      <table>
+        <thead><tr><th>Especificador</th><th>Características</th><th>Clínica relevante</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Con ansiedad</strong></td>
+            <td>Nerviosismo, tensión, inquietud, pensamientos catastróficos</td>
+            <td>Asociación extremadamente común. Comparten bases neurobiológicas</td>
+          </tr>
+          <tr>
+            <td><strong>Con características mixtas</strong></td>
+            <td>Ánimo elevado, verborragia, taquipsiquia, impulsividad, ↓ necesidad de sueño</td>
+            <td><span class="badge badge-rojo">ALTO RIESGO suicida</span> por pensamiento negativo + impulsividad</td>
+          </tr>
+          <tr>
+            <td><strong>Con características melancólicas</strong></td>
+            <td>Anhedonia + falta de reactividad, empeoramiento matinal, despertar precoz, inhibición motora, culpa excesiva, anorexia</td>
+            <td>Peor en la mañana. "El momento más doloroso del día"</td>
+          </tr>
+          <tr>
+            <td><strong>Con características atípicas</strong></td>
+            <td>Reactividad del ánimo conservada, hiperfagia, hipersomnia, "parálisis plúmbea", sensibilidad al rechazo</td>
+            <td>Frecuente en <strong>adolescentes</strong>. Difícil de diagnosticar</td>
+          </tr>
+          <tr>
+            <td><strong>Con características psicóticas</strong></td>
+            <td>Delirios/alucinaciones congruentes o no congruentes con el ánimo</td>
+            <td>Le da cualidad de gravedad. Ej: delirios de muerte, culpa, castigo</td>
+          </tr>
+          <tr>
+            <td><strong>Con catatonía</strong></td>
+            <td>Estupor, catalepsia, mutismo, negativismo, estereotipias, ecolalia</td>
+            <td>Primero descartar causa orgánica; luego trastornos del ánimo; luego esquizofrenia</td>
+          </tr>
+          <tr>
+            <td><strong>Con inicio en el periparto</strong></td>
+            <td>Durante embarazo o 4 semanas posparto. 50% comienza ANTES del parto</td>
+            <td>Sospechar bipolaridad</td>
+          </tr>
+          <tr>
+            <td><strong>Con patrón estacional</strong></td>
+            <td>Relación temporal con una época del año</td>
+            <td>Remisiones totales también estacionales</td>
+          </tr>
+          <tr>
+            <td><strong>Gravedad</strong></td>
+            <td>Leve / Moderado / Grave</td>
+            <td>Leve: psicoterapia sola posible. Moderado-Grave: combinado</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Depresión Unipolar vs Bipolar ⚡</h3>
+    <div class="nota-critica">
+      Esta distinción es CRUCIAL para el tratamiento. Los antidepresivos en depresión bipolar pueden producir VIRAJE MANÍACO, aumentando el número de episodios y empeorando el pronóstico.
+    </div>
+    <div class="comp-grid">
+      <div class="comp-card comp-unipolar">
+        <div class="comp-titulo" style="color:#1E40AF">🔵 DEPRESIÓN UNIPOLAR</div>
+        <div class="comp-item">Inicio en edad adulta (más tardío)</div>
+        <div class="comp-item">Menor número de episodios</div>
+        <div class="comp-item">Episodios de mayor duración</div>
+        <div class="comp-item">Insomnio más frecuente</div>
+        <div class="comp-item">Disminución del apetito más frecuente</div>
+        <div class="comp-item">Menos síntomas psicóticos</div>
+        <div class="comp-item" style="margin-top:12px; font-weight:700; color:#1E40AF">✅ TRATAMIENTO: Antidepresivos</div>
+      </div>
+      <div class="comp-card comp-bipolar">
+        <div class="comp-titulo" style="color:#991B1B">🔴 DEPRESIÓN BIPOLAR</div>
+        <div class="comp-item">Inicio más temprano (sospecha en jóvenes)</div>
+        <div class="comp-item">Mayor número de episodios</div>
+        <div class="comp-item">Episodios más cortos</div>
+        <div class="comp-item">Hipersomnia más frecuente</div>
+        <div class="comp-item">Aumento del apetito más frecuente</div>
+        <div class="comp-item">Más síntomas psicóticos y atípicos</div>
+        <div class="comp-item">Abuso de sustancias más frecuente</div>
+        <div class="comp-item">Labilidad emocional, ánimo cambiante</div>
+        <div class="comp-item">Historia familiar positiva</div>
+        <div class="comp-item">Depresión periparto más frecuente</div>
+        <div class="comp-item" style="margin-top:12px; font-weight:700; color:#991B1B">⚠️ TRATAMIENTO: Estabilizadores del ánimo (nunca antidepresivos solos)</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECCIÓN 6: ETIOLOGÍA -->
+<div class="seccion sec-etiologia" id="etiologia">
+  <div class="seccion-header">🧬 <span>6. Teorías Etiológicas</span></div>
+  <div class="seccion-body">
+
+    <div class="droga-grid">
+      <div class="droga-card" style="border-color:#4A90D9">
+        <div class="droga-nombre">🔬 Teorías Biológicas</div>
+        <div class="droga-clase">Alteraciones de neurotransmisores</div>
+        <ul class="lista">
+          <li>↓ Serotonina (5-HT): sitios de unión del SERT</li>
+          <li>↓ Noradrenalina: metabolitos urinarios</li>
+          <li>↑ MAO-A en pacientes deprimidos</li>
+          <li>↓ Dopamina: vinculada a anhedonia (D2/D3 ↑)</li>
+        </ul>
+      </div>
+      <div class="droga-card" style="border-color:#9B72CF">
+        <div class="droga-nombre">🧠 Alteraciones Neuroanatómicas</div>
+        <div class="droga-clase">Hallazgos por neuroimágenes</div>
+        <ul class="lista">
+          <li>↓ Volumen del hipocampo</li>
+          <li>↑ Glándula pituitaria</li>
+          <li>Hiperactivación límbica + hipoactivación cortical</li>
+          <li>Correlaciona con duración de episodios</li>
+        </ul>
+      </div>
+      <div class="droga-card" style="border-color:#5CB85C">
+        <div class="droga-nombre">🧬 Alteraciones Genéticas</div>
+        <div class="droga-clase">Polimorfismos y vulnerabilidad</div>
+        <ul class="lista">
+          <li>Polimorfismo 5-HTTLPR (gen SERT): alelo "s" = mayor vulnerabilidad</li>
+          <li>CRHR1: regula eje HPA y estrés</li>
+          <li>Interacción gen-ambiente en eventos estresantes tempranos</li>
+        </ul>
+      </div>
+      <div class="droga-card" style="border-color:#F4A261">
+        <div class="droga-nombre">😰 Teoría del Estrés (eje HHA)</div>
+        <div class="droga-clase">Cortisol y depresión</div>
+        <ul class="lista">
+          <li>Exposición crónica al estrés → ↑ Cortisol sostenido</li>
+          <li>El cortisol daña neuronas del hipocampo</li>
+          <li>Falla en la regulación del eje HHA</li>
+        </ul>
+      </div>
+      <div class="droga-card" style="border-color:#E76F51">
+        <div class="droga-nombre">🔥 Teoría de la Inflamación</div>
+        <div class="droga-clase">Inflamación sistémica crónica</div>
+        <ul class="lista">
+          <li>Inflamación afecta sistemas neurotransmisores</li>
+          <li>Altera el funcionamiento cerebral</li>
+        </ul>
+      </div>
+      <div class="droga-card" style="border-color:#FFD166">
+        <div class="droga-nombre">🌱 Neuroplasticidad</div>
+        <div class="droga-clase">Plasticidad sináptica y neurogénesis</div>
+        <ul class="lista">
+          <li>↓ Plasticidad sináptica en hipocampo y corteza prefrontal</li>
+          <li>ISRS → ↑ BDNF (factor neurotrófico)</li>
+          <li>Los psicofármacos producen cambios estructurales reales</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Teorías Psicológicas</h3>
+    <div class="tabla-wrap">
+      <table>
+        <thead><tr><th>Teoría</th><th>Autor</th><th>Concepto central</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Disminución del refuerzo positivo</strong></td>
+            <td>Lewinsohn (1975)</td>
+            <td>Cambios ambientales → ↓ refuerzo positivo → ↑ autocrítica y expectativas negativas</td>
+          </tr>
+          <tr>
+            <td><strong>Resolución de problemas</strong></td>
+            <td>Nezu (1987)</td>
+            <td>Déficit en habilidades de resolución de problemas como factor de vulnerabilidad</td>
+          </tr>
+          <tr>
+            <td><strong>Indefensión aprendida / Desesperanza</strong></td>
+            <td>Seligman; reformulada por Abramson et al. (1978)</td>
+            <td>Atribución estable, global e interna de eventos negativos → percepción de incontrolabilidad</td>
+          </tr>
+          <tr>
+            <td><strong>Cognitiva</strong></td>
+            <td>Beck (1967)</td>
+            <td>Tríada cognitiva: visión negativa de sí mismo + del mundo + del futuro. Pensamientos automáticos negativos. Distorsiones cognitivas</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- SECCIÓN 7: MONOAMINAS -->
+<div class="seccion sec-neuro" id="neuro">
+  <div class="seccion-header">⚗️ <span>7. Monoaminas y Sistema Nervioso Central</span></div>
+  <div class="seccion-body">
+
+    <div class="mono-grid">
+      <div class="mono-card" style="background:linear-gradient(135deg,#E76F51,#F4A261)">
+        <div class="mono-nombre">🔴 Serotonina (5-HT)</div>
+        <div class="mono-funcion">Ánimo, sueño/vigilia, obsesiones, funciones cognitivas, regulación del intestino (peristaltismo)</div>
+        <div class="mono-origen">Origen: Núcleos del Rafe<br>Más ampliamente distribuida</div>
+      </div>
+      <div class="mono-card" style="background:linear-gradient(135deg,#457B9D,#A8DADC)">
+        <div class="mono-nombre">🔵 Noradrenalina (NA)</div>
+        <div class="mono-funcion">Energía, alerta, concentración, atención, activación sistema simpático</div>
+        <div class="mono-origen">Origen: Locus Coeruleus<br>Segunda más distribuida</div>
+      </div>
+      <div class="mono-card" style="background:linear-gradient(135deg,#9B72CF,#C3B1E1)">
+        <div class="mono-nombre">🟣 Dopamina (DA)</div>
+        <div class="mono-funcion">Recompensa, motivación, movimiento, placer, anhedonia</div>
+        <div class="mono-origen">Origen: Mesencéfalo<br>Menos distribuida de las 3</div>
+      </div>
+    </div>
+
+    <h3>Hipótesis Monoaminérgica de la Depresión</h3>
+    <div class="mecanismo">
+      <div style="display:flex; gap:16px; align-items:center; flex-wrap:wrap; justify-content:center; margin-bottom:16px;">
+        <div style="text-align:center; padding:14px; background:#EBF4FF; border-radius:12px; flex:1; min-width:140px;">
+          <div style="font-size:1.3em">🧪</div>
+          <strong style="font-size:0.88em; color:#1E40AF">Estado Normal</strong>
+          <p style="font-size:0.8em; color:var(--texto-claro); margin:6px 0 0">Cantidad adecuada de monoaminas en sinapsis</p>
+        </div>
+        <div style="font-size:2em; color:#E76F51">→</div>
+        <div style="text-align:center; padding:14px; background:#FEE2E2; border-radius:12px; flex:1; min-width:140px;">
+          <div style="font-size:1.3em">😔</div>
+          <strong style="font-size:0.88em; color:#991B1B">Depresión</strong>
+          <p style="font-size:0.8em; color:var(--texto-claro); margin:6px 0 0">↓ Monoaminas → Upregulation de receptores (más receptores sin ocupar)</p>
+        </div>
+        <div style="font-size:2em; color:#5CB85C">→</div>
+        <div style="text-align:center; padding:14px; background:#EAFAF1; border-radius:12px; flex:1; min-width:140px;">
+          <div style="font-size:1.3em">💊</div>
+          <strong style="font-size:0.88em; color:#065F46">Con antidepresivos</strong>
+          <p style="font-size:0.8em; color:var(--texto-claro); margin:6px 0 0">↑ Monoaminas en sinapsis → Cambios estructurales neuronales</p>
+        </div>
+      </div>
+      <div class="alerta alerta-verde">
+        <span class="alerta-icon">💡</span>
+        <div><strong>¿Por qué demoran 4 semanas en hacer efecto?</strong> El aumento de monoaminas es rápido, pero el efecto real se debe a cambios estructurales: ↑ BDNF → nuevas arborizaciones dendríticas → más receptores → mejor sinapsis. Esto toma tiempo. Los antidepresivos NO solo tapan síntomas: producen cambios anatómicos reales.</div>
+      </div>
+    </div>
+
+    <h3>Síntesis de monoaminas</h3>
+    <div class="tabla-wrap">
+      <table>
+        <thead><tr><th>Monoamina</th><th>Precursor</th><th>Vía</th><th>Enzima de degradación</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Serotonina</strong></td>
+            <td>Triptófano</td>
+            <td>Triptófano → Hidroxilación → 5-HTP → Descarboxilación → Serotonina (5-HT)</td>
+            <td>MAO (monoaminooxidasa)</td>
+          </tr>
+          <tr>
+            <td><strong>Dopamina</strong></td>
+            <td>Tirosina</td>
+            <td>Tirosina → DOPA (L-Dopa) → Dopamina</td>
+            <td>MAO</td>
+          </tr>
+          <tr>
+            <td><strong>Noradrenalina</strong></td>
+            <td>Tirosina (vía Dopamina)</td>
+            <td>Dopamina → Hidroxilación → Noradrenalina</td>
+            <td>MAO</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="caja caja-amarilla">
+      <strong>🔄 Sinapsis serotonérgica — Mecanismo de terminación</strong>
+      La serotonina se recapta al interior neuronal por el transportador SERT (Serotonin Transporter) → dentro de la célula es degradada por la MAO. Los receptores presinápticos (autoreceptores) regulan por feedback la liberación adicional de serotonina.
+    </div>
+  </div>
+</div>
+
+<!-- SECCIÓN 8: FAMILIAS ANTIDEPRESIVOS -->
+<div class="seccion sec-familias" id="antidep">
+  <div class="seccion-header">💊 <span>8. Familias de Antidepresivos</span></div>
+  <div class="seccion-body">
+
+    <div class="caja caja-violeta">
+      <strong>📊 Ranking de eficacia antidepresiva</strong>
+      <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:8px;">
+        <span class="badge badge-rojo">1° IMAO (mayor eficacia)</span>
+        <span class="badge badge-violeta">2° Tricíclicos</span>
+        <span class="badge badge-azul">3° IRSN "Duales"</span>
+        <span class="badge badge-verde">4° ISRS</span>
+        <span class="badge badge-amarillo">5° Atípicos</span>
+      </div>
+      <p style="margin-top:8px; font-size:0.88em">⚠️ Los ISRS y IRSN son de 1ª línea por tener el mejor perfil tolerabilidad/eficacia</p>
+    </div>
+
+    <!-- IMAO -->
+    <div class="familia-bloque">
+      <div class="familia-header" style="background:linear-gradient(135deg,#E63946,#F4A261)">
+        <h4>IMAO — Inhibidores de la Monoaminooxidasa</h4>
+        <span class="sigla">Clásico</span>
+      </div>
+      <div class="familia-body">
+        <p><strong>Mecanismo:</strong> Inhiben la enzima MAO que degrada serotonina, noradrenalina y dopamina → actúan sobre los 3 sistemas.</p>
+        <div class="efectos-cols">
+          <div class="efectos-col">
+            <h5>✅ Ventajas</h5>
+            <ul>
+              <li>Mayor eficacia antidepresiva de todos</li>
+              <li>MAO-B útil para Parkinson</li>
+            </ul>
+          </div>
+          <div class="efectos-col">
+            <h5>❌ Desventajas / Efectos adversos</h5>
+            <ul>
+              <li>Síndrome del queso (crisis hipertensivas severas)</li>
+              <li>Interacciones graves con alimentos (queso, ahumados)</li>
+              <li>Inhibe MAO digestiva → alimentos con tiramina peligrosos</li>
+              <li>Requiere dieta restrictiva estricta</li>
+            </ul>
+          </div>
+        </div>
+        <div class="alerta alerta-roja">
+          <span class="alerta-icon">🚫</span>
+          <div><strong>NUNCA son de primera elección.</strong> Reservar para depresiones superrefractarias y resistentes. En desuso general.</div>
+        </div>
+        <div style="margin-top:8px">
+          <span style="font-size:0.85em; color:var(--texto-claro); font-weight:700">MAO-A:</span> <span class="badge badge-rojo">Serotonina</span><span class="badge badge-azul">Noradrenalina</span><span class="badge badge-violeta">Dopamina</span> (en cerebro Y digestivo ← problema)<br>
+          <span style="font-size:0.85em; color:var(--texto-claro); font-weight:700; display:inline-block; margin-top:6px">MAO-B:</span> <span class="badge badge-violeta">Dopamina</span> (solo cerebro, no digestivo → Parkinson)
+        </div>
+      </div>
+    </div>
+
+    <!-- TRICÍCLICOS -->
+    <div class="familia-bloque">
+      <div class="familia-header" style="background:linear-gradient(135deg,#3D5A80,#98C1D9)">
+        <h4>Antidepresivos Tricíclicos (ATC)</h4>
+        <span class="sigla">Clásico</span>
+      </div>
+      <div class="familia-body">
+        <p><strong>Mecanismo:</strong> "Regla de los tres": inhiben recaptación de 5-HT, NA y DA + antagonismo de receptores H1, M1 (muscarínico) y α1 adrenérgico + bloqueo canal Na⁺</p>
+        <p><strong>Ejemplos:</strong> <span class="badge badge-azul">Imipramina</span> <span class="badge badge-azul">Clomipramina</span> <span class="badge badge-azul">Amitriptilina</span> <span class="badge badge-azul">Nortriptilina</span></p>
+        <p style="font-size:0.85em; color:var(--texto-claro)">Amitriptilina y Nortriptilina se usan también para dolor (en dosis menores a la antidepresiva)</p>
+        <div class="tabla-wrap" style="margin-top:14px">
+          <table>
+            <thead><tr><th>Receptor bloqueado</th><th>Efecto adverso</th></tr></thead>
+            <tbody>
+              <tr><td>Recaptación 5-HT</td><td>Trastornos GI, disfunciones sexuales, cambios de peso, cefalea, síndrome serotoninérgico (si se combina)</td></tr>
+              <tr><td>Recaptación NA</td><td>Hipertensión arterial</td></tr>
+              <tr><td>H1 (histamina)</td><td>↑ Peso considerable, sedación (se da de noche)</td></tr>
+              <tr><td>α1 adrenérgico</td><td>Hipotensión ortostática, sedación</td></tr>
+              <tr><td>M1 (muscarínico)</td><td>Visión borrosa, boca seca, estreñimiento, retención urinaria, taquicardia</td></tr>
+              <tr><td>Canal de Na⁺</td><td>Arritmias cardíacas</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="alerta alerta-amarilla">
+          <span class="alerta-icon">⚠️</span>
+          <div>Alta eficacia pero NO de 1ª línea por cantidad de efectos adversos. Cuidado especial en ancianos con hiperplasia prostática benigna.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ISRS -->
+    <div class="familia-bloque">
+      <div class="familia-header" style="background:linear-gradient(135deg,#5CB85C,#A8D8A8)">
+        <h4>ISRS — Inhibidores Selectivos de Recaptación de Serotonina</h4>
+        <span class="sigla">1ª Línea ⭐</span>
+      </div>
+      <div class="familia-body">
+        <p><strong>Mecanismo:</strong> Inhiben SELECTIVAMENTE el transportador de serotonina (SERT) → ↑ 5-HT en brecha sináptica → down-regulation de receptores → ↑ BDNF → cambios estructurales neuronales (arborizaciones dendríticas).</p>
+        <p><strong>Las 6 moléculas:</strong></p>
+        <div class="familia-drogas-lista">
+          <span class="badge badge-verde">Fluoxetina</span>
+          <span class="badge badge-verde">Paroxetina</span>
+          <span class="badge badge-verde">Fluvoxamina</span>
+          <span class="badge badge-verde">Citalopram</span>
+          <span class="badge badge-verde">Escitalopram ⭐ (menos interacciones)</span>
+          <span class="badge badge-verde">Sertralina ⭐ (menos interacciones)</span>
+        </div>
+        <div class="efectos-cols">
+          <div class="efectos-col">
+            <h5>✅ Por qué son 1ª línea</h5>
+            <ul>
+              <li>Molécula "limpia" — solo inhibe SERT</li>
+              <li>Muy buena tolerabilidad</li>
+              <li>Sin efectos antihistamínicos ni antimuscarínicos</li>
+              <li>Buena eficacia antidepresiva</li>
+              <li>También útiles en ansiedad, TOC, TEPT</li>
+            </ul>
+          </div>
+          <div class="efectos-col">
+            <h5>❌ Efectos adversos</h5>
+            <ul>
+              <li>Trastornos GI (náuseas, vómitos) — primeras semanas</li>
+              <li>Disfunciones sexuales <strong>(persiste, no se tolera)</strong></li>
+              <li>Cefalea</li>
+              <li>Cambios de peso (menores que tricíclicos)</li>
+              <li>Síndrome serotoninérgico <strong>(si se combina con otro)</strong></li>
+            </ul>
+          </div>
+        </div>
+        <div class="alerta alerta-roja">
+          <span class="alerta-icon">🚨</span>
+          <div><strong>Síndrome Serotoninérgico:</strong> Emergencia médica. Ocurre al combinar dos antidepresivos serotoninérgicos. Síntomas: diarrea, vómitos, hipertermia extrema. Riesgo de vida. NUNCA combinar.</div>
+        </div>
+        <div class="caja caja-azul" style="margin-top:12px">
+          <strong>Particularidades por molécula:</strong>
+          Paroxetina: sedante → útil en insomnio; efecto anticolinérgico leve. Escitalopram y Citalopram: menos interacciones → primera elección cuando hay polifarmacia. Fluoxetina: vida media larga.
+        </div>
+      </div>
+    </div>
+
+    <!-- IRSN -->
+    <div class="familia-bloque">
+      <div class="familia-header" style="background:linear-gradient(135deg,#457B9D,#A8DADC)">
+        <h4>IRSN — Inhibidores Recaptación Serotonina-Noradrenalina ("Duales")</h4>
+        <span class="sigla">1ª Línea en severos</span>
+      </div>
+      <div class="familia-body">
+        <p><strong>Mecanismo:</strong> Inhiben SERT (serotonina) + NET (noradrenalina). Mayor potencia que ISRS solos.</p>
+        <p><strong>Moléculas:</strong> <span class="badge badge-azul">Venlafaxina</span> <span class="badge badge-azul">Desvenlafaxina</span> <span class="badge badge-azul">Duloxetina</span></p>
+        <p><strong>Efectos adversos:</strong> Los de ISRS + posible hipertensión arterial (por NA).</p>
+        <div class="caja caja-azul">
+          <strong>Indicación especial:</strong> De elección en depresión severa o con riesgo suicida. Duloxetina también aprobada para dolor neuropático.
+        </div>
+      </div>
+    </div>
+
+    <!-- BUPROPIÓN -->
+    <div class="familia-bloque">
+      <div class="familia-header" style="background:linear-gradient(135deg,#F4A261,#FFD166)">
+        <h4>Inhibidores Recaptación Dopamina-Noradrenalina</h4>
+        <span class="sigla">Atípico</span>
+      </div>
+      <div class="familia-body">
+        <p><strong>Molécula principal:</strong> <span class="badge badge-naranja">Bupropión</span></p>
+        <p><strong>Mecanismo:</strong> Inhibe recaptación de Dopamina y Noradrenalina. NO actúa sobre serotonina.</p>
+        <div class="efectos-cols">
+          <div class="efectos-col">
+            <h5>✅ Indicaciones / Ventajas</h5>
+            <ul>
+              <li>TDM</li>
+              <li>TDAH</li>
+              <li>Deshabituación al tabaco</li>
+              <li><strong>Sin disfunciones sexuales</strong></li>
+              <li>No genera aumento de peso</li>
+              <li>Activante (↑ energía)</li>
+            </ul>
+          </div>
+          <div class="efectos-col">
+            <h5>❌ Efectos adversos</h5>
+            <ul>
+              <li>↓ Umbral convulsivo (no en epilepsia)</li>
+              <li>Hipertensión arterial (monitorear)</li>
+              <li>Insomnio → dar a la mañana</li>
+              <li>Ansiedad o irritabilidad al inicio</li>
+              <li>Boca seca, temblores</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MIRTAZAPINA -->
+    <div class="familia-bloque">
+      <div class="familia-header" style="background:linear-gradient(135deg,#6A0572,#AB83A1)">
+        <h4>Antagonistas de Receptores de Monoaminas</h4>
+        <span class="sigla">Atípico</span>
+      </div>
+      <div class="familia-body">
+        <p><strong>Moléculas:</strong> <span class="badge badge-violeta">Mirtazapina</span> <span class="badge badge-violeta">Mianserina</span></p>
+        <p><strong>Mecanismo:</strong> Antagonizan receptores presinápticos α2 y serotoninérgicos → ↑ liberación de NA y 5-HT. También antagonismo H1.</p>
+        <ul class="lista">
+          <li>Antagonismo α2 → ↑ Noradrenalina</li>
+          <li>Antagonismo receptor 5-HT presináptico → ↑ Serotonina</li>
+          <li>Antagonismo H1 → sedación + aumento de peso (útil en pacientes con insomnio y anorexia)</li>
+        </ul>
+        <div class="caja caja-violeta">
+          <strong>Indicación preferencial:</strong> Pacientes con insomnio + disminución del apetito. También útil cuando los ISRS generan efectos sexuales intolerables.
+        </div>
+      </div>
+    </div>
+
+    <!-- AGOMELATINA -->
+    <div class="familia-bloque">
+      <div class="familia-header" style="background:linear-gradient(135deg,#2D6A4F,#52B788)">
+        <h4>Agomelatina</h4>
+        <span class="sigla">Atípico — Melatonina</span>
+      </div>
+      <div class="familia-body">
+        <p><strong>Mecanismo único:</strong> Agonista de receptores de melatonina (MT1 y MT2) + antagonista de receptores 5-HT presinápticos.</p>
+        <ul class="lista">
+          <li>Regula ritmos circadianos (sueño-vigilia)</li>
+          <li>↑ liberación de 5-HT, NA y DA (por heteroreceptores)</li>
+          <li>No es muy potente como antidepresivo solo → se usa en combinación</li>
+          <li>Útil cuando hay alteración del ritmo circadiano</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- RESUMEN TABLA -->
+    <h3>Resumen comparativo de familias</h3>
+    <div class="tabla-wrap">
+      <table>
+        <thead><tr><th>Familia</th><th>Eficacia</th><th>Tolerabilidad</th><th>Línea</th><th>Cuidado especial</th></tr></thead>
+        <tbody>
+          <tr><td>IMAO</td><td>⭐⭐⭐⭐⭐</td><td>❌ Muy baja</td><td>Última</td><td>Dieta estricta, interacciones graves</td></tr>
+          <tr><td>Tricíclicos</td><td>⭐⭐⭐⭐</td><td>❌ Baja</td><td>2da/3era</td><td>Arritmias, anticolinérgico, ancianos</td></tr>
+          <tr><td>IRSN (Duales)</td><td>⭐⭐⭐⭐</td><td>✅ Buena</td><td>1era (severos)</td><td>Hipertensión</td></tr>
+          <tr><td>ISRS</td><td>⭐⭐⭐</td><td>✅✅ Muy buena</td><td>1era</td><td>Disfunción sexual, sínd. serotoninérgico</td></tr>
+          <tr><td>Bupropión</td><td>⭐⭐⭐</td><td>✅ Buena</td><td>1era/2da</td><td>Convulsiones, HTA</td></tr>
+          <tr><td>Mirtazapina</td><td>⭐⭐⭐</td><td>✅ Buena</td><td>1era/2da</td><td>Aumento de peso</td></tr>
+          <tr><td>Agomelatina</td><td>⭐⭐</td><td>✅ Buena</td><td>Combinación</td><td>Monitorear función hepática</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- SECCIÓN 9: ALGORITMO -->
+<div class="seccion sec-algo" id="algo">
+  <div class="seccion-header">🗺️ <span>9. Algoritmo de Tratamiento (Dr. Saidman)</span></div>
+  <div class="seccion-body">
+
+    <h3>Elección del antidepresivo en fase aguda</h3>
+    <div class="caja caja-verde">
+      <strong>Variables a considerar:</strong>
+      Edad del paciente · Otras medicaciones (interacciones) · Gravedad del cuadro · Respuesta previa a tratamientos · Comorbilidades · Estado orgánico · Insomnio/hipersomnia · Peso (obesidad/delgadez) · Función sexual
+    </div>
+
+    <div class="tabla-wrap" style="margin:16px 0">
+      <table>
+        <thead><tr><th>Perfil del paciente</th><th>Antidepresivo preferido</th></tr></thead>
+        <tbody>
+          <tr><td>Obesidad</td><td><span class="badge badge-verde">Paroxetina</span> <span class="badge badge-verde">Fluoxetina</span></td></tr>
+          <tr><td>Delgadez (sin hipercolesterolemia)</td><td><span class="badge badge-azul">Mirtazapina</span></td></tr>
+          <tr><td>Eyaculación precoz</td><td><span class="badge badge-verde">Paroxetina</span></td></tr>
+          <tr><td>↓ Libido o disfunción eréctil</td><td><span class="badge badge-naranja">Bupropión</span> <span class="badge badge-azul">Mirtazapina</span> (evitar paroxetina)</td></tr>
+          <tr><td>Sospecha bipolaridad enmascarada</td><td>En orden: <span class="badge badge-naranja">Bupropión</span> → <span class="badge badge-verde">Paroxetina</span> → <span class="badge badge-azul">Venlafaxina</span></td></tr>
+          <tr><td>Polifarmacia / interacciones</td><td><span class="badge badge-verde">Escitalopram</span> o <span class="badge badge-verde">Citalopram</span> → Sertralina</td></tr>
+          <tr><td>Depresión severa / riesgo suicida</td><td><span class="badge badge-azul">Dual</span> (venlafaxina o mirtazapina) — de entrada</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Algoritmo paso a paso</h3>
+
+    <div class="algo-step">
+      <div class="algo-num" style="background:#5CB85C">1</div>
+      <div class="algo-content">
+        <h4>Comenzar con ISRS</h4>
+        <p>Primera línea para la mayoría de los pacientes. Monoterapia es siempre preferible.</p>
+      </div>
+    </div>
+    <div class="algo-step">
+      <div class="algo-num" style="background:#4A90D9">2</div>
+      <div class="algo-content">
+        <h4>Evaluar respuesta a las 4-8 semanas</h4>
+        <p>Si hay respuesta parcial: (a) llevar dosis al máximo, (b) cambiar a otro ISRS o antidepresivo de otra clase.</p>
+      </div>
+    </div>
+    <div class="algo-step">
+      <div class="algo-num" style="background:#F4A261">3</div>
+      <div class="algo-content">
+        <h4>Fracaso de 2 ISRS → cambiar a Dual</h4>
+        <p>Venlafaxina o Mirtazapina. También directamente si la depresión es severa o tiene riesgo suicida.</p>
+      </div>
+    </div>
+    <div class="algo-step">
+      <div class="algo-num" style="background:#9B72CF">4</div>
+      <div class="algo-content">
+        <h4>Potenciación (augmentation)</h4>
+        <p>Agregar litio, hormona tiroidea, antirrecurrenciales o estimulantes al antidepresivo actual.</p>
+      </div>
+    </div>
+    <div class="algo-step">
+      <div class="algo-num" style="background:#E76F51">5</div>
+      <div class="algo-content">
+        <h4>Combinación de dos antidepresivos</h4>
+        <p>⚠️ Muy peligroso, solo para depresiones resistentes. Requiere experiencia del médico. <strong>¡CUIDADO CON LAS INTERACCIONES!</strong></p>
+      </div>
+    </div>
+    <div class="algo-step">
+      <div class="algo-num" style="background:#2D6A4F">6</div>
+      <div class="algo-content">
+        <h4>Revisar diagnóstico / TEC</h4>
+        <p>Si la respuesta sigue siendo menor a la esperada: revisar diagnóstico, patología comórbida, causas orgánicas. Considerar Terapia Electroconvulsiva (TEC) o interconsulta.</p>
+      </div>
+    </div>
+
+    <div class="alerta alerta-amarilla" style="margin-top:20px">
+      <span class="alerta-icon">⏰</span>
+      <div><strong>Período de lavado:</strong> Respetar el período de lavado de cada antidepresivo al cambiar, para evitar interacciones peligrosas (especialmente síndrome serotoninérgico al cambiar entre serotoninérgicos).</div>
+    </div>
+
+    <div class="nota-critica">
+      Los IMAO JAMÁS son antidepresivos de primera elección. No medicar solo se justifica si el episodio es LEVE y el paciente prefiere exclusivamente psicoterapia.
+    </div>
+
+    <h3>Duración del tratamiento</h3>
+    <div class="fases">
+      <div class="fase" style="background:#4A90D9">
+        <div class="fase-titulo">FASE AGUDA</div>
+        <div class="fase-desc">Buscar respuesta</div>
+        <div class="fase-tiempo">1-3 meses</div>
+      </div>
+      <div class="fase" style="background:#5CB85C">
+        <div class="fase-titulo">CONTINUACIÓN</div>
+        <div class="fase-desc">Misma dosis. Consenso: 1-2 años</div>
+        <div class="fase-tiempo">≥20 semanas (APA) → 1-2 años</div>
+      </div>
+      <div class="fase" style="background:#9B72CF">
+        <div class="fase-titulo">MANTENIMIENTO</div>
+        <div class="fase-desc">Indefinido en candidatos. No reducir dosis (o muy gradualmente)</div>
+        <div class="fase-tiempo">De por vida</div>
+      </div>
+    </div>
+    <div class="caja caja-violeta" style="margin-top:16px">
+      <strong>Candidatos a tratamiento permanente (desde 1er episodio):</strong>
+      Más de 1 episodio previo · 3er episodio = ~100% de probabilidad de recurrencia · Inicio después de los 50 años · Ideación/intento de suicidio · Factores de riesgo suicida
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div style="text-align:center; padding:30px 20px; color:var(--texto-claro); font-size:0.88em; margin-top:20px;">
+  <div style="background:white; border-radius:16px; padding:20px; box-shadow:0 4px 16px rgba(0,0,0,0.06); display:inline-block; max-width:600px;">
+    📚 Fuentes: Celleri, Díaz y Ponieman (2023) · Dr. Saidman — Algoritmo TDM · Transcripciones clases Psicofarmacología · DSM-5 · APA Practice Guidelines 2004
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1821 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apunte: Trastornos Bipolares</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+
+  :root{
+    --bg:#fff8ef;
+    --paper:#ffffff;
+    --ink:#243042;
+    --muted:#687386;
+
+    --azul:#4b7bec;
+    --azul-claro:#eef4ff;
+    --azul-oscuro:#2855c7;
+
+    --violeta:#9b5de5;
+    --violeta-claro:#f4edff;
+
+    --rosa:#ff6b9a;
+    --rosa-claro:#fff0f6;
+
+    --verde:#55c6a9;
+    --verde-claro:#ecfff8;
+
+    --amarillo:#ffd166;
+    --amarillo-claro:#fff8dc;
+
+    --rojo:#ff5c5c;
+    --rojo-claro:#fff0f0;
+
+    --naranja:#ff9f43;
+    --naranja-claro:#fff1df;
+
+    --cyan:#42c2d6;
+    --cyan-claro:#eefdff;
+
+    --gris-fondo:#fff8ef;
+    --texto:#243042;
+    --texto-suave:#687386;
+
+    --border:#222;
+    --shadow:0 10px 25px rgba(50, 50, 93, .10);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    background:
+      radial-gradient(circle at top left, #ffe8f1 0 18%, transparent 19%),
+      radial-gradient(circle at top right, #e0f7ff 0 16%, transparent 17%),
+      radial-gradient(circle at 18% 60%, #fff1bf 0 9%, transparent 10%),
+      var(--gris-fondo);
+    color: var(--texto);
+    line-height: 1.7;
+  }
+
+  /* HEADER */
+  .header {
+    max-width: 1100px;
+    margin: 34px auto 24px;
+    background: linear-gradient(135deg,#ffffff 0%,#fff4c7 45%,#ffe3ef 100%);
+    color: var(--texto);
+    padding: 34px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid var(--border);
+    border-radius: 28px;
+    box-shadow: 8px 8px 0 var(--border);
+  }
+
+  .header::before {
+    content: "TB";
+    position: absolute;
+    right: 22px;
+    bottom: -40px;
+    font-size: 128px;
+    line-height: 1;
+    font-weight: 900;
+    color: rgba(255,107,154,.22);
+    letter-spacing: 4px;
+  }
+
+  .header::after {
+    content: "Psicopatología visual";
+    position: absolute;
+    top: 28px;
+    left: 34px;
+    background: #222;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+
+  .header h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 46px;
+    line-height: 1.05;
+    letter-spacing: -1px;
+    margin: 42px 0 8px;
+    position: relative;
+    color: var(--texto);
+  }
+
+  .header p {
+    font-size: 19px;
+    opacity: 1;
+    position: relative;
+    max-width: 760px;
+    color: var(--texto);
+  }
+
+  .header .tags {
+    margin-top: 22px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .header .tag {
+    background: white;
+    color: #222;
+    border: 2px solid #222;
+    padding: 6px 13px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 900;
+    box-shadow: 3px 3px 0 #222;
+  }
+
+  /* ÍNDICE */
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 22px 70px; }
+
+  .indice {
+    background: white;
+    border: 3px solid #222;
+    border-radius: 24px;
+    padding: 24px;
+    margin-bottom: 30px;
+    box-shadow: 6px 6px 0 #222;
+  }
+
+  .indice h2 {
+    color: var(--texto);
+    margin-bottom: 15px;
+    font-size: 1.45em;
+  }
+
+  .indice ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .indice li a {
+    color: #222;
+    background: #fffdf4;
+    border: 2px solid #222;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 0.88em;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 13px;
+    border-radius: 999px;
+    box-shadow: 3px 3px 0 #222;
+  }
+
+  .indice li a:hover {
+    color: #222;
+    text-decoration: none;
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 0 #222;
+  }
+
+  .indice li a::before { content: '→'; opacity: 1; }
+
+  /* SECCIONES */
+  .seccion {
+    background: white;
+    border: 3px solid #222;
+    border-radius: 26px;
+    padding: 30px;
+    margin-bottom: 28px;
+    box-shadow: 0 10px 25px rgba(50,50,93,.10);
+  }
+
+  .seccion:nth-of-type(odd) {
+    box-shadow: 6px 6px 0 #222;
+  }
+
+  .seccion-titulo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .seccion-titulo .icono {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    border: 2px solid #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    flex-shrink: 0;
+    box-shadow: 4px 4px 0 #222;
+  }
+
+  .seccion-titulo h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.85em;
+    color: var(--texto) !important;
+    letter-spacing: -0.3px;
+  }
+
+  /* colores por sección */
+  .s-azul .icono { background: var(--azul-claro); }
+  .s-violeta .icono { background: var(--violeta-claro); }
+  .s-rosa .icono { background: var(--rosa-claro); }
+  .s-verde .icono { background: var(--verde-claro); }
+  .s-amarillo .icono { background: var(--amarillo-claro); }
+  .s-naranja .icono { background: var(--naranja-claro); }
+  .s-cyan .icono { background: var(--cyan-claro); }
+
+  .s-azul .seccion-titulo,
+  .s-violeta .seccion-titulo,
+  .s-rosa .seccion-titulo,
+  .s-verde .seccion-titulo,
+  .s-amarillo .seccion-titulo,
+  .s-naranja .seccion-titulo,
+  .s-cyan .seccion-titulo { border-color: transparent; }
+
+  .s-azul h2,
+  .s-violeta h2,
+  .s-rosa h2,
+  .s-verde h2,
+  .s-amarillo h2,
+  .s-naranja h2,
+  .s-cyan h2 { color: var(--texto) !important; }
+
+  /* COMPONENTES */
+  .alerta {
+    border-radius: 20px;
+    padding: 16px 18px;
+    margin: 15px 0;
+    font-weight: 700;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    border: 2px solid #222 !important;
+    border-left: 8px solid #222 !important;
+    box-shadow: 4px 4px 0 #222;
+    color: var(--texto) !important;
+  }
+
+  .alerta-rojo { background: var(--rojo-claro); }
+  .alerta-amarillo { background: var(--amarillo-claro); }
+  .alerta-verde { background: var(--verde-claro); }
+  .alerta-azul { background: var(--azul-claro); }
+  .alerta-violeta { background: var(--violeta-claro); }
+  .alerta-naranja { background: var(--naranja-claro); }
+  .alerta-cyan { background: var(--cyan-claro); }
+
+  .alerta-icono { font-size: 1.3em; flex-shrink: 0; margin-top: 2px; }
+
+  /* TABLA */
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 18px 0;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 2px solid #222;
+    box-shadow: 5px 5px 0 #222;
+    background: white;
+  }
+
+  th {
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 0.82em;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background: #222 !important;
+    color: white !important;
+  }
+
+  td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #ececec;
+    font-size: 0.95em;
+    vertical-align: top;
+  }
+
+  tbody tr:nth-child(even) td { background: #fffaf0; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #f9fbff; }
+
+  /* GRILLAS */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 15px 0; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin: 15px 0; }
+
+  /* TARJETAS */
+  .tarjeta {
+    border-radius: 22px;
+    padding: 19px;
+    border: 2px solid #222 !important;
+    box-shadow: 5px 5px 0 #222;
+  }
+
+  .tarjeta h4 { font-size: 1.05em; margin-bottom: 10px; color: var(--texto) !important; }
+  .tarjeta ul { padding-left: 18px; }
+  .tarjeta ul li { margin-bottom: 5px; font-size: 0.93em; }
+
+  .tarjeta-azul { background: var(--azul-claro); }
+  .tarjeta-rojo { background: var(--rojo-claro); }
+  .tarjeta-verde { background: var(--verde-claro); }
+  .tarjeta-amarillo { background: var(--amarillo-claro); }
+  .tarjeta-violeta { background: var(--violeta-claro); }
+  .tarjeta-naranja { background: var(--naranja-claro); }
+  .tarjeta-rosa { background: var(--rosa-claro); }
+  .tarjeta-cyan { background: var(--cyan-claro); }
+  .tarjeta-gris { background: #F8FAFC; }
+
+  /* ESPECTRO / TIMELINE */
+  .espectro-bar {
+    background: linear-gradient(to right, #4b7bec, #9b5de5, #ff6b9a, #ffd166, #ff9f43, #ff5c5c);
+    border-radius: 999px;
+    min-height: 42px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 18px;
+    color: white;
+    font-weight: 900;
+    font-size: 0.85em;
+    margin: 18px 0;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    border: 2px solid #222;
+    box-shadow: 4px 4px 0 #222;
+  }
+
+  .linea-tiempo {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    margin: 20px 0;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 2px solid #222;
+    box-shadow: 5px 5px 0 #222;
+  }
+
+  .lt-item {
+    flex: 1;
+    padding: 14px 12px;
+    text-align: center;
+    font-size: 0.88em;
+    font-weight: 800;
+  }
+
+  /* CRITERIOS DSM */
+  .criterio-box {
+    background: #fffdf4;
+    border: 2px solid #222 !important;
+    border-radius: 22px;
+    padding: 18px;
+    margin: 12px 0;
+    box-shadow: 5px 5px 0 #222;
+  }
+
+  .criterio-box .criterio-label {
+    display: inline-block;
+    background: #222 !important;
+    color: white;
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 0.78em;
+    font-weight: 900;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  /* FÁRMACOS */
+  .farmaco-card {
+    border-radius: 22px;
+    padding: 20px;
+    margin: 14px 0;
+    border: 2px solid #222 !important;
+    box-shadow: 5px 5px 0 #222;
+  }
+
+  .farmaco-nombre {
+    font-size: 1.2em;
+    font-weight: 900;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .farmaco-familia {
+    display: inline-block;
+    border-radius: 999px !important;
+    padding: 4px 12px;
+    font-size: 0.78em;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    border: 2px solid #222;
+  }
+
+  /* SEMÁFORO */
+  .semaforo {
+    display: flex;
+    gap: 10px;
+    margin: 12px 0;
+    flex-wrap: wrap;
+  }
+
+  .semaforo-item {
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-size: 0.87em;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 2px solid #222;
+    box-shadow: 3px 3px 0 #222;
+  }
+
+  .sem-verde { background: var(--verde-claro); color: #222; }
+  .sem-amarillo { background: var(--amarillo-claro); color: #222; }
+  .sem-rojo { background: var(--rojo-claro); color: #222; }
+
+  /* BADGE */
+  .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 0.82em;
+    font-weight: 900;
+    margin: 2px;
+    border: 1.5px solid #222;
+  }
+
+  /* QUOTE */
+  .quote {
+    background: #fffdf4;
+    border-left: 10px solid var(--violeta);
+    border-radius: 20px;
+    padding: 18px 22px;
+    margin: 16px 0;
+    font-style: italic;
+    color: #374151;
+    font-size: 0.97em;
+    line-height: 1.8;
+    border-top: 2px solid #222;
+    border-right: 2px solid #222;
+    border-bottom: 2px solid #222;
+    box-shadow: 5px 5px 0 #222;
+  }
+
+  /* SEPARADOR */
+  .sep {
+    height: 4px;
+    background: linear-gradient(to right, #4b7bec, #9b5de5, #ff6b9a, #ffd166);
+    border-radius: 999px;
+    margin: 26px 0;
+    border: 1px solid rgba(0,0,0,.15);
+  }
+
+  p { margin-bottom: 12px; }
+  ul.lista, ol.lista { padding-left: 22px; margin-bottom: 14px; }
+  ul.lista li, ol.lista li { margin-bottom: 6px; font-size: 0.95em; }
+
+  strong { font-weight: 900; }
+
+  .subtitulo {
+    font-size: 1.02em;
+    font-weight: 900;
+    margin: 20px 0 12px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid #222;
+    box-shadow: 3px 3px 0 #222;
+    color: #222 !important;
+  }
+
+  .sub-azul { background: var(--azul-claro); }
+  .sub-violeta { background: var(--violeta-claro); }
+  .sub-verde { background: var(--verde-claro); }
+  .sub-amarillo { background: var(--amarillo-claro); }
+  .sub-rojo { background: var(--rojo-claro); }
+  .sub-naranja { background: var(--naranja-claro); }
+  .sub-rosa { background: var(--rosa-claro); }
+  .sub-cyan { background: var(--cyan-claro); }
+  .sub-gris { background: #F1F5F9; }
+
+  a { color: var(--azul-oscuro); }
+
+  @media (max-width: 900px) {
+    .grid-3 { grid-template-columns: 1fr; }
+    .grid-2 { grid-template-columns: 1fr; }
+    .espectro-bar { flex-wrap: wrap; justify-content: center; gap: 10px; }
+    .linea-tiempo { flex-direction: column; }
+  }
+
+  @media (max-width: 700px) {
+    .header { margin: 18px 14px 22px; padding: 28px 22px; }
+    .header::after { left: 22px; top: 22px; }
+    .header h1 { font-size: 2.2em; margin-top: 42px; }
+    .container { padding: 0 14px 50px; }
+    .indice ul { display: flex; }
+    .seccion { padding: 22px; }
+    .seccion-titulo h2 { font-size: 1.45em; }
+  }
+
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <h1>🧠 Trastornos Bipolares</h1>
+  <p>Apunte completo · Psicopatología y Psicofarmacología</p>
+  <div class="tags">
+    <span class="tag">DSM-5 / CIE-11</span>
+    <span class="tag">Episodios</span>
+    <span class="tag">Espectro</span>
+    <span class="tag">Etiopatogenia</span>
+    <span class="tag">Farmacología</span>
+    <span class="tag">Litio</span>
+    <span class="tag">Anticonvulsivantes</span>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- ÍNDICE -->
+  <div class="indice" id="indice">
+    <h2>📋 Índice</h2>
+    <ul>
+      <li><a href="#s1">1. Conceptos semiológicos básicos</a></li>
+      <li><a href="#s2">2. Epidemiología</a></li>
+      <li><a href="#s3">3. Clasificación DSM-5</a></li>
+      <li><a href="#s4">4. Episodio depresivo mayor</a></li>
+      <li><a href="#s5">5. Episodio maníaco</a></li>
+      <li><a href="#s6">6. Episodio hipomaníaco</a></li>
+      <li><a href="#s7">7. Episodio mixto</a></li>
+      <li><a href="#s8">8. Espectro bipolar</a></li>
+      <li><a href="#s9">9. Curso y pronóstico</a></li>
+      <li><a href="#s10">10. Etiopatogenia</a></li>
+      <li><a href="#s11">11. Tratamiento farmacológico: Litio</a></li>
+      <li><a href="#s12">12. Anticonvulsivantes</a></li>
+      <li><a href="#s13">13. Guías prácticas para pacientes</a></li>
+      <li><a href="#s14">14. Espectro bipolar — Herlyn (ampliado)</a></li>
+      <li><a href="#s15">15. Neurobiología del TB — Palacio</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== SECCIÓN 1: SEMIOLOGÍA ===== -->
+  <div class="seccion s-azul" id="s1">
+    <div class="seccion-titulo">
+      <div class="icono">🔬</div>
+      <h2>1. Conceptos Semiológicos Básicos</h2>
+    </div>
+
+    <p>Los estados anímicos son <strong>emociones estables y duraderas</strong>. Las emociones cambian constantemente, pero cuando esas fluctuaciones se hacen persistentes, las llamamos <em>estado de ánimo</em>. Cuando el paciente entra en una fase, permanece en ella cierto tiempo.</p>
+
+    <div class="subtitulo sub-azul">📊 Escala del Estado de Ánimo</div>
+
+    <div style="margin: 18px 0;">
+      <div class="linea-tiempo">
+        <div class="lt-item" style="background:#DC2626;color:white;">🔴 MANÍA<br><small>Hipertimia</small></div>
+        <div class="lt-item" style="background:#F97316;color:white;">🟠 HIPOMANÍA<br><small>Hipertimia leve</small></div>
+        <div class="lt-item" style="background:#10B981;color:white;font-weight:900;">✅ EUTIMIA<br><small>Ánimo normal</small></div>
+        <div class="lt-item" style="background:#60A5FA;color:white;">🔵 SUBDEPRESIÓN<br><small>Distimia</small></div>
+        <div class="lt-item" style="background:#1D4ED8;color:white;">🟣 DEPRESIÓN<br><small>Hipotimia</small></div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div>
+        <table>
+          <thead><tr style="background:#DBEAFE;"><th colspan="2">📚 Glosario Semiológico</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Eutimia</strong></td><td>Estado de ánimo normal (eu = normal; timia = ánimo)</td></tr>
+            <tr><td><strong>Hipotimia</strong></td><td>Ánimo bajo / depresión mayor</td></tr>
+            <tr><td><strong>Distimia</strong></td><td>Síntomas subdepresivos</td></tr>
+            <tr><td><strong>Hipertimia</strong></td><td>Ánimo elevado / manía</td></tr>
+            <tr><td><strong>Anhedonia</strong></td><td>Incapacidad para sentir placer</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div class="alerta alerta-azul">
+          <span class="alerta-icono">💡</span>
+          <div>Cuando en una historia clínica veas la palabra <strong>"-timia"</strong>, hace referencia al estado anímico. Por ej., <em>eutimia = ánimo normal</em>.</div>
+        </div>
+        <div class="alerta alerta-violeta" style="margin-top:12px;">
+          <span class="alerta-icono">📖</span>
+          <div>Kraepelin fue quien describió el cuadro como <strong>"Psicosis Maníaco-Depresiva"</strong>. Hoy el término psicosis se reemplazó por <em>Trastorno Bipolar</em>, aunque la psicosis puede aparecer en algunos episodios.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SECCIÓN 2: EPIDEMIOLOGÍA ===== -->
+  <div class="seccion s-verde" id="s2">
+    <div class="seccion-titulo">
+      <div class="icono">📊</div>
+      <h2>2. Epidemiología</h2>
+    </div>
+
+    <div class="grid-3">
+      <div class="tarjeta tarjeta-verde">
+        <h4>🌍 Prevalencia</h4>
+        <ul>
+          <li>Espectro bipolar: <strong>2,4%</strong></li>
+          <li>TB tipo 1 + 2: <strong>~1%</strong></li>
+          <li>Formas subclínicas: <strong>1,4%</strong></li>
+          <li>Otros estudios: hasta <strong>7,8%</strong></li>
+        </ul>
+      </div>
+      <div class="tarjeta tarjeta-azul">
+        <h4>📅 Edad de inicio</h4>
+        <ul>
+          <li>50% debuta <strong>antes de los 20 años</strong></li>
+          <li>Pico: <strong>16-17 años</strong></li>
+          <li>Rango frecuente: <strong>20-35 años</strong></li>
+          <li>Inicio tardío (&gt;35-40 a.): sospecha otra patología</li>
+        </ul>
+      </div>
+      <div class="tarjeta tarjeta-rosa">
+        <h4>⚧ Diferencias por género</h4>
+        <ul>
+          <li><strong>♂ Hombres:</strong> más episodios maníacos, inicio más temprano, episodios más largos</li>
+          <li><strong>♀ Mujeres:</strong> más episodios mixtos y depresivos. TB tipo 2: <em>2x más frecuente</em></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="alerta alerta-amarillo">
+      <span class="alerta-icono">⚠️</span>
+      <div>El inicio en la <strong>adolescencia</strong> dificulta el diagnóstico porque es una etapa de inestabilidad emocional. Los estudios muestran que psicólogos y psiquiatras frecuentemente no hacen buen diagnóstico diferencial en etapas tempranas.</div>
+    </div>
+  </div>
+
+  <!-- ===== SECCIÓN 3: CLASIFICACIÓN DSM-5 ===== -->
+  <div class="seccion s-violeta" id="s3">
+    <div class="seccion-titulo">
+      <div class="icono">📖</div>
+      <h2>3. Clasificación según DSM-5 y CIE-11</h2>
+    </div>
+
+    <p>El capítulo se llama <strong>"Trastorno Bipolar y Trastornos Relacionados"</strong>. CIE-11 lo ordena bajo "Alteraciones del Estado de Ánimo" con las mismas categorías.</p>
+
+    <div class="grid-3">
+      <div class="tarjeta tarjeta-rojo">
+        <h4>🔴 TB Tipo I</h4>
+        <ul>
+          <li>Requiere <strong>sí o sí un episodio maníaco</strong></li>
+          <li>Puede haber episodios depresivos e hipomaníacos</li>
+          <li>Mayor severidad sintomática</li>
+          <li>A menudo requiere hospitalización</li>
+        </ul>
+      </div>
+      <div class="tarjeta tarjeta-naranja">
+        <h4>🟠 TB Tipo II</h4>
+        <ul>
+          <li>Episodio <strong>hipomaníaco + depresivo mayor</strong></li>
+          <li><strong>Nunca hubo episodio maníaco</strong> (excluye TB I)</li>
+          <li>Ciclos más frecuentes</li>
+          <li>Mayor riesgo suicida que TB I</li>
+          <li>2x más frecuente en mujeres</li>
+        </ul>
+      </div>
+      <div class="tarjeta tarjeta-amarillo">
+        <h4>🟡 Trastorno Ciclotímico</h4>
+        <ul>
+          <li><strong>≥2 años</strong> de síntomas hipomaníacos + subdepresivos</li>
+          <li>Nunca cumple criterios completos para ningún episodio</li>
+          <li>Síntomas presentes &gt;50% del tiempo</li>
+          <li>No más de 2 meses seguidos sin síntomas</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="criterio-box">
+      <div class="criterio-label">CRITERIO DIFERENCIADOR CLAVE</div>
+      <div class="grid-2">
+        <div>
+          <strong>TB Tipo I:</strong> Episodio maníaco completo (≥7 días o cualquier duración con hospitalización)
+        </div>
+        <div>
+          <strong>TB Tipo II:</strong> Episodio hipomaníaco (≥4 días) + depresivo mayor. <em>Nunca episodio maníaco</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="alerta alerta-verde">
+      <span class="alerta-icono">✅</span>
+      <div>Si vés un paciente con criterios para episodio maníaco → <strong>ya podés diagnosticar TB Tipo I</strong>, sin necesidad de esperar episodio depresivo.</div>
+    </div>
+  </div>
+
+  <!-- ===== SECCIÓN 4: EPISODIO DEPRESIVO MAYOR ===== -->
+  <div class="seccion s-azul" id="s4">
+    <div class="seccion-titulo">
+      <div class="icono">😔</div>
+      <h2>4. Episodio Depresivo Mayor (EDM)</h2>
+    </div>
+
+    <div class="quote">
+      <strong>Testimonio de paciente:</strong> "Cuando me deprimo dudo de mi capacidad para hacer cualquier cosa. Parece como que la mente se volviera lenta y el cuerpo no responde. Me cuesta mucho hacer cualquier cosa. Por momentos me siento la culpable de todas las cosas malas. En esos momentos en que uno no puede sentir, moverse, pensar, cuidarse, la vida pierde sentido."
+    </div>
+
+    <div class="subtitulo sub-azul">📋 Criterios DSM-5 — Criterio A (≥5 síntomas durante ≥2 semanas)</div>
+
+    <div class="alerta alerta-amarillo">
+      <span class="alerta-icono">⚠️</span>
+      <div>Deben estar presentes <strong>5 o más síntomas</strong> de la lista, y <strong>al menos uno</strong> debe ser el síntoma <span class="badge" style="background:#FDE68A;color:#78350F;">1</span> o el <span class="badge" style="background:#FDE68A;color:#78350F;">2</span></div>
+    </div>
+
+    <table>
+      <thead>
+        <tr style="background:#DBEAFE;color:#1E3A8A;">
+          <th>#</th><th>Síntoma</th><th>Notas clínicas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="background:#EFF6FF;">
+          <td><strong style="color:#1D4ED8;">1★</strong></td>
+          <td><strong>Estado de ánimo depresivo / irritable</strong></td>
+          <td>Tristeza, vacío, llanto. En niños: irritabilidad (no tristeza)</td>
+        </tr>
+        <tr style="background:#EFF6FF;">
+          <td><strong style="color:#1D4ED8;">2★</strong></td>
+          <td><strong>Anhedonia</strong></td>
+          <td>Pérdida del interés o placer en actividades antes disfrutadas. Puede ser sin tristeza</td>
+        </tr>
+        <tr><td>3</td><td>Pérdida / aumento de peso</td><td>Lo más frecuente: pérdida de peso</td></tr>
+        <tr><td>4</td><td>Insomnio / hipersomnia</td><td>Lo más frecuente: insomnio</td></tr>
+        <tr><td>5</td><td>Agitación / enlentecimiento psicomotor</td><td>Lo más frecuente: enlentecimiento</td></tr>
+        <tr><td>6</td><td>Fatiga o pérdida de energía</td><td>—</td></tr>
+        <tr><td>7</td><td>Sentimientos de inutilidad o culpa excesivos</td><td>Pueden llegar a ser ideas delirantes (psicosis congruente con el ánimo)</td></tr>
+        <tr><td>8</td><td>Dificultad para pensar, concentrarse o tomar decisiones</td><td>⚠️ En adolescentes: baja del rendimiento académico como señal de alerta</td></tr>
+        <tr><td>9</td><td>Pensamientos recurrentes de muerte / ideación suicida</td><td>Con o sin plan. Evaluar siempre</td></tr>
+      </tbody>
+    </table>
+
+    <div class="subtitulo sub-verde">🌿 Indicios de que la depresión es bipolar (y no unipolar)</div>
+    <div class="grid-2">
+      <div class="tarjeta tarjeta-cyan">
+        <h4>🔍 Señales de alarma bipolar</h4>
+        <ul>
+          <li>Hipersomnia e hiperfagia (atípico)</li>
+          <li>Ansiedad comórbida marcada</li>
+          <li>Inhibición psicomotriz prominente</li>
+          <li>Labilidad emocional en el episodio</li>
+          <li>Síntomas psicóticos</li>
+          <li>Ideación suicida marcada</li>
+          <li><strong>🔑 Antecedentes familiares de bipolaridad</strong> (mayor predictor)</li>
+        </ul>
+      </div>
+      <div class="alerta alerta-amarillo" style="margin: 0; align-self: start;">
+        <span class="alerta-icono">💡</span>
+        <div>Una depresión mayor <strong>atípica</strong> también puede presentar hipersomnia e hiperfagia y <em>no</em> ser bipolar. Los antecedentes familiares son el indicador más específico.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SECCIÓN 5: EPISODIO MANÍACO ===== -->
+  <div class="seccion s-rosa" id="s5">
+    <div class="seccion-titulo">
+      <div class="icono">⚡</div>
+      <h2>5. Episodio Maníaco</h2>
+    </div>
+
+    <div class="quote">
+      <strong>Testimonio de paciente:</strong> "Había perdido el trabajo y estaba inusualmente contenta. La plata que me dieron de indemnización me la gasté en una semana. Salía todas las noches a bailar, por las mañanas sin dormir. Las ideas eran a mil por hora. Me sentía poderosa, llegué a pensar que yo era la encargada de salvar al mundo."
+    </div>
+
+    <div class="grid-2">
+      <div>
+        <div class="criterio-box">
+          <div class="criterio-label">CRITERIO A — Estado de ánimo</div>
+          <p>Estado de ánimo <strong>anormalmente y persistentemente:</strong></p>
+          <ul class="lista">
+            <li>Elevado / expansivo / <strong>irritable</strong></li>
+            <li>Con aumento persistente de actividad o energía dirigida a un objetivo</li>
+          </ul>
+          <p style="margin-top:8px;"><strong>Duración mínima: 1 semana</strong> (o cualquier duración si requiere hospitalización)</p>
+        </div>
+      </div>
+      <div>
+        <div class="criterio-box">
+          <div class="criterio-label">CRITERIO B — Síntomas (≥3 de los siguientes)</div>
+          <ol class="lista">
+            <li>⬆️ Aumento de la autoestima / grandiosidad</li>
+            <li>💤 Disminución de la necesidad de sueño (2hs y se siente descansado)</li>
+            <li>💬 Más hablador de lo habitual (logorrea)</li>
+            <li>🧠 Fuga de ideas / pensamiento acelerado</li>
+            <li>👀 Fácil distracción</li>
+            <li>🏃 Aumento de actividad dirigida / agitación psicomotora</li>
+            <li>💸 Actividades con alto riesgo: gastos excesivos, indiscreciones sexuales, etc.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="criterio-box" style="border-color: #FCA5A5; background: #FEF2F2;">
+      <div class="criterio-label" style="background: #DC2626;">CRITERIO C — Gravedad</div>
+      <p>La alteración es <strong>suficientemente grave</strong> para causar deterioro importante en funcionamiento social/laboral o para necesitar <strong>hospitalización</strong>. Puede presentar síntomas psicóticos.</p>
+    </div>
+
+    <div class="alerta alerta-rojo">
+      <span class="alerta-icono">🚨</span>
+      <div>La <strong>irritabilidad</strong> es el "lado oscuro" de la manía. El paciente maníaco, al ser contradicho, puede volverse muy irritable o incluso violento. No siempre es euforia pura.</div>
+    </div>
+
+    <div class="alerta alerta-naranja">
+      <span class="alerta-icono">💡</span>
+      <div><strong>Grandiosidad:</strong> Puede llegar a delirios de omnipotencia. El paciente puede creer que es el salvador del mundo, poniéndose en riesgo real por decisiones basadas en esa creencia.</div>
+    </div>
+  </div>
+
+  <!-- ===== SECCIÓN 6: HIPOMANÍA ===== -->
+  <div class="seccion s-amarillo" id="s6">
+    <div class="seccion-titulo">
+      <div class="icono">🌤️</div>
+      <h2>6. Episodio Hipomaníaco</h2>
+    </div>
+
+    <div class="quote">
+      <strong>Testimonio:</strong> "Al principio fue tremendo, tenía menos necesidad de dormir y mucha energía. Mi jefe me felicitó porque había duplicado los objetivos y se me ocurrieron varias ideas para mejorar las ventas. Nunca tuve tanto éxito con las mujeres. Esto duró una semana, después estuve 3 meses deprimido."
+    </div>
+
+    <div class="alerta alerta-azul">
+      <span class="alerta-icono">📌</span>
+      <div><strong>Los síntomas son IDÉNTICOS al episodio maníaco.</strong> La diferencia está en la <em>intensidad y las consecuencias</em>, no en el tipo de síntomas.</div>
+    </div>
+
+    <table>
+      <thead>
+        <tr style="background: #FEF3C7; color: #78350F;">
+          <th>Característica</th><th>🔴 Episodio MANÍACO</th><th>🟡 Episodio HIPOMANÍACO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Duración mínima</strong></td><td>≥ 7 días</td><td>≥ 4 días</td></tr>
+        <tr><td><strong>Funcionamiento</strong></td><td>Deterioro importante</td><td>Cambio observable, pero puede seguir funcionando</td></tr>
+        <tr><td><strong>Hospitalización</strong></td><td>Frecuentemente necesaria</td><td>No necesaria</td></tr>
+        <tr><td><strong>Síntomas psicóticos</strong></td><td>Posibles</td><td>No</td></tr>
+        <tr><td><strong>Diagnóstico resultante</strong></td><td>TB Tipo I</td><td>TB Tipo II</td></tr>
+      </tbody>
+    </table>
+
+    <div class="alerta alerta-violeta">
+      <span class="alerta-icono">⚠️</span>
+      <div>El diagnóstico de hipomanía es más difícil: el paciente no siente que está enfermo porque <strong>"se siente bien"</strong>. No suele consultar. Son los familiares y colegas quienes notan el cambio.</div>
+    </div>
+  </div>
+
+  <!-- ===== SECCIÓN 7: EPISODIO MIXTO ===== -->
+  <div class="seccion s-naranja" id="s7">
+    <div class="seccion-titulo">
+      <div class="icono">🔀</div>
+      <h2>7. Episodio Mixto (Especificador en DSM-5)</h2>
+    </div>
+
+    <p>El DSM-5 <strong>eliminó el episodio mixto como categoría independiente</strong> y lo convirtió en un <em>especificador</em> que se añade a cualquier episodio (depresivo, maníaco o hipomaníaco).</p>
+
+    <div class="tarjeta tarjeta-naranja">
+      <h4>🔀 ¿Qué es un episodio mixto?</h4>
+      <p>Confluencia en el <strong>mismo episodio</strong> de síntomas de ambos polos:</p>
+      <ul>
+        <li>Tristeza <em>y al mismo tiempo</em> más hablador, sin dormir, sensación de bienestar momentánea</li>
+        <li>Síntomas que van oscilando durante el día</li>
+      </ul>
+    </div>
+
+    <div class="grid-2">
+      <div class="alerta alerta-rojo">
+        <span class="alerta-icono">🚨</span>
+        <div>Los episodios mixtos son <strong>los más complejos de tratar</strong> y tienen el mayor riesgo suicida dentro de los TB.</div>
+      </div>
+      <div class="alerta alerta-amarillo">
+        <span class="alerta-icono">💊</span>
+        <div>TB Tipo II suele presentar más ciclos frecuentes, oscilando entre episodios, lo que lo hace más difícil de tratar que el TB Tipo I.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SECCIÓN 8: ESPECTRO ===== -->
+  <div class="seccion s-verde" id="s8">
+    <div class="seccion-titulo">
+      <div class="icono">🌈</div>
+      <h2>8. Espectro Bipolar (Akiskal)</h2>
+    </div>
+
+    <p>Esta clasificación <strong>no está en el DSM-5</strong>, sino que es una propuesta de Akiskal y colaboradores que amplía el concepto más allá de los manuales diagnósticos.</p>
+
+    <div class="espectro-bar">
+      <span>TB I</span>
+      <span>TB II</span>
+      <span>TB 2½</span>
+      <span>TB III</span>
+      <span>TB 3½</span>
+      <span>TB IV</span>
+      <span>TB V</span>
+      <span>TB VI</span>
+    </div>
+
+    <table>
+      <thead>
+        <tr style="background:#D1FAE5;color:#065F46;">
+          <th>Subtipo</th><th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>TB I</strong></td><td>Episodio maníaco completo (igual al DSM)</td></tr>
+        <tr><td><strong>TB II</strong></td><td>Hipomanía + depresión mayor (igual al DSM)</td></tr>
+        <tr><td><strong>TB 2½</strong></td><td>Ciclotimia + Depresión Mayor</td></tr>
+        <tr><td><strong>TB III</strong></td><td>Manía/hipomanía inducida por <strong>antidepresivos</strong> (switch)</td></tr>
+        <tr><td><strong>TB 3½</strong></td><td>Manía/hipomanía inducida por <strong>sustancias de abuso</strong> (alcohol, cocaína, etc.)</td></tr>
+        <tr><td><strong>TB IV</strong></td><td>Temperamento hipertímico + Depresión Mayor recurrente</td></tr>
+        <tr><td><strong>TB V</strong></td><td>Depresión Mayor recurrente + <strong>antecedentes familiares de bipolaridad</strong></td></tr>
+        <tr><td><strong>TB VI</strong></td><td>Demencia temprana con ánimo afectado</td></tr>
+      </tbody>
+    </table>
+
+    <div class="alerta alerta-naranja">
+      <span class="alerta-icono">💊</span>
+      <div><strong>TB Tipo III (switch):</strong> Ocurre cuando se da un antidepresivo a alguien que tiene una depresión bipolar no diagnosticada. El antidepresivo lo "cambia" (switch) hacia una manía o hipomanía. Es una de las causas más comunes de error diagnóstico.</div>
+    </div>
+  </div>
+
+  <!-- ===== SECCIÓN 9: CURSO Y PRONÓSTICO ===== -->
+  <div class="seccion s-rosa" id="s9">
+    <div class="seccion-titulo">
+      <div class="icono">📈</div>
+      <h2>9. Curso, Pronóstico y Comorbilidad</h2>
+    </div>
+
+    <div class="grid-3">
+      <div class="tarjeta tarjeta-azul">
+        <h4>⏱️ Duración de episodios</h4>
+        <ul>
+          <li>Promedio general: <strong>13 semanas</strong></li>
+          <li>Maníaco/Hipomaníaco: <strong>~2-3 meses</strong></li>
+          <li>Depresivo mayor: <strong>6-9 meses</strong> (hasta 4x más)</li>
+        </ul>
+      </div>
+      <div class="tarjeta tarjeta-rojo">
+        <h4>♻️ Ciclado</h4>
+        <ul>
+          <li>Enfermedad <strong>crónica y recurrente</strong> (de por vida)</li>
+          <li><strong>Ciclado lento:</strong> &lt;4 ciclos/año</li>
+          <li><strong>Ciclado rápido:</strong> &gt;4 ciclos/año (20% de pacientes)</li>
+          <li>Ciclado rápido responde mejor a valproato/carbamazepina</li>
+        </ul>
+      </div>
+      <div class="tarjeta tarjeta-violeta">
+        <h4>🧠 Deterioro cognitivo</h4>
+        <ul>
+          <li>1/3 de los pacientes tiene deterioro significativo</li>
+          <li>Relacionado con episodios depresivos</li>
+          <li>Afecta hipocampo y corteza prefrontal</li>
+          <li><em>"Ciclar mata neuronas"</em> (Saidman)</li>
+          <li>Mayor tasa de demencia vs. población general</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="subtitulo sub-rojo">⚠️ Riesgo Suicida</div>
+    <div class="alerta alerta-rojo">
+      <span class="alerta-icono">🚨</span>
+      <div>
+        <strong>15-20% de los pacientes</strong> con TB mueren por suicidio. Es el trastorno afectivo con mayor índice de suicidio, incluso mayor que la depresión mayor.<br>
+        <br>
+        <strong>Período de mayor riesgo:</strong> primeras semanas posteriores al alta hospitalaria (primeros 3 meses y primer año son críticos).<br>
+        <br>
+        El consumo de alcohol aumenta aún más el riesgo.
+      </div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="subtitulo sub-naranja">🔗 Comorbilidades</div>
+    <div class="alerta alerta-azul">
+      <span class="alerta-icono">📊</span>
+      <div><strong>3 de cada 4 pacientes</strong> tienen algún trastorno comórbido.</div>
+    </div>
+    <div class="grid-2">
+      <div class="tarjeta tarjeta-naranja">
+        <h4>1️⃣ Trastorno por uso de sustancias</h4>
+        <ul>
+          <li>Comorbilidad más frecuente</li>
+          <li>Empeora el pronóstico y dificulta el tratamiento</li>
+          <li>El autoregistro incluye registro de consumo</li>
+        </ul>
+      </div>
+      <div class="tarjeta tarjeta-amarillo">
+        <h4>2️⃣ Trastornos de ansiedad</h4>
+        <ul>
+          <li>Segunda comorbilidad más común</li>
+          <li>Mayor deterioro psicosocial</li>
+          <li>Mayor gravedad de la enfermedad</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SECCIÓN 10: ETIOPATOGENIA ===== -->
+  <div class="seccion s-cyan" id="s10">
+    <div class="seccion-titulo">
+      <div class="icono">🔬</div>
+      <h2>10. Etiopatogenia</h2>
+    </div>
+
+    <div class="alerta alerta-rojo">
+      <span class="alerta-icono">❗</span>
+      <div><strong>Hasta la fecha no existe ninguna explicación sobre las causas del trastorno bipolar.</strong> Lo que sigue son hallazgos y factores asociados estudiados, no causas demostradas.</div>
+    </div>
+
+    <div class="grid-2">
+
+      <div>
+        <div class="subtitulo sub-azul">🧬 Factores Genéticos</div>
+        <div class="tarjeta tarjeta-azul">
+          <h4>Evidencia genética</h4>
+          <ul>
+            <li>&gt;50% de los pacientes tienen familiar de 1° grado con trastorno del ánimo</li>
+            <li>Descendientes: <strong>5-10x mayor riesgo</strong> que población general</li>
+            <li>Gemelos: genética explica hasta <strong>85%</strong> del trastorno</li>
+            <li>Herencia <strong>poligénica</strong> (múltiples genes implicados)</li>
+          </ul>
+        </div>
+        <div class="alerta alerta-violeta">
+          <span class="alerta-icono">💡</span>
+          <div><em>No se hereda el trastorno, se heredan genes que aumentan la predisposición.</em> Los TB no son enfermedades hereditarias en sentido estricto.</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="subtitulo sub-cyan">🧪 Anomalías Neurohormonales</div>
+        <div class="tarjeta tarjeta-cyan">
+          <h4>Eje HHA (Hipotálamo-Hipófisis-Adrenal)</h4>
+          <ul>
+            <li>Desregulación en la secreción de glucocorticoides (<strong>cortisol</strong>)</li>
+            <li>Produce toxicidad neuronal en hipocampo y corteza prefrontal</li>
+            <li>La corteza prefrontal regula la toma de decisiones → afectada en depresión</li>
+          </ul>
+        </div>
+        <div class="subtitulo sub-gris" style="margin-top:12px;">🏗️ Anomalías Anatómicas</div>
+        <div class="alerta alerta-amarillo">
+          <span class="alerta-icono">🔍</span>
+          <div>Investigaciones contradictorias. Un metaanálisis reciente concluyó que <strong>no hay diferencias estructurales</strong> claras ni en circunvoluciones ni en volumen de sustancia gris.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="subtitulo sub-verde">🌍 Factores Psicosociales</div>
+    <div class="grid-2">
+      <div>
+        <div class="tarjeta tarjeta-verde">
+          <h4>📌 Precipitantes de episodios</h4>
+          <ul>
+            <li><strong>Depresivos:</strong> acontec. negativos, fracasos, pérdidas</li>
+            <li><strong>Maníacos:</strong> tanto acontec. negativos (insultos, hostigamiento) como positivos (logros importantes)</li>
+            <li>La propia enfermedad es estresante → feedback negativo que desencadena más episodios</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="tarjeta tarjeta-rosa">
+          <h4>⚠️ Factores predisponentes</h4>
+          <ul>
+            <li>Pobre apoyo social</li>
+            <li>Maltrato en la infancia</li>
+            <li>Baja autoestima</li>
+            <li>Distorsiones cognitivas</li>
+          </ul>
+        </div>
+        <div class="alerta alerta-verde" style="margin-top:10px;">
+          <span class="alerta-icono">✅</span>
+          <div><strong>Sin evidencia:</strong> No existe ningún paper que demuestre que el estilo de crianza <em>cause</em> el TB.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SECCIÓN 11: LITIO ===== -->
+  <div class="seccion s-amarillo" id="s11">
+    <div class="seccion-titulo">
+      <div class="icono">⚗️</div>
+      <h2>11. Tratamiento Farmacológico: Litio</h2>
+    </div>
+
+    <div class="subtitulo sub-azul">🏠 Las 3 (+ 1) Familias de Antirrecurrenciales / Estabilizadores del Ánimo</div>
+    <div class="grid-2">
+      <div class="tarjeta tarjeta-azul">
+        <h4>Familias principales</h4>
+        <ul>
+          <li>🔵 <strong>Litio</strong> (único de su familia)</li>
+          <li>🟢 <strong>Anticonvulsivantes:</strong> ácido valproico, carbamazepina, lamotrigina, topiramato</li>
+          <li>🟠 <strong>Antipsicóticos atípicos</strong></li>
+          <li>🔴 <strong>Antidepresivos</strong> (solo en combinación, nunca solos)</li>
+        </ul>
+      </div>
+      <div class="alerta alerta-rojo">
+        <span class="alerta-icono">🚫</span>
+        <div><strong>NUNCA dar un antidepresivo solo en depresión bipolar.</strong> Riesgo de <em>switch</em> hacia manía/hipomanía. Siempre con estabilizador + antidepresivo débil.</div>
+      </div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="subtitulo sub-amarillo">🔬 Litio — Farmacocinética</div>
+
+    <table>
+      <thead>
+        <tr style="background:#FEF3C7;color:#92400E;">
+          <th>Parámetro</th><th>Dato</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Elemento</strong></td><td>Ion (3° en la tabla periódica). Similar al sodio: misma valencia (+), pero más pequeño</td></tr>
+        <tr><td><strong>Administración</strong></td><td>Exclusivamente <strong>oral</strong>. No existe litio EV, IM, transdérmico</td></tr>
+        <tr><td><strong>Absorción</strong></td><td>Intestinal mediante transportadores iónicos (no cruza membranas solo)</td></tr>
+        <tr><td><strong>Unión a proteínas</strong></td><td>No se une (es ionizado, hidrofílico)</td></tr>
+        <tr><td><strong>BHE</strong></td><td>Atraviesa ~50%</td></tr>
+        <tr><td><strong>Metabolismo</strong></td><td>❌ No se metaboliza. Se elimina igual que se ingiere</td></tr>
+        <tr><td><strong>Eliminación</strong></td><td>Renal (casi exclusiva). Compite con sodio en túbulo proximal</td></tr>
+        <tr><td><strong>Vida media</strong></td><td>~24 hs. → estado estacionario a los <strong>4-5 días</strong></td></tr>
+        <tr><td><strong>Litemia</strong></td><td>Se dosa a los 7 días. En <strong>valle</strong> (12hs después de última dosis). Rango: 0,7–1,2 mEq/L</td></tr>
+        <tr><td><strong>Embarazo</strong></td><td>⛔ Categoría D (teratogénico). Pasa leche materna</td></tr>
+      </tbody>
+    </table>
+
+    <div class="alerta alerta-naranja">
+      <span class="alerta-icono">🧂</span>
+      <div><strong>Relación litio-sodio:</strong> Si el paciente consume <em>mucha sal</em> → el sodio compite con el litio en los túbulos renales → el litio se excreta más → niveles bajos (ineficaz). Si consume <em>muy poca sal</em> → los transportadores reabsorben todo el litio → niveles altos → <strong>intoxicación</strong>. Mantener ingesta de sal estable.</div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="subtitulo sub-violeta">💊 Mecanismo de Acción del Litio</div>
+    <div class="alerta alerta-violeta">
+      <span class="alerta-icono">🔬</span>
+      <div>El mecanismo de acción <strong>no está completamente esclarecido</strong>. Lo más importante a recordar: <strong>inhibe el PIP2</strong> (fosfatidilinositol bifosfato), modulando cascadas intracelulares de segundos mensajeros.</div>
+    </div>
+
+    <div class="grid-3">
+      <div class="tarjeta tarjeta-azul">
+        <h4>Vía PIP2</h4>
+        <p style="font-size:0.92em;">Inhibe enzimas que fosforilan inositoles → no se forman los fosfolípidos de membrana → cambios en la citoarquitectura neuronal</p>
+      </div>
+      <div class="tarjeta tarjeta-violeta">
+        <h4>Sinapsis monoaminérgicas</h4>
+        <p style="font-size:0.92em;">Modula sinapsis serotoninérgicas, noradrenérgicas y dopaminérgicas. El exceso de dopamina → episodios maníacos/psicóticos</p>
+      </div>
+      <div class="tarjeta tarjeta-verde">
+        <h4>Neuroprotección</h4>
+        <p style="font-size:0.92em;">Inhibe GSK-3 (glicógeno sintetasa kinasa 3) → promueve factores neurotróficos → plasticidad y neuroprotección a largo plazo</p>
+      </div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="subtitulo sub-verde">🩺 Controles Clínicos con Litio</div>
+    <div class="grid-2">
+      <div class="tarjeta tarjeta-verde">
+        <h4>Antes de iniciar</h4>
+        <ul>
+          <li>✅ Función renal (el riñón debe funcionar bien)</li>
+          <li>✅ Función tiroidea (litio altera la tiroides)</li>
+          <li>✅ ECG (sobre todo &gt;50 años: arritmias)</li>
+        </ul>
+      </div>
+      <div class="tarjeta tarjeta-azul">
+        <h4>Durante el tratamiento</h4>
+        <ul>
+          <li>🔁 Controles periódicos de función renal</li>
+          <li>📊 Litemias</li>
+          <li>⚖️ Peso e IMC</li>
+          <li>🩺 Función tiroidea</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="subtitulo sub-rojo">⚠️ Efectos Adversos del Litio</div>
+
+    <table>
+      <thead>
+        <tr style="background:#FEE2E2;color:#7F1D1D;"><th>Nivel</th><th>Síntomas</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="badge" style="background:#D1FAE5;color:#065F46;">LEVES</span></td>
+          <td>Temblor fino de manos, sed, pérdida de apetito, cambio del gusto (sabor metálico), estreñimiento/diarrea leve, rash cutáneo</td>
+        </tr>
+        <tr>
+          <td><span class="badge" style="background:#FEF3C7;color:#92400E;">MODERADOS</span></td>
+          <td>Ataxia, temblores importantes, <strong>polidipsia</strong> (diabetes insípida), diarrea, <strong>alteraciones tiroideas</strong> (hipo o hipertiroidismo), aumento de glóbulos blancos</td>
+        </tr>
+        <tr>
+          <td><span class="badge" style="background:#FEE2E2;color:#991B1B;">TÓXICOS</span></td>
+          <td>Daño renal, arritmias cardíacas, crisis epilépticas, pseudotumor cerebri (hipertensión endocraniana)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="subtitulo sub-rojo">🆘 Triada de Intoxicación por Litio</div>
+    <div class="grid-3">
+      <div class="tarjeta tarjeta-rojo">
+        <h4>1️⃣ Gastrointestinal</h4>
+        <ul>
+          <li>Náuseas, vómitos, diarrea</li>
+          <li>⚠️ Riesgo: deshidratación → el litio no se elimina → más intoxicación</li>
+        </ul>
+      </div>
+      <div class="tarjeta tarjeta-naranja">
+        <h4>2️⃣ Cardíaco</h4>
+        <ul>
+          <li>Cambios eléctricos en ECG</li>
+          <li>Sin elevación de enzimas cardíacas</li>
+        </ul>
+      </div>
+      <div class="tarjeta tarjeta-amarillo">
+        <h4>3️⃣ Neurológico</h4>
+        <ul>
+          <li>Confusión, agitación</li>
+          <li>Hiperreflexia</li>
+          <li>Fasciculaciones, convulsiones</li>
+          <li><strong>Disartria</strong>, <strong>ataxia</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="subtitulo sub-azul">🔗 Interacciones Farmacológicas del Litio</div>
+    <div class="grid-2">
+      <div class="tarjeta tarjeta-rojo">
+        <h4>⬆️ AUMENTAN niveles de litio (riesgo tóxico)</h4>
+        <ul>
+          <li>⚠️ <strong>AINEs</strong> (ibuprofeno, ketorolac) — populares e "inofensivos"</li>
+          <li>Inhibidores COX-2</li>
+          <li>Diuréticos (algunos)</li>
+          <li>IECAs (enalapril y similares)</li>
+          <li>Metronidazol</li>
+        </ul>
+      </div>
+      <div class="tarjeta tarjeta-azul">
+        <h4>⬇️ DISMINUYEN niveles de litio (ineficacia)</h4>
+        <ul>
+          <li>Cetazolamida</li>
+          <li>Sustancias alcalinas (antiácidos)</li>
+          <li>Xantinas (café, té)</li>
+          <li>Exceso de sal en la dieta</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="alerta alerta-verde">
+      <span class="alerta-icono">✅</span>
+      <div><strong>El litio NO produce reacciones alérgicas como la carbamazepina.</strong> Es muy eficaz contra la manía y su recurrencia. También es el mejor fármaco <strong>antisuicida</strong> disponible. Redujo significativamente la mortalidad por suicidio en TB.</div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="subtitulo sub-gris">❌ Malos respondedores al Litio</div>
+    <div class="semaforo">
+      <span class="semaforo-item sem-rojo">Cicladores rápidos</span>
+      <span class="semaforo-item sem-rojo">Estados mixtos</span>
+      <span class="semaforo-item sem-rojo">Comorbilidad con abuso de sustancias</span>
+      <span class="semaforo-item sem-rojo">Psicosis incongruente con el estado de ánimo</span>
+    </div>
+  </div>
+
+  <!-- ===== SECCIÓN 12: ANTICONVULSIVANTES ===== -->
+  <div class="seccion s-naranja" id="s12">
+    <div class="seccion-titulo">
+      <div class="icono">💊</div>
+      <h2>12. Anticonvulsivantes como Estabilizadores</h2>
+    </div>
+
+    <!-- LITIO comparativo -->
+    <div class="farmaco-card" style="background:#FEFCE8;border-color:#FDE68A;">
+      <div class="farmaco-nombre">
+        ⚡ Valproato / Divalproato
+        <span class="farmaco-familia" style="background:#FEF3C7;color:#92400E;">Anticonvulsivante</span>
+      </div>
+      <div class="grid-2">
+        <div>
+          <ul class="lista">
+            <li>Absorción buena (divalproato: menos molestias GI)</li>
+            <li>Metabolismo <strong>hepático</strong> (cuidado con hepatopatías)</li>
+            <li>Efectivo en <strong>cicladores rápidos</strong></li>
+            <li>Indica en estados mixtos</li>
+          </ul>
+        </div>
+        <div>
+          <div class="alerta alerta-rojo" style="margin:0;font-size:0.9em;">
+            <span class="alerta-icono">⚠️</span>
+            <div><strong>Toxicidad hepática</strong>. Pedir hepatogramas. <strong>Muy teratogénico</strong> (evitar embarazo). Puede bajar células sanguíneas (pedir hemogramas).</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="farmaco-card" style="background:#FFF7ED;border-color:#FDBA74;">
+      <div class="farmaco-nombre">
+        🌿 Carbamazepina
+        <span class="farmaco-familia" style="background:#FFEDD5;color:#9A3412;">Anticonvulsivante</span>
+      </div>
+      <div class="grid-2">
+        <div>
+          <ul class="lista">
+            <li>Metabolismo <strong>hepático</strong></li>
+            <li>Efectiva en cicladores rápidos</li>
+            <li>Interacciona con muchos fármacos (inductor enzimático)</li>
+            <li>No asociar con valproato</li>
+          </ul>
+        </div>
+        <div>
+          <div class="alerta alerta-rojo" style="margin:0;font-size:0.9em;">
+            <span class="alerta-icono">⚠️</span>
+            <div><strong>Mayor riesgo de alergias</strong> (erupciones, prurito). Si hay alergia: suspender definitivamente. Baja células sanguíneas. Teratogénica.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="farmaco-card" style="background:#F0FDF4;border-color:#6EE7B7;">
+      <div class="farmaco-nombre">
+        ✨ Lamotrigina
+        <span class="farmaco-familia" style="background:#D1FAE5;color:#065F46;">Anticonvulsivante — Perfil antidepresivo</span>
+      </div>
+      <div class="grid-2">
+        <div>
+          <ul class="lista">
+            <li>Absorción buena, <strong>escaso metabolismo hepático</strong></li>
+            <li><strong>No aumenta el peso</strong></li>
+            <li>Tiene <strong>efecto antidepresivo</strong> (único entre los antirrecurrenciales)</li>
+            <li>"Estabiliza regulando en alta" → levemente por encima de eutimia</li>
+            <li>Inicio: 25mg, aumentar de a 25mg cada 15 días</li>
+            <li>Podría usarse en embarazo (se necesita más evidencia)</li>
+          </ul>
+        </div>
+        <div>
+          <div class="alerta alerta-amarillo" style="margin:0;font-size:0.9em;">
+            <span class="alerta-icono">⚠️</span>
+            <div>Riesgo de reacciones alérgicas <strong>graves y potencialmente mortales</strong> (Síndrome de Stevens-Johnson, Síndrome de Lyell). Titulación muy lenta para minimizarlo.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="farmaco-card" style="background:#EFF6FF;border-color:#BFDBFE;">
+      <div class="farmaco-nombre">
+        🔧 Oxcarbazepina
+        <span class="farmaco-familia" style="background:#DBEAFE;color:#1D4ED8;">Derivado de carbamazepina</span>
+      </div>
+      <ul class="lista">
+        <li>Derivado de carbamazepina con <strong>menos riesgo de alergias</strong></li>
+        <li>Fármaco más nuevo, menos experiencia en TB</li>
+      </ul>
+    </div>
+
+    <div class="farmaco-card" style="background:#FDF4FF;border-color:#E9D5FF;">
+      <div class="farmaco-nombre">
+        ⚖️ Topiramato
+        <span class="farmaco-familia" style="background:#EDE9FE;color:#4C1D95;">Anticonvulsivante — Adyuvante</span>
+      </div>
+      <div class="grid-2">
+        <div>
+          <ul class="lista">
+            <li>No recomendado en monoterapia (estabilizador débil)</li>
+            <li><strong>Ventaja única: hace perder peso</strong></li>
+            <li>Útil como terapia combinada (los otros antirrecurrenciales aumentan peso)</li>
+            <li>Se metaboliza por riñón → usar en insuficiencia hepática</li>
+          </ul>
+        </div>
+        <div>
+          <div class="alerta alerta-rojo" style="margin:0;font-size:0.9em;">
+            <span class="alerta-icono">⚠️</span>
+            <div>Contraindicado en <strong>glaucoma</strong> (puede precipitar ataque agudo). El riñón debe funcionar bien.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="subtitulo sub-azul">📋 Comparativo rápido de antirrecurrenciales</div>
+    <table>
+      <thead>
+        <tr style="background:#EDE9FE;color:#3B0764;">
+          <th>Fármaco</th><th>Indicación estrella</th><th>Metabolismo</th><th>Precaución principal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Litio</strong></td><td>Primera elección TB I; antisuicida</td><td>No metaboliza (renal)</td><td>Ventana terapéutica estrecha. AINES. Sal</td></tr>
+        <tr><td><strong>Valproato</strong></td><td>Ciclado rápido, estados mixtos</td><td>Hepático</td><td>Hepatotóxico. Muy teratogénico</td></tr>
+        <tr><td><strong>Carbamazepina</strong></td><td>Ciclado rápido</td><td>Hepático (inductor)</td><td>Alergias graves. Muchas interacciones</td></tr>
+        <tr><td><strong>Lamotrigina</strong></td><td>Perfil antidepresivo en TB</td><td>Poco hepático</td><td>Stevens-Johnson (titulación lenta)</td></tr>
+        <tr><td><strong>Topiramato</strong></td><td>Adyuvante + pérdida de peso</td><td>Renal</td><td>Glaucoma. No en monoterapia</td></tr>
+      </tbody>
+    </table>
+
+    <div class="sep"></div>
+
+    <div class="subtitulo sub-rosa">🔄 Esquema de tratamiento en manía aguda</div>
+    <div class="linea-tiempo">
+      <div class="lt-item" style="background:#EF4444;color:white;">1️⃣ Manía aguda<br><small>Antipsicótico atípico + Benzodiazepina</small></div>
+      <div class="lt-item" style="background:#F97316;color:white;">2️⃣ Iniciar antirrecurrencial<br><small>(tarda días-semanas en actuar)</small></div>
+      <div class="lt-item" style="background:#EAB308;color:white;">3️⃣ Paciente estabilizado<br><small>Retirar antipsicótico con prudencia</small></div>
+      <div class="lt-item" style="background:#10B981;color:white;">4️⃣ Mantenimiento<br><small>Antirrecurrencial de por vida (TB I)</small></div>
+    </div>
+  </div>
+
+  <!-- ===== SECCIÓN 13: GUÍAS PRÁCTICAS ===== -->
+  <div class="seccion s-verde" id="s13">
+    <div class="seccion-titulo">
+      <div class="icono">🧭</div>
+      <h2>13. Guías Prácticas para Pacientes</h2>
+    </div>
+
+    <div class="grid-2">
+      <div>
+        <div class="subtitulo sub-azul">😔 Ante un bajón (episodio depresivo)</div>
+        <ul class="lista">
+          <li>📞 Consultar al equipo tratante</li>
+          <li>😴 Dormir <strong>máximo 9 horas</strong> (más sueño = el ánimo se queda abajo)</li>
+          <li>🎯 Fijarse objetivos <strong>realistas y pequeños</strong></li>
+          <li>➕ Aumentar actividades de a poco</li>
+          <li>🏃 Realizar <strong>ejercicio físico</strong></li>
+          <li>🚫 No tomar decisiones importantes</li>
+          <li>💊 Nunca automedicarse</li>
+        </ul>
+      </div>
+      <div>
+        <div class="subtitulo sub-rosa">⚡ Ante una subida (hipomanía/manía)</div>
+        <ul class="lista">
+          <li>💳 No realizar gastos importantes sin esperar 24hs y consultar a alguien de confianza</li>
+          <li>😴 Aumentar horas de sueño hasta <strong>mínimo 10 horas</strong></li>
+          <li>🕐 Dedicar <strong>máximo 6 horas</strong> a actividades activas</li>
+          <li>☕ Evitar estimulantes: café, té, bebidas energéticas</li>
+          <li>🧘 Reducir estimulación mental: relajación</li>
+          <li>🤔 Someter las "ideas geniales" al criterio de otra persona</li>
+          <li>📞 Contactar al equipo tratante cuanto antes</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="alerta alerta-amarillo">
+      <span class="alerta-icono">📋</span>
+      <div><strong>Autoregistro diario:</strong> Herramienta clave para el seguimiento. Permite registrar: estado de ánimo (escala del 1 al 3 arriba/abajo de eutimia), horas de sueño (predictor de episodios), peso (días 14 y 28), ansiedad/irritabilidad, medicación tomada, consumo de sustancias. Las horas de sueño son el predictor más precoz: descenso → sube el ánimo; aumento → baja el ánimo.</div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="subtitulo sub-gris">🔑 Perlas clínicas para recordar</div>
+    <div class="grid-2">
+      <div class="tarjeta tarjeta-violeta">
+        <h4>💡 Diagnóstico diferencial con TLP</h4>
+        <p style="font-size:0.92em;">El Trastorno Límite de la Personalidad presenta <em>inestabilidad afectiva</em> similar al <strong>ciclado ultrarrápido</strong> del TB. El diagnóstico diferencial es muy difícil y ambos pueden coexistir. Se usan fármacos similares.</p>
+      </div>
+      <div class="tarjeta tarjeta-amarillo">
+        <h4>💡 "Regulando en baja" vs. "en alta"</h4>
+        <p style="font-size:0.92em;">La mayoría de los antirrecurrenciales estabilizan al paciente "<em>regulando en baja</em>" (motor a pocas revoluciones). La <strong>lamotrigina</strong> es la excepción: estabiliza levemente por encima de la eutimia.</p>
+      </div>
+    </div>
+
+    <div class="alerta alerta-rojo">
+      <span class="alerta-icono">🚨</span>
+      <div><strong>MALA PRAXIS:</strong> Dejar a un paciente bipolar sin medicación. "Ciclar mata neuronas." El deterioro cognitivo puede comenzar antes de las primeras manifestaciones clínicas, incluso en adolescentes.</div>
+    </div>
+  </div>
+
+  <!-- ===== SECCIÓN 14: ESPECTRO BIPOLAR — HERLYN ===== -->
+  <div class="seccion s-violeta" id="s14">
+    <div class="seccion-titulo">
+      <div class="icono">🌈</div>
+      <h2>14. Espectro Bipolar — Silvia Herlyn (ampliado)</h2>
+    </div>
+
+    <div class="alerta alerta-violeta">
+      <span class="alerta-icono">📌</span>
+      <div>La bipolaridad se define por la <strong>fluctuación del ánimo en sentido de su exaltación</strong>. Las depresiones sin episodios de elevación son unipolares. Cuando hay oscilación hacia arriba (manía o hipomanía) → bipolaridad. El movimiento <em>entre dos polos</em> da el nombre al trastorno.</div>
+    </div>
+
+    <div class="subtitulo sub-violeta">🎭 Los cuadros mixtos (Kraepelin, s. XIX)</div>
+    <p>Coexistencia de elementos depresivos y maníacos en el mismo episodio. Se diseñan a partir de <strong>tres coordenadas</strong>:</p>
+    <div class="grid-3">
+      <div class="tarjeta tarjeta-azul"><h4>🧠 Lo anímico</h4><p style="font-size:0.92em;">Tristeza con excitación o euforia con angustia</p></div>
+      <div class="tarjeta tarjeta-violeta"><h4>💭 Lo cognitivo</h4><p style="font-size:0.92em;">Aceleración del pensamiento con ánimo deprimido (o lentitud con euforia)</p></div>
+      <div class="tarjeta tarjeta-rosa"><h4>🏃 Lo motor</h4><p style="font-size:0.92em;">Agitación con disforia, o inhibición psicomotriz con ánimo elevado</p></div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="subtitulo sub-rosa">🔍 Por qué la hipomanía pasa desapercibida (12 razones — Akiskal)</div>
+    <div class="alerta alerta-amarillo">
+      <span class="alerta-icono">⚠️</span>
+      <div>La hipomanía puede confundirse con <strong>alegría no patológica</strong>. Quien tenga ciclos depresivos + hipomaníacos puede ser erróneamente tratado solo como depresivo → tratamiento inconveniente que aumenta el ciclado.</div>
+    </div>
+
+    <table>
+      <thead>
+        <tr style="background:#EDE9FE;color:#3B0764;"><th>#</th><th>Razón</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td><strong>Vivencia de bienestar:</strong> el estado hipomaníaco es registrado como placentero (hipertimia placentera)</td></tr>
+        <tr><td>2</td><td>Un estado placentero no se asocia a algo patológico</td></tr>
+        <tr><td>3</td><td>La gravedad es <strong>moderada</strong> (a diferencia de la manía franca)</td></tr>
+        <tr><td>4</td><td>Tras un episodio depresivo, la hipomanía parece simplemente "una mejora" o alegría normal</td></tr>
+        <tr><td>5</td><td><strong>Diagnóstico retrospectivo dificultado:</strong> el paciente recuerda mejor el sufrimiento que el bienestar patológico</td></tr>
+        <tr><td>6</td><td>Los episodios hipomaníacos son de <strong>corta duración</strong></td></tr>
+        <tr><td>7</td><td>Los criterios diagnósticos pueden ser muy restrictivos</td></tr>
+        <tr><td>8</td><td>Popularmente no circula la idea de que pueda haber una "alegría patológica"</td></tr>
+        <tr><td>9</td><td>Temperamento hipertímico de base dificulta la diferenciación con hipomanía propiamente dicha</td></tr>
+        <tr><td>10</td><td>Se puede diagnosticar como rasgo caracterológico o temperamento, no como episodio</td></tr>
+        <tr><td>11</td><td><strong>Sustancias estimulantes</strong> pueden enmascarar la aceleración propia de la hipomanía</td></tr>
+        <tr><td>12</td><td>La euforia manifestada como <strong>irritabilidad</strong> puede generar contratransferencia que le resta al terapeuta la visión diagnóstica</td></tr>
+      </tbody>
+    </table>
+
+    <div class="sep"></div>
+
+    <div class="subtitulo sub-verde">🔦 Claves para DETECTAR la hipomanía (Akiskal)</div>
+    <div class="grid-2">
+      <div class="tarjeta tarjeta-verde">
+        <h4>Pistas clínicas</h4>
+        <ul>
+          <li>Euforia <strong>desproporcionada</strong> a la causa que la justifica</li>
+          <li><strong>Labilidad afectiva:</strong> euforia sin consistencia, vira a irritabilidad u hostilidad cuando se lo contradice</li>
+          <li>Necesidad de <strong>sedarse</strong>: recurre al alcohol o psicofármacos como automedicación</li>
+          <li>Cierta <strong>disminución del juicio</strong> (no franca como en manía)</li>
+          <li>Aparece en <strong>secuencia diacrónica</strong>: antes o después de un episodio depresivo</li>
+          <li><strong>Recurrencia</strong> de presentación</li>
+        </ul>
+      </div>
+      <div>
+        <div class="alerta alerta-azul">
+          <span class="alerta-icono">👥</span>
+          <div>Las pistas pueden provenir del <strong>propio paciente</strong> o de sus <strong>familiares / entorno cercano</strong>. A veces son los familiares quienes aportan la información clave.</div>
+        </div>
+        <div class="alerta alerta-naranja" style="margin-top:12px;">
+          <span class="alerta-icono">👦</span>
+          <div>En <strong>niños y adolescentes</strong>, la exaltación del ánimo se manifiesta más frecuentemente como <strong>irritabilidad</strong> que como euforia. En el adulto, el ánimo expansivo vira al enojo cuando se lo contraría.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="subtitulo sub-azul">📊 Aumento de prevalencia del TB: 3 explicaciones</div>
+    <div class="grid-3">
+      <div class="tarjeta tarjeta-gris">
+        <h4>1️⃣ Aumento aparente</h4>
+        <p style="font-size:0.92em;">Mayor número de casos reportados por nuevos constructos diagnósticos. Lo que antes era diagnosticado como esquizofrenia o trastorno de personalidad, ahora encuadra en TB. El número real no cambia, cambia el criterio.</p>
+      </div>
+      <div class="tarjeta tarjeta-azul">
+        <h4>2️⃣ Anticipación génica (aumento real)</h4>
+        <p style="font-size:0.92em;">Debut cada vez más temprano del TB en distintas generaciones de familias con bipolaridad. Aumento real de tipo <strong>genotípico</strong>.</p>
+      </div>
+      <div class="tarjeta tarjeta-naranja">
+        <h4>3️⃣ Episodios disparados por antidepresivos (aumento real)</h4>
+        <p style="font-size:0.92em;">Expresión <strong>fenotípica</strong>: la molécula antidepresiva pone al descubierto una condición clínica no manifestada previamente.</p>
+      </div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="subtitulo sub-amarillo">⚠️ Impacto del tratamiento antidepresivo en bipolaridad</div>
+    <div class="alerta alerta-rojo">
+      <span class="alerta-icono">🚨</span>
+      <div>El tratamiento antidepresivo en un cuadro bipolar lo <strong>complica</strong>: aumenta la frecuencia del ciclado. Mayor número de recurrencias es la evolución más temida. Por eso el tratamiento de elección son los <strong>estabilizadores del ánimo / antirrecurrenciales / anticíclicos</strong>.</div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="subtitulo sub-gris">📚 Ilustración clínica — Marguerite Duras, "El amante"</div>
+    <div class="quote">
+      "Mi madre pasaba cada día por esa terrible desgana de vivir. A veces duraba, a veces desaparecía con la noche. [...] Debía de ser brutal. Esa desesperación se manifestaba en un momento dado del día. Y después seguía la imposibilidad de seguir avanzando, o el sueño, o a veces nada, u otras veces, por el contrario, las compras de casas, las mudanzas, o ese humor, ese abatimiento o, a veces, una reina [...] O nada, o dormir, morir."
+    </div>
+    <p style="font-size:0.9em;color:var(--texto-suave);">La alternancia entre la desgana total, el abandono de las funciones básicas (no poder lavar, vestir, alimentar a los hijos) y los momentos de compras impulsivas e iniciativas grandiosas ilustra clínicamente la oscilación bipolar.</p>
+
+    <div class="sep"></div>
+
+    <div class="subtitulo sub-violeta">🔗 TB y Trastorno Límite de la Personalidad (TLP)</div>
+    <div class="grid-2">
+      <div class="tarjeta tarjeta-violeta">
+        <h4>El problema diagnóstico</h4>
+        <ul>
+          <li>Antes: bipolaridad estaba subdiagnosticada</li>
+          <li>Ahora: el sesgo puede haberse revertido → posible sobrediagnóstico</li>
+          <li>TLP presenta inestabilidad afectiva similar al ciclado ultrarrápido del TB</li>
+          <li>La línea divisoria no siempre es clara</li>
+          <li>Ambos cuadros <strong>suelen coexistir</strong></li>
+        </ul>
+      </div>
+      <div class="tarjeta tarjeta-gris">
+        <h4>También en debate</h4>
+        <ul>
+          <li>Disfunciones ejecutivas vs. bipolaridad</li>
+          <li>Algunos autores (Akiskal) plantean que el TLP no tiene identidad distinta del TB</li>
+          <li>La Academia Americana de Psiquiatría los mantiene como cuadros separados</li>
+          <li>Usan fármacos similares en el tratamiento</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SECCIÓN 15: NEUROBIOLOGÍA — PALACIO ===== -->
+  <div class="seccion s-cyan" id="s15">
+    <div class="seccion-titulo">
+      <div class="icono">🧬</div>
+      <h2>15. Neurobiología del Trastorno Bipolar — Dra. Ana Palacio</h2>
+    </div>
+
+    <div class="alerta alerta-cyan">
+      <span class="alerta-icono">🔬</span>
+      <div>Los <strong>factores genéticos</strong> son indiscutibles, pero los <strong>factores ambientales</strong> determinan conjuntamente una marcada vulnerabilidad al estrés. Las anomalías en la expresión génica subyacen a los desórdenes neurobiológicos, y los factores ambientales <em>detonan o no</em> dichas anomalías.</div>
+    </div>
+
+    <div class="subtitulo sub-cyan">🔁 Analogía con otras enfermedades episódicas</div>
+    <div class="semaforo">
+      <span class="semaforo-item sem-verde">⚡ Epilepsia</span>
+      <span class="semaforo-item sem-verde">🤕 Migraña</span>
+      <span class="semaforo-item sem-verde">🧠 Trastorno Bipolar</span>
+    </div>
+    <p style="font-size:0.93em;margin-top:8px;">Las tres son enfermedades episódicas. Se ha intentado equiparar el mecanismo fisiopatológico del TB al de epilepsia y migraña mediante las <strong>teorías del Kindling y fenómenos de sensibilización</strong> (cada episodio "enciende" el siguiente con más facilidad).</p>
+
+    <div class="sep"></div>
+
+    <div class="subtitulo sub-azul">🧠 Circuitos implicados</div>
+    <div class="tarjeta tarjeta-azul" style="margin-bottom:16px;">
+      <h4>Circuito límbico-estriado-frontocortical</h4>
+      <p style="font-size:0.92em;">Los neurotransmisores intervinientes son: <strong>acetilcolina, catecolaminas (NA, DA) y serotonina</strong>.</p>
+      <p style="font-size:0.92em;margin-top:8px;">El sistema límbico regula: sueño, apetito, función sexual, neuroendocrina, emociones (ira, miedo) → todos afectados clínicamente en el TB.</p>
+    </div>
+    <p><strong>Postulado central:</strong> en el TB habría una <em>disregulación en el funcionamiento y señalización del sistema monoaminérgico</em> y una <em>disfunción en el eje hipotálamo-hipófiso-adrenal (HHA)</em>.</p>
+
+    <div class="sep"></div>
+
+    <div class="subtitulo sub-violeta">⚗️ Hipótesis monoaminérgica y otros neurotransmisores</div>
+
+    <table>
+      <thead>
+        <tr style="background:#EDE9FE;color:#3B0764;"><th>NT</th><th>En MANÍA</th><th>En DEPRESIÓN</th><th>Dato extra</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>🔵 Noradrenalina (NA)</strong></td>
+          <td><span class="badge" style="background:#FEE2E2;color:#991B1B;">⬆️ Aumentada</span></td>
+          <td><span class="badge" style="background:#DBEAFE;color:#1E3A8A;">⬇️ Disminuida</span></td>
+          <td>Modula alteraciones del sueño</td>
+        </tr>
+        <tr>
+          <td><strong>🟣 Dopamina (DA)</strong></td>
+          <td><span class="badge" style="background:#FEE2E2;color:#991B1B;">⬆️ ↑ área mesolímbica</span></td>
+          <td><span class="badge" style="background:#DBEAFE;color:#1E3A8A;">⬇️ Disminuida</span></td>
+          <td>DA mesoaccumbens → motivación. ↓ D1 corteza frontal; ↑ D2 ganglios basales (PET)</td>
+        </tr>
+        <tr>
+          <td><strong>🟡 Serotonina (5-HT)</strong></td>
+          <td>Hallazgos contradictorios</td>
+          <td><span class="badge" style="background:#DBEAFE;color:#1E3A8A;">⬇️ Disminuida</span></td>
+          <td>↓ en impulsividad e intentos de suicidio. Modula el sueño</td>
+        </tr>
+        <tr>
+          <td><strong>🟢 Acetilcolina (ACh)</strong></td>
+          <td><span class="badge" style="background:#DBEAFE;color:#1E3A8A;">⬇️ Disminuida</span></td>
+          <td><span class="badge" style="background:#FEE2E2;color:#991B1B;">⬆️ Aumentada</span></td>
+          <td>Inhibe el tono noradrenérgico (excitatorio). Efecto opuesto a NA</td>
+        </tr>
+        <tr>
+          <td><strong>🔴 GABA</strong></td>
+          <td colspan="2" style="text-align:center;"><span class="badge" style="background:#FEE2E2;color:#991B1B;">⬇️ Hipofunción GABAérgica en AMBOS (manía y depresión)</span></td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td><strong>🟠 Glutamato</strong></td>
+          <td colspan="2" style="text-align:center;"><span class="badge" style="background:#FFEDD5;color:#9A3412;">⬆️ Activación de la vía glutamatérgica córtico-límbica</span></td>
+          <td>Contribuye a excitotoxicidad</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="sep"></div>
+
+    <div class="subtitulo sub-naranja">🔄 Eje Hipotálamo-Hipófiso-Adrenal (HHA)</div>
+
+    <div class="tarjeta tarjeta-naranja">
+      <h4>Cascada del estrés crónico</h4>
+      <div class="linea-tiempo" style="margin-top:12px;">
+        <div class="lt-item" style="background:#FEF3C7;color:#92400E;font-size:0.82em;">Estrés crónico → ↑ CRF</div>
+        <div class="lt-item" style="background:#FDE68A;color:#78350F;font-size:0.82em;">↑ Glucocorticoides (cortisol)</div>
+        <div class="lt-item" style="background:#F59E0B;color:white;font-size:0.82em;">Excitotoxicidad → ↑ Glutamato</div>
+        <div class="lt-item" style="background:#DC2626;color:white;font-size:0.82em;">Atrofia y muerte celular hipocampal</div>
+      </div>
+    </div>
+
+    <div class="alerta alerta-azul" style="margin-top:14px;">
+      <span class="alerta-icono">🏗️</span>
+      <div><strong>Corteza Cingulada Anterior (CCA):</strong> Contiene abundantes receptores a glucocorticoides que intervienen en el "apagado" del eje HHA ante el estrés. La disfunción en esta zona determina síntomas depresivos (↓ motivación y placer) <em>y</em> maníacos (↑ motivación y placer).</div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="subtitulo sub-rojo">🔬 Hallazgos Neuroanatómicos</div>
+    <div class="grid-2">
+      <div>
+        <div class="subtitulo sub-gris" style="margin-bottom:10px;">Estudios estructurales (RMN)</div>
+        <table>
+          <thead><tr style="background:#FEE2E2;color:#7F1D1D;"><th>Estructura</th><th>Hallazgo</th></tr></thead>
+          <tbody>
+            <tr><td>Corteza prefrontal orbital y media</td><td>↓ Volumen</td></tr>
+            <tr><td>Estriado ventral</td><td>↓ Volumen</td></tr>
+            <tr><td>Hipocampo</td><td>↓ Volumen</td></tr>
+            <tr><td>III ventrículo</td><td>↑ Ensanchamiento</td></tr>
+            <tr><td>Corteza Cingulada Anterior</td><td>↓ Volumen</td></tr>
+            <tr><td>Células gliales (corteza PF subgenual, orbital, dorsal)</td><td>↓ Número y densidad neuronal</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div class="subtitulo sub-gris" style="margin-bottom:10px;">Estudios funcionales (PET) — En MANÍA</div>
+        <table>
+          <thead><tr style="background:#FEF3C7;color:#92400E;"><th>Región</th><th>Metabolismo</th></tr></thead>
+          <tbody>
+            <tr><td>Giro frontal inferior derecho</td><td>⬆️ Aumentado</td></tr>
+            <tr><td>Giro temporal medio derecho</td><td>⬆️ Aumentado</td></tr>
+            <tr><td>Giro orbitario izquierdo</td><td>⬆️ Aumentado</td></tr>
+            <tr><td>Giro cingular derecho</td><td>⬇️ Disminuido</td></tr>
+            <tr><td>Giro frontal medio derecho</td><td>⬇️ Disminuido</td></tr>
+            <tr><td>Lóbulo parietal inferior izquierdo</td><td>⬇️ Disminuido</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="subtitulo sub-verde">🔗 Neuroplasticidad y neuroprotección</div>
+    <div class="grid-2">
+      <div class="tarjeta tarjeta-verde">
+        <h4>¿Por qué "ciclar mata neuronas"?</h4>
+        <ul>
+          <li>Sucesión de episodios → modificaciones en la señalización intracelular → alteran la neuroplasticidad a largo plazo</li>
+          <li>Atrofia y apoptosis neuronal → especialmente en hipocampo y corteza prefrontal</li>
+          <li>Aumento de factores neurotóxicos</li>
+          <li>Disminución de factores neurotróficos (BDNF y similares)</li>
+          <li>El deterioro cognitivo puede detectarse por estudios neuropsicológicos incluso <strong>antes de las primeras manifestaciones clínicas</strong> (adolescentes)</li>
+        </ul>
+      </div>
+      <div class="tarjeta tarjeta-azul">
+        <h4>¿Cómo actúan los estabilizadores?</h4>
+        <ul>
+          <li><strong>Litio y valproato</strong>: promueven factores neurotróficos, inhiben apoptosis, favorecen neuroplasticidad</li>
+          <li><strong>Litio</strong>: inhibe GSK-3β → promueve neuroprotección y supervivencia neuronal</li>
+          <li>Los efectos son <strong>a largo plazo</strong> (semanas-meses), de ahí la importancia del tratamiento continuo</li>
+          <li>Reducen el kindling → menos sensibilización con cada episodio</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="alerta alerta-rojo">
+      <span class="alerta-icono">🧠</span>
+      <div>El deterioro cognitivo en TB está relacionado con la <strong>atrofia de corteza prefrontal e hipocampo</strong>. La corteza prefrontal regula la toma de decisiones, la inhibición de impulsos y la memoria de trabajo. Su deterioro explica muchas de las dificultades funcionales crónicas del paciente bipolar.</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="background: linear-gradient(135deg, #1D4ED8, #7C3AED); color: white; border-radius: 20px; padding: 30px; text-align: center; margin-bottom: 20px;">
+    <p style="font-size: 1.1em; font-weight: 700; margin: 0;">🧠 Trastornos Bipolares · Apunte de estudio</p>
+    <p style="opacity: 0.8; margin-top: 8px; font-size: 0.9em;">Basado en clases teóricas (Dr. Nico), textos de Saidman, Herling, Palacios · DSM-5 · CIE-11</p>
+  </div>
+
+</div>
+</body>
+</html>

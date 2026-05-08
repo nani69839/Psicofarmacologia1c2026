@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biología de las Neuronas — Anexo Neurotransmisión</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #f5f0e8;
+    --paper: #faf7f2;
+    --ink: #1a1710;
+    --ink-light: #3d3a30;
+    --ink-muted: #7a7568;
+    --accent: #2d5a8e;
+    --accent-warm: #8b3a2a;
+    --accent-green: #2a5c3f;
+    --rule: #c8bfa8;
+    --highlight: #e8d5a0;
+    --highlight-blue: #d4e3f0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  /* PORTADA */
+  .cover {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 80px 60px 60px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 28px,
+      rgba(255,255,255,0.03) 28px,
+      rgba(255,255,255,0.03) 29px
+    );
+    pointer-events: none;
+  }
+
+  .cover-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 40px;
+  }
+
+  .cover-title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: clamp(36px, 6vw, 64px);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    color: var(--cream);
+  }
+
+  .cover-subtitle {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--ink-muted);
+    margin-bottom: 48px;
+  }
+
+  .cover-meta {
+    display: flex;
+    gap: 40px;
+    font-size: 13px;
+    color: var(--ink-muted);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 24px;
+    flex-wrap: wrap;
+  }
+
+  .cover-meta span { font-weight: 500; color: var(--cream); }
+
+  /* LAYOUT */
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  /* SECTIONS */
+  .section {
+    padding: 64px 0;
+    border-bottom: 1px solid var(--rule);
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .section:last-child { border-bottom: none; }
+
+  /* SECTION HEADER */
+  .section-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+
+  .section-title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 28px;
+    line-height: 1.2;
+  }
+
+  /* IMAGE BLOCK */
+  .img-block {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 24px;
+    margin: 32px 0;
+    text-align: center;
+  }
+
+  .img-block img {
+    max-width: 100%;
+    max-height: 380px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .img-caption {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-muted);
+    margin-top: 14px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    border-top: 1px solid var(--rule);
+    padding-top: 10px;
+  }
+
+  /* BODY TEXT */
+  p {
+    color: var(--ink-light);
+    margin-bottom: 16px;
+    font-weight: 300;
+  }
+
+  /* CALLOUT / NOTE */
+  .callout {
+    background: var(--highlight-blue);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px;
+    margin: 24px 0;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .callout.warm {
+    background: #f0e8d8;
+    border-left-color: var(--accent-warm);
+  }
+
+  .callout.green {
+    background: #d8ede3;
+    border-left-color: var(--accent-green);
+  }
+
+  .callout-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+
+  .callout.warm .callout-label { color: var(--accent-warm); }
+  .callout.green .callout-label { color: var(--accent-green); }
+
+  .callout p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: var(--ink);
+    font-weight: 400;
+  }
+
+  /* DEFINITION LIST */
+  .def-list { margin: 20px 0; }
+
+  .def-item {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: start;
+  }
+
+  .def-item:last-child { border-bottom: none; }
+
+  .def-term {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--accent);
+    padding-top: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .def-desc {
+    color: var(--ink-light);
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  /* ION TABLE */
+  .ion-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 24px 0;
+  }
+
+  .ion-card {
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 20px;
+    background: var(--paper);
+  }
+
+  .ion-card-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--ink-muted);
+    margin-bottom: 10px;
+  }
+
+  .ion-card-title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .ion-card.interior .ion-card-title { color: var(--accent-green); }
+  .ion-card.exterior .ion-card-title { color: var(--accent); }
+
+  .ion-card p {
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+
+  /* STEP LIST */
+  .steps { margin: 20px 0; counter-reset: step; }
+
+  .step {
+    display: flex;
+    gap: 20px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--rule);
+    counter-increment: step;
+    align-items: flex-start;
+  }
+
+  .step:last-child { border-bottom: none; }
+
+  .step-num {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--rule);
+    line-height: 1;
+    min-width: 36px;
+    flex-shrink: 0;
+    padding-top: 2px;
+  }
+
+  .step-content { flex: 1; }
+
+  .step-title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+
+  .step-desc {
+    font-size: 14px;
+    color: var(--ink-muted);
+    margin-bottom: 0;
+    font-weight: 300;
+  }
+
+  /* INLINE HIGHLIGHT */
+  mark {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+    font-weight: 400;
+  }
+
+  mark.blue {
+    background: transparent;
+  }
+
+  /* STATES TABLE */
+  .states-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+  }
+
+  .states-table th {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 10px 14px;
+    text-align: left;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+  }
+
+  .states-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--rule);
+    color: var(--ink-light);
+    vertical-align: top;
+  }
+
+  .states-table tr:last-child td { border-bottom: none; }
+  .states-table tr:nth-child(even) td { background: var(--paper); }
+
+  .state-badge {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .badge-closed { background: #e8d5a0; color: #5c4a00; }
+  .badge-open { background: #d8ede3; color: #1a4a2e; }
+  .badge-inactive { background: #f0d8d8; color: #4a1a1a; }
+
+  /* DIVIDER */
+  hr.fancy {
+    border: none;
+    height: 1px;
+    background: var(--rule);
+    margin: 0;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: var(--ink);
+    color: var(--ink-muted);
+    padding: 40px 60px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: gap;
+  }
+
+  .footer a { color: var(--cream); text-decoration: none; }
+
+  /* TOC */
+  .toc {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 32px 36px;
+    margin: 0;
+  }
+
+  .toc-title {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--ink-muted);
+    margin-bottom: 20px;
+  }
+
+  .toc-list { list-style: none; }
+
+  .toc-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 7px 0;
+    border-bottom: 1px dotted var(--rule);
+    font-size: 14px;
+  }
+
+  .toc-list li:last-child { border-bottom: none; }
+
+  .toc-list a {
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 400;
+  }
+
+  .toc-list a:hover { color: var(--accent); }
+
+  .toc-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-muted);
+  }
+
+  @media (max-width: 600px) {
+    .cover { padding: 48px 24px 40px; }
+    .container { padding: 0 20px; }
+    .def-item { grid-template-columns: 1fr; gap: 4px; }
+    .ion-grid { grid-template-columns: 1fr; }
+    .cover-meta { flex-direction: column; gap: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="container">
+    <h1 class="cover-title">Biología de las Neuronas</h1>
+    <p class="cover-subtitle">Introducción a la neurotransmisión</p>
+    <div class="cover-meta">
+      <div>Contenido: <span>Membrana · Potencial de acción · Canales iónicos</span></div>
+    </div>
+  </div>
+</div>
+
+<hr class="fancy">
+
+<!-- TOC -->
+<div class="container">
+  <div class="section visible" style="padding: 48px 0;">
+    <div class="toc">
+      <div class="toc-title">Contenido</div>
+      <ul class="toc-list">
+        <li><a href="#s1">1 · La célula y sus compartimientos</a><span class="toc-num">01</span></li>
+        <li><a href="#s2">2 · La membrana plasmática</a><span class="toc-num">02</span></li>
+        <li><a href="#s3">3 · La neurona</a><span class="toc-num">03</span></li>
+        <li><a href="#s4">4 · Potencial de reposo</a><span class="toc-num">04</span></li>
+        <li><a href="#s5">5 · Potencial de acción</a><span class="toc-num">05</span></li>
+        <li><a href="#s6">6 · El canal de sodio voltaje-dependiente</a><span class="toc-num">06</span></li>
+        <li><a href="#s7">7 · Tipos de canales iónicos</a><span class="toc-num">07</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<hr class="fancy">
+
+<!-- SECTION 1 -->
+<div class="container">
+  <section class="section" id="s1">
+    <div class="section-num">01</div>
+    <h2 class="section-title">La célula y sus compartimientos</h2>
+
+    <div class="img-block">
+      <img src="https://gyazo.com/316be1c61b43db0178b145a8b327523f.png" alt="Diagrama de una célula con sus organelas">
+      <div class="img-caption">Fig. 1 — Célula genérica del organismo. Se observan el núcleo, aparato de Golgi, mitocondrias y la membrana plasmática.</div>
+    </div>
+
+    <p>La imagen anterior muestra una célula que podría ser cualquier célula del organismo. Se distinguen claramente sus distintas organelas: el núcleo, el aparato de Golgi y las mitocondrias —las productoras de energía celular.</p>
+
+    <p>Lo que interesa en particular es la <strong>membrana plasmática</strong>: la estructura que delimita a la célula y genera dos compartimientos líquidos diferenciados.</p>
+
+    <div class="ion-grid">
+      <div class="ion-card interior">
+        <div class="ion-card-label">Compartimiento</div>
+        <div class="ion-card-title">Intracelular</div>
+        <p>Predomina el <strong>potasio (K⁺)</strong>. Mayor concentración de potasio respecto al exterior. También contiene proteínas con carga negativa fija (polianiónicas) que no pueden atravesar la membrana.</p>
+      </div>
+      <div class="ion-card exterior">
+        <div class="ion-card-label">Compartimiento</div>
+        <div class="ion-card-title">Extracelular</div>
+        <p>Predominan el <strong>sodio (Na⁺)</strong> y el <strong>cloro (Cl⁻)</strong>. El sodio está más concentrado en el exterior que en el interior celular.</p>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-label">Concepto clave</div>
+      <p>La membrana plasmática delimita dos compartimientos líquidos con composiciones químicas distintas. Esta asimetría es la base del potencial eléctrico celular.</p>
+    </div>
+  </section>
+</div>
+
+<hr class="fancy">
+
+<!-- SECTION 2 -->
+<div class="container">
+  <section class="section" id="s2">
+    <div class="section-num">02</div>
+    <h2 class="section-title">La membrana plasmática</h2>
+
+    <div class="img-block">
+      <img src="https://gyazo.com/b035c2b1ec0125ff28f278cc8aa93c52.png" alt="Bicapa lipídica con canales iónicos">
+      <div class="img-caption">Fig. 2 — Detalle de la bicapa lipídica. Se observan los fosfolípidos con sus cabezas hidrofílicas y colas apolares, y los canales iónicos proteicos.</div>
+    </div>
+
+    <p>La membrana está formada básicamente por <strong>fosfolípidos</strong>. Cada fosfolípido tiene una cabeza hidrofílica (polar) y colas de ácidos grasos apolares. Esta estructura particular determina que los fosfolípidos se organicen en una doble capa lipídica —o bicapa lipídica.</p>
+
+    <p>La bicapa lipídica es prácticamente impermeable a cualquier molécula que sea:</p>
+
+    <div class="def-list">
+      <div class="def-item">
+        <div class="def-term">Alto PM</div>
+        <div class="def-desc">Moléculas de alto peso molecular no pueden cruzar por su tamaño.</div>
+      </div>
+      <div class="def-item">
+        <div class="def-term">Hidrosoluble</div>
+        <div class="def-desc">Las sustancias que se disuelven en agua no atraviesan el núcleo lipídico de la membrana.</div>
+      </div>
+      <div class="def-item">
+        <div class="def-term">Cargada</div>
+        <div class="def-desc">Los iones tienen carga eléctrica, lo que los hace incapaces de difundir libremente a través de la capa grasa.</div>
+      </div>
+    </div>
+
+    <div class="callout warm">
+      <div class="callout-label">Canales iónicos</div>
+      <p>Para que partículas cargadas como los iones sodio y potasio puedan atravesar la membrana, son indispensables proteínas especializadas: los <strong>canales iónicos</strong>. Sin ellos, estas especies prácticamente no pueden cruzar.</p>
+    </div>
+  </section>
+</div>
+
+<hr class="fancy">
+
+<!-- SECTION 3 -->
+<div class="container">
+  <section class="section" id="s3">
+    <div class="section-num">03</div>
+    <h2 class="section-title">La neurona</h2>
+
+    <div class="img-block">
+      <img src="https://gyazo.com/4db26d2dc6e67f7783a0fea198add3f8.png" alt="Neurona típica con dendrita, soma y axón">
+      <div class="img-caption">Fig. 3 — Neurona típica. Se distinguen el árbol dendrítico, el soma, el axón con vaina de mielina, los nodos de Ranvier y el terminal sináptico.</div>
+    </div>
+
+    <p>La neurona es una <strong>célula especializada en la generación y conducción de potenciales electroquímicos</strong>. Tiene una morfología particular que refleja su función:</p>
+
+    <div class="def-list">
+      <div class="def-item">
+        <div class="def-term">Árbol dendrítico</div>
+        <div class="def-desc">Recibe múltiples aferencias de otras neuronas. Estas pueden ser excitatorias o inhibitorias.</div>
+      </div>
+      <div class="def-item">
+        <div class="def-term">Soma</div>
+        <div class="def-desc">Cuerpo celular. Contiene el núcleo y las organelas. Integra las señales recibidas.</div>
+      </div>
+      <div class="def-item">
+        <div class="def-term">Axón</div>
+        <div class="def-desc">Prolongación única. Conduce el estímulo nervioso a grandes distancias, funcionando como un cable bioeléctrico.</div>
+      </div>
+      <div class="def-item">
+        <div class="def-term">Vaina de mielina</div>
+        <div class="def-desc">Recubre el axón de forma discontinua. Acelera la conducción del potencial de acción.</div>
+      </div>
+      <div class="def-item">
+        <div class="def-term">Nodos de Ranvier</div>
+        <div class="def-desc">Regiones sin mielina con alta concentración de canales iónicos voltaje-dependientes. El potencial de acción se regenera en cada nodo (conducción saltatoria).</div>
+      </div>
+      <div class="def-item">
+        <div class="def-term">Botones terminales</div>
+        <div class="def-desc">Extremo del axón. Hacen sinapsis con otras neuronas u otros tejidos excitables (ej: célula muscular).</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<hr class="fancy">
+
+<!-- SECTION 4 -->
+<div class="container">
+  <section class="section" id="s4">
+    <div class="section-num">04</div>
+    <h2 class="section-title">Potencial de reposo</h2>
+
+    <div class="img-block">
+      <img src="https://gyazo.com/31ed1063f1ddec561f5b9ae67d473f25.png" alt="Membrana con gradientes de sodio y potasio y bomba Na/K">
+      <div class="img-caption">Fig. 4 — Distribución iónica en reposo y bomba sodio-potasio ATPasa. El gradiente de concentración y las cargas fijas generan el potencial de reposo de –70 mV.</div>
+    </div>
+
+    <p>En condiciones de reposo existe una <strong>asimetría eléctrica</strong> entre el interior y el exterior celular. El interior contiene mayor cantidad de potasio y proteínas con carga negativa fija (polianiónicas) que no pueden atravesar la membrana. Esto genera un exceso de cargas positivas en el exterior.</p>
+
+    <div class="callout green">
+      <div class="callout-label">Potencial de membrana en reposo</div>
+      <p>El potencial de membrana en reposo es de aproximadamente <strong>–70 mV</strong>. El interior es "menos positivo" respecto al exterior.</p>
+    </div>
+
+    <p>En reposo hay canales iónicos que están abiertos todo el tiempo: los <strong>canales iónicos pasivos</strong>. Esto genera dos tendencias opuestas y simultáneas:</p>
+
+    <div class="def-list">
+      <div class="def-item">
+        <div class="def-term">Sodio (Na⁺)</div>
+        <div class="def-desc">Tiende a <strong>entrar</strong>. Como está más concentrado afuera que adentro, su gradiente de concentración lo impulsa hacia el interior. A eso se suma que el interior es negativo, lo que atrae aún más al catión.</div>
+      </div>
+      <div class="def-item">
+        <div class="def-term">Potasio (K⁺)</div>
+        <div class="def-desc">Tiende a <strong>salir</strong>. Adentro está más concentrado que afuera, por lo que su gradiente de concentración lo empuja hacia el exterior.</div>
+      </div>
+    </div>
+
+    <p>Si este flujo se mantuviera en el tiempo, las diferencias de concentración tenderían a disiparse. Para que eso no ocurra existe la <strong>bomba Na⁺/K⁺-ATPasa</strong>: saca 3 moléculas de Na⁺ hacia afuera e ingresa 2 moléculas de K⁺ hacia adentro, usando ATP como fuente de energía. Su función es mantener el gradiente de concentración a ambos lados de la membrana.</p>
+
+    <div class="img-block">
+      <img src="https://gyazo.com/fe3c8f02a925c4ac2aacae72466422e2.png" alt="Canales iónicos pasivos en reposo: sodio entra, potasio sale">
+      <div class="img-caption">Fig. 4b — Canales iónicos pasivos en condiciones de reposo. El Na⁺ tiende a entrar y el K⁺ tiende a salir según sus gradientes de concentración. La bomba Na⁺/K⁺-ATPasa (no ilustrada aquí) contrarresta continuamente estos flujos.</div>
+    </div>
+  </section>
+</div>
+
+<hr class="fancy">
+
+<!-- SECTION 5 -->
+<div class="container">
+  <section class="section" id="s5">
+    <div class="section-num">05</div>
+    <h2 class="section-title">Potencial de acción</h2>
+
+    <div class="img-block">
+      <img src="https://gyazo.com/1bc23196ddea4856288ebb87e89f63e2.png" alt="Gráfico del potencial de acción con conductancias de sodio y potasio">
+      <div class="img-caption">Fig. 5 — Potencial de acción. En las ordenadas: potencial de membrana (mV). Se observa el aumento de conductancia de Na⁺ seguido por el de K⁺, la inversión del potencial hasta +50 mV y la repolarización.</div>
+    </div>
+
+    <p>Cuando los estímulos excitatorios que alcanzan el árbol dendrítico se suman y esa variación alcanza el umbral, se genera el potencial de acción. Este evento depende de la <strong>apertura masiva de canales de Na⁺ voltaje-dependientes</strong> que estaban cerrados en reposo.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">Despolarización</div>
+          <p class="step-desc">Los estímulos excitatorios se suman hasta alcanzar el umbral. La membrana deja de estar tan "menos positiva". Se activan los canales de Na⁺ voltaje-dependientes. El sodio entra masivamente (estaba más concentrado afuera y el interior era negativo). El potencial de membrana sube de –70 mV hasta aproximadamente +50 mV: se produce una inversión del potencial.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">Inactivación de canales Na⁺</div>
+          <p class="step-desc">Inmediatamente después de abrirse, los canales de sodio voltaje-dependientes se <strong>inactivan</strong>. Esto hace que el potencial de acción sea una señal transitoria.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">Repolarización</div>
+          <p class="step-desc">Se activan canales de K⁺ voltaje-dependientes que sacan el exceso de cargas positivas (en forma de potasio). Simultáneamente, la bomba Na⁺/K⁺-ATPasa continúa actuando.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <div class="step-title">Restitución del potencial de reposo</div>
+          <p class="step-desc">Todo el proceso restaura rápidamente el potencial de membrana a las condiciones de reposo (–70 mV). La variación del potencial es lo que se conduce a lo largo del axón.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="img-block">
+      <img src="https://gyazo.com/c256c764d15cdeef1a391a8b8d40a675.png" alt="Propagación del potencial de acción a lo largo del axón">
+      <div class="img-caption">Fig. 5b — Propagación del potencial de acción a lo largo de la membrana axónica. La variación del potencial se conduce como una onda que avanza de nodo en nodo.</div>
+    </div>
+
+    <div class="callout warm">
+      <div class="callout-label">Conducción saltatoria</div>
+      <div class="def-list" style="margin-top:12px;">
+        <div class="def-item">
+          <div class="def-term">Mielina</div>
+          <div class="def-desc">Recubre el axón de forma discontinua funcionando como aislante. Impide que las cargas se escapen por los costados. Los huecos sin mielina se llaman <strong>nodos de Ranvier</strong>.</div>
+        </div>
+        <div class="def-item">
+          <div class="def-term">Disparo en el nodo</div>
+          <div class="def-desc">El potencial de acción se dispara en un nodo: entra Na⁺ masivamente y el interior se vuelve muy positivo.</div>
+        </div>
+        <div class="def-item">
+          <div class="def-term">Viaje de la corriente</div>
+          <div class="def-desc">Las cargas positivas del interior son empujadas hacia adelante como una corriente eléctrica. La mielina evita que se pierdan en el camino, por lo que llegan con fuerza al nodo siguiente.</div>
+        </div>
+        <div class="def-item">
+          <div class="def-term">Umbral</div>
+          <div class="def-desc">Esas cargas despolarizan el nodo siguiente. Si la despolarización supera el <strong>umbral</strong>, se abren los canales de Na⁺ voltaje-dependientes y se regenera el potencial de acción con toda su fuerza.</div>
+        </div>
+        <div class="def-item">
+          <div class="def-term">El sodio no viaja</div>
+          <div class="def-desc">El Na⁺ entra en cada nodo y se queda ahí. Lo que viaja es la corriente eléctrica. La señal se regenera de nodo en nodo con sodio local en cada uno.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<hr class="fancy">
+
+<!-- SECTION 6 -->
+<div class="container">
+  <section class="section" id="s6">
+    <div class="section-num">06</div>
+    <h2 class="section-title">El canal de Na⁺ voltaje-dependiente</h2>
+
+    <p>El canal de sodio voltaje-dependiente puede adoptar <strong>tres estados conformacionales</strong>:</p>
+
+    <table class="states-table">
+      <thead>
+        <tr>
+          <th>Estado</th>
+          <th>Condición</th>
+          <th>Pasaje de Na⁺</th>
+          <th>Puede activarse</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="state-badge badge-closed">Cerrado</span></td>
+          <td>Reposo. Membrana en –70 mV.</td>
+          <td>No</td>
+          <td>Sí — es pasible de apertura ante despolarización suficiente.</td>
+        </tr>
+        <tr>
+          <td><span class="state-badge badge-open">Abierto</span></td>
+          <td>Despolarización alcanza el umbral.</td>
+          <td>Sí — masivamente</td>
+          <td>Ya está activo. Pasará a inactivo de inmediato.</td>
+        </tr>
+        <tr>
+          <td><span class="state-badge badge-inactive">Inactivo</span></td>
+          <td>Inmediatamente después de abrirse.</td>
+          <td>No</td>
+          <td>No — ni siquiera ante estímulos supraumbral. Tiempo después vuelve a estado cerrado.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout">
+      <div class="callout-label">Período refractario</div>
+      <p>Mientras los canales de Na⁺ están en estado inactivo, la neurona no puede generar un nuevo potencial de acción, ni siquiera ante estímulos mayores al umbral. Esto se denomina <strong>período refractario</strong> y explica que los potenciales de acción sean eventos discretos y unidireccionales.</p>
+    </div>
+  </section>
+</div>
+
+<hr class="fancy">
+
+<!-- SECTION 7 -->
+<div class="container">
+  <section class="section" id="s7">
+    <div class="section-num">07</div>
+    <h2 class="section-title">Tipos de canales iónicos</h2>
+
+    <p>Los canales iónicos se clasifican según cómo se activan:</p>
+
+    <div class="def-list">
+      <div class="def-item">
+        <div class="def-term">Pasivos</div>
+        <div class="def-desc">Constitutivamente abiertos. No requieren estímulo para estar activos. Contribuyen al potencial de reposo.</div>
+      </div>
+      <div class="def-item">
+        <div class="def-term">Voltaje-dependientes</div>
+        <div class="def-desc">Se activan cuando la membrana sufre una despolarización suficiente. Son los protagonistas del potencial de acción. Incluye los canales de Na⁺ y K⁺ voltaje-dependientes.</div>
+      </div>
+      <div class="def-item">
+        <div class="def-term">Ligando-dependientes</div>
+        <div class="def-desc">Se activan al unirse a sustancias específicas denominadas en conjunto <strong>transmisoras</strong> (neurotransmisores). Son el nexo entre la neurotransmisión y los cambios eléctricos en la neurona postsináptica.</div>
+      </div>
+    </div>
+
+    <div class="callout green">
+      <div class="callout-label">Próxima clase</div>
+      <p>Los canales ligando-dependientes son la puerta de entrada al tema de <strong>neurotransmisión y sinapsis</strong>. Comprender cómo llega el potencial de acción al terminal presináptico permite entender los mecanismos por los cuales se produce la transmisión sináptica.</p>
+    </div>
+  </section>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="container" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:12px;">
+    <span>Psicofarmacología · Comisión 1</span>
+    <span>Dr. Mauro Centrella — Médico Psiquiatra</span>
+    <span>Anexo: Biología de las Neuronas</span>
+  </div>
+</div>
+
+<script>
+  // Intersection Observer para animaciones de entrada
+  const sections = document.querySelectorAll('.section');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.08 });
+
+  sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>

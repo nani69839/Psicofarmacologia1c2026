@@ -1,0 +1,140 @@
+[00:03]
+Muy bien. Bueno, esta es una filmina que prácticamente resume la clase. Fíjense que en medio encontramos el bloqueo de receptores.
+
+[00:17]
+Yo le había les había dicho que los fármacos neurolépticos, es decir, los fármacos antipsicóticos de primera generación, los fármacos antipsicóticos clásicos pueden bloquear receptores a la dopamina de tipo D2, de ahí su efecto antipsicótico, pero también pueden bloquear otros tantos receptores, ¿está bien?
+
+[00:42]
+Bloqueando receptores muscarínicos a la acetilcolina, son capaces de producir boca seca, visión borrosa, dificultades en la micción y estreñimiento, como vemos aquí.
+
+[01:00]
+Bloqueando los receptores noradrenérgicos alfa 1 pueden producir hipotensión postural, hipotensión ortostática, es decir, el desajuste de la tensión arterial ante los cambios bruscos de posición corporal e hipotermia y al mismo tiempo bloqueando receptores a la histamina de tipo H1 pueden producir sedación y aumento de peso. ¿Está bien?
+
+[01:30]
+De los antipsicóticos, típicos, tenemos tres familias. La clorpromazina es la droga patrón de los antipsicóticos típicos con perfil sedativo porque además del bloqueo dopaminérgico tiene un efecto sedativo muy marcado por el bloqueo H1.
+
+[01:57]
+Tenemos una familia intermedia La tioridacina tiene mucho bloqueo colinérgico y por otro lado tenemos los fármacos que se denominan más incisivos como las piperacinas que tienen menos efecto sedante, menos efecto anticolinérgico, pero efectos adversos extrapiramidales más pronunciados, ¿por qué?
+
+[02:25]
+Porque son los que tienen mayor potencia para bloquear a los receptores a la dopamina de tipo D2. En esa columna encontramos al aloperidol, que es una butirofenona que prácticamente lo único que hace es bloquear receptores a la dopamina de tipo D2 y por ende es la droga que produce mayores efectos extrapiramidales, ¿por qué?
+
+[02:52]
+Porque bloquean la vía nigroestriatal y afecta el desenvolvimiento normal de los movimientos, es capaz de producir parkinsonismo, un cuadro de inquietud psicomotriz que se denomina acatisia, distonias, trastornos diskinéticos del movimiento y en algunos casos una disquinesia tardía que no se resuelve con el cese del tratamiento.
+
+[03:30]
+Bueno, esto es más de los mismos efectos adversos. Fíjense en el primer dibujo los trastornos que causa el bloqueo de los receptores a la acetilcolina de tipo muscarínicos, pueden producir visión borrosa, sequedad bucal, constipación, retención urinaria, fallas en la eyaculación. ¿Está bien?
+
+[03:57]
+Y la segunda imagen nos muestra qué sucede con el bloqueo de los receptores H1 y de los receptores alfa1.
+
+[04:11]
+Muy bien. Acá lo que vemos es un conjunto de fármacos antipsicóticos atípicos. ¿Está bien? Ya no hablamos de neurolépticos, ¿por qué? Porque son fármacos que no producen un bloqueo tan marcado de receptores a la dopamina de tipo D2. Son fármacos que tienen un mejor perfil de efectos adversos en los motor.
+
+[04:41]
+¿Bien? Hay forma de clasificarlos, por ejemplo, estos que dicen antipsicóticos de tipo SDA, son los antipsicóticos que antagonizan el efecto de la serotonina y de la dopamina. Serotonina y dopamina acuerdo que eran neurotransmisores que han sido vinculados con los síntomas de la psicosis, ¿está bien?
+
+[05:11]
+Encontramos a la esperidona, a la luracidona, que es un fármaco antipsicótico antagonista de serotonina y dopamina relativamente nuevo. ¿Está bien? Después tenemos los antipsicóticos que pertenecen a la familia de fármacos que bloquean a múltiples receptores, la clozapina, la olanzapina, la que te apina, ¿está bien?
+
+[05:39]
+Y otro de los mecanismos por los cuales una droga puede de ser antipsicótica y puede estar dentro de la familia de los atípicos es porque presente un agonismo parcial de los receptores a la dopamina de tipo D2. Es el caso, por ejemplo, del aripiprazol. ¿Qué significa que un fármaco sea un agonista parcial?
+
+[06:08]
+Un agonista parcial, cuando el neurotransmisor está en exceso, bloquea. y cuando el neurotransmisor está en defecto, estimula, ¿se entiende? Por eso se pensó al principio que el aripiprazol podía ser la panacea en el tratamiento de la psicosis, ¿por qué?
+
+[06:26]
+Porque justamente bloqueando la hiperdopaminemia a nivel mesolímbico controlaba los síntomas positivos y estimulando a nivel de la vía mesocortical podía ya promover la mejoría de los síntomas negativos, ¿está bien?
+
+[06:49]
+Bueno, hoy sabemos que el Aripirasol es útil, es una herramienta terapéutica muy muy muy válida, ¿está bien? Pero no es tan eficaz para tratar los síntomas negativos de la psicosis. Muy bien. Lo que vemos aquí es un fármaco antipsicótico típico que puede estar actuando sobre una miría de receptores, ¿está bien?
+
+[07:21]
+Por ejemplo, acá lo que vemos es un gráfico que a mí me gusta mucho, ¿por qué? Porque muestra la afinidad relativa que tienen distintos fármacos sobre los distintos receptores. Fíjense, por ejemplo, que el aloperidol tiene la mayor afinidad con los receptores de tipo D 2.
+
+[07:40]
+Recuerden que en un fármaco muy decisivo a la hora de bloquear receptores de tipo D2 y prácticamente no actuaba sobre los receptores muscarínicos colinérgicos y tampoco actuaba sobre los receptores a la histamina. Entonces, no era un fármaco que tuviera propiedades sedativas.
+
+[08:05]
+Fíjense lo que pasa con la risperidona, que es uno de estos antipsicóticos atípicos que lo que hace es justamente bloquear tanto receptores a la dopamina como receptores a la serotonina. Los receptores que bloquean habitualmente los fármacos antipsicóticos atípicos a la a la serotonina, perdón, son los receptores 5-HT2A.
+
+[08:32]
+Se dice que las moléculas que bloquean receptores 5-HT2A tienen efecto antipsicótico y el bloqueo de los receptores 5-HT2A indirectamente también modula la función dopaminérgica. Fíjense que la risperidona es un fármaco que tiene mucha afinidad por receptores D2 y receptores 5HT2A.
+
+[08:56]
+Eso hace que la risperidona sea de los antipsicóticos atípicos el que tenga un perfil más típico en el sentido de el alperidol, por ejemplo, ¿no? Bloqueando receptores de tipo D2. Fíjense, por ejemplo, la cipracidona.
+
+[09:18]
+La cipracidona también tiene afinidad, es otro antipsicótico atípico, tiene afinidad, tal vez ligeramente un poco más de afinidad por el receptor 5 HT2A, que es sobre el receptor de tipo D2, pero el mecanismo de acción de la cipracidona es muy interesante, ¿por qué? Porque la cinética que tiene de unión y de desunión del receptor de tipo D2 es mucho más dinámica.
+
+[09:47]
+Obedece un mecanismo que se denomina de touch and go. Entonces, eso hace que se minimicen los efectos adversos que puede presentar a nivel extrapiramidal. ¿Está bien?
+
+[10:02]
+Tiene baja afinidad por los receptores muscarínicos, menor afinidad por los receptores H1 a la histamina, tiene más afinidad por los receptores 5HT2C, eso explica por qué es una droga que no suele producir tanto aumento de peso como el resto de los fármacos antipsicóticos agónicos atípicos.
+
+[10:27]
+La clozapina, como vemos acá, tiene o es capaz de producir mucha sedación, porque fíjense que tiene mucha afinidad por el receptor al neurotransmisor histamina, receptor H1. ¿Está bien? Es una droga que produce constipación con mucha frecuencia, porque también tiene una afinidad muy alta por el receptor muscarínico la acetilcolina ¿Está bien?
+
+[10:58]
+Tiene más afinidad por los receptores serotoninérgicos que por el receptor dopaminérgico. La clozapina es un neurotransmisor, eh, perdón, la clozapina es un fármaco antipsicótico, atípico, es la droga patrón de los atípicos, ese es el antipsicótico más eficaz con el que contamos.
+
+[11:23]
+Recuerden igualmente lo que yo les había ha dicho de ese eh posible efecto adverso que podía tener sobre las defensas del organismo, por eso es una medicación que se usa con cuidado, se reserva solo para el tratamiento de las formas refractarias de esquizofrenia, por ejemplo, ¿está bien?
+
+[11:46]
+Es decir, en aquellos casos en los que han fallado al menos dos tratamientos con antipsicóticos atípicos y uno con típico. ¿Está bien? Es ahí cuando recién se usa la clonazepam, ¿por qué? Porque es una droga que requiere monitoreo.
+
+[12:05]
+Como es capaz de de de reducir el recuento de glóbulos blancos, justamente de estos glóbulos blancos, los neutrófilos que nos defienden de las infecciones, periódicamente el paciente tiene que hacerse un análisis de sangre para ver cómo están esos valores. Al principio de tratamiento, que es cuando este efecto adverso puede aparecer con mayor frecuencia.
+
+[12:30]
+Eh, el control será más frecuente, se hace semanalmente por 16 a 20 semanas y luego de eso todo el tiempo que el paciente esté tomando clonazepam, mensualmente tiene que hacer un control hematológico para ver cómo están sus glóbulos blancos, ¿está bien?
+
+[12:53]
+La olanzapina y La quetiapina también tienen un marcado efecto sedativo.
+
+[12:59]
+Fíjense que la quetiapina de los atípicos es la que tiene menor afinidad por los receptores de tipo D2, o sea, que sería la que produciría síntomas extrapiramidales o efectos adversos extrapiramidales con menor frecuencia y eso es importante y eso hace que la quetiapina sea la preferida de los neurólogos, sobretodo ¿Qué?
+
+[13:25]
+Porque de esa forma evitan que los pacientes presenten sintomatología extrapiramidal y sería la preferida para el tratamiento, por ejemplo, de los síntomas psicóticos que pueden acompañar a las etapas más tardías o más evolucionadas de la enfermedad de Parkinson, es decir, cuando los trastornos motores comienzan a cursar con deterioro cognitivo, aquello que se conoce como complejo Parkinson demencia.
+
+[13:55]
+Muy bien. Lo interesante de esta filmina es que en el centro vemos un antipsicótico atípico que actúa sobre múltiples receptores. Puede ser el caso, por ejemplo, de la acenapina. Fíjense que no solamente bloquea receptores a la dopamina de tipo D2 y a la serotonina 5-HT2A, sino que actúa sobre otra gran miría de receptores. ¿Está bien?
+
+[14:23]
+Lo interesante es ver que cuando uno da un antipsicótico, no solamente está dando un antipsicótico, ¿por qué?
+
+[14:32]
+Porque el agonismo parcial de los receptores, perdón, eh, de los receptores a la dopamina que tienen distribución límbica como el tipo D2 y D3 tiene efecto antidepresivo porque el bloqueo de receptores A la dopamina de tipo D2, 5HT2A y 5HT1A puede tener efecto antimaníaco porque el bloqueo de estos receptores, sobre todo el receptor a la histamina de tipo H1 puede tener efecto ansiolítico, sedante e hipnótico.
+
+[15:20]
+Está bien.
+
+[15:24]
+Y al mismo tiempo, fíjense que actuando sobre estos receptores receptores que enumerábamos anteriormente un antipsicótico atípico puede tener efectos sobre el metabolismo y sobre la función cardiovascular.
+
+[15:46]
+Recuerden, por ejemplo, que los antipsicóticos atípicos se prefirieron respecto a los típicos históricamente, ¿por qué? Porque eran menores o producían con menor frecuencia síntomas extrapiramidales.
+
+[16:02]
+¿Se acuerdan que esos síntomas extrapiramidales eran muy temidos, por ejemplo, las distonias o el caso del síndrome neuroléptico maligno, este síndrome catastrófico del que habíamos hablado oportunamente, pero la verdad es que estos fármacos en su conjunto producen menor cantidad de sintomatología extrapiramidal, pero son fármacos que son capaces de producir un síndrome metabólico.
+
+[16:35]
+El síndrome metabólico Es un conjunto de signos y síntomas que aumenta el riesgo cardiovascular de los pacientes. El síndrome metabólico que producen con mucha frecuencia estos fármacos se caracteriza por hipertensión arterial, por obesidad central, por dislipemias, o sea, por trastornos en los lípidos o la composición de los lípidos de la sangre, ¿está bien?
+
+[17:05]
+Y todos estos son factores de riesgo cardiovascular, es decir, son factores de riesgo que pueden aumentar la incidencia de accidente cerebrovascular o infarto agudo miocardio, ¿está bien?
+
+[17:22]
+Es decir, son fármacos que se prefieren para evitarle al paciente los síntomas extrapiramidales y el síndrome neuroléptico maligno, pero son fármacos que si no se acompañan de dieta, ejercicio inicio o o o de una rutina nutricional, son fármacos que pueden disminuir la expectativa de vida del paciente produciendo estos efectos adversos a nivel cardiovascular. ¿Está bien?
+
+[17:53]
+Así que bueno, eso hay que tenerlo en cuenta. Eh, hay que tener en cuenta las distintas dimensiones sintomáticas de la psicosis, eso lo van a ver bien eh cuando vean los protocolos de tratamiento justamente para ver qué droga elegimos en cada caso porque muchas veces alguno de los efectos adversos de un fármaco pueden resultar para algunos pacientes beneficiosos.
+
+[18:21]
+Hay que evitarlos a rajatalla con otros, ¿está bien? Y hay fármacos que cuando los administramos sabemos que no solamente tienen un efecto antipsicótico, sino que, como veíamos en esta última filmina, pueden Pueden tener efecto antidepresivo también o potenciar el efecto de algún antidepresivo. Pueden tener efecto ansiolítico, etcétera, etcétera. Bueno, les agradezco por su atención.
+
+[18:50]
+La verdad es que intenté hacerlo lo más corto y lo más este simple posible para bueno, más que nada para facilitar este la lectura y para que vayan al texto con eh eh alguna información sucinta que eh que facilite. Bueno, muchas gracias por su atención eh y hasta luego.
